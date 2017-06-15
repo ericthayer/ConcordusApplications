@@ -83,12 +83,6 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"\/CNAME": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/CNAME",
-		"oF": 1
-		},
 	"\/composer.json": {
 		"ft": 524288,
 		"oA": 1,
