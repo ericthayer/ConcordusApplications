@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Concordus Applications">
+  <meta name="author" content="Concordus Applications">
+  <meta name="msapplication-TileColor" content="#333333">
+  <meta name="msapplication-TileImage" content="images/icons/favicon-144.jpg">
+  <!--[if IEMobile]><meta http-equiv="cleartype" content="on" /><![endif]-->
+  <link rel="apple-touch-icon" href="images/icons/favicon-180.jpg">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <title>Concordus Applications</title>
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="site-wrapper">
+
+    <header role="banner">
+      <nav class="navbar navbar-inverse fixed-top navbar-toggleable-md">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="images/concordus-logo-white-h.svg" alt="Concordus Applications" /></a>
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu"
+            aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+          <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="http://example.com" id="services-dropdown" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">Services</a>
+                <div class="dropdown-menu" aria-labelledby="services-dropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Testing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Customers</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="http://example.com" id="analytics-dropdown" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">Analytics</a>
+                <div class="dropdown-menu" aria-labelledby="analytics-dropdown">
+                  <a class="dropdown-item" href="#">360-Degree view of the Customer</a>
+                  <a class="dropdown-item" href="#">Ad Hoc Data Analysis on Big Data Sets</a>
+                  <a class="dropdown-item" href="#">Reaping the Benefits of Real-Time Analytics</a>
+                  <a class="dropdown-item" href="#">Sentiment Analysis</a>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main" role="main">
+
+      <!-- masthead -->
+      <section class="masthead pt-pb-2">
+        <div class="container">
+          <h1>Building a Connected World</h1>
+          <p class="lead">Innovative, smart and cost-effective software development an integration provided as a service, for Telcos and
+            Enterprises.</p>
+          <button class="btn btn-round btn-primary">Learn More</button>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer mastfoot" role="contentinfo">
+      <div class="container">
+        <p>&copy; 2017 Concordus Applications</p>
+        <a href="#0">Contact us</a> &bull; <a href="#0">Help center</a></p>
+      </div>
+    </footer>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-slim.min.js"><\/script>')</script>
+  <script src="js/bootstrap.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="js/libs/ie10-viewport-bug-workaround.js"></script>
+  <!-- Custom scripts -->
+  <script src="js/script.min.js" async></script>
+  <!-- async font loading -->
+  <script>
+    var html = document.documentElement;
+
+    if (sessionStorage.fontsLoaded) {
+      html.classList.add("fonts-loaded");
+    } else {
+      var script = document.createElement("script");
+      script.src = "js/libs/fontfaceobserver.js";
+      script.async = true;
+
+      script.onload = function () {
+        var MontserratLight = new FontFaceObserver("Montserrat-light");
+        var Montserrat = new FontFaceObserver("Montserrat");
+        var MontserratBold = new FontFaceObserver("Montserrat-bold", {});
+
+        Promise.all([
+          MontserratLight.load(),
+          Montserrat.load(),
+          MontserratBold.load()
+        ]).then(function () {
+          html.classList.add("fonts-loaded");
+          sessionStorage.fontsLoaded = true;
+        });
+      };
+      document.head.appendChild(script);
+    }
+
+  </script>
+  <!-- async icon sprite -->
+  <script>
+    var ajax = new XMLHttpRequest();
+    ajax.open("GET", "images/ui/ui-icons.svg", true);
+    ajax.send();
+    ajax.onload = function (e) {
+      var div = document.createElement("div");
+      div.innerHTML = ajax.responseText;
+      document.body.insertBefore(div, document.body.childNodes[0]);
+    }
+
+  </script>
+  <!-- smooth scroll -->
+  <!--<script src="js/libs/smooth-scroll.min.js"></script>
+  <script>
+    
+
+  </script>-->
+</body>
+
+</html>

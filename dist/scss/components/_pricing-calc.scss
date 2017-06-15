@@ -1,0 +1,58 @@
+
+.pricing-calc {
+  @include flex;
+  @include flex-wrap;
+  @include jc-center;
+  .radio-group {
+    @include flex;
+    @include flex-wrap;
+    @include ai-center;
+    @include jc-center;
+    > * {
+      @include pr-pl-sm;
+    }
+  }
+  .control-label {
+    //@include bold;
+    @include all-caps;
+    @include text-base;
+  }
+
+  .panel-body {
+    @include flex;
+    @include flex-wrap;
+    @include ai-center;
+    @include jc-center;
+    @include mb-1;
+    @include p-1;
+    border: 1px solid #DDD;
+    > * {
+      @include pr-pl-tiny;
+    }
+    .price {
+      @include mb-0;
+      @include text-xl;
+    }
+    .payment-terms {
+      @include text-tiny;
+    }
+  }
+
+  .input-group {
+    @include ai-center;
+    @include jc-center;
+    @include flex-wrap;
+    > * {
+      @include pr-pl-sm;
+    }
+    .control-label {
+      @include mb-0;
+      @include pt-pb-sm;
+    }
+    input {
+      @include flex-grow-1;
+      min-width: 10em;
+    }
+  }
+
+}

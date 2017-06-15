@@ -1,0 +1,185 @@
+// Media Queries
+
+$break-240: 15em; // 240px
+
+$break-tiny-phone: 20em; // 320px
+
+$break-375: 23.438em; // 375px
+ 
+$break-sm-phone: 30em; // 480px
+
+$break-md-phone: 33.750em; // > 540px
+
+$break-ml-phone: 40em; // 640px
+
+$break-lg-phone: 48em; // 768px
+
+$break-800: 50em; // 800px
+
+$break-900: 56.25em; // 900px 
+
+$break-md-screen: 62em; // 992px
+
+$break-lg-screen: 75em; // 1200px 
+
+$break-xl-screen: 100em; // 1600px
+
+$break-xxl-screen: 125em; // 2000px
+
+$break-widescreen: 150em; // 2400px
+
+// Default Font Stacks
+
+$sans-serif: "Helvetica Neue", Helvetica, sans-serif;
+
+$serif: "Garamond", "Cambria", Georgia, serif;
+
+// ** Custom Fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400|Varela+Round');
+
+$Varela: 'Varela Round', $sans-serif;
+$OpenSans: 'Open Sans', $sans-serif;
+
+
+// Specific Helpers
+
+$wht-text-shadow: 0 1px 0 rgba(white, 0.35);
+
+$blk-text-shadow: 1px 1px 0 rgba(black, 0.15);
+
+$blk-text-shadow-neg: 0 -1px 1px rgba(black, 0.25);
+
+// MaxCentive Colors
+
+// Base
+$max-black: #111;
+$max-charcoal: #222;
+$max-grey: #333;
+$max-grey-CCC: #CCC;
+$max-grey-EEE: #EEE;
+$max-white: #FCFCFC;
+
+$max-warning: #FF2222;
+
+// ** Brand ** //
+
+// blue
+$max-blue: #29ABE2;
+$max-blue-light: mix(white, $max-blue, 50%);
+$max-blue-dark: mix(black, $max-blue, 25%);
+
+// green
+$max-green: #39B54A;
+$max-green-light: mix(white, $max-green, 35%);
+$max-green-dark: mix(black, $max-green, 25%);
+
+// orange
+$max-orange: #F15A24;
+$max-orange-light: mix(white, $max-orange, 35%);
+$max-orange-dark: mix(black, $max-orange, 25%);
+
+// purple
+$max-purple: #93278F;
+$max-purple-light: mix(white, $max-purple, 35%);
+$max-purple-dark: mix(black, $max-purple, 25%);
+
+// BS colors
+$brand-primary: #428bca;
+$brand-success: #5cb85c;
+$brand-info: #5bc0de;
+$brand-warning: #f0ad4e;
+$brand-danger: #d9534f;
+
+// calc + padding
+
+$calc-25: calc(1vw + .25em);
+$calc-50: calc(1vw + .5em);
+$calc-75: calc(1vw + .75em);
+$calc-1: calc(1vw + 1em);
+$calc-2: calc(1vw + 2em);
+$calc-3: calc(1vw + 3em);
+$calc-4: calc(1vw + 4em);
+$calc-5: calc(1vw + 5em);
+$calc-10: calc(1vw + 10em);
+
+.max-black-c {
+  color: $max-black;
+}
+
+.max-white-c {
+  color: $max-white;
+}
+
+.max-charcoal-c {
+  color: $max-charcoal;
+}
+
+.max-grey-CCC-c {
+  color: $max-grey-CCC;
+}
+
+.max-grey-EEE-c {
+  color: $max-grey-EEE;
+}
+
+.max-warning {
+ color: $max-warning;
+}
+
+// theme colors
+
+@mixin theme-max-black {
+  background-color: $max-black;
+  background: $max-black;
+  color: $max-white;
+}
+
+@mixin theme-max-blue {
+  background-color: $max-blue;
+  background: $max-blue;
+  color: $max-white;
+}
+
+@mixin theme-max-blue {
+  background-color: $max-blue;
+  background: $max-blue;
+  color: $max-white;
+}
+
+@mixin theme-max-green {
+  background-color: $max-green;
+  background: $max-green;
+  color: $max-white;
+}
+
+@mixin theme-max-purple {
+  background-color: $max-purple;
+  background: $max-purple;
+  color: $max-white;
+}
+
+@mixin theme-max-orange {
+  background-color: $max-orange;
+  background: $max-orange;
+  color: $max-white;
+}
+
+.theme-black {
+  @include theme-max-black;
+}
+
+.theme-blue {
+  @include theme-max-blue;
+}
+
+.theme-green {
+  @include theme-max-green;
+}
+
+.theme-purple {
+  @include theme-max-purple;
+}
+
+.theme-orange {
+  @include theme-max-orange;
+}

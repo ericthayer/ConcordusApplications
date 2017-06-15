@@ -1,0 +1,25 @@
+// Concordus Colors
+
+//Base Colors
+$brand-primary: #39909A; // aquamarine
+$brand-secondary: #00A2E1; // light blue
+
+$link-color: $brand-secondary;
+$link-color-hover: mix(white, $brand-secondary, 25%);
+
+$brand-purple: #A0AFD4; // light purple
+$brand-dark-purple: #919FC2; // dark purple
+$brand-light-green: #7EB963; // light green
+$brand-peach: #FA7564; // peachy pink
+$brand-blue-dark: mix(black, $brand-secondary, 40%); // dark blue
+
+$brand-gradient-blue-1: linear-gradient(to bottom, $brand-secondary 10%, $brand-blue-dark 100%);
+
+$brand-gradient-blue-2: linear-gradient(to top, $brand-secondary 10%, $brand-blue-dark 100%);
+
+$text-color: #555;
+$heading-color: #333;
+$bg-color: #e1e0e0;
+
+$inverse-bg-color: mix(black, $brand-primary, 25%);
+$inverse-text-color: white;

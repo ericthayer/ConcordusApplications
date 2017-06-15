@@ -1,0 +1,237 @@
+// *** CLASS MODIFIERS *** //
+
+.p-0 {
+  @include p-0; 
+}
+
+.p-0-important {
+  @include p-0-important; 
+}
+
+.p-tiny {
+  @include p-tiny; 
+}
+
+.p-sm {
+  @include p-sm; 
+}
+
+.p-1 {
+  @include p-1; 
+}
+
+.p-1-pt5 {
+  @include p-1-pt5;
+}
+
+.p-2 {
+  @include p-2; 
+}
+
+.p-2-pt5 {
+ @include p-2-pt5; 
+}
+
+.p-3 {
+  @include p-3; 
+}
+
+.p-3-pt5 {
+  @include p-3-pt5; 
+}
+
+.p-4 {
+  @include p-4; 
+}
+
+.p-4-pt5 {
+  @include p-4-pt5; 
+}
+
+.p-5 {
+  @include p-5; 
+}
+
+.p-5-pt5 {
+  @include p-5-pt5; 
+}
+
+//  Padding Top & Bottom
+
+.pt-pb-tiny {
+  @include pt-pb-tiny;   
+}
+
+.pt-pb-sm {
+  @include pt-pb-sm;   
+}
+
+.pt-pb-1 {
+  @include pt-pb-1;   
+}
+
+.pt-pb-2 {
+  @include pt-pb-2;   
+}
+
+.pt-pb-3 {
+  @include pt-pb-3;   
+}
+
+.pt-pb-4 {
+  @include pt-pb-4;   
+}
+
+// Padding Top
+
+.pt-0 {
+  @include pt-0; 
+}
+
+.pt-tiny {
+  @include pt-tiny; 
+}
+
+.pt-sm {
+  @include pt-sm;
+}
+
+.pt-1 {
+  @include pt-1;  
+}
+
+.pt-2 {
+  @include pt-2; 
+}
+
+.pt-3 {
+  @include pt-3; 
+}
+
+.pt-4 {
+  @include pt-4;  
+}
+
+
+// Padding Bottom
+
+.pb-0 {
+  @include pb-0;  
+}
+
+.pb-tiny {
+  @include pb-tiny;  
+}
+
+.pb-sm {
+  @include pb-sm; 
+}
+
+.pb-1 {
+  @include pb-1;  
+}
+
+.pb-2 {
+  @include pb-2; 
+}
+
+.pb-3 {
+  @include pb-3;  
+}
+
+.pb-4 {
+  @include pb-4;  
+}
+
+
+// Padding Right & Left
+
+.pr-pl-0 {
+  @include pr-pl-0;  
+}
+
+.pr-pl-tiny {
+  @include pr-pl-tiny;   
+}
+
+.pr-pl-sm {
+  @include pr-pl-sm;   
+}
+
+.pr-pl-1 {
+  @include pr-pl-1 ;   
+}
+
+.pr-pl-2 {
+  @include pr-pl-2;   
+}
+
+.pr-pl-3 {
+  @include pr-pl-3;   
+}
+
+.pr-pl-4 {
+  @include pr-pl-4;   
+}
+
+
+// Padding Right
+
+.pr-0 {
+  @include pr-0; 
+}
+
+.pr-tiny {
+  @include pr-tiny;   
+}
+
+.pr-sm {
+  @include pr-sm; 
+}
+
+.pr-1 {
+  @include pr-1;  
+}
+
+.pr-2 {
+  @include pr-2;  
+}
+
+.pr-3 {
+  @include pr-3;  
+}
+
+.pr-4 {
+  @include pr-4;  
+}
+
+
+// Padding Left
+
+.pl-0 {
+  @include pl-0;  
+}
+
+.pl-tiny {
+  @include pl-tiny;   
+}
+
+.pl-sm {
+  @include pl-sm;   
+}
+
+.pl-1 {
+  @include pl-1;  
+}
+
+.pl-2 {
+  @include pl-2;  
+}
+
+.pl-3 {
+  @include pl-3;  
+}
+
+.pl-4 {
+  @include pl-4;  
+} 

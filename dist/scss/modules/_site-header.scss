@@ -1,0 +1,46 @@
+// Site Header
+
+.header {
+  height: auto;
+  padding: 0; 
+  &.header-shadow {
+    height: auto;
+    a {
+      color: #333;
+    }
+  }
+  .container-fluid {
+    padding-top: 1em;
+    padding-bottom: 1em; 
+  }
+  .extra-nav {
+    display: table-cell;
+  }
+  // > 992
+  @media (min-width: $break-md-screen) {
+    background: rgba(black, .75);
+
+    .inner-header {
+      min-width: 9em;
+      max-width: 100%;
+    }
+
+    .inner-nav {
+      
+    }
+
+    .extra-nav {
+      max-width: 100%;
+    }
+
+  }
+}
+
+img[class^="brand-"] {
+  min-width: 9em;
+  max-width: 10em;
+}
+
+.bg-gradient:after {
+  mix-blend-mode: soft-light;
+}

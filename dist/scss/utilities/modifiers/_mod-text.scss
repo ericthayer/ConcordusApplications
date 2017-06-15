@@ -1,0 +1,52 @@
+//** ALIGNMENT (align-left by default) **//
+// align right
+.align-right {
+  @include align-right;
+}
+
+// align center
+.align-center {
+  @include align-center;
+}
+
+.text-center {
+  @include text-center;
+}
+
+//** FONT SIZE (1em by default) **//
+.text-tiny {
+  @include text-tiny;
+}
+
+.text-sm {
+  @include text-sm;
+}
+
+.text-base {
+  @include text-base;
+}
+
+.text-md {
+  @include text-md;
+}
+
+.text-lg {
+  @include text-lg;
+}
+
+.text-xl {
+  @include text-xl;
+}
+
+//** FONT STYLES **//
+.all-caps {
+  @include all-caps;
+}
+
+.italic {
+  @include italic;
+}
+
+.bold {
+  @include bold;
+}

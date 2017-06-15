@@ -1,0 +1,349 @@
+// ******* Mixins ******* //
+// fade animation
+// @keyframes fade-in {
+//   0% {
+//     opacity: 0;
+//   }
+//   100% {
+//     opacity: 1;
+//   }  
+// }
+// @keyframes fade-out {
+//   0% {
+//     opacity: 1;
+//   }
+//   100% {
+//     opacity: 0;
+//   }  
+// }
+@mixin fade-in {
+  animation: fade-in .4s linear forwards;
+  transition: opacity .4s ease;
+}
+
+@mixin fade-out {
+  animation: fade-out .4s linear forwards;
+  transition: opacity .4s ease;
+}
+
+@mixin fade-out-delay {
+  animation: fade-out .4s 4s linear forwards;
+  transition: opacity .4s ease;
+}
+
+/// Slightly lighten a color
+/// @access public
+/// @param {Color} $color - color to tint
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+@function tint($color, $percentage) {
+  @return mix($color, white, $percentage);
+}
+
+/// Slightly darken a color
+/// @access public
+/// @param {Color} $color - color to shade
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+@function shade($color, $percentage) {
+  @return mix($color, black, $percentage);
+}
+
+@mixin color-reset {
+  *,
+  a {
+    color: currentColor !important;
+  }
+}
+
+// Panel Background Defaults
+@mixin panel-bg-scale {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+@mixin panel-bg-repeat {
+  background-repeat: repeat;
+  background-position: left top;
+  background-size: contain;
+}
+
+@mixin panel-bg-contain {
+  background-repeat: no-repeat;
+  background-size: cover; // > 667
+  @media (min-width: $break-ml-phone) {
+    background-size: contain;
+  }
+}
+
+// Opacity helpers
+@mixin opacity-50 {
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+}
+
+@mixin opacity-80 {
+  filter: alpha(opacity=80);
+  opacity: 0.8;
+}
+
+// Text
+@mixin post-list {
+  list-style-type: none;
+  margin: {
+    top: 0;
+    right: auto;
+    bottom: 0;
+    left: auto;
+  }
+  padding: {
+    left: 0;
+    top: .65em;
+    bottom: .65em;
+  }
+  // Post Item
+  & > li {
+    margin-bottom: .5em;
+    width: 100%;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  & > li > a {
+    text-decoration: none;
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  } // 400
+  @media (min-width: 25em) {
+    padding-left: .25em;
+  }
+}
+
+.post-list {
+  @include post-list;
+}
+
+// Reg Mark adjustments for copy
+@mixin reg-mark {
+  font-size: 9px;
+  vertical-align: text-top;
+}
+
+// Caret UI element
+@mixin caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  padding: 0;
+  vertical-align: middle;
+  border-top: 4px dashed;
+  border-top: 4px solid \9;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  &:before {
+    display: none;
+  }
+}
+
+.caret {
+  @include caret;
+}
+
+// P overflow fix to hide text at smaller screens
+@mixin text-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin text-overflow-off {
+  overflow: visible;
+  white-space: normal;
+}
+
+// Module block
+@mixin mod-block {
+  padding-top: 2em;
+  padding-bottom: 2em; // 768
+  @media (min-width: $break-lg-phone) {
+    //padding-bottom: 2em;   
+  }
+}
+
+// Date Label
+@mixin date-label {
+  background-color: $red-label-bg;
+  color: #FFF;
+  font-size: 11px;
+  font-style: normal;
+  letter-spacing: 0;
+  line-height: 14px;
+  margin: 0;
+  padding: 2px 10px 3px 10px;
+  text-shadow: $blk-text-shadow-neg;
+}
+
+// counter item
+@mixin counter-item {
+  counter-increment: sequential;
+  &:before {
+    background-color: $orange-red;
+    border-radius: 50%;
+    color: #FFF;
+    content: counter(sequential);
+    font-size: .875rem;
+    line-height: .5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto 1em;
+    padding: 1em;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    max-height: 2em;
+    max-width: 2em;
+  } // > 640
+  @media (min-width: $break-ml-phone) {
+    .title {
+      margin-bottom: .9rem;
+    }
+  }
+}
+
+// Images
+@mixin circle-mask {
+  border-radius: 100%;
+  width: 100%;
+  overflow: hidden; 
+  shape-outside: circle();
+  img {
+    border-radius: 100%;
+    overflow: hidden;
+  }
+}
+
+@mixin circle-mask-md {
+  @include circle-mask;
+  max-height: 20rem;
+  max-width: 20rem;
+}
+
+@mixin circle-mask-sm {
+  @include circle-mask;
+  max-height: 10rem;
+  max-width: 10rem;
+}
+
+.circle-mask {
+  @include circle-mask;
+}
+
+.circle-mask-md {
+  @include circle-mask-md;
+}
+
+.circle-mask-sm {
+  @include circle-mask-sm;
+}
+
+@mixin rounded-mask {
+  border-radius: 1rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.rounded-mask {
+  @include rounded-mask;
+}
+
+// Image Replacement "hack"
+@mixin hide-button-text {
+  background-color: transparent;
+  border: 0;
+  color: transparent;
+  font: 0/0;
+  text-shadow: none;
+}
+
+@mixin hide-text {
+  color: transparent;
+  font: 0/0;
+  &:hover,
+  &:focus {
+    color: transparent;
+    font: 0/0;
+  }
+}
+
+.hide-text {
+  @include hide-text;
+}
+
+// Clearfix
+@mixin clearfix {
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+// .btn:after reset
+%btn-after-reset {
+  content: "" !important;
+  padding: 0 !important;
+}
+
+// SR Text
+@mixin sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0 !important;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+@mixin sr-only-focusable {
+  &:active,
+  &:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+  }
+}
+
+@mixin link-shadow {
+  text-shadow: .05em 0 0 #F9F9F9, -0.05em 0 0 #F9F9F9, 0 .05em 0 #F9F9F9, 0 -0.05em 0 #F9F9F9, .1em 0 0 #F9F9F9, -0.1em 0 0 #F9F9F9, 0 .1em 0 #F9F9F9, 0 -0.1em 0 #F9F9F9;
+  background-image: linear-gradient(to right, currentColor 0%, currentColor 100%);
+  background-repeat: repeat-x;
+  background-position: bottom .05em center;
+  background-size: 100% .07em;
+}
+
+.sr-only {
+  @include sr-only;
+}
+
+.sr-only-focusable {
+  @include sr-only-focusable;
+}
+
+@import "mixins/text";
+@import "mixins/layout";
+@import "mixins/margin";
+@import "mixins/padding";
+@import "mixins/flexbox";
+@import "mixins/css-grid";

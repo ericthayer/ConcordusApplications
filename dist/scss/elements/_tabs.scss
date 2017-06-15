@@ -1,0 +1,12 @@
+.tab-content {
+  background-color: initial;
+  border: initial;
+  color: initial;
+}
+
+.tab {
+  &.btn-brand.active {
+    background-color: #277adc;
+    border-color: #277adc;
+  }
+}

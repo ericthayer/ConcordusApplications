@@ -1,0 +1,69 @@
+@mixin icon {
+  display: inline-block;
+  fill: currentColor;
+  height: 1em;
+  width: 1em;   
+  vertical-align: middle;
+  position: relative;
+  top: -.0625em;
+  margin-right: 0.25em;
+  margin-left: 0.25em;   
+  text-align: center; 
+  transition: fill .3s ease;
+}
+
+// Icon directions. Used mostly for arrows
+
+@mixin rotate-180 {
+  transform: rotate(180deg);
+}
+
+@mixin rotate-90 {
+  transform: rotate(90deg);
+}
+
+@mixin rotate-neg-90 {
+  transform: rotate(-90deg);
+}
+
+@mixin rotate-45 {
+  transform: rotate(45deg);
+}
+
+@mixin rotate-neg-45 {
+  transform: rotate(-45deg);
+}
+
+.icon:not([class*="icon icon-"]) {
+  @include icon;
+}
+
+// Icon directions. Used mostly for arrows
+
+.rotate-180 {
+  @include rotate-180;
+}
+
+.rotate-90 {
+  @include rotate-90;
+}
+
+.rotate-neg-90 {
+  @include rotate-neg-90;
+}
+
+.rotate-45 {
+  @include rotate-45;
+}
+
+.rotate-neg-45 {
+  @include rotate-neg-45;
+}
+
+.icon-box-icon {
+  .icon {
+    display: block;
+    height: initial;
+    width: 100%;
+  }
+}

@@ -1,0 +1,57 @@
+// input styles
+
+input,
+select,
+textarea {
+  border: initial; 
+  border-radius: initial;
+  box-shadow: initial;
+  color: initial;
+  display: initial;
+  font-size: initial;
+  height: auto;
+  @include pt-tiny;
+  @include pr-sm;
+  @include pb-tiny;
+  @include pl-sm;
+  width: initial;
+}
+
+input,
+textarea {
+  background-color: initial; 
+}
+
+input {
+  &[type="file"] {
+    @include mb-1;
+  }
+}
+
+.form-control {
+  border: initial; 
+  border-radius: initial;
+  box-shadow: initial;
+  display: initial;
+  font-size: initial;
+  width: initial;
+  &:focus {
+    background-color: $max-purple;
+    border: 0.15rem solid transparent;
+    box-shadow: none;
+    color: #FFF;
+    outline: 2px solid $max-blue;
+    outline-offset: 4px;
+  }
+  &[readonly] {
+    border-bottom: none;
+  }
+}
+
+.form-control-outline {
+  border-radius: 5em;
+}
+
+select.form-control {
+  border: .15rem solid $max-grey-CCC;
+}
