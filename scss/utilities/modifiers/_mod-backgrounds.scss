@@ -1,0 +1,17 @@
+//**  CLASS Modifiers  **//
+
+.bg-cover {
+  @include bg-cover;
+}
+
+.bg-full {
+  @include bg-full;
+}
+
+.bg-hero {
+  @include bg-hero;
+  &-globe {
+    background-image: url(../images/bg/bg-hero-globe-dark.png);
+  }
+}
+

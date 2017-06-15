@@ -1,24 +1,10 @@
 .site-footer {
-  color: #EEE;
+  @include pt-2;
+  @include pb-2;
   @include text-center;
-  .logo {
-    flex-grow: 1;
-    max-width: 15em;
-    margin-bottom: 2rem;
-    .a {
-      fill: currentColor;
-    }
-  }
-  a:not(.logo) {
-    color: #888;
-  }
-  &.theme-black {
-    a {
-      &:hover,
-      &:focus {
-        color: #FFF;
-      }
-    }
+  @include theme-black;
+  p, nav {
+    @include text-sm;
   }
 }
 
@@ -37,26 +23,6 @@
       padding-right: calc(1vw + 5em);
     }
   }
-}
-
-.nav-list {
-  font-size: .875em;
-  ul > li {
-    margin-bottom: 1rem;
-  }
-  // < 450
-  @media (max-width: 28.125em) {
-    width: 100%;
-  }
-}
-
-.nav-title {
-  font-size: 1.25em;
-  margin-bottom: 1.5rem;
-}
-
-.footer-contact {
-
 }
 
 .contact-nav {

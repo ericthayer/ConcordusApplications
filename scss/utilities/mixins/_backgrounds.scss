@@ -1,0 +1,23 @@
+// background styles
+
+@mixin bg-cover {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@mixin bg-full {
+  @include bg-cover;
+  @include flex;
+  @include ai-center;
+  @include as-stretch;
+  @include flex-grow-1;
+}
+
+@mixin bg-hero {
+  @include bg-cover;
+  @include bg-full;
+  > .container {
+    @include mw-40em;
+  }
+}

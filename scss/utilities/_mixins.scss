@@ -1,21 +1,30 @@
 // ******* Mixins ******* //
+
+@import "mixins/text";
+@import "mixins/margin";
+@import "mixins/padding";
+@import "mixins/layout";
+@import "mixins/backgrounds";
+@import "mixins/flexbox";
+@import "mixins/css-grid";
+
 // fade animation
-// @keyframes fade-in {
-//   0% {
-//     opacity: 0;
-//   }
-//   100% {
-//     opacity: 1;
-//   }  
-// }
-// @keyframes fade-out {
-//   0% {
-//     opacity: 1;
-//   }
-//   100% {
-//     opacity: 0;
-//   }  
-// }
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }  
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }  
+}
 @mixin fade-in {
   animation: fade-in .4s linear forwards;
   transition: opacity .4s ease;
@@ -167,11 +176,14 @@
 
 // Module block
 @mixin mod-block {
-  padding-top: 2em;
-  padding-bottom: 2em; // 768
-  @media (min-width: $break-lg-phone) {
-    //padding-bottom: 2em;   
-  }
+  @include pt-4;
+  @include pr-2;
+  @include pb-4;
+  @include pl-2;
+}
+
+.mod-block {
+  @include mod-block;
 }
 
 // Date Label
@@ -340,10 +352,3 @@
 .sr-only-focusable {
   @include sr-only-focusable;
 }
-
-@import "mixins/text";
-@import "mixins/layout";
-@import "mixins/margin";
-@import "mixins/padding";
-@import "mixins/flexbox";
-@import "mixins/css-grid";

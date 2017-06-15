@@ -23,13 +23,12 @@
 
   <div class="site-wrapper">
 
-    <header role="banner">
-      <nav class="navbar navbar-inverse fixed-top navbar-toggleable-md">
+    <header class="site-header">
+      <nav class="navbar navbar-inverse fixed-top navbar-toggleable-md" role="navigation">
         <div class="container">
           <a class="navbar-brand" href="#"><img src="images/concordus-logo-white-h.svg" alt="Concordus Applications" /></a>
           <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu"
-            aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+            aria-expanded="false" aria-label="Toggle navigation"><svg class="icon"><use xlink:href="#icon-menu" /></svg><!--<span>Menu</span>-->
         </button>
 
           <div class="collapse navbar-collapse" id="main-menu">
@@ -75,7 +74,7 @@
     <main id="main" role="main">
 
       <!-- masthead -->
-      <section class="masthead pt-pb-2">
+      <section class="masthead bg-hero bg-hero-globe theme-black">
         <div class="container">
           <h1>Building a Connected World</h1>
           <p class="lead">Innovative, smart and cost-effective software development an integration provided as a service, for Telcos and
@@ -86,10 +85,10 @@
 
     </main>
 
-    <footer class="site-footer mastfoot" role="contentinfo">
+    <footer class="site-footer" role="contentinfo">
       <div class="container">
         <p>&copy; 2017 Concordus Applications</p>
-        <a href="#0">Contact us</a> &bull; <a href="#0">Help center</a></p>
+        <nav><a href="#0">Contact us</a> &bull; <a href="#0">Help center</a></nav>
       </div>
     </footer>
 

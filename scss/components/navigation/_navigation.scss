@@ -4,12 +4,55 @@
   text-align: left;
 }
 
+.navbar-collapse {
+  background-color: rgba(#000, .9);
+  margin: 0 -15px;
+  @include p-1;
+  &.show {
+
+  }
+}
+
 .navbar-toggler {
-  top: .5rem;
+  font-size: 1.5rem;
+  font-weight: normal;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+  top: .25em;
   right: 0;
+  padding: 0;
+  .navbar-inverse & {
+    border: none;
+    .icon {
+      fill: #ddd;
+    }
+  }
+  .icon {
+    height: 1.75em;
+    width: 1.75em;
+    margin-right: 0;
+    margin-left: 0;
+    top: 0;
+  }
 }
 
 .navbar-brand {
   max-width: 12rem;
   width: 100%;
+}
+
+.nav-list {
+  font-size: .875em;
+  ul > li {
+    margin-bottom: 1rem;
+  }
+  // < 450
+  @media (max-width: 28.125em) {
+    width: 100%;
+  }
+}
+
+.nav-title {
+  font-size: 1.25em;
+  margin-bottom: 1.5rem;
 }

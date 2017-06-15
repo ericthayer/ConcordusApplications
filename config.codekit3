@@ -276,6 +276,17 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/images\/bg\/bg-hero-globe-dark.png": {
+		"ft": 32768,
+		"iS": 2383810,
+		"oA": 0,
+		"oAP": "\/images\/bg\/bg-hero-globe-dark.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/images\/concordus-logo-white-h.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -675,19 +686,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/scss\/layout\/_flex-grid.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/scss\/css\/_flex-grid.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"\/scss\/modifiers.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -818,6 +816,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/scss\/utilities\/mixins\/_backgrounds.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/scss\/utilities\/css\/_backgrounds.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/scss\/utilities\/mixins\/_css-grid.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -892,6 +903,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/scss\/utilities\/css\/_text.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/scss\/utilities\/modifiers\/_mod-backgrounds.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/scss\/utilities\/css\/_mod-backgrounds.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

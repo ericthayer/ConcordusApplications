@@ -1,12 +1,9 @@
 // Masthead (page header)
 
 .masthead {
-  color: #fff;
-  text-align: center;
-  text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
-  margin-bottom: 2rem;
-  @include p-1;
-  @include mw-40em;
+  @include mod-block;
+  @include text-center;
+  @include w-100;
 }
 
 .masthead-brand {

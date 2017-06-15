@@ -42,6 +42,23 @@
   background: #F15A24;
   color: #FCFCFC; }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10.5em, 1fr));
+  grid-gap: .5em; }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fade-out {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
 .post-list {
   list-style-type: none;
   margin-top: 0;
@@ -77,6 +94,12 @@
   border-left: 4px solid transparent; }
   .caret:before {
     display: none; }
+
+.mod-block {
+  padding-top: 4em;
+  padding-right: 2em;
+  padding-bottom: 4em;
+  padding-left: 2em; }
 
 .circle-mask {
   border-radius: 100%;
@@ -138,11 +161,6 @@
   margin: 0;
   overflow: visible;
   clip: auto; }
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10.5em, 1fr));
-  grid-gap: .5em; }
 
 @media (min-width: 33.75em) {
   .align-right {
