@@ -230,6 +230,7 @@ h4, .h4,
 h5, .h5,
 h6, .h6 {
   color: currentColor;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   line-height: 1.35;
   transition: opacity .2s; }
   .fonts-loaded h1, .fonts-loaded .h1, .fonts-loaded
@@ -256,7 +257,8 @@ p {
     text-decoration: none; }
 
 .lead {
-  -webkit-font-smoothing: initial; }
+  -webkit-font-smoothing: auto;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
   .fonts-loaded .lead {
     font-family: "Montserrat Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-weight: 300; }
@@ -364,7 +366,8 @@ img {
   transform: rotate(-45deg); }
 
 .btn {
-  -webkit-font-smoothing: initial; }
+  -webkit-font-smoothing: auto;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
   .fonts-loaded .btn {
     font-family: "Montserrat Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-weight: 300; }
@@ -510,7 +513,8 @@ img {
     flex-direction: row-reverse; } }
 
 .banner p {
-  -webkit-font-smoothing: initial;
+  -webkit-font-smoothing: auto;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   line-height: 2; }
   .fonts-loaded .banner p {
     font-family: "Montserrat Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
