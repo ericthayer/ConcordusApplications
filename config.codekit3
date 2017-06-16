@@ -45,6 +45,12 @@
 		"oAP": "\/.houndignore",
 		"oF": 1
 		},
+	"\/.htaccess": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/.htaccess",
+		"oF": 0
+		},
 	"\/.travis.yml": {
 		"ft": 8192,
 		"oA": 1,
