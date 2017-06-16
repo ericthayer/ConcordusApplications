@@ -16,22 +16,22 @@
   font-weight: normal;
   font-style: normal; }
 
-.max-black-c {
+.ca-black-c {
   color: #111; }
 
-.max-white-c {
+.ca-white-c {
   color: #FCFCFC; }
 
-.max-charcoal-c {
+.ca-charcoal-c {
   color: #222; }
 
-.max-grey-CCC-c {
+.ca-grey-CCC-c {
   color: #CCC; }
 
-.max-grey-EEE-c {
+.ca-grey-EEE-c {
   color: #EEE; }
 
-.max-warning {
+.ca-warning {
   color: #FF2222; }
 
 .theme-black {
@@ -40,23 +40,23 @@
   color: #FCFCFC; }
 
 .theme-blue {
-  background-color: #29ABE2;
-  background: #29ABE2;
+  background-color: #00A2E1;
+  background: #00A2E1;
   color: #FCFCFC; }
 
 .theme-green {
-  background-color: #39B54A;
-  background: #39B54A;
+  background-color: #7EB963;
+  background: #7EB963;
   color: #FCFCFC; }
 
 .theme-purple {
-  background-color: #93278F;
-  background: #93278F;
+  background-color: #A0AFD4;
+  background: #A0AFD4;
   color: #FCFCFC; }
 
 .theme-orange {
-  background-color: #F15A24;
-  background: #F15A24;
+  background-color: #F6BE1E;
+  background: #F6BE1E;
   color: #FCFCFC; }
 
 .grid {
@@ -316,6 +316,12 @@ img {
   display: flex;
   flex-direction: column;
   width: 100%; }
+  @supports (grid-gap: 0) {
+    .site-wrapper {
+      height: 100vh;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      grid-template-columns: minmax(10em, 1fr); } }
 
 .container {
   max-width: 85rem;
@@ -331,6 +337,23 @@ img {
       padding: 4em; }
       #main > * + *:not(.banner-full) > .container {
         padding: 0; }
+  @supports (grid-gap: 0) {
+    #main {
+      grid-row: 2 / 3; } }
+
+.content-page .site-header {
+  position: relative; }
+
+@media (min-width: 40em) {
+  .content-page .card-row .media-item {
+    align-self: stretch;
+    padding-top: 4em; } }
+
+@media (min-width: 62em) {
+  .content-page .card-row .media-item {
+    padding-top: 0; }
+  .content-page .card-row .card-block {
+    padding: 4em 10em 4em 7em; } }
 
 .icon {
   display: inline-block;
@@ -389,6 +412,7 @@ img {
   border-radius: 5rem; }
 
 .btn-text {
+  color: #39909A;
   padding: 0; }
 
 .media-wrap {
@@ -479,15 +503,24 @@ img {
 .dropdown-item {
   white-space: initial; }
 
+.breadcrumb {
+  display: none;
+  background: transparent;
+  margin-bottom: 0;
+  font-size: .875em; }
+  .breadcrumb .container {
+    display: flex;
+    justify-content: flex-end; }
+
 .masthead {
-  height: 100vh;
   width: 100%;
   text-align: center; }
-  @media (max-height: 33.75em) {
-    .masthead {
-      height: auto;
-      padding-top: 5em;
-      padding-bottom: 5em; } }
+  .masthead p {
+    max-width: 40em;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2rem;
+    font-size: 1.25em; }
 
 .card-clean {
   background-color: transparent;
@@ -508,7 +541,7 @@ img {
       display: flex;
       flex-direction: column;
       padding: 10%; }
-    .card-row .card-text {
+    .card-row .card-text + .card-text {
       margin-bottom: 20%; }
     .card-row .btn {
       align-self: flex-start; } }
@@ -529,6 +562,9 @@ img {
   background-color: rgba(0, 0, 0, 0.85); }
   .site-header.headroom--not-top {
     background-color: rgba(0, 0, 0, 0.85); }
+  @supports (grid-gap: 0) {
+    .site-header {
+      grid-row: span 1; } }
 
 .headroom {
   transition: opacity .3s ease; }
@@ -548,6 +584,9 @@ img {
   text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5); }
   .site-footer p, .site-footer nav {
     font-size: .875em; }
+  @supports (grid-gap: 0) {
+    .site-footer {
+      grid-row: 4 / 4; } }
 
 .footer-nav {
   padding-top: calc(1vw + 3em);
@@ -1082,6 +1121,9 @@ img {
   .align-center {
     text-align: center; } }
 
+.bg-trans {
+  background: transparent; }
+
 .bg-cover {
   background-position: center;
   background-repeat: no-repeat;
@@ -1107,7 +1149,8 @@ img {
   align-items: center;
   align-self: stretch;
   flex-grow: 1;
-  font-size: calc( 1rem + (40 - 28) * ( (100vw - 400px) / ( 2000 - 400))); }
+  font-size: calc( 1rem + (40 - 28) * ( (100vw - 400px) / ( 2000 - 400)));
+  height: 100vh; }
   .bg-hero .h1, .bg-hero h1 {
     font-size: 2.5em;
     margin-bottom: .625rem; }
@@ -1121,6 +1164,11 @@ img {
     font-size: .875em; }
   .bg-hero .icon {
     font-size: 1em; }
+  @media (max-height: 33.75em) {
+    .bg-hero {
+      height: auto;
+      padding-top: 5em;
+      padding-bottom: 5em; } }
   .bg-hero-globe {
     background-image: url(../images/bg/bg-hero-globe-dark.jpg);
     background-image: -webkit-image-set(url(../images/bg/bg-hero-globe-dark.jpg) 1x, url(../images/bg/bg-hero-globe-dark-lg.jpg) 2x);

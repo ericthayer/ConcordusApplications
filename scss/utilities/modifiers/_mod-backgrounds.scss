@@ -1,5 +1,9 @@
 //**  CLASS Modifiers  **//
 
+.bg-trans {
+  @include bg-trans;
+}
+
 .bg-cover {
   @include bg-cover;
 }

@@ -16,22 +16,22 @@
   font-weight: normal;
   font-style: normal; }
 
-.max-black-c {
+.ca-black-c {
   color: #111; }
 
-.max-white-c {
+.ca-white-c {
   color: #FCFCFC; }
 
-.max-charcoal-c {
+.ca-charcoal-c {
   color: #222; }
 
-.max-grey-CCC-c {
+.ca-grey-CCC-c {
   color: #CCC; }
 
-.max-grey-EEE-c {
+.ca-grey-EEE-c {
   color: #EEE; }
 
-.max-warning {
+.ca-warning {
   color: #FF2222; }
 
 .theme-black {
@@ -40,23 +40,23 @@
   color: #FCFCFC; }
 
 .theme-blue {
-  background-color: #29ABE2;
-  background: #29ABE2;
+  background-color: #00A2E1;
+  background: #00A2E1;
   color: #FCFCFC; }
 
 .theme-green {
-  background-color: #39B54A;
-  background: #39B54A;
+  background-color: #7EB963;
+  background: #7EB963;
   color: #FCFCFC; }
 
 .theme-purple {
-  background-color: #93278F;
-  background: #93278F;
+  background-color: #A0AFD4;
+  background: #A0AFD4;
   color: #FCFCFC; }
 
 .theme-orange {
-  background-color: #F15A24;
-  background: #F15A24;
+  background-color: #F6BE1E;
+  background: #F6BE1E;
   color: #FCFCFC; }
 
 .grid {

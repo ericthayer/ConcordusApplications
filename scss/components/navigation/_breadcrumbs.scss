@@ -1,0 +1,10 @@
+.breadcrumb {
+  @include hidden;
+  @include bg-trans;
+  @include mb-0;
+  @include text-sm;
+  .container {
+    @include flex;
+    @include jc-end;
+  }
+}

@@ -6,6 +6,9 @@
   p, nav {
     @include text-sm;
   }
+  @supports (grid-gap: 0) {
+    grid-row: 4 / 4;
+  }
 }
 
 .footer-nav {

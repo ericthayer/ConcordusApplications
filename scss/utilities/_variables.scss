@@ -76,36 +76,56 @@ $blk-text-shadow-neg: 0 -1px 1px rgba(black, 0.25);
 // MaxCentive Colors
 
 // Base
-$max-black: #111;
-$max-charcoal: #222;
-$max-grey: #333;
-$max-grey-CCC: #CCC;
-$max-grey-EEE: #EEE;
-$max-white: #FCFCFC;
+$ca-black: #111;
+$ca-charcoal: #222;
+$ca-grey: #333;
+$ca-grey-CCC: #CCC;
+$ca-grey-EEE: #EEE;
+$ca-white: #FCFCFC;
 
-$max-warning: #FF2222;
+$ca-warning: #FF2222;
 
 // ** Brand ** //
 
 // blue
-$max-blue: #29ABE2;
-$max-blue-light: mix(white, $max-blue, 50%);
-$max-blue-dark: mix(black, $max-blue, 25%);
+$ca-blue: #00A2E1;
+$ca-blue-light: mix(white, $ca-blue, 50%);
+$ca-blue-dark: mix(black, $ca-blue, 25%);
+
+// teal
+$ca-teal: #39909A;
+$ca-teal-light: mix(white, $ca-teal, 50%);
+$ca-teal-dark: mix(black, $ca-teal, 25%);
 
 // green
-$max-green: #39B54A;
-$max-green-light: mix(white, $max-green, 35%);
-$max-green-dark: mix(black, $max-green, 25%);
+$ca-green: #7EB963;
+$ca-green-light: mix(white, $ca-green, 35%);
+$ca-green-dark: mix(black, $ca-green, 25%);
 
 // orange
-$max-orange: #F15A24;
-$max-orange-light: mix(white, $max-orange, 35%);
-$max-orange-dark: mix(black, $max-orange, 25%);
+$ca-orange: #F6BE1E;
+$ca-orange-light: mix(white, $ca-orange, 35%);
+$ca-orange-dark: mix(black, $ca-orange, 25%);
 
 // purple
-$max-purple: #93278F;
-$max-purple-light: mix(white, $max-purple, 35%);
-$max-purple-dark: mix(black, $max-purple, 25%);
+$ca-purple: #A0AFD4;
+$ca-purple-light: mix(white, $ca-purple, 35%);
+$ca-purple-dark: mix(black, $ca-purple, 25%);
+
+// red
+$ca-red: #A0AFD4;
+$ca-red-light: mix(white, $ca-red, 35%);
+$ca-red-dark: mix(black, $ca-red, 25%);
+
+// brown
+$ca-brown: #956B51;
+$ca-brown-light: mix(white, $ca-brown, 35%);
+$ca-brown-dark: mix(black, $ca-brown, 25%);
+
+// tan
+$ca-tan: #CCBE97;
+$ca-tan-light: mix(white, $ca-tan, 35%);
+$ca-tan-dark: mix(black, $ca-tan, 25%);
 
 // BS colors
 $brand-primary: #428bca;
@@ -126,84 +146,84 @@ $calc-4: calc(1vw + 4em);
 $calc-5: calc(1vw + 5em);
 $calc-10: calc(1vw + 10em);
 
-.max-black-c {
-  color: $max-black;
+.ca-black-c {
+  color: $ca-black;
 }
 
-.max-white-c {
-  color: $max-white;
+.ca-white-c {
+  color: $ca-white;
 }
 
-.max-charcoal-c {
-  color: $max-charcoal;
+.ca-charcoal-c {
+  color: $ca-charcoal;
 }
 
-.max-grey-CCC-c {
-  color: $max-grey-CCC;
+.ca-grey-CCC-c {
+  color: $ca-grey-CCC;
 }
 
-.max-grey-EEE-c {
-  color: $max-grey-EEE;
+.ca-grey-EEE-c {
+  color: $ca-grey-EEE;
 }
 
-.max-warning {
- color: $max-warning;
+.ca-warning {
+ color: $ca-warning;
 }
 
 // theme colors
 
-@mixin theme-max-black {
-  background-color: $max-black;
-  background: $max-black;
-  color: $max-white;
+@mixin theme-ca-black {
+  background-color: $ca-black;
+  background: $ca-black;
+  color: $ca-white;
 }
 
-@mixin theme-max-blue {
-  background-color: $max-blue;
-  background: $max-blue;
-  color: $max-white;
+@mixin theme-ca-blue {
+  background-color: $ca-blue;
+  background: $ca-blue;
+  color: $ca-white;
 }
 
-@mixin theme-max-blue {
-  background-color: $max-blue;
-  background: $max-blue;
-  color: $max-white;
+@mixin theme-ca-blue {
+  background-color: $ca-blue;
+  background: $ca-blue;
+  color: $ca-white;
 }
 
-@mixin theme-max-green {
-  background-color: $max-green;
-  background: $max-green;
-  color: $max-white;
+@mixin theme-ca-green {
+  background-color: $ca-green;
+  background: $ca-green;
+  color: $ca-white;
 }
 
-@mixin theme-max-purple {
-  background-color: $max-purple;
-  background: $max-purple;
-  color: $max-white;
+@mixin theme-ca-purple {
+  background-color: $ca-purple;
+  background: $ca-purple;
+  color: $ca-white;
 }
 
-@mixin theme-max-orange {
-  background-color: $max-orange;
-  background: $max-orange;
-  color: $max-white;
+@mixin theme-ca-orange {
+  background-color: $ca-orange;
+  background: $ca-orange;
+  color: $ca-white;
 }
 
 .theme-black {
-  @include theme-max-black;
+  @include theme-ca-black;
 }
 
 .theme-blue {
-  @include theme-max-blue;
+  @include theme-ca-blue;
 }
 
 .theme-green {
-  @include theme-max-green;
+  @include theme-ca-green;
 }
 
 .theme-purple {
-  @include theme-max-purple;
+  @include theme-ca-purple;
 }
 
 .theme-orange {
-  @include theme-max-orange;
+  @include theme-ca-orange;
 }

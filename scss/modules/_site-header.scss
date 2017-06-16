@@ -5,6 +5,9 @@
   &.headroom--not-top {
     background-color: rgba(black, .85);
   }
+  @supports (grid-gap: 0) {
+    grid-row: span 1;
+  }
 }
 
 .headroom {

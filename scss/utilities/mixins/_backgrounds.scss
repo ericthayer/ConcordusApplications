@@ -1,5 +1,9 @@
 // background styles
 
+@mixin bg-trans {
+  background: transparent;
+}
+
 @mixin bg-pos-center {
   background-position: center;
 }
@@ -31,6 +35,7 @@
   @include bg-cover;
   @include bg-full;
   @include font-scale;
+  @include h-100vh;
 
   .h1, h1 {
     @include text-xl;
@@ -47,7 +52,14 @@
   .btn {
     @include text-sm;
   }
+
   .icon {
     @include text-base;
   }
+
+  @media (max-height: $break-md-phone) {
+    @include h-auto;
+    @include pt-pb-5;
+  }
+
 }

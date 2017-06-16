@@ -1,11 +1,12 @@
 // Masthead (page header)
 
 .masthead {
-  @include h-100vh;
   @include w-100;
   @include text-center;
-  @media (max-height: $break-md-phone) {
-    @include h-auto;
-    @include pt-pb-5;
+  p {
+    @include mw-40em;
+    @include mr-ml-a;
+    @include mb-2;
+    @include text-md;
   }
 }
