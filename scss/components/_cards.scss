@@ -16,7 +16,7 @@
       @include flex-d-row;
       @include ai-center;
 
-      > img {
+      > * {
         @include as-center;
         @include w-35;
       }

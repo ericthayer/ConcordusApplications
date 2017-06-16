@@ -501,7 +501,7 @@ img {
   .card-row {
     flex-direction: row;
     align-items: center; }
-    .card-row > img {
+    .card-row > * {
       align-self: center;
       width: 35%; }
     .card-row .card-block {
@@ -525,18 +525,19 @@ img {
     font-family: "Montserrat Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-weight: 300; }
 
-.site-header.headroom--not-top {
+.site-header {
   background-color: rgba(0, 0, 0, 0.85); }
+  .site-header.headroom--not-top {
+    background-color: rgba(0, 0, 0, 0.85); }
 
 .headroom {
-  will-change: transform;
-  transition: transform .3s ease; }
+  transition: opacity .3s ease; }
 
 .headroom--pinned {
-  transform: translateY(0%); }
+  opacity: 1; }
 
 .headroom--unpinned {
-  transform: translateY(-100%); }
+  opacity: 0; }
 
 .site-footer {
   padding-top: 2em;
