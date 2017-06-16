@@ -306,6 +306,26 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/images\/bg\/bg-hero-globe-dark-lg.jpg": {
+		"ft": 16384,
+		"iS": 246606,
+		"oA": 0,
+		"oAP": "\/images\/bg\/bg-hero-globe-dark-lg.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/images\/bg\/bg-hero-globe-dark-sm.jpg": {
+		"ft": 16384,
+		"iS": 78065,
+		"oA": 0,
+		"oAP": "\/images\/bg\/bg-hero-globe-dark-sm.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/images\/bg\/bg-hero-globe-dark.jpg": {
 		"ft": 16384,
 		"iS": 152307,
@@ -313,7 +333,7 @@
 		"oAP": "\/images\/bg\/bg-hero-globe-dark.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/images\/bg\/bg-hero-globe-dark.png": {
