@@ -3,6 +3,7 @@
 @import "utilities/mixins";
 
 // Base
+@import "base/lazyload";
 @import "base/colors";
 @import "base/typography";
 @import "base/global";
@@ -17,6 +18,7 @@
 @import "components/navigation/navigation";
 @import "components/masthead";
 @import "components/cards";
+@import "components/banners";
 
 // Modules
 @import "modules/site-header";

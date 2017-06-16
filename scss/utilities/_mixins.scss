@@ -87,6 +87,7 @@
 }
 
 @mixin MontserratLight {
+  -webkit-font-smoothing: initial;
   .fonts-loaded & {
     font-family: $MontserratLight;
     font-weight: 300;

@@ -15,21 +15,26 @@
     @media (min-width: $break-ml-phone) {
       @include flex-d-row;
       @include ai-center;
+
       > img {
         @include as-center;
         @include w-35;
       }
+
       .card-block {
         @include flex;
         @include flex-d-col;
         padding: 10%;
       }
+
       .card-text {
         margin-bottom: 20%;
       }
+
       .btn {
         @include as-start;
       }
+
     }
   }
 
@@ -38,8 +43,6 @@
       @include flex-d-row-rev;
     }
   }
-
-
 
 }
 

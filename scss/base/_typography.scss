@@ -51,7 +51,6 @@ a {
 
 p {
   font-size: 1.1em;
-  line-height: 1.75;
   -webkit-font-smoothing: antialiased;
   a {
     //color: $link;
@@ -62,7 +61,6 @@ p {
   }
 }
 
-
 .lead {
   @include MontserratLight;
 }
@@ -71,40 +69,6 @@ a abbr[title] {
   border: none;
   text-decoration: inherit;  
 }
-
-// > 180
-// @media (min-width: 11.25em) {
-//   .fonts-loaded {
-//     h1:not(.site-title),
-// 		.h1:not(.site-title) {
-//     	font-size: 3.5rem;	
-//     }
-    
-//     h2, .h2 {
-//     	font-size: 2.75rem;
-//     }
-    
-//     h3, .h3 {
-//     	font-size: 2.125rem;
-//     }
-    
-//     h4, .h4 {
-//     	font-size: 1.875rem;
-//     }
-    
-//     h5, .h5,
-// 		.small-header {
-//     	font-size: 1.65rem;
-//     }
-    
-//     h6, .h6 {
-//     	font-size: 1.25rem;
-//     }
-//     p {
-//       //font-size: 1.125rem; 
-//     }
-//   }
-// }
 
 .module-header {
   &.full-height {

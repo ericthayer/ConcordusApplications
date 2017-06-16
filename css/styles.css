@@ -189,6 +189,23 @@
   overflow: visible;
   clip: auto; }
 
+.lazyload {
+  opacity: 1; }
+
+img.lazyload {
+  display: none; }
+
+.enhanced .lazyload {
+  opacity: 0; }
+
+.enhanced figure.lazyload a:first-child,
+.enhanced img.lazyload {
+  display: block; }
+
+.enhanced .lazyloaded {
+  opacity: 1;
+  transition: opacity .3s; }
+
 .theme-black {
   background-color: #111;
   color: #fff;
@@ -234,14 +251,15 @@ a {
 
 p {
   font-size: 1.1em;
-  line-height: 1.75;
   -webkit-font-smoothing: antialiased; }
   p a {
     text-decoration: none; }
 
-.fonts-loaded .lead {
-  font-family: "Montserrat Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-weight: 300; }
+.lead {
+  -webkit-font-smoothing: initial; }
+  .fonts-loaded .lead {
+    font-family: "Montserrat Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 300; }
 
 a abbr[title] {
   border: none;
@@ -345,9 +363,11 @@ img {
 .rotate-neg-45 {
   transform: rotate(-45deg); }
 
-.fonts-loaded .btn {
-  font-family: "Montserrat Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-weight: 300; }
+.btn {
+  -webkit-font-smoothing: initial; }
+  .fonts-loaded .btn {
+    font-family: "Montserrat Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 300; }
 
 .btn-outline {
   background-color: transparent;
@@ -488,6 +508,13 @@ img {
 @media (min-width: 40em) {
   .card-row-rev {
     flex-direction: row-reverse; } }
+
+.banner p {
+  -webkit-font-smoothing: initial;
+  line-height: 2; }
+  .fonts-loaded .banner p {
+    font-family: "Montserrat Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 300; }
 
 .site-header.headroom--not-top {
   background-color: rgba(0, 0, 0, 0.85); }
