@@ -34,8 +34,14 @@
   transform: rotate(-45deg);
 }
 
-.icon:not([class*="icon icon-"]) {
+.icon {
   @include icon;
+}
+
+.icon-outline {
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px currentColor;
 }
 
 // Icon directions. Used mostly for arrows
@@ -58,12 +64,4 @@
 
 .rotate-neg-45 {
   @include rotate-neg-45;
-}
-
-.icon-box-icon {
-  .icon {
-    display: block;
-    height: initial;
-    width: 100%;
-  }
 }

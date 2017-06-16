@@ -2,7 +2,7 @@
 
 .site-header {
   &.headroom--not-top {
-    background-color: rgba(black, .75);
+    background-color: rgba(black, .85);
   }
 }
 
@@ -13,6 +13,7 @@
 .headroom--pinned {
   transform: translateY(0%);
 }
+
 .headroom--unpinned {
   transform: translateY(-100%);
 }

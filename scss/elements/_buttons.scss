@@ -1,4 +1,13 @@
 .btn-outline {
   background-color: transparent;
-  border: 2px solid currentColor;
+  border: 1px solid currentColor;
+  text-align: center;
+}
+
+.btn-round {
+  border-radius: 5rem;
+}
+
+.btn-text {
+  @include p-0;
 }

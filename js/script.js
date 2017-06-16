@@ -9,7 +9,7 @@ document.documentElement.className += " enhanced";
 
 smoothScroll.init({
   selector: "[data-scroll]",
-  speed: 1000,
+  speed: 1500,
   easing: "easeInOutCubic",
   offset: 0,
 });

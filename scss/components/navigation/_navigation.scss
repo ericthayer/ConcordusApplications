@@ -4,6 +4,10 @@
   text-align: left;
 }
 
+.main-menu {
+  @include m-0;
+}
+
 .navbar-collapse {
   margin: 0 -15px;
   @include p-1;
@@ -57,4 +61,22 @@
 .nav-title {
   font-size: 1.25em;
   margin-bottom: 1.5rem;
+}
+
+.navbar-inverse .navbar-nav .nav-link {
+  color: #DDD;
+}
+
+@media (min-width: $break-md-screen) {
+  .nav-item {
+    @include ml-1;
+  }
+}
+
+.dropdown-menu {
+  min-width: 15rem;
+}
+
+.dropdown-item {
+  white-space: initial;
 }

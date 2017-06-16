@@ -298,6 +298,9 @@ p ol {
 body {
   background-color: #f9f9f9; }
 
+img {
+  max-width: 100%; }
+
 .site-wrapper {
   display: flex;
   flex-direction: column;
@@ -318,7 +321,7 @@ body {
       #main > * + *:not(.banner) > .container {
         padding: 0; }
 
-.icon:not([class*="icon icon-"]) {
+.icon {
   display: inline-block;
   fill: currentColor;
   height: 1em;
@@ -330,6 +333,11 @@ body {
   margin-left: 0.25em;
   text-align: center;
   transition: fill .3s ease; }
+
+.icon-outline {
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px currentColor; }
 
 .rotate-180 {
   transform: rotate(180deg); }
@@ -346,14 +354,16 @@ body {
 .rotate-neg-45 {
   transform: rotate(-45deg); }
 
-.icon-box-icon .icon {
-  display: block;
-  height: initial;
-  width: 100%; }
-
 .btn-outline {
   background-color: transparent;
-  border: 2px solid currentColor; }
+  border: 1px solid currentColor;
+  text-align: center; }
+
+.btn-round {
+  border-radius: 5rem; }
+
+.btn-text {
+  padding: 0; }
 
 .tab-content {
   background-color: initial;
@@ -393,6 +403,9 @@ body {
 
 .navbar {
   text-align: left; }
+
+.main-menu {
+  margin: 0; }
 
 .navbar-collapse {
   margin: 0 -15px;
@@ -436,6 +449,19 @@ body {
   font-size: 1.25em;
   margin-bottom: 1.5rem; }
 
+.navbar-inverse .navbar-nav .nav-link {
+  color: #DDD; }
+
+@media (min-width: 62em) {
+  .nav-item {
+    margin-left: 1rem; } }
+
+.dropdown-menu {
+  min-width: 15rem; }
+
+.dropdown-item {
+  white-space: initial; }
+
 .masthead {
   text-align: center;
   height: 100vh;
@@ -454,12 +480,17 @@ body {
 
 @media (min-width: 40em) {
   .card-row {
-    flex-direction: row; }
+    flex-direction: row;
+    align-items: center; }
+    .card-row > img {
+      align-self: center;
+      width: 35%; }
     .card-row .card-block {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      padding: 10%; }
     .card-row .card-text {
-      flex-grow: 1; }
+      margin-bottom: 20%; }
     .card-row .btn {
       align-self: flex-start; } }
 
@@ -468,7 +499,7 @@ body {
     flex-direction: row-reverse; } }
 
 .site-header.headroom--not-top {
-  background-color: rgba(0, 0, 0, 0.75); }
+  background-color: rgba(0, 0, 0, 0.85); }
 
 .headroom {
   will-change: transform;

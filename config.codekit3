@@ -301,6 +301,50 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/images\/content\/img-content-analytics.png": {
+		"ft": 32768,
+		"iS": 358543,
+		"oA": 0,
+		"oAP": "\/images\/content\/img-content-analytics.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/images\/content\/img-content-integration-team.png": {
+		"ft": 32768,
+		"iS": 1199755,
+		"oA": 0,
+		"oAP": "\/images\/content\/img-content-integration-team.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/images\/content\/img-content-subscription-services.png": {
+		"ft": 32768,
+		"iS": 456764,
+		"oA": 0,
+		"oAP": "\/images\/content\/img-content-subscription-services.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/images\/content\/img-content-testing.png": {
+		"ft": 32768,
+		"iS": 953201,
+		"oA": 0,
+		"oAP": "\/images\/content\/img-content-testing.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/images\/ui\/ui-icons.svg": {
 		"ft": 2097152,
 		"miP": 0,
