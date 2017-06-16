@@ -59,6 +59,10 @@
 }
 
 // height
+.h-auto {
+  @include h-auto;
+}
+
 .h-0 {
   @include h-0;
 }

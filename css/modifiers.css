@@ -402,6 +402,9 @@
 .float-r {
   float: right; }
 
+.h-auto {
+  height: auto; }
+
 .h-0 {
   height: 0; }
 

@@ -4,4 +4,8 @@
   @include h-100vh;
   @include w-100;
   @include text-center;
+  @media (max-height: $break-md-phone) {
+    @include h-auto;
+    @include pt-pb-5;
+  }
 }

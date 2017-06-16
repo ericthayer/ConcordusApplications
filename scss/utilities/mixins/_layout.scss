@@ -58,6 +58,10 @@
 }
 
 // height
+@mixin h-auto {
+  height: auto;
+}
+
 @mixin h-0 {
   height: 0;
 }

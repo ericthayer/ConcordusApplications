@@ -483,6 +483,11 @@ img {
   height: 100vh;
   width: 100%;
   text-align: center; }
+  @media (max-height: 33.75em) {
+    .masthead {
+      height: auto;
+      padding-top: 5em;
+      padding-bottom: 5em; } }
 
 .card-clean {
   background-color: transparent;
@@ -760,6 +765,10 @@ img {
   padding-top: 4em;
   padding-bottom: 4em; }
 
+.pt-pb-5 {
+  padding-top: 5em;
+  padding-bottom: 5em; }
+
 .pt-0 {
   padding-top: 0; }
 
@@ -781,6 +790,9 @@ img {
 .pt-4 {
   padding-top: 4em; }
 
+.pt-5 {
+  padding-top: 5em; }
+
 .pb-0 {
   padding-bottom: 0; }
 
@@ -801,6 +813,9 @@ img {
 
 .pb-4 {
   padding-bottom: 4em; }
+
+.pb-5 {
+  padding-bottom: 5em; }
 
 .pr-pl-0 {
   padding-right: 0;
@@ -914,6 +929,9 @@ img {
 
 .float-r {
   float: right; }
+
+.h-auto {
+  height: auto; }
 
 .h-0 {
   height: 0; }

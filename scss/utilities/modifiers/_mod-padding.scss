@@ -82,6 +82,10 @@
   @include pt-pb-4;   
 }
 
+.pt-pb-5 {
+  @include pt-pb-5;   
+}
+
 // Padding Top
 
 .pt-0 {
@@ -112,6 +116,9 @@
   @include pt-4;  
 }
 
+.pt-5 {
+  @include pt-5;  
+}
 
 // Padding Bottom
 
@@ -143,6 +150,9 @@
   @include pb-4;  
 }
 
+.pb-5 {
+  @include pb-5;  
+}
 
 // Padding Right & Left
 
