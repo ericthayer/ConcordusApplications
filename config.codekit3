@@ -383,8 +383,8 @@
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/js\/min\/script-min.js",
-		"oF": 0,
+		"oAP": "\/js\/script.min.js",
+		"oF": 2,
 		"sC": 1,
 		"tS": 0
 		},
@@ -481,6 +481,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/scss\/css\/_typography.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/scss\/components\/_cards.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/scss\/css\/_cards.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

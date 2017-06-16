@@ -16,6 +16,10 @@
 	font-family: $OpenSans;
 }
 
+@mixin font-scale {
+  font-size: calc( 1rem + (40 - 20) * ( (100vw - 400px) / ( 2000 - 400)));
+}
+
 body {
 	color: #333;
 	line-height: 1.667;
@@ -33,7 +37,7 @@ h6, .h6 {
   color: currentColor;
 	@include Varela; 	
   font-weight: normal;
-	line-height: 1;
+	line-height: 1.35;
   transition: opacity .2s;	
 }
 
@@ -59,7 +63,7 @@ a {
 
 p {	
   //color: #555;
-	font-size: 1.1rem;
+	font-size: 1.1em;
   line-height: 1.75;
 	-webkit-font-smoothing: antialiased;
   a {

@@ -174,16 +174,36 @@
   white-space: normal;
 }
 
-// Module block
-@mixin mod-block {
-  @include pt-4;
-  @include pr-2;
-  @include pb-4;
-  @include pl-2;
+// padded block
+@mixin pad-block {
+  @include p-4;
+  > .container {
+    @include p-0;
+  }
 }
 
-.mod-block {
-  @include mod-block;
+.pad-block {
+  @include pad-block;
+}
+
+// banner
+@mixin banner {
+  @include p-0;
+  > .container {
+    @include p-4;
+  }
+}
+
+.banner {
+  @include banner;
+}
+
+.banner-full {
+  @include p-0;
+  > .container {
+    @include p-0;
+    max-width: 100%;
+  }
 }
 
 // Date Label

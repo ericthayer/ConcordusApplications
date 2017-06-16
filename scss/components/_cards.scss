@@ -1,0 +1,39 @@
+// card styles
+
+.card {
+
+  &-clean {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+  }
+
+  &-row {
+    .card-block {
+      @include p-4;
+    }
+    @media (min-width: $break-ml-phone) {
+      @include flex-d-row;
+      .card-block {
+        @include flex;
+        @include flex-d-col;
+      }
+      .card-text {
+        @include flex-grow-1;
+      }
+      .btn {
+        @include as-start;
+      }
+    }
+  }
+
+  &-row-rev {
+    @media (min-width: $break-ml-phone) {
+      @include flex-d-row-rev;
+    }
+  }
+
+
+
+}
+

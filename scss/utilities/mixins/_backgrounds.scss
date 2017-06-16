@@ -20,4 +20,12 @@
   > .container {
     @include mw-40em;
   }
+  font-size: 1.25rem;
+  .h1, h1 {
+    font-size: 2.5em;
+  }
+  p {
+    font-size: 1.125em;
+    @include mb-2;
+  }
 }

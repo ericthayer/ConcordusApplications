@@ -5,11 +5,13 @@
 }
 
 .navbar-collapse {
-  background-color: rgba(#000, .9);
   margin: 0 -15px;
   @include p-1;
   &.show {
 
+  }
+  @media (max-width: 991px) {
+    background-color: rgba(#000, .9);
   }
 }
 
