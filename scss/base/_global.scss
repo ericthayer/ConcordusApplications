@@ -3,13 +3,13 @@ body {
 }
 
 img {
-  max-width: 100%;
+  @include mw-100p;
 }
 
 .site-wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+  @include flex;
+  @include flex-d-col;
+  @include w-100;
   //height: 100vh;
   //box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
 }
@@ -26,15 +26,9 @@ img {
   @include flex-d-col;
   @include flex-grow-1;
   > * {
-    //@include flex-grow-1;
-    
     @include w-100;
-    & + *:not(.banner) {
-      //@include pt-2;
-      //@include pb-2;
+    & + *:not(.banner-full) {
       @include pad-block;
     }
   }
-  
-
 }

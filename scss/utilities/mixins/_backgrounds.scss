@@ -1,9 +1,21 @@
 // background styles
 
-@mixin bg-cover {
+@mixin bg-pos-center {
   background-position: center;
+}
+
+@mixin bg-repeat-no {
   background-repeat: no-repeat;
+}
+
+@mixin bg-size-cover {
   background-size: cover;
+}
+
+@mixin bg-cover {
+  @include bg-pos-center;
+  @include bg-repeat-no;
+  @include bg-size-cover;
 }
 
 @mixin bg-full {
@@ -15,17 +27,31 @@
 }
 
 @mixin bg-hero {
+  
   @include bg-cover;
   @include bg-full;
-  > .container {
-    @include mw-40em;
-  }
-  font-size: 1.25rem;
+  @include font-scale;
+
   .h1, h1 {
-    font-size: 2.5em;
+    @include text-xl;
+    @include mb-sm;
   }
+
   p {
-    font-size: 1.125em;
+    @include mw-40em;
+    @include mr-ml-a;
     @include mb-2;
+    @include text-md;
+  }
+
+  .lead {
+
+  }
+
+  .btn {
+    @include text-sm;
+  }
+  .icon {
+    @include text-base;
   }
 }

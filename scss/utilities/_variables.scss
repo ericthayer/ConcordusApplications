@@ -30,15 +30,39 @@ $break-widescreen: 150em; // 2400px
 
 // Default Font Stacks
 
-$sans-serif: "Helvetica Neue", Helvetica, sans-serif;
+$sans-serif: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
 $serif: "Garamond", "Cambria", Georgia, serif;
 
 // ** Custom Fonts
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400|Varela+Round');
 
-$Varela: 'Varela Round', $sans-serif;
-$OpenSans: 'Open Sans', $sans-serif;
+@font-face {
+  font-family: "Montserrat Light";
+  src: url("../fonts/montserrat-300.woff2") format("woff2"),
+       url("../fonts/montserrat-300.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat-500.woff2") format("woff2"),
+       url("../fonts/montserrat-500.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url("../fonts/montserrat-700.woff2") format("woff2"),
+       url("../fonts/montserrat-700.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+$MontserratLight: 'Montserrat Light', $sans-serif;
+$Montserrat: 'Montserrat', $sans-serif;
+$MontserratBold: 'Montserrat Bold', $sans-serif;
 
 
 // Specific Helpers

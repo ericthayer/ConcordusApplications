@@ -85,7 +85,7 @@
           <h1>Building a Connected World</h1>
           <p class="lead">Innovative, smart and cost-effective software development and integration provided as a service, for Telcos and
             Enterprises.</p>
-          <a href="#page-start" class="btn btn-lg btn-round btn-outline pr-tiny" data-scroll>Learn More <svg class="icon rotate-90"><use xlink:href="#icon-chevron-sm" /></svg></a>
+          <a href="#page-start" class="btn btn-lg btn-round btn-outline pr-tiny" data-scroll>Learn More <svg class="icon icon-outline rotate-90"><use xlink:href="#icon-chevron-sm" /></svg></a>
         </div>
       </section>
 
@@ -187,7 +187,7 @@
   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
   <script src="js/libs/ie10-viewport-bug-workaround.js"></script>
   <!-- Custom scripts -->
-  <script src="js/script.min.js" async></script>
+  <script src="js/script.min.js"></script>
   <!-- async font loading -->
   <script>
     var html = document.documentElement;
@@ -200,9 +200,9 @@
       script.async = true;
 
       script.onload = function () {
-        var MontserratLight = new FontFaceObserver("Montserrat-light");
+        var MontserratLight = new FontFaceObserver("Montserrat Light");
         var Montserrat = new FontFaceObserver("Montserrat");
-        var MontserratBold = new FontFaceObserver("Montserrat-bold", {});
+        var MontserratBold = new FontFaceObserver("Montserrat Bold", {});
 
         Promise.all([
           MontserratLight.load(),
@@ -217,6 +217,7 @@
     }
 
   </script>
+
   <!-- async icon sprite -->
   <script>
     var ajax = new XMLHttpRequest();
@@ -229,12 +230,6 @@
     }
 
   </script>
-  <!-- smooth scroll -->
-  <!--<script src="js/libs/smooth-scroll.min.js"></script>
-  <script>
-    
 
-  </script>-->
 </body>
-
 </html>

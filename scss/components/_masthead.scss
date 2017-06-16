@@ -1,11 +1,7 @@
 // Masthead (page header)
 
 .masthead {
-  @include text-center;
-  height: 100vh;
+  @include h-100vh;
   @include w-100;
-}
-
-.masthead-brand {
-  margin-bottom: 0;
+  @include text-center;
 }

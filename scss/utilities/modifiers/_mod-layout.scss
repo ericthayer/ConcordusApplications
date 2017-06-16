@@ -79,6 +79,10 @@
   @include h-100;
 }
 
+.h-100vh {
+  @include h-100vh;
+}
+
 // Width Sizes
 .w-a {
   @include w-a;
@@ -235,6 +239,10 @@
 
 .mw-56em {
   @include mw-56em;
+}
+
+.mw-100p {
+  @include mw-100p;
 }
 
 //** ALIGNMENT (align-left by default) **//

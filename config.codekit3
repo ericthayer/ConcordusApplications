@@ -179,9 +179,9 @@
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/css\/bootstrap-min.css",
-		"oF": 0,
-		"oS": 0
+		"oAP": "\/css\/bootstrap.min.css",
+		"oF": 3,
+		"oS": 3
 		},
 	"\/css\/bootstrap.css.map": {
 		"ft": 8192,
@@ -247,6 +247,42 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/fonts\/Montserrat 700.ttf",
+		"oF": 0
+		},
+	"\/fonts\/montserrat-300.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/montserrat-300.woff",
+		"oF": 0
+		},
+	"\/fonts\/montserrat-300.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/montserrat-300.woff2",
+		"oF": 0
+		},
+	"\/fonts\/montserrat-500.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/montserrat-500.woff",
+		"oF": 0
+		},
+	"\/fonts\/montserrat-500.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/montserrat-500.woff2",
+		"oF": 0
+		},
+	"\/fonts\/montserrat-700.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/montserrat-700.woff",
+		"oF": 0
+		},
+	"\/fonts\/montserrat-700.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/montserrat-700.woff2",
 		"oF": 0
 		},
 	"\/Gemfile": {

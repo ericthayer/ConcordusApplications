@@ -86,6 +86,27 @@
   }
 }
 
+@mixin MontserratLight {
+  .fonts-loaded & {
+    font-family: $MontserratLight;
+    font-weight: 300;
+  }
+}
+
+@mixin Montserrat {
+  .fonts-loaded & {
+    font-family: $Montserrat;
+    font-weight: 500;
+  }
+}
+
+@mixin MontserratBold {
+  .fonts-loaded & {
+    font-family: $MontserratBold;
+    font-weight: 700;
+  }
+}
+
 // Opacity helpers
 @mixin opacity-50 {
   filter: alpha(opacity=50);
