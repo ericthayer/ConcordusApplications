@@ -3,10 +3,4 @@
 .masthead {
   @include w-100;
   @include text-center;
-  p {
-    @include mw-40em;
-    @include mr-ml-a;
-    @include mb-2;
-    @include text-md;
-  }
 }

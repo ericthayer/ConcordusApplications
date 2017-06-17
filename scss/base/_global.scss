@@ -35,7 +35,7 @@ img {
   > * {
     @include w-100;
     & + *:not(.banner-full) {
-      @include pad-block;
+      // @include pad-block;
     }
   }
 
@@ -88,7 +88,7 @@ img {
         }
 
         .card-block {
-          padding: 4em 10em 4em 7em;
+          //padding: 4em 10em 4em 7em;
         }
       }
     }

@@ -275,13 +275,26 @@
 
 // Images
 @mixin circle-mask {
-  border-radius: 100%;
+  border-radius: 50%;
+  height: 100%;
   width: 100%;
   overflow: hidden; 
-  shape-outside: circle();
+  max-height: 25rem;
+  max-width: 25rem;
   img {
-    border-radius: 100%;
+    border-radius: 50%;
     overflow: hidden;
+  }
+  &.float-l,
+  &.float-r {
+    shape-outside: circle();
+    margin: 1rem;
+  }
+  &.float-l {
+    margin: 0 2.5rem 2.5rem 0;
+  }
+  &.float-r {
+    margin: 0 0 2.5rem 2.5rem;
   }
 }
 

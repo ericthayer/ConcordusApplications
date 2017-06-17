@@ -129,35 +129,62 @@
     max-width: 100%; }
 
 .circle-mask {
-  border-radius: 100%;
+  border-radius: 50%;
+  height: 100%;
   width: 100%;
   overflow: hidden;
-  shape-outside: circle(); }
+  max-height: 25rem;
+  max-width: 25rem; }
   .circle-mask img {
-    border-radius: 100%;
+    border-radius: 50%;
     overflow: hidden; }
+  .circle-mask.float-l, .circle-mask.float-r {
+    shape-outside: circle();
+    margin: 1rem; }
+  .circle-mask.float-l {
+    margin: 0 2.5rem 2.5rem 0; }
+  .circle-mask.float-r {
+    margin: 0 0 2.5rem 2.5rem; }
 
 .circle-mask-md {
-  border-radius: 100%;
+  border-radius: 50%;
+  height: 100%;
   width: 100%;
   overflow: hidden;
-  shape-outside: circle();
+  max-height: 25rem;
+  max-width: 25rem;
   max-height: 20rem;
   max-width: 20rem; }
   .circle-mask-md img {
-    border-radius: 100%;
+    border-radius: 50%;
     overflow: hidden; }
+  .circle-mask-md.float-l, .circle-mask-md.float-r {
+    shape-outside: circle();
+    margin: 1rem; }
+  .circle-mask-md.float-l {
+    margin: 0 2.5rem 2.5rem 0; }
+  .circle-mask-md.float-r {
+    margin: 0 0 2.5rem 2.5rem; }
 
 .circle-mask-sm {
-  border-radius: 100%;
+  border-radius: 50%;
+  height: 100%;
   width: 100%;
   overflow: hidden;
-  shape-outside: circle();
+  max-height: 25rem;
+  max-width: 25rem;
   max-height: 10rem;
   max-width: 10rem; }
   .circle-mask-sm img {
-    border-radius: 100%;
+    border-radius: 50%;
     overflow: hidden; }
+  .circle-mask-sm.float-l, .circle-mask-sm.float-r {
+    shape-outside: circle();
+    margin: 1rem; }
+  .circle-mask-sm.float-l {
+    margin: 0 2.5rem 2.5rem 0; }
+  .circle-mask-sm.float-r {
+    margin: 0 0 2.5rem 2.5rem; }
 
 .rounded-mask {
   border-radius: 1rem;
@@ -333,10 +360,6 @@ img {
   flex-grow: 1; }
   #main > * {
     width: 100%; }
-    #main > * + *:not(.banner-full) {
-      padding: 4em; }
-      #main > * + *:not(.banner-full) > .container {
-        padding: 0; }
   @supports (grid-gap: 0) {
     #main {
       grid-row: 2 / 3; } }
@@ -351,9 +374,7 @@ img {
 
 @media (min-width: 62em) {
   .content-page .card-row .media-item {
-    padding-top: 0; }
-  .content-page .card-row .card-block {
-    padding: 4em 10em 4em 7em; } }
+    padding-top: 0; } }
 
 .icon {
   display: inline-block;
@@ -515,12 +536,6 @@ img {
 .masthead {
   width: 100%;
   text-align: center; }
-  .masthead p {
-    max-width: 40em;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 2rem;
-    font-size: 1.25em; }
 
 .card-clean {
   background-color: transparent;
@@ -618,6 +633,19 @@ img {
   @media (min-width: 30em) {
     .footer-copyright .soc-media-icons {
       justify-content: flex-end; } }
+
+.page-content > .container {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-right: 4em;
+  padding-left: 4em; }
+  .page-content > .container > p:last-of-type {
+    margin-bottom: 5%; }
+
+@media (min-width: 48em) {
+  .page-content {
+    padding-top: 10vh;
+    padding-bottom: 10vh; } }
 
 @media (min-width: 33.75em) {
   .align-right {

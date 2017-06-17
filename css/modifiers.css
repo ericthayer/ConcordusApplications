@@ -129,35 +129,62 @@
     max-width: 100%; }
 
 .circle-mask {
-  border-radius: 100%;
+  border-radius: 50%;
+  height: 100%;
   width: 100%;
   overflow: hidden;
-  shape-outside: circle(); }
+  max-height: 25rem;
+  max-width: 25rem; }
   .circle-mask img {
-    border-radius: 100%;
+    border-radius: 50%;
     overflow: hidden; }
+  .circle-mask.float-l, .circle-mask.float-r {
+    shape-outside: circle();
+    margin: 1rem; }
+  .circle-mask.float-l {
+    margin: 0 2.5rem 2.5rem 0; }
+  .circle-mask.float-r {
+    margin: 0 0 2.5rem 2.5rem; }
 
 .circle-mask-md {
-  border-radius: 100%;
+  border-radius: 50%;
+  height: 100%;
   width: 100%;
   overflow: hidden;
-  shape-outside: circle();
+  max-height: 25rem;
+  max-width: 25rem;
   max-height: 20rem;
   max-width: 20rem; }
   .circle-mask-md img {
-    border-radius: 100%;
+    border-radius: 50%;
     overflow: hidden; }
+  .circle-mask-md.float-l, .circle-mask-md.float-r {
+    shape-outside: circle();
+    margin: 1rem; }
+  .circle-mask-md.float-l {
+    margin: 0 2.5rem 2.5rem 0; }
+  .circle-mask-md.float-r {
+    margin: 0 0 2.5rem 2.5rem; }
 
 .circle-mask-sm {
-  border-radius: 100%;
+  border-radius: 50%;
+  height: 100%;
   width: 100%;
   overflow: hidden;
-  shape-outside: circle();
+  max-height: 25rem;
+  max-width: 25rem;
   max-height: 10rem;
   max-width: 10rem; }
   .circle-mask-sm img {
-    border-radius: 100%;
+    border-radius: 50%;
     overflow: hidden; }
+  .circle-mask-sm.float-l, .circle-mask-sm.float-r {
+    shape-outside: circle();
+    margin: 1rem; }
+  .circle-mask-sm.float-l {
+    margin: 0 2.5rem 2.5rem 0; }
+  .circle-mask-sm.float-r {
+    margin: 0 0 2.5rem 2.5rem; }
 
 .rounded-mask {
   border-radius: 1rem;

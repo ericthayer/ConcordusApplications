@@ -1,0 +1,18 @@
+.page-content {
+
+  > .container {
+    @include pt-pb-2;
+    @include pr-pl-4;
+    > p:last-of-type {
+      margin-bottom: 5%;
+    }
+  }
+
+  @media (min-width: $break-lg-phone) {
+
+      padding-top: 10vh;
+      padding-bottom: 10vh;
+
+  }
+
+}
