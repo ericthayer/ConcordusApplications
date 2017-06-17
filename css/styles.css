@@ -16,42 +16,58 @@
   font-weight: normal;
   font-style: normal; }
 
-@supports (grid-gap: 0) {
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10.5em, 1fr));
-    grid-gap: 1em; }
-    .grid .title {
-      grid-column: span 1;
-      width: 100%; } }
+.grid {
+  display: flex;
+  flex-wrap: wrap; }
+  .grid > * {
+    flex-grow: 1;
+    padding: 1em;
+    flex-basis: 15em; }
+  @supports (grid-gap: 0) {
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(10.5em, 1fr));
+      grid-gap: 1em; }
+      .grid > * {
+        padding: 0; } }
 
-@supports (grid-gap: 0) {
-  .grid-2-col {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10.5em, 1fr));
-    grid-gap: 1em; }
-    .grid-2-col .title {
-      grid-column: span 1;
-      width: 100%; } }
+.grid-2-col {
+  display: flex;
+  flex-wrap: wrap; }
+  .grid-2-col > * {
+    flex-grow: 1;
+    padding: 1em;
+    flex-basis: 15em; }
+  @supports (grid-gap: 0) {
+    .grid-2-col {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(10.5em, 1fr));
+      grid-gap: 1em; }
+      .grid-2-col > * {
+        padding: 0; } }
+  @supports (grid-gap: 0) {
+    .grid-2-col {
+      grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
+      grid-gap: 4em; } }
 
-@supports (grid-gap: 0) {
-  .grid-2-col {
-    grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
-    grid-gap: 4em; } }
-
-@supports (grid-gap: 0) {
-  .grid-4-col {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10.5em, 1fr));
-    grid-gap: 1em; }
-    .grid-4-col .title {
-      grid-column: span 1;
-      width: 100%; } }
-
-@supports (grid-gap: 0) {
-  .grid-4-col {
-    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
-    grid-gap: 2em; } }
+.grid-4-col {
+  display: flex;
+  flex-wrap: wrap; }
+  .grid-4-col > * {
+    flex-grow: 1;
+    padding: 1em;
+    flex-basis: 15em; }
+  @supports (grid-gap: 0) {
+    .grid-4-col {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(10.5em, 1fr));
+      grid-gap: 1em; }
+      .grid-4-col > * {
+        padding: 0; } }
+  @supports (grid-gap: 0) {
+    .grid-4-col {
+      grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+      grid-gap: 2em; } }
 
 .circle-mask {
   border-radius: 50%;

@@ -1,15 +1,23 @@
 // CSS Grid Layout
 
 @mixin grid {
+  @include flex;
+  @include flex-wrap;
+  > * {
+    @include flex-grow-1;
+    @include p-1;
+    flex-basis: 15em;
+  }
+
   @supports (grid-gap: 0) {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10.5em, 1fr));
     grid-gap: 1em;
-    .title {
-      grid-column: span 1;
-      width: 100%;
+    > * {
+      @include p-0;
     }
   }
+
 }
 
 @mixin grid-2-col {
