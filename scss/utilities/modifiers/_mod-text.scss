@@ -1,3 +1,15 @@
+.MontserratLight {
+  @include MontserratLight;
+}
+
+.Montserrat {
+  @include Montserrat;
+}
+
+.MontserratBold {
+  @include MontserratBold;
+}
+
 //** ALIGNMENT (align-left by default) **//
 // align right
 .align-right {

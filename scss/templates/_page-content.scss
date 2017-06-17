@@ -9,6 +9,13 @@
     }
   }
 
+  ul,
+  ol {
+    li {
+      @include mb-1;
+    }
+  }
+
   @media (min-width: $break-lg-phone) {
 
     padding-top: 10vh;

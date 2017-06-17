@@ -2,6 +2,9 @@
   @include MontserratLight;
   letter-spacing: .05em;
   text-shadow: none;
+  &.btn-xl {
+    @include text-lg;
+  }
 }
 
 .btn-outline {

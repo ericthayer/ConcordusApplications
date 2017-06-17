@@ -235,26 +235,39 @@ body {
   font-size-adjust: none;
   text-rendering: optimizeLegibility; }
 
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6 {
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
   color: currentColor;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   line-height: 1.35;
   transition: opacity .2s; }
-  .fonts-loaded h1, .fonts-loaded .h1, .fonts-loaded
-  h2, .fonts-loaded .h2, .fonts-loaded
-  h3, .fonts-loaded .h3, .fonts-loaded
-  h4, .fonts-loaded .h4, .fonts-loaded
-  h5, .fonts-loaded .h5, .fonts-loaded
-  h6, .fonts-loaded .h6 {
+  .fonts-loaded h1, .fonts-loaded
+  .h1, .fonts-loaded
+  h2, .fonts-loaded
+  .h2, .fonts-loaded
+  h3, .fonts-loaded
+  .h3, .fonts-loaded
+  h4, .fonts-loaded
+  .h4, .fonts-loaded
+  h5, .fonts-loaded
+  .h5, .fonts-loaded
+  h6, .fonts-loaded
+  .h6 {
     font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-weight: 500; }
 
-.h1, h1 {
+.h1,
+h1 {
   margin-bottom: 1.5rem; }
 
 a {
@@ -317,6 +330,19 @@ a abbr[title] {
   color: hotpink;
   font-size: 1rem;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+
+.list-title {
+  margin-left: -1rem; }
+
+.border-title {
+  border-bottom: 1px solid #DDD;
+  color: #555;
+  margin-bottom: 2rem;
+  padding-top: 1em;
+  padding-bottom: .313em;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em; }
 
 body {
   background-color: #f9f9f9; }
@@ -402,6 +428,8 @@ img {
   .fonts-loaded .btn {
     font-family: "Montserrat Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-weight: 300; }
+  .btn.btn-xl {
+    font-size: 1.5em; }
 
 .btn-outline {
   background-color: transparent;
@@ -656,6 +684,10 @@ img {
     margin-top: 1rem;
     margin-bottom: 2rem; }
 
+.page-content ul li,
+.page-content ol li {
+  margin-bottom: 1rem; }
+
 @media (min-width: 48em) {
   .page-content {
     padding-top: 10vh;
@@ -663,6 +695,25 @@ img {
     .page-content > .container {
       padding-top: 0;
       padding-bottom: 0; } }
+
+.MontserratLight {
+  -webkit-font-smoothing: auto;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  .fonts-loaded .MontserratLight {
+    font-family: "Montserrat Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 300; }
+
+.Montserrat {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  .fonts-loaded .Montserrat {
+    font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 500; }
+
+.MontserratBold {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  .fonts-loaded .MontserratBold {
+    font-family: "Montserrat Bold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 700; }
 
 @media (min-width: 33.75em) {
   .align-right {

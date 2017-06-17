@@ -1,11 +1,10 @@
 // Typography
-
 .sans-serif {
-	font-family: $sans-serif;
+  font-family: $sans-serif;
 }
 
 .serif {
-	font-family: $serif;
+  font-family: $serif;
 }
 
 @mixin font-scale {
@@ -13,40 +12,52 @@
 }
 
 body {
-	color: #333;
-	line-height: 1.667;
-	font-size-adjust: none;
-	text-rendering: optimizeLegibility; 		
+  color: #333;
+  line-height: 1.667;
+  font-size-adjust: none;
+  text-rendering: optimizeLegibility;
 }
 
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6 {
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
   color: currentColor;
   @include Montserrat;
   line-height: 1.35;
-  transition: opacity .2s;	
+  transition: opacity .2s;
 }
 
-
-.h1, h1 {
+.h1,
+h1 {
   @include mb-1-pt5;
 }
 
-h2, h3, h4, h5, h6,
-.h2, .h3, .h4, .h5, .h6,
-.help-block, p {
-  
-}
+h2,
+h3,
+h4,
+h5,
+h6,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.help-block,
+p {}
 
 a {
-	color: currentColor;
-	text-decoration: none;
-	transition: color .4s ease;
-  //-webkit-font-smoothing: subpixel-antialiased;
+  color: currentColor;
+  text-decoration: none;
+  transition: color .4s ease; //-webkit-font-smoothing: subpixel-antialiased;
 }
 
 p {
@@ -67,7 +78,7 @@ p {
 
 a abbr[title] {
   border: none;
-  text-decoration: inherit;  
+  text-decoration: inherit;
 }
 
 .module-header {
@@ -90,38 +101,49 @@ a abbr[title] {
 }
 
 .sub-header {
-	color: #555;
-	font-size: 1.25rem;
-	font-weight: normal;
-	line-height: 1.4;
-	//border-top: 2px dotted #CCC;
-	//border-bottom: 2px dotted #CCC;
-	//margin: 0 auto;
-	margin-right: auto;
-	margin-left: auto; 
-	a {
-		//@include link-shadow;
-	}  
-	.fonts-loaded & {
-		font-size: 1.65rem;
-	}
+  color: #555;
+  font-size: 1.25rem;
+  font-weight: normal;
+  line-height: 1.4; //border-top: 2px dotted #CCC;
+  //border-bottom: 2px dotted #CCC;
+  //margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
+  a {
+    //@include link-shadow;
+  }
+  .fonts-loaded & {
+    font-size: 1.65rem;
+  }
   #portfolio-home & {
     max-width: 30em;
-  }						
-	// > 540
-  @media (min-width: $break-md-phone) {		
-		margin-bottom: 2em;		
-		max-width: 40em;
-	}
-	// > 1200
-	@media (min-width: $break-lg-screen) {
-  	max-width: 100%;
-	}	
+  } // > 540
+  @media (min-width: $break-md-phone) {
+    margin-bottom: 2em;
+    max-width: 40em;
+  } // > 1200
+  @media (min-width: $break-lg-screen) {
+    max-width: 100%;
+  }
 }
 
 .disclaimer {
-	color: hotpink;
-	font-size: 1rem;
-	font-family: $sans-serif;
-	//font-style: italic;
+  color: hotpink;
+  font-size: 1rem;
+  font-family: $sans-serif; //font-style: italic;
+}
+
+.list-title {
+  margin-left: -1rem;
+}
+
+.border-title {
+  border-bottom: 1px solid #DDD;
+  color: $text-color;
+  @include mb-2;
+  @include pt-1;
+  @include pb-tiny;
+  @include text-base;
+  @include all-caps;
+  letter-spacing: 0.1em;
 }
