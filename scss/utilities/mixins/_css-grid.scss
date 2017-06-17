@@ -1,11 +1,41 @@
 // CSS Grid Layout
 
 @mixin grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10.5em, 1fr));
-  grid-gap: .5em;
+  @supports (grid-gap: 0) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10.5em, 1fr));
+    grid-gap: 1em;
+    .title {
+      grid-column: span 1;
+      width: 100%;
+    }
+  }
+}
+
+@mixin grid-2-col {
+  @include grid;
+  @supports (grid-gap: 0) {
+    grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
+    grid-gap: 4em;
+  }
+}
+
+@mixin grid-4-col {
+  @include grid;
+  @supports (grid-gap: 0) {
+    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+    grid-gap: 2em;
+  }
 }
 
 .grid {
   @include grid;
+}
+
+.grid-2-col {
+  @include grid-2-col;
+}
+
+.grid-4-col {
+  @include grid-4-col;
 }

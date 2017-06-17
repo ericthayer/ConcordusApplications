@@ -150,3 +150,9 @@ a abbr[title] {
   @include all-caps;
   letter-spacing: 0.1em;
 }
+
+.title {
+  @include mr-ml-a;
+  max-width: 85em;
+  width: 100%;
+}
