@@ -24,13 +24,157 @@ $bg-color: #e1e0e0;
 $inverse-bg-color: mix(black, $brand-primary, 25%);
 $inverse-text-color: white;
 
+// Concordus Colors
+
+// Base
+$ca-black: #111;
+$ca-charcoal: #222;
+$ca-grey: #333;
+$ca-grey-CCC: #CCC;
+$ca-grey-EEE: #EEE;
+$ca-white: #FCFCFC;
+
+$ca-warning: #FF2222;
+
+// ** Brand ** //
+
+// blue
+$ca-blue: #00A2E1;
+$ca-blue-light: mix(white, $ca-blue, 50%);
+$ca-blue-dark: mix(black, $ca-blue, 25%);
+
+// teal
+$ca-teal: #39909A;
+$ca-teal-light: mix(white, $ca-teal, 50%);
+$ca-teal-dark: mix(black, $ca-teal, 25%);
+
+// green
+$ca-green: #7EB963;
+$ca-green-light: mix(white, $ca-green, 35%);
+$ca-green-dark: mix(black, $ca-green, 25%);
+
+// orange
+$ca-orange: #F6BE1E;
+$ca-orange-light: mix(white, $ca-orange, 35%);
+$ca-orange-dark: mix(black, $ca-orange, 25%);
+
+// purple
+$ca-purple: #A0AFD4;
+$ca-purple-light: mix(white, $ca-purple, 35%);
+$ca-purple-dark: mix(black, $ca-purple, 25%);
+
+// red
+$ca-red: #A0AFD4;
+$ca-red-light: mix(white, $ca-red, 35%);
+$ca-red-dark: mix(black, $ca-red, 25%);
+
+// brown
+$ca-brown: #956B51;
+$ca-brown-light: mix(white, $ca-brown, 35%);
+$ca-brown-dark: mix(black, $ca-brown, 25%);
+
+// tan
+$ca-tan: #CCBE97;
+$ca-tan-light: mix(white, $ca-tan, 35%);
+$ca-tan-dark: mix(black, $ca-tan, 25%);
+
+// BS colors
+$brand-primary: #428bca;
+$brand-success: #5cb85c;
+$brand-info: #5bc0de;
+$brand-warning: #f0ad4e;
+$brand-danger: #d9534f;
+
+// calc + padding
+
+$calc-25: calc(1vw + .25em);
+$calc-50: calc(1vw + .5em);
+$calc-75: calc(1vw + .75em);
+$calc-1: calc(1vw + 1em);
+$calc-2: calc(1vw + 2em);
+$calc-3: calc(1vw + 3em);
+$calc-4: calc(1vw + 4em);
+$calc-5: calc(1vw + 5em);
+$calc-10: calc(1vw + 10em);
+
+.ca-black-c {
+  color: $ca-black;
+}
+
+.ca-white-c {
+  color: $ca-white;
+}
+
+.ca-charcoal-c {
+  color: $ca-charcoal;
+}
+
+.ca-grey-CCC-c {
+  color: $ca-grey-CCC;
+}
+
+.ca-grey-EEE-c {
+  color: $ca-grey-EEE;
+}
+
+.ca-warning {
+ color: $ca-warning;
+}
+
+// theme colors
 
 @mixin theme-black {
-  background-color: #111;
-  color: #fff;
-  text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+  background-color: $ca-black;
+  background: $ca-black;
+  color: $ca-white;
+}
+
+@mixin theme-blue {
+  background-color: $ca-blue;
+  background: $ca-blue;
+  color: $ca-white;
+}
+
+@mixin theme-blue {
+  background-color: $ca-blue;
+  background: $ca-blue;
+  color: $ca-white;
+}
+
+@mixin theme-green {
+  background-color: $ca-green;
+  background: $ca-green;
+  color: $ca-white;
+}
+
+@mixin theme-purple {
+  background-color: $ca-purple;
+  background: $ca-purple;
+  color: $ca-white;
+}
+
+@mixin theme-orange {
+  background-color: $ca-orange;
+  background: $ca-orange;
+  color: $ca-white;
 }
 
 .theme-black {
   @include theme-black;
+}
+
+.theme-blue {
+  @include theme-blue;
+}
+
+.theme-green {
+  @include theme-green;
+}
+
+.theme-purple {
+  @include theme-purple;
+}
+
+.theme-orange {
+  @include theme-orange;
 }

@@ -1,0 +1,49 @@
+.media-wrap {
+  position: relative;
+  line-height: 0;
+  height: 0; // padding-bottom: 70% !important; // 4:3
+  padding-bottom: 56.25%; // 16:9
+  width: 100%;
+  &>figure,
+  &>div,
+  &>iframe {
+    display: inline-block;
+    position: absolute;
+    margin: 0;
+    padding-top: 0;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  iframe {
+    
+  }
+}
+
+// Embedded Map
+.map-embed {
+  display: block;
+  height: 100%;
+  padding-top: 2em;
+  padding-bottom: 80%;
+  #map-canvas {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@mixin media-item {
+
+  &.float-l {
+    margin: 2rem 2.5rem 2.5rem 0;
+  }
+  &.float-r {
+    margin: 2rem 0 2.5rem 2.5rem;
+  }
+
+}
+
+.media-item {
+  @include media-item;
+}

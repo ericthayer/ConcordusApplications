@@ -3,15 +3,21 @@
   > .container {
     @include pt-pb-2;
     @include pr-pl-4;
-    > p:last-of-type {
-      margin-bottom: 5%;
+    > .btn {
+      margin-top: 1rem;
+      @include mb-2;
     }
   }
 
   @media (min-width: $break-lg-phone) {
 
-      padding-top: 10vh;
-      padding-bottom: 10vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+
+    > .container {
+      @include pt-0;
+      @include pb-0;
+    }
 
   }
 

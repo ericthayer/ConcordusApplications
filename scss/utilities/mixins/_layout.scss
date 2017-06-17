@@ -82,6 +82,10 @@
   height: 100%;
 }
 
+@mixin h-50vh {
+  height: 50vh;
+}
+
 @mixin h-100vh {
   height: 100vh;
 }

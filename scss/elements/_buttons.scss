@@ -1,5 +1,6 @@
 .btn {
   @include MontserratLight;
+  text-shadow: none;
 }
 
 
@@ -29,4 +30,8 @@
 .btn-text {
   color: $ca-teal;
   @include p-0;
+}
+
+.btn-secondary {
+  
 }

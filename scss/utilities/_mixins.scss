@@ -7,6 +7,7 @@
 @import "mixins/backgrounds";
 @import "mixins/flexbox";
 @import "mixins/css-grid";
+@import "mixins/media";
 
 // fade animation
 @keyframes fade-in {
@@ -271,65 +272,6 @@
       margin-bottom: .9rem;
     }
   }
-}
-
-// Images
-@mixin circle-mask {
-  border-radius: 50%;
-  height: 100%;
-  width: 100%;
-  overflow: hidden; 
-  max-height: 25rem;
-  max-width: 25rem;
-  img {
-    border-radius: 50%;
-    overflow: hidden;
-  }
-  &.float-l,
-  &.float-r {
-    shape-outside: circle();
-    margin: 1rem;
-  }
-  &.float-l {
-    margin: 0 2.5rem 2.5rem 0;
-  }
-  &.float-r {
-    margin: 0 0 2.5rem 2.5rem;
-  }
-}
-
-@mixin circle-mask-md {
-  @include circle-mask;
-  max-height: 20rem;
-  max-width: 20rem;
-}
-
-@mixin circle-mask-sm {
-  @include circle-mask;
-  max-height: 10rem;
-  max-width: 10rem;
-}
-
-.circle-mask {
-  @include circle-mask;
-}
-
-.circle-mask-md {
-  @include circle-mask-md;
-}
-
-.circle-mask-sm {
-  @include circle-mask-sm;
-}
-
-@mixin rounded-mask {
-  border-radius: 1rem;
-  width: 100%;
-  overflow: hidden;
-}
-
-.rounded-mask {
-  @include rounded-mask;
 }
 
 // Image Replacement "hack"
