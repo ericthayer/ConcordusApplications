@@ -397,6 +397,7 @@ img {
 .btn {
   -webkit-font-smoothing: auto;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  letter-spacing: .05em;
   text-shadow: none; }
   .fonts-loaded .btn {
     font-family: "Montserrat Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -404,23 +405,36 @@ img {
 
 .btn-outline {
   background-color: transparent;
-  border: 2px solid currentColor;
-  letter-spacing: .05em;
+  border: 1px solid currentColor;
   text-align: center; }
-  .btn-outline .icon-outline {
-    margin-right: .625rem; }
   .btn-outline:hover, .btn-outline:focus {
     background-color: #428bca;
     border-color: transparent;
     color: rgba(255, 255, 255, 0.8);
     text-shadow: none; }
+  .btn-outline.btn-primary {
+    background-color: transparent;
+    color: #00A2E1; }
+  .btn-outline.btn-secondary {
+    background-color: transparent;
+    border-color: #CCC; }
 
 .btn-round {
   border-radius: 5rem; }
+  .btn-round .icon-outline {
+    margin-right: .625rem; }
 
 .btn-text {
-  color: #39909A;
+  color: #00A2E1;
   padding: 0; }
+
+.btn-primary {
+  background-color: #00A2E1;
+  border-color: #00A2E1; }
+  .btn-primary:hover, .btn-primary:focus {
+    background-color: #007aa9;
+    border-color: #007aa9;
+    color: #fff; }
 
 .media-wrap {
   position: relative;
@@ -567,6 +581,10 @@ img {
   .fonts-loaded .banner p {
     font-family: "Montserrat Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-weight: 300; }
+
+.blockquote {
+  padding-top: 1em;
+  padding-bottom: 1em; }
 
 .site-header {
   background-color: rgba(0, 0, 0, 0.85); }
@@ -1164,7 +1182,8 @@ img {
   align-items: center;
   align-self: stretch;
   flex-grow: 1;
-  height: 50vh; }
+  padding-top: 5em;
+  padding-bottom: 5em; }
 
 .bg-hero {
   background-position: center;
@@ -1177,7 +1196,8 @@ img {
   align-items: center;
   align-self: stretch;
   flex-grow: 1;
-  height: 50vh;
+  padding-top: 5em;
+  padding-bottom: 5em;
   font-size: calc( 1rem + (40 - 28) * ( (100vw - 400px) / ( 2000 - 400)));
   height: 100vh; }
   .bg-hero .h1, .bg-hero h1 {

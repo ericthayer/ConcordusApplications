@@ -1,18 +1,13 @@
 .btn {
   @include MontserratLight;
+  letter-spacing: .05em;
   text-shadow: none;
 }
 
-
 .btn-outline {
   background-color: transparent;
-  border: 2px solid currentColor;
-  letter-spacing: .05em;
+  border: 1px solid currentColor;  
   text-align: center;
-
-  .icon-outline {
-    @include mr-sm;
-  }
 
   &:hover,
   &:focus {
@@ -21,15 +16,40 @@
     color: rgba(#fff, .8);
     text-shadow: none;
   }
+
+  &.btn-primary {
+    background-color: transparent;
+    color: $ca-blue;
+  }
+
+  &.btn-secondary {
+    background-color: transparent;
+    border-color: $ca-grey-CCC;
+  }
+
 }
 
 .btn-round {
   border-radius: 5rem;
+  .icon-outline {
+    @include mr-sm;
+  }
 }
 
 .btn-text {
-  color: $ca-teal;
+  color: $ca-blue;
   @include p-0;
+}
+
+.btn-primary {
+  background-color: $ca-blue;
+  border-color: $ca-blue;
+  &:hover,
+  &:focus {
+    background-color: $ca-blue-dark;
+    border-color: $ca-blue-dark;
+    color: #fff;
+  }
 }
 
 .btn-secondary {

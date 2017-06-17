@@ -28,7 +28,8 @@
   @include ai-center;
   @include as-stretch;
   @include flex-grow-1;
-  @include h-50vh;
+  //@include h-50vh;
+  @include pt-pb-5;
 }
 
 @mixin bg-hero {
