@@ -12,47 +12,27 @@
 }
 
 body {
-  color: #333;
+  color: $text-color;
   line-height: 1.667;
   font-size-adjust: none;
   text-rendering: optimizeLegibility;
 }
 
-h1,
-.h1,
-h2,
-.h2,
-h3,
-.h3,
-h4,
-.h4,
-h5,
-.h5,
-h6,
-.h6 {
+h1,.h1,
+h2,.h2,
+h3,.h3,
+h4,.h4,
+h5,.h5,
+h6,.h6 {
   color: currentColor;
   @include Montserrat;
   line-height: 1.35;
   transition: opacity .2s;
 }
 
-.h1,
-h1 {
+.h1,h1 {
   @include mb-1-pt5;
 }
-
-h2,
-h3,
-h4,
-h5,
-h6,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6,
-.help-block,
-p {}
 
 a {
   color: currentColor;
@@ -135,6 +115,29 @@ a abbr[title] {
 
 .list-title {
   margin-left: -1rem;
+}
+
+:not(nav ul), ol {
+  @include MontserratLight;
+
+  &.list-unstyled {
+    font-family: $sans-serif;
+    ul {
+      font-family: $sans-serif;
+      @include mb-0;
+      @include pt-pb-1;
+      li:last-child {
+        @include mb-0;
+      }
+    }
+  }
+
+  li {
+    @include mb-sm;
+    &:last-child {
+      @include mb-0;
+    }
+  }
 }
 
 .border-title {

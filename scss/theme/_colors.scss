@@ -80,43 +80,36 @@ $calc-10: calc(1vw + 10em);
 
 @mixin theme-light {
   background-color: $ca-grey-EEE;
-  background: $ca-grey-EEE;
   color: $ca-grey-555;
 }
 
 @mixin theme-black {
   background-color: $ca-black;
-  background: $ca-black;
   color: $ca-white;
 }
 
 @mixin theme-blue {
   background-color: $ca-blue;
-  background: $ca-blue;
   color: $ca-white;
 }
 
 @mixin theme-blue {
   background-color: $ca-blue;
-  background: $ca-blue;
   color: $ca-white;
 }
 
 @mixin theme-green {
   background-color: $ca-green;
-  background: $ca-green;
   color: $ca-white;
 }
 
 @mixin theme-purple {
   background-color: $ca-purple;
-  background: $ca-purple;
   color: $ca-white;
 }
 
 @mixin theme-orange {
   background-color: $ca-orange;
-  background: $ca-orange;
   color: $ca-white;
 }
 

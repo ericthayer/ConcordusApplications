@@ -36,10 +36,18 @@
 @mixin media-item {
 
   &.float-l {
-    margin: 2rem 2.5rem 2.5rem 0;
+    margin: .5rem 2.5rem 2.5rem 0;
   }
   &.float-r {
-    margin: 2rem 0 2.5rem 2.5rem;
+    margin: .5rem 0 2.5rem 2.5rem;
+  }
+
+  &.mask-outside.float-l {
+    margin: 2rem 2.5rem 2.5rem 0;
+  }
+
+  &.mask-outside.float-r {
+    margin: .5rem 0 2.5rem 2.5rem;
   }
 
 }

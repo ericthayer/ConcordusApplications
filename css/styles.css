@@ -187,44 +187,31 @@ img.lazyload {
   font-family: "Garamond", "Cambria", Georgia, serif; }
 
 body {
-  color: #333;
+  color: #555;
   line-height: 1.667;
   font-size-adjust: none;
   text-rendering: optimizeLegibility; }
 
-h1,
-.h1,
-h2,
-.h2,
-h3,
-.h3,
-h4,
-.h4,
-h5,
-.h5,
-h6,
-.h6 {
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
   color: currentColor;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   line-height: 1.35;
   transition: opacity .2s; }
-  .fonts-loaded h1, .fonts-loaded
-  .h1, .fonts-loaded
-  h2, .fonts-loaded
-  .h2, .fonts-loaded
-  h3, .fonts-loaded
-  .h3, .fonts-loaded
-  h4, .fonts-loaded
-  .h4, .fonts-loaded
-  h5, .fonts-loaded
-  .h5, .fonts-loaded
-  h6, .fonts-loaded
-  .h6 {
+  .fonts-loaded h1, .fonts-loaded .h1, .fonts-loaded
+  h2, .fonts-loaded .h2, .fonts-loaded
+  h3, .fonts-loaded .h3, .fonts-loaded
+  h4, .fonts-loaded .h4, .fonts-loaded
+  h5, .fonts-loaded .h5, .fonts-loaded
+  h6, .fonts-loaded .h6 {
     font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-weight: 500; }
 
-.h1,
-h1 {
+.h1, h1 {
   margin-bottom: 1.5rem; }
 
 a {
@@ -290,6 +277,26 @@ a abbr[title] {
 
 .list-title {
   margin-left: -1rem; }
+
+:not(nav ul), ol {
+  -webkit-font-smoothing: auto;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  .fonts-loaded :not(nav ul), .fonts-loaded ol {
+    font-family: "Montserrat Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 300; }
+  :not(nav ul).list-unstyled, ol.list-unstyled {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+    :not(nav ul).list-unstyled ul, ol.list-unstyled ul {
+      font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      margin-bottom: 0;
+      padding-top: 1em;
+      padding-bottom: 1em; }
+      :not(nav ul).list-unstyled ul li:last-child, ol.list-unstyled ul li:last-child {
+        margin-bottom: 0; }
+  :not(nav ul) li, ol li {
+    margin-bottom: .625rem; }
+    :not(nav ul) li:last-child, ol li:last-child {
+      margin-bottom: 0; }
 
 .border-title {
   border-bottom: 1px solid #DDD;
@@ -449,10 +456,16 @@ img {
     width: 100%; }
 
 .media-item.float-l {
-  margin: 2rem 2.5rem 2.5rem 0; }
+  margin: .5rem 2.5rem 2.5rem 0; }
 
 .media-item.float-r {
-  margin: 2rem 0 2.5rem 2.5rem; }
+  margin: .5rem 0 2.5rem 2.5rem; }
+
+.media-item.mask-outside.float-l {
+  margin: 2rem 2.5rem 2.5rem 0; }
+
+.media-item.mask-outside.float-r {
+  margin: .5rem 0 2.5rem 2.5rem; }
 
 .navbar {
   text-align: left; }
@@ -592,7 +605,6 @@ img {
   padding-bottom: 2em;
   text-align: center;
   background-color: #111;
-  background: #111;
   color: #FCFCFC; }
   .site-footer p, .site-footer nav {
     font-size: .875em; }
@@ -639,10 +651,6 @@ img {
   .page-content > .container > .btn {
     margin-top: 1rem;
     margin-bottom: 2rem; }
-
-.page-content ul li,
-.page-content ol li {
-  margin-bottom: 1rem; }
 
 @media (min-width: 48em) {
   .page-content {
@@ -1382,30 +1390,24 @@ img {
 
 .theme-light {
   background-color: #EEE;
-  background: #EEE;
   color: #555; }
 
 .theme-black {
   background-color: #111;
-  background: #111;
   color: #FCFCFC; }
 
 .theme-blue {
   background-color: #00A2E1;
-  background: #00A2E1;
   color: #FCFCFC; }
 
 .theme-green {
   background-color: #7EB963;
-  background: #7EB963;
   color: #FCFCFC; }
 
 .theme-purple {
   background-color: #A0AFD4;
-  background: #A0AFD4;
   color: #FCFCFC; }
 
 .theme-orange {
   background-color: #F6BE1E;
-  background: #F6BE1E;
   color: #FCFCFC; }
