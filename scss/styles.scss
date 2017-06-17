@@ -1,10 +1,9 @@
 // Utilities
-@import "utilities/variables";
+@import "utilities/variables"; // brand colors are in here
 @import "utilities/mixins";
 
 // Base
 @import "base/lazyload";
-@import "base/colors";
 @import "base/typography";
 @import "base/global";
 
@@ -38,3 +37,6 @@
 @import "utilities/modifiers/mod-layout";
 @import "utilities/modifiers/mod-backgrounds";
 @import "utilities/modifiers/mod-flexbox";
+
+// Theme
+@import "theme/ca-theme-colors";
