@@ -3,6 +3,8 @@
 @mixin grid {
   @include flex;
   @include flex-wrap;
+  padding: 0 !important;
+  @include mw-100p;
   > * {
     @include flex-grow-1;
     @include p-1;
@@ -31,8 +33,12 @@
 @mixin grid-4-col {
   @include grid;
   @supports (grid-gap: 0) {
-    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(16.5em, 1fr));
     grid-gap: 2em;
+    // 2 cols @ 900 ~ 1360
+    @media (min-width: 60em) and (max-width: 85em) {
+      grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
+    }
   }
 }
 
