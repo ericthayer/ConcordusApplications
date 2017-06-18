@@ -577,6 +577,22 @@ input[type="button"].btn-block {
   .btn-round > .icon-outline {
     margin-right: .625rem; }
 
+.btn-outline {
+  background-color: transparent;
+  border: 1px solid currentColor;
+  text-align: center; }
+  .btn-outline:hover, .btn-outline:focus {
+    background-color: #428bca;
+    border-color: transparent;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: none; }
+  .btn-outline.button-primary {
+    background-color: transparent;
+    color: #00A2E1; }
+  .btn-outline.button-secondary {
+    background-color: transparent;
+    border-color: #CCC; }
+
 .btn-text {
   color: #00A2E1;
   padding: 0; }
@@ -1473,6 +1489,9 @@ input[type="button"].btn-block {
       height: auto;
       padding-top: 5em;
       padding-bottom: 5em; } }
+  @media (min-width: 50em) {
+    .bg-hero {
+      height: 100vh; } }
   .bg-hero-globe {
     background-image: url(../images/bg/bg-hero-globe-dark.jpg);
     background-image: -webkit-image-set(url(../images/bg/bg-hero-globe-dark.jpg) 1x, url(../images/bg/bg-hero-globe-dark-lg.jpg) 2x);

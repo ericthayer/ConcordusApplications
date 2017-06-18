@@ -204,6 +204,10 @@ input[type="button"].btn-block {
   @include button-round;
 }
 
+.btn-outline {
+  @include button-outline;
+}
+
 .btn-text {
   color: $ca-blue;
   @include p-0;

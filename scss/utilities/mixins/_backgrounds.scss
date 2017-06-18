@@ -68,4 +68,9 @@
     @include pt-pb-5;
   }
 
+  // > 800px
+  @media (min-width: 50em) {
+    @include h-100vh;
+  }
+
 }
