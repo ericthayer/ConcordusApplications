@@ -28,8 +28,12 @@
   @include ai-center;
   @include as-stretch;
   @include flex-grow-1;
-  //@include h-50vh;
   @include pt-pb-5;
+  // > 800px
+  @media (min-width: 50em) {
+    @include h-50vh;
+  }
+
 }
 
 @mixin bg-hero {

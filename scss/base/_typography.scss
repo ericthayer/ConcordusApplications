@@ -117,8 +117,11 @@ a abbr[title] {
   margin-left: -1rem;
 }
 
-:not(nav ul), ol {
-  @include MontserratLight;
+ul, ol {
+  
+  &.list-styled {
+    @include MontserratLight;
+  }
 
   &.list-unstyled {
     font-family: $sans-serif;
