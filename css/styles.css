@@ -480,14 +480,6 @@ img {
     font-family: "Montserrat Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-weight: 300; }
 
-.btn-lg, .btn-group-lg > .btn {
-  padding: 0.75rem 1.5rem;
-  font-size: 1.25rem;
-  border-radius: 0.3rem; }
-
-.btn-xl {
-  font-size: 1.5em; }
-
 .btn:focus, .btn:hover {
   text-decoration: none; }
 
@@ -655,6 +647,18 @@ input[type="button"].btn-block {
     background-color: #007aa9;
     border-color: #007aa9;
     color: #fff; }
+
+.btn-lg, .btn-group-lg > .btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
+  border-radius: 0.3rem; }
+
+.btn-xl {
+  font-size: 1.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-right: 2em;
+  padding-left: 2em; }
 
 .media-wrap {
   position: relative;

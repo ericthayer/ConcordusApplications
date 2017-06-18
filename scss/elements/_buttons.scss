@@ -112,14 +112,6 @@
   @include button;
 }
 
-.btn-lg, .btn-group-lg > .btn {
-  @include button-lg;
-}
-
-.btn-xl {
-  @include button-xl;
-}
-
 .btn:focus, .btn:hover {
   text-decoration: none;
 }
@@ -218,4 +210,15 @@ input[type="button"].btn-block {
   @include button-lg;
   @include button-round;
   @include button-primary;
+}
+
+.btn-lg, .btn-group-lg > .btn {
+  @include button-lg;
+}
+
+
+.btn-xl {
+  @include button-xl;
+  @include pt-pb-1;
+  @include pr-pl-2;
 }
