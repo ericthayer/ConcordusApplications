@@ -738,6 +738,7 @@ input[type="button"].btn-block {
   white-space: initial; }
 
 .breadcrumb {
+  display: none;
   background: transparent;
   margin-bottom: 0;
   font-size: .875em; }
