@@ -11,10 +11,6 @@ $ca-white: #FCFCFC;
 
 $ca-warning: #FF2222;
 
-$text-color: $ca-grey-555;
-$heading-color: $ca-grey;
-$bg-color: $ca-white;
-
 // ** Brand ** //
 
 // blue
@@ -75,6 +71,14 @@ $calc-3: calc(1vw + 3em);
 $calc-4: calc(1vw + 4em);
 $calc-5: calc(1vw + 5em);
 $calc-10: calc(1vw + 10em);
+
+// defaults
+
+$text-color: $ca-grey-555;
+$heading-color: $ca-grey;
+$bg-color: $ca-white;
+$link: $ca-blue;
+
 
 // theme colors
 

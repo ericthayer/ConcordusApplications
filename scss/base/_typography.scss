@@ -41,11 +41,15 @@ a {
 }
 
 p {
+  @include MontserratLight;
   font-size: 1.1em;
-  -webkit-font-smoothing: antialiased;
+  //-webkit-font-smoothing: antialiased;
   a {
-    //color: $link;
-    text-decoration: none;
+    color: $link;
+    text-decoration: underline;
+    @supports (text-decoration-skip: ink) {
+      text-decoration-skip: ink;
+    }
   }
   a {
     //@include link-shadow;
@@ -118,7 +122,7 @@ a abbr[title] {
 }
 
 ul, ol {
-  
+
   &.list-styled {
     @include MontserratLight;
   }

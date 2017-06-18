@@ -91,6 +91,18 @@
   @include mr-1;  
 }
 
+.mr-2 {
+  @include mr-2;  
+}
+
+.mr-3 {
+  @include mr-3;  
+}
+
+.mr-4 {
+  @include mr-4;  
+}
+
 // Margin Left
 
 .ml-a {
@@ -111,4 +123,16 @@
 
 .ml-1 {
   @include ml-1;  
+}
+
+.ml-2 {
+  @include ml-2;  
+}
+
+.ml-3 {
+  @include ml-3;  
+}
+
+.ml-4 {
+  @include ml-4;  
 }

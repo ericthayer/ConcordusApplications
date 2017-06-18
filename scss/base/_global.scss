@@ -25,6 +25,10 @@ img {
   width: 100%;
 }
 
+.row {
+  @include w-100;
+}
+
 // main
 
 #main {
