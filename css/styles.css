@@ -581,10 +581,10 @@ input[type="button"].btn-block {
     border-color: transparent;
     color: rgba(255, 255, 255, 0.8);
     text-shadow: none; }
-  .btn-outline.button-primary {
+  .btn-outline.btn-primary {
     background-color: transparent;
     color: #00A2E1; }
-  .btn-outline.button-secondary {
+  .btn-outline.btn-secondary {
     background-color: transparent;
     border-color: #CCC; }
 
@@ -616,7 +616,6 @@ input[type="button"].btn-block {
   text-shadow: none;
   padding: 0.75rem 1.5rem;
   font-size: 1.25rem;
-  border-radius: 0.3rem;
   border-radius: 5rem;
   color: #fff;
   background-color: #0275d8;
@@ -650,8 +649,7 @@ input[type="button"].btn-block {
 
 .btn-lg, .btn-group-lg > .btn {
   padding: 0.75rem 1.5rem;
-  font-size: 1.25rem;
-  border-radius: 0.3rem; }
+  font-size: 1.25rem; }
 
 .btn-xl {
   font-size: 1.5em;
