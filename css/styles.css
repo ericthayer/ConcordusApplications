@@ -676,6 +676,10 @@ input[type="button"].btn-block {
 .media-item.mask-outside.float-r {
   margin: .5rem 0 2.5rem 2.5rem; }
 
+.media-item figcaption {
+  padding-top: .625em;
+  padding-left: .625em; }
+
 .navbar {
   text-align: left; }
 
