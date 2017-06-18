@@ -1,9 +1,9 @@
 // Site Header
 
 .site-header {
-  background-color: rgba(#000, .85);
+  background-color: rgba(#000, .9);
   &.headroom--not-top {
-    background-color: rgba(black, .85);
+    background-color: rgba(black, .9);
   }
   @supports (grid-gap: 0) {
     grid-row: span 1;

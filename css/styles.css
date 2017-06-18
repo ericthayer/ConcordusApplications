@@ -708,9 +708,6 @@ input[type="button"].btn-block {
 .navbar-collapse {
   margin: 0 -15px;
   padding: 1em; }
-  @media (max-width: 991px) {
-    .navbar-collapse {
-      background-color: rgba(0, 0, 0, 0.9); } }
 
 .navbar-toggler {
   font-size: 1.5rem;
@@ -860,9 +857,9 @@ input[type="button"].btn-block {
   opacity: 0.9; }
 
 .site-header {
-  background-color: rgba(0, 0, 0, 0.85); }
+  background-color: rgba(0, 0, 0, 0.9); }
   .site-header.headroom--not-top {
-    background-color: rgba(0, 0, 0, 0.85); }
+    background-color: rgba(0, 0, 0, 0.9); }
   @supports (grid-gap: 0) {
     .site-header {
       grid-row: span 1; } }
@@ -1544,6 +1541,8 @@ input[type="button"].btn-block {
     background-image: -moz-image-set(url(../images/bg/bg-hero-globe-dark.jpg) 1x, url(../images/bg/bg-hero-globe-dark-lg.jpg) 2x);
     background-image: -o-image-set(url(../images/bg/bg-hero-globe-dark.jpg) 1x, url(../images/bg/bg-hero-globe-dark-lg.jpg) 2x);
     background-image: -ms-image-set(url(../images/bg/bg-hero-globe-dark.jpg) 1x, url(../images/bg/bg-hero-globe-dark-lg.jpg) 2x); }
+  .bg-hero-user {
+    background-image: url(../images/bg/bg-hero-user-man.jpg); }
 
 .flex-layout {
   display: flex;
