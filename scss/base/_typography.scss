@@ -139,6 +139,10 @@ ul, ol {
     }
   }
 
+  &.no-bullet {
+    list-style-type: none;
+  }
+
   li {
     @include mb-sm;
     &:last-child {

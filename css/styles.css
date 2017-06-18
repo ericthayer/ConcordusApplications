@@ -351,6 +351,9 @@ ul.list-unstyled, ol.list-unstyled {
     ul.list-unstyled ul li:last-child, ol.list-unstyled ul li:last-child {
       margin-bottom: 0; }
 
+ul.no-bullet, ol.no-bullet {
+  list-style-type: none; }
+
 ul li, ol li {
   margin-bottom: .625rem; }
   ul li:last-child, ol li:last-child {
