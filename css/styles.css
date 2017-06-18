@@ -816,6 +816,49 @@ input[type="button"].btn-block {
   padding-top: 1em;
   padding-bottom: 1em; }
 
+.modal {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  pointer-events: none; }
+  .modal.show {
+    pointer-events: all; }
+  .modal .close {
+    background-color: transparent;
+    color: #FCFCFC;
+    padding: 1em;
+    opacity: 0.5;
+    font-size: 2.5em;
+    text-shadow: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all .3s; }
+    .modal .close:hover, .modal .close:focus {
+      background-color: black;
+      opacity: 1; }
+  .modal-clean .modal-content {
+    background: transparent;
+    border: none; }
+  .modal-clean .modal-header {
+    border: none;
+    justify-content: flex-end;
+    padding: 0; }
+  .modal-clean .modal-body {
+    padding: 0; }
+
+.modal-clean.show .modal-dialog,
+.modal-clean.fade .modal-dialog {
+  transform: none; }
+
+.modal-dialog {
+  flex-grow: 1;
+  max-width: 85em; }
+
+.modal-backdrop.show {
+  opacity: 0.9; }
+
 .site-header {
   background-color: rgba(0, 0, 0, 0.85); }
   .site-header.headroom--not-top {

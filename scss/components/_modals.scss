@@ -1,9 +1,59 @@
 
 .modal {
+  display: flex !important;
+  @include ai-center;
+  @include jc-center;
   @include p-2;
+  pointer-events: none;
+  &.show {    
+    pointer-events: all;
+  }
+  .close {
+    background-color: rgba(black, 0);
+    color: $ca-white;
+    @include p-1;
+    opacity: 0.5;
+    @include text-xl;
+    text-shadow: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all .3s;
+    &:hover,
+    &:focus {
+      background-color: rgba(black, 1);
+      //box-shadow: inset 0 0 0 2em rgba(black, 1);
+      opacity: 1;
+    }
+  }
+  &-clean {
+    .modal-content {
+      @include bg-trans;
+      border: none;
+    }
+    .modal-header {
+      border: none;
+      @include jc-end;
+      @include p-0;
+    }
+    .modal-body {
+      @include p-0;
+    }
+  }
+}
+
+.modal-clean.show,
+.modal-clean.fade {
+  .modal-dialog {
+    transform: none;
+  }
 }
 
 .modal-dialog {
-  margin: 5em auto 0;
-  max-width: 45em;
+  @include flex-grow-1;
+  max-width: 85em;
+}
+
+.modal-backdrop.show {
+  opacity: 0.9;
 }
