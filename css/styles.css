@@ -587,10 +587,6 @@ input[type="button"].btn-block {
     background-color: transparent;
     border-color: #CCC; }
 
-.btn-text {
-  color: #00A2E1;
-  padding: 0; }
-
 .btn-brand {
   display: inline-block;
   font-weight: normal;
@@ -656,6 +652,10 @@ input[type="button"].btn-block {
   padding-bottom: 1em;
   padding-right: 2em;
   padding-left: 2em; }
+
+.btn-text {
+  color: #00A2E1;
+  padding: 0; }
 
 .media-wrap {
   position: relative;

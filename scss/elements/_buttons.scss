@@ -197,11 +197,6 @@ input[type="button"].btn-block {
   @include button-outline;
 }
 
-.btn-text {
-  color: $ca-blue;
-  @include p-0;
-}
-
 .btn-brand {
   @include button;
   @include button-lg;
@@ -217,4 +212,9 @@ input[type="button"].btn-block {
   @include button-xl;
   @include pt-pb-1;
   @include pr-pl-2;
+}
+
+.btn-text {
+  color: $ca-blue;
+  @include p-0;
 }
