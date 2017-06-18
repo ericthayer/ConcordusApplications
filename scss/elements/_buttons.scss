@@ -27,6 +27,7 @@
 @mixin button-lg {
   padding: 0.75rem 1.5rem;
   font-size: 1.25rem;
+  border-radius: 0;
 }
 
 @mixin button-xl {
@@ -134,7 +135,6 @@ a.btn.disabled,
 fieldset[disabled] a.btn {
   pointer-events: none;
 }
-
 
 .btn-secondary {
   color: #292b2c;
