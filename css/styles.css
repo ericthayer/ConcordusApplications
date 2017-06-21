@@ -1079,6 +1079,9 @@ input[type="button"].btn-block {
     padding-left: 0; }
   .footer-nav li {
     list-style-type: none; }
+  @supports (text-decoration-skip: ink) {
+    .footer-nav a:hover {
+      text-decoration-skip: ink; } }
   @media (min-width: 42em) {
     .footer-nav nav {
       margin-bottom: 4rem; } }

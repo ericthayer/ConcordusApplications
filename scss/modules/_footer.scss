@@ -44,6 +44,12 @@
     list-style-type: none;
   }
 
+  a:hover {
+    //text-decoration: none;
+    @supports (text-decoration-skip: ink) {
+      text-decoration-skip: ink;
+    }
+  }
 
   // 450
   @media (min-width: 42em) {
