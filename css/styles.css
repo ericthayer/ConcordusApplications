@@ -723,6 +723,8 @@ input[type="button"].btn-block {
     box-shadow: none;
     height: auto;
     margin: 0; }
+  .form-trans input:focus {
+    background: transparent; }
   .form-trans button {
     padding-left: 0; }
 

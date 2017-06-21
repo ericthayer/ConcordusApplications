@@ -16,6 +16,9 @@
     height: auto;
     margin: 0;
   }
+  input:focus {
+    background: transparent;
+  }
   button {
     // @include pr-tiny;
     // @include pl-tiny;
