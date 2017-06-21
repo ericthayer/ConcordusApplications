@@ -71,10 +71,19 @@
 
 .footer-copyright {
   border: none;
+  .soc-media-icons {
+    .icon {
+      @include ml-0;
+    }
+  }
   @media (min-width: 42em) {
     text-align: right;
     .soc-media-icons {
       justify-content: flex-end;
+      .icon {
+        @include ml-tiny;
+        @include mr-0;
+      }
     }
   }
 }

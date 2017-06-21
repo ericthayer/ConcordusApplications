@@ -1095,11 +1095,16 @@ input[type="button"].btn-block {
 
 .footer-copyright {
   border: none; }
+  .footer-copyright .soc-media-icons .icon {
+    margin-left: 0; }
   @media (min-width: 42em) {
     .footer-copyright {
       text-align: right; }
       .footer-copyright .soc-media-icons {
-        justify-content: flex-end; } }
+        justify-content: flex-end; }
+        .footer-copyright .soc-media-icons .icon {
+          margin-left: .313rem;
+          margin-right: 0; } }
 
 .page-content > .container {
   padding-top: 2em;
