@@ -57,6 +57,10 @@
   float: right;
 }
 
+@mixin float-none {
+  float: none;
+}
+
 // height
 @mixin h-auto {
   height: auto;

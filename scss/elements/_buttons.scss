@@ -217,4 +217,5 @@ input[type="button"].btn-block {
 .btn-text {
   color: $ca-blue;
   @include p-0;
+  white-space: normal;
 }

@@ -34,25 +34,30 @@
 }
 
 @mixin media-item {
-
-  &.float-l {
-    margin: .5rem 2.5rem 2.5rem 0;
-  }
-  &.float-r {
-    margin: .5rem 0 2.5rem 2.5rem;
-  }
-
-  &.mask-outside.float-l {
-    margin: 2rem 2.5rem 2.5rem 0;
-  }
-
-  &.mask-outside.float-r {
-    margin: .5rem 0 2.5rem 2.5rem;
-  }
+  margin: 0 auto 2rem;
 
   figcaption {
     @include pt-sm;
     @include pl-sm;
+  }
+
+  @media (min-width: $break-lg-phone) {
+
+    &.float-l {
+      margin: .5rem 2.5rem 2.5rem 0;
+    }
+    &.float-r {
+      margin: .5rem 0 2.5rem 2.5rem;
+    }
+
+    &.mask-outside.float-l {
+      margin: 2rem 2.5rem 2.5rem 0;
+    }
+
+    &.mask-outside.float-r {
+      margin: .5rem 0 2.5rem 2.5rem;
+    }
+
   }
 
 }
