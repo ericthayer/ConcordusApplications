@@ -52,6 +52,9 @@
       @include mb-4;
     }
   }
+  @media (min-width: 55em) {
+    flex-wrap: nowrap;
+  }
 }
 
 .footer-contact {

@@ -1082,6 +1082,9 @@ input[type="button"].btn-block {
   @media (min-width: 42em) {
     .footer-nav nav {
       margin-bottom: 4rem; } }
+  @media (min-width: 55em) {
+    .footer-nav {
+      flex-wrap: nowrap; } }
 
 .footer-contact {
   font-size: .875em; }
