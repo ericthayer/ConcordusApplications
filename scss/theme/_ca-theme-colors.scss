@@ -38,6 +38,10 @@
   @include theme-green;
 }
 
+.theme-dark-green {
+  @include theme-dark-green;
+}
+
 .theme-purple {
   @include theme-purple;
 }

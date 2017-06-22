@@ -28,6 +28,9 @@ $ca-green: #7EB963;
 $ca-green-light: mix(white, $ca-green, 35%);
 $ca-green-dark: mix(black, $ca-green, 25%);
 
+// dark green
+$ca-dark-green: #194247;
+
 // orange
 $ca-orange: #F6BE1E;
 $ca-orange-light: mix(white, $ca-orange, 35%);
@@ -97,14 +100,17 @@ $link: $ca-blue;
   color: $ca-white;
 }
 
-@mixin theme-blue {
-  background-color: $ca-blue;
-  color: $ca-white;
-}
-
 @mixin theme-green {
   background-color: $ca-green;
   color: $ca-white;
+}
+
+@mixin theme-dark-green {
+  background-color: $ca-dark-green;
+  color: $ca-white;
+  a {
+    color: #41a5ae;
+  }
 }
 
 @mixin theme-purple {

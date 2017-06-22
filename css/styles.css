@@ -1075,7 +1075,7 @@ input[type="button"].btn-block {
   .footer-nav nav {
     margin-bottom: 2rem; }
     .footer-nav nav:not(:last-child) {
-      padding-right: calc(1vw + 5em); }
+      padding-right: calc(1vw + 2em); }
   .footer-nav ul {
     margin-bottom: 0;
     margin-left: 0;
@@ -1091,6 +1091,9 @@ input[type="button"].btn-block {
   @media (min-width: 55em) {
     .footer-nav {
       flex-wrap: nowrap; } }
+  @media (min-width: 65em) {
+    .footer-nav nav:not(:last-child) {
+      padding-right: calc(1vw + 4em); } }
 
 .footer-contact {
   font-size: .875em; }
@@ -1745,6 +1748,13 @@ input[type="button"].btn-block {
   .bg-hero-user {
     background-image: url(../images/bg/bg-hero-user-man.jpg); }
 
+.bg-half-globe-left {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: contain;
+  background-image: url(../images/bg/bg-banner-half-globe-darkgreen.png); }
+
 .flex-layout {
   display: flex;
   flex-wrap: wrap;
@@ -1908,6 +1918,12 @@ input[type="button"].btn-block {
 .theme-green {
   background-color: #7EB963;
   color: #FCFCFC; }
+
+.theme-dark-green {
+  background-color: #194247;
+  color: #FCFCFC; }
+  .theme-dark-green a {
+    color: #41a5ae; }
 
 .theme-purple {
   background-color: #A0AFD4;

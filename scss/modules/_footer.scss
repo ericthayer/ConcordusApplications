@@ -30,7 +30,7 @@
   nav {
     @include mb-2;
     &:not(:last-child) {
-      padding-right: calc(1vw + 5em);
+      padding-right: calc(1vw + 2em);
     }
   }
 
@@ -60,6 +60,13 @@
   }
   @media (min-width: 55em) {
     flex-wrap: nowrap;
+  }
+  @media (min-width: 65em) {
+    nav {
+      &:not(:last-child) {
+        padding-right: calc(1vw + 4em);
+      }
+    }
   }
 }
 
