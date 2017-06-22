@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script>
+    // Set "enhanced" class for JS detection
+    document.documentElement.className += "enhanced";
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -19,14 +23,397 @@
 </head>
 
 <body class="content-page">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  
+    <symbol id="icon-menu" viewBox="0 0 32 32" aria-labelledby="icon-menu-title icon-menu-desc">
+      <title id="menu-title"></title>
+      <desc id="menu-desc"></desc>
+      <path d="M26.24 14.4h-20.48c-0.883 0-0.96 0.715-0.96 1.6s0.077 1.6 0.96 1.6h20.48c0.883 0 0.96-0.715 0.96-1.6s-0.077-1.6-0.96-1.6zM26.24 20.8h-20.48c-0.883 0-0.96 0.715-0.96 1.6s0.077 1.6 0.96 1.6h20.48c0.883 0 0.96-0.715 0.96-1.6s-0.077-1.6-0.96-1.6zM5.76 11.2h20.48c0.883 0 0.96-0.715 0.96-1.6s-0.077-1.6-0.96-1.6h-20.48c-0.883 0-0.96 0.715-0.96 1.6s0.077 1.6 0.96 1.6z"></path>
+    </symbol>
+    
+    <symbol id="icon-chevron-sm" viewBox="0 0 32 32" aria-labelledby="icon-chevron-sm-title icon-chevron-sm-desc">
+      <title id="icon-chevron-sm-title"></title>
+      <desc id="icon-chevron-sm-desc"></desc>
+      <path d="M17.6 16l-5.026-5.472c-0.429-0.432-0.429-1.131 0-1.565 0.429-0.432 1.122-0.432 1.55 0l6.128 6.253c0.429 0.434 0.429 1.134 0 1.566l-6.128 6.253c-0.427 0.435-1.122 0.432-1.55 0-0.429-0.43-0.429-1.131 0-1.565l5.026-5.47z"></path>
+    </symbol>
+      
+  </svg>
+  
+  <!-- SVG icon no-js fallback -->
+  <noscript>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  
+      <symbol id="icon-compass" viewBox="0 0 32 32" aria-labelledby="icon-compass-title icon-compass-desc">
+      <title id="compass-title"></title>
+      <desc id="compass-desc"></desc>
+      <path d="M17 32c-0.072 0-0.144-0.008-0.217-0.024-0.458-0.102-0.783-0.507-0.783-0.976v-15h-15c-0.469 0-0.875-0.326-0.976-0.783s0.129-0.925 0.553-1.123l30-14c0.381-0.178 0.833-0.098 1.13 0.199s0.377 0.749 0.199 1.13l-14 30c-0.167 0.358-0.524 0.577-0.906 0.577zM5.508 14h11.492c0.552 0 1 0.448 1 1v11.492l10.931-23.423-23.423 10.931z"></path>
+      </symbol>
 
-  <div class="site-wrapper">
+      <symbol id="icon-search" viewBox="0 0 32 32" aria-labelledby="icon-search-title icon-search-desc">
+      <title id="search-title"></title>
+      <desc id="search-desc"></desc>
+      <path d="M31.008 27.231l-7.58-6.447c-0.784-0.705-1.622-1.029-2.299-0.998 1.789-2.096 2.87-4.815 2.87-7.787 0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12c2.972 0 5.691-1.081 7.787-2.87-0.031 0.677 0.293 1.515 0.998 2.299l6.447 7.58c1.104 1.226 2.907 1.33 4.007 0.23s0.997-2.903-0.23-4.007zM12 20c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z"></path>
+      </symbol>
+
+      <symbol id="icon-menu" viewBox="0 0 32 32" aria-labelledby="icon-menu-title icon-menu-desc">
+      <title id="menu-title"></title>
+      <desc id="menu-desc"></desc>
+      <path d="M26.24 14.4h-20.48c-0.883 0-0.96 0.715-0.96 1.6s0.077 1.6 0.96 1.6h20.48c0.883 0 0.96-0.715 0.96-1.6s-0.077-1.6-0.96-1.6zM26.24 20.8h-20.48c-0.883 0-0.96 0.715-0.96 1.6s0.077 1.6 0.96 1.6h20.48c0.883 0 0.96-0.715 0.96-1.6s-0.077-1.6-0.96-1.6zM5.76 11.2h20.48c0.883 0 0.96-0.715 0.96-1.6s-0.077-1.6-0.96-1.6h-20.48c-0.883 0-0.96 0.715-0.96 1.6s0.077 1.6 0.96 1.6z"></path>
+      </symbol>
+
+
+      <symbol id="icon-user-plus" viewBox="0 0 32 32" aria-labelledby="icon-user-plus-title icon-user-plus-desc">
+      <title id="icon-user-plus-title"></title>
+      <desc id="icon-user-plus-desc"></desc>
+      <path d="M12 23c0-4.726 2.996-8.765 7.189-10.319 0.509-1.142 0.811-2.411 0.811-3.681 0-4.971 0-9-6-9s-6 4.029-6 9c0 3.096 1.797 6.191 4 7.432v1.649c-6.784 0.555-12 3.888-12 7.918h12.416c-0.271-0.954-0.416-1.96-0.416-3z"></path>
+      <path fill="#333" d="M23 14c-4.971 0-9 4.029-9 9s4.029 9 9 9c4.971 0 9-4.029 9-9s-4.029-9-9-9zM28 24h-4v4h-2v-4h-4v-2h4v-4h2v4h4v2z"></path>
+      </symbol>
+
+      <!-- color mode -->
+      <symbol id="icon-color-mode" viewBox="0 0 24 32" aria-labelledby="icon-color-mode-title icon-color-mode-desc">
+      <title id="icon-color-mode-title"></title>
+      <desc id="icon-color-mode-desc"></desc>
+      <path d="M0 4v24h24v-24h-24zM2 26v-20h20l-20 20z"></path>
+      </symbol>
+
+      <symbol id="icon-home" viewBox="0 0 32 32" aria-labelledby="icon-home-title icon-home-desc">
+      <title id="icon-home-title"></title>
+      <desc id="icon-home-desc"></desc>
+      <path d="M32 19l-6-6v-9h-4v5l-6-6-16 16v1h4v10h10v-6h4v6h10v-10h4z"></path>
+      </symbol>
+
+      <symbol id="icon-price-tag" viewBox="0 0 32 32" aria-labelledby="icon-price-tag-title icon-price-tag-desc">
+      <title id="icon-price-tag-title"></title>
+      <desc id="icon-price-tag-desc"></desc>
+      <path d="M30.5 0h-12c-0.825 0-1.977 0.477-2.561 1.061l-14.879 14.879c-0.583 0.583-0.583 1.538 0 2.121l12.879 12.879c0.583 0.583 1.538 0.583 2.121 0l14.879-14.879c0.583-0.583 1.061-1.736 1.061-2.561v-12c0-0.825-0.675-1.5-1.5-1.5zM23 12c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"></path>
+      </symbol>
+
+      <symbol id="icon-cart" viewBox="0 0 32 32" aria-labelledby="icon-cart-title icon-cart-desc">
+      <title id="icon-cart-title"></title>
+      <desc id="icon-cart-desc"></desc>
+      <path d="M12 29c0 1.657-1.343 3-3 3s-3-1.343-3-3c0-1.657 1.343-3 3-3s3 1.343 3 3z"></path>
+      <path fill="#333" d="M32 29c0 1.657-1.343 3-3 3s-3-1.343-3-3c0-1.657 1.343-3 3-3s3 1.343 3 3z"></path>
+      <path fill="#333" d="M32 16v-12h-24c0-1.105-0.895-2-2-2h-6v2h4l1.502 12.877c-0.915 0.733-1.502 1.859-1.502 3.123 0 2.209 1.791 4 4 4h24v-2h-24c-1.105 0-2-0.895-2-2 0-0.007 0-0.014 0-0.020l26-3.98z"></path>
+      </symbol>
+
+      <symbol id="icon-credit-card" viewBox="0 0 32 32" aria-labelledby="icon-credit-card-title icon-credit-card-desc">
+      <title id="icon-credit-card-title"></title>
+      <desc id="icon-credit-card-desc"></desc>
+      <path d="M29 4h-26c-1.65 0-3 1.35-3 3v18c0 1.65 1.35 3 3 3h26c1.65 0 3-1.35 3-3v-18c0-1.65-1.35-3-3-3zM3 6h26c0.542 0 1 0.458 1 1v3h-28v-3c0-0.542 0.458-1 1-1zM29 26h-26c-0.542 0-1-0.458-1-1v-9h28v9c0 0.542-0.458 1-1 1zM4 20h2v4h-2zM8 20h2v4h-2zM12 20h2v4h-2z"></path>
+      </symbol>
+
+      <symbol id="icon-address-book" viewBox="0 0 32 32" aria-labelledby="icon-address-book-title icon-address-book-desc">
+      <title id="icon-address-book-title"></title>
+      <desc id="icon-address-book-desc"></desc>
+      <path d="M6 0v32h24v-32h-24zM18 8.010c2.203 0 3.99 1.786 3.99 3.99s-1.786 3.99-3.99 3.99-3.99-1.786-3.99-3.99 1.786-3.99 3.99-3.99v0zM24 24h-12v-2c0-2.209 1.791-4 4-4v0h4c2.209 0 4 1.791 4 4v2z"></path>
+      <path fill="#333" d="M2 2h3v6h-3v-6z"></path>
+      <path fill="#333" d="M2 10h3v6h-3v-6z"></path>
+      <path fill="#333" d="M2 18h3v6h-3v-6z"></path>
+      <path fill="#333" d="M2 26h3v6h-3v-6z"></path>
+      </symbol>
+
+      <symbol id="icon-alarm" viewBox="0 0 32 32" aria-labelledby="icon-alarm-title icon-alarm-desc">
+      <title id="icon-alarm-title"></title>
+      <desc id="icon-alarm-desc"></desc>
+      <path d="M16 4c-7.732 0-14 6.268-14 14s6.268 14 14 14 14-6.268 14-14-6.268-14-14-14zM16 29.25c-6.213 0-11.25-5.037-11.25-11.25s5.037-11.25 11.25-11.25c6.213 0 11.25 5.037 11.25 11.25s-5.037 11.25-11.25 11.25zM29.212 8.974c0.501-0.877 0.788-1.892 0.788-2.974 0-3.314-2.686-6-6-6-1.932 0-3.65 0.913-4.747 2.331 4.121 0.851 7.663 3.287 9.96 6.643v0zM12.748 2.331c-1.097-1.418-2.816-2.331-4.748-2.331-3.314 0-6 2.686-6 6 0 1.082 0.287 2.098 0.788 2.974 2.297-3.356 5.838-5.792 9.96-6.643z"></path>
+      <path fill="#333" d="M16 18v-8h-2v10h8v-2z"></path>
+      </symbol>
+
+      <symbol id="icon-user" viewBox="0 0 32 32" aria-labelledby="icon-user-title icon-user-desc">
+      <title id="icon-user-title"></title>
+      <desc id="icon-user-desc"></desc>
+      <path d="M18 22.082v-1.649c2.203-1.241 4-4.337 4-7.432 0-4.971 0-9-6-9s-6 4.029-6 9c0 3.096 1.797 6.191 4 7.432v1.649c-6.784 0.555-12 3.888-12 7.918h28c0-4.030-5.216-7.364-12-7.918z"></path>
+      </symbol>
+
+      <symbol id="icon-stats-bars" viewBox="0 0 32 32" aria-labelledby="icon-stats-bars-title icon-stats-bars-desc">
+      <title id="icon-stats-bars-title"></title>
+      <desc id="icon-stats-bars-desc"></desc>
+      <path d="M0 26h32v4h-32zM4 18h4v6h-4zM10 10h4v14h-4zM16 16h4v8h-4zM22 4h4v20h-4z"></path>
+      </symbol>
+
+      <symbol id="icon-meter" viewBox="0 0 32 32" aria-labelledby="icon-meter-title icon-meter-desc">
+      <title id="icon-meter-title"></title>
+      <desc id="icon-meter-desc"></desc>
+      <path d="M16 2c8.837 0 16 7.163 16 16 0 6.025-3.331 11.271-8.25 14h-15.499c-4.92-2.729-8.25-7.975-8.25-14 0-8.837 7.163-16 16-16zM25.060 27.060c2.42-2.42 3.753-5.637 3.753-9.060h-2.813v-2h2.657c-0.219-1.406-0.668-2.755-1.33-4h-3.327v-2h2.009c-0.295-0.368-0.611-0.722-0.949-1.060-1.444-1.444-3.173-2.501-5.060-3.119v2.178h-2v-2.658c-0.656-0.102-1.324-0.155-2-0.155s-1.344 0.053-2 0.155v2.658h-2v-2.178c-1.887 0.617-3.615 1.674-5.060 3.119-0.338 0.338-0.654 0.692-0.949 1.060h2.009v2h-3.327c-0.662 1.245-1.111 2.594-1.33 4h2.657v2h-2.813c0 3.422 1.333 6.64 3.753 9.060 0.335 0.335 0.685 0.648 1.049 0.94h6.011l1.143-16h1.714l1.143 16h6.011c0.364-0.292 0.714-0.606 1.049-0.94z"></path>
+      </symbol>
+
+      <symbol id="icon-briefcase" viewBox="0 0 32 32" aria-labelledby="icon-briefcase-title icon-briefcase-desc">
+      <title id="icon-briefcase-title"></title>
+      <desc id="icon-briefcase-desc"></desc>
+      <path d="M30 8h-8v-2c0-1.1-0.9-2-2-2h-8c-1.1 0-2 0.9-2 2v2h-8c-1.1 0-2 0.9-2 2v18c0 1.1 0.9 2 2 2h28c1.1 0 2-0.9 2-2v-18c0-1.1-0.9-2-2-2zM12 6.004c0.001-0.001 0.002-0.003 0.004-0.004h7.993c0.001 0.001 0.003 0.002 0.004 0.004v1.996h-8v-1.996zM30 16h-4v3c0 0.55-0.45 1-1 1h-2c-0.55 0-1-0.45-1-1v-3h-12v3c0 0.55-0.45 1-1 1h-2c-0.55 0-1-0.45-1-1v-3h-4v-2h28v2z"></path>
+      </symbol>
+
+      <symbol id="icon-target" viewBox="0 0 32 32" aria-labelledby="icon-target-title icon-target-desc">
+      <title id="icon-target-title"></title>
+      <desc id="icon-target-desc"></desc>
+      <path d="M32 14h-3.154c-0.864-5.57-5.276-9.982-10.846-10.846v-3.154h-4v3.154c-5.57 0.864-9.982 5.276-10.846 10.846h-3.154v4h3.154c0.864 5.57 5.276 9.982 10.846 10.846v3.154h4v-3.154c5.57-0.864 9.982-5.276 10.846-10.846h3.154v-4zM24.776 14h-3.118c-0.603-1.705-1.953-3.056-3.658-3.658v-3.118c3.36 0.765 6.010 3.416 6.776 6.776zM16 18c-1.105 0-2-0.895-2-2s0.895-2 2-2c1.105 0 2 0.895 2 2s-0.895 2-2 2zM14 7.224v3.118c-1.705 0.603-3.056 1.953-3.658 3.658h-3.118c0.765-3.36 3.416-6.010 6.776-6.776zM7.224 18h3.118c0.603 1.705 1.953 3.056 3.658 3.658v3.118c-3.36-0.765-6.010-3.416-6.776-6.776zM18 24.776v-3.118c1.705-0.603 3.056-1.953 3.658-3.658h3.118c-0.765 3.36-3.416 6.010-6.776 6.776z"></path>
+      </symbol>
+
+      <symbol id="icon-tree" viewBox="0 0 32 32" aria-labelledby="icon-tree-title icon-tree-desc">
+      <title id="icon-tree-title"></title>
+      <desc id="icon-tree-desc"></desc>
+      <path d="M30.5 24h-0.5v-6.5c0-1.93-1.57-3.5-3.5-3.5h-8.5v-4h0.5c0.825 0 1.5-0.675 1.5-1.5v-5c0-0.825-0.675-1.5-1.5-1.5h-5c-0.825 0-1.5 0.675-1.5 1.5v5c0 0.825 0.675 1.5 1.5 1.5h0.5v4h-8.5c-1.93 0-3.5 1.57-3.5 3.5v6.5h-0.5c-0.825 0-1.5 0.675-1.5 1.5v5c0 0.825 0.675 1.5 1.5 1.5h5c0.825 0 1.5-0.675 1.5-1.5v-5c0-0.825-0.675-1.5-1.5-1.5h-0.5v-6h8v6h-0.5c-0.825 0-1.5 0.675-1.5 1.5v5c0 0.825 0.675 1.5 1.5 1.5h5c0.825 0 1.5-0.675 1.5-1.5v-5c0-0.825-0.675-1.5-1.5-1.5h-0.5v-6h8v6h-0.5c-0.825 0-1.5 0.675-1.5 1.5v5c0 0.825 0.675 1.5 1.5 1.5h5c0.825 0 1.5-0.675 1.5-1.5v-5c0-0.825-0.675-1.5-1.5-1.5zM6 30h-4v-4h4v4zM18 30h-4v-4h4v4zM14 8v-4h4v4h-4zM30 30h-4v-4h4v4z"></path>
+      </symbol>
+
+      <symbol id="icon-eye" viewBox="0 0 32 32" aria-labelledby="icon-eye-title icon-eye-desc">
+      <title id="icon-eye-title"></title>
+      <desc id="icon-eye-desc"></desc>
+      <path d="M16 6c-6.979 0-13.028 4.064-16 10 2.972 5.936 9.021 10 16 10s13.027-4.064 16-10c-2.972-5.936-9.021-10-16-10zM23.889 11.303c1.88 1.199 3.473 2.805 4.67 4.697-1.197 1.891-2.79 3.498-4.67 4.697-2.362 1.507-5.090 2.303-7.889 2.303s-5.527-0.796-7.889-2.303c-1.88-1.199-3.473-2.805-4.67-4.697 1.197-1.891 2.79-3.498 4.67-4.697 0.122-0.078 0.246-0.154 0.371-0.228-0.311 0.854-0.482 1.776-0.482 2.737 0 4.418 3.582 8 8 8s8-3.582 8-8c0-0.962-0.17-1.883-0.482-2.737 0.124 0.074 0.248 0.15 0.371 0.228v0zM16 13c0 1.657-1.343 3-3 3s-3-1.343-3-3 1.343-3 3-3 3 1.343 3 3z"></path>
+      </symbol>
+
+      <symbol id="icon-info" viewBox="0 0 32 32" aria-labelledby="icon-info-title icon-info-desc">
+      <title id="icon-info-title"></title>
+      <desc id="icon-info-desc"></desc>
+      <path d="M14 9.5c0-0.825 0.675-1.5 1.5-1.5h1c0.825 0 1.5 0.675 1.5 1.5v1c0 0.825-0.675 1.5-1.5 1.5h-1c-0.825 0-1.5-0.675-1.5-1.5v-1z"></path>
+      <path fill="#333" d="M20 24h-8v-2h2v-6h-2v-2h6v8h2z"></path>
+      <path fill="#333" d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM16 29c-7.18 0-13-5.82-13-13s5.82-13 13-13 13 5.82 13 13-5.82 13-13 13z"></path>
+      </symbol>
+
+      <symbol id="icon-cancel-circle" viewBox="0 0 32 32" aria-labelledby="icon-cancel-circle-title icon-cancel-circle-desc">
+      <title id="icon-cancel-circle-title"></title>
+      <desc id="icon-cancel-circle-desc"></desc>
+      <path d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM16 29c-7.18 0-13-5.82-13-13s5.82-13 13-13 13 5.82 13 13-5.82 13-13 13z"></path>
+      <path d="M21 8l-5 5-5-5-3 3 5 5-5 5 3 3 5-5 5 5 3-3-5-5 5-5z"></path>
+      </symbol>
+
+      <symbol id="icon-blocked" viewBox="0 0 32 32" aria-labelledby="icon-blocked-title icon-blocked-desc">
+      <title id="icon-blocked-title"></title>
+      <desc id="icon-blocked-desc"></desc>
+      <path d="M27.314 4.686c-3.022-3.022-7.040-4.686-11.314-4.686s-8.292 1.664-11.314 4.686c-3.022 3.022-4.686 7.040-4.686 11.314s1.664 8.292 4.686 11.314c3.022 3.022 7.040 4.686 11.314 4.686s8.292-1.664 11.314-4.686c3.022-3.022 4.686-7.040 4.686-11.314s-1.664-8.292-4.686-11.314zM28 16c0 2.588-0.824 4.987-2.222 6.949l-16.727-16.727c1.962-1.399 4.361-2.222 6.949-2.222 6.617 0 12 5.383 12 12zM4 16c0-2.588 0.824-4.987 2.222-6.949l16.727 16.727c-1.962 1.399-4.361 2.222-6.949 2.222-6.617 0-12-5.383-12-12z"></path>
+      </symbol>
+
+      <symbol id="icon-arrow-right" viewBox="0 0 32 32" aria-labelledby="icon-arrow-right-title icon-arrow-right-desc">
+      <title id="icon-arrow-right-title"></title>
+      <desc id="icon-arrow-right-desc"></desc>
+      <path d="M19.414 27.414l10-10c0.781-0.781 0.781-2.047 0-2.828l-10-10c-0.781-0.781-2.047-0.781-2.828 0s-0.781 2.047 0 2.828l6.586 6.586h-19.172c-1.105 0-2 0.895-2 2s0.895 2 2 2h19.172l-6.586 6.586c-0.39 0.39-0.586 0.902-0.586 1.414s0.195 1.024 0.586 1.414c0.781 0.781 2.047 0.781 2.828 0z"></path>
+      </symbol>
+
+      <symbol id="icon-circle-right" viewBox="0 0 32 32" aria-labelledby="icon-circle-right-title icon-circle-right-desc">
+      <title id="icon-circle-right-title"></title>
+      <desc id="icon-circle-right-desc"></desc>
+      <path d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM16 29c-7.18 0-13-5.82-13-13s5.82-13 13-13 13 5.82 13 13-5.82 13-13 13z"></path>
+      <path fill="#333" d="M11.086 22.086l2.829 2.829 8.914-8.914-8.914-8.914-2.828 2.828 6.086 6.086z"></path>
+      </symbol>
+
+      <symbol id="icon-checkbox-checked" viewBox="0 0 32 32" aria-labelledby="icon-checkbox-checked-title icon-checkbox-checked-desc">
+      <title id="icon-checkbox-checked-title"></title>
+      <desc id="icon-checkbox-checked-desc"></desc>
+      <path d="M28 0h-24c-2.2 0-4 1.8-4 4v24c0 2.2 1.8 4 4 4h24c2.2 0 4-1.8 4-4v-24c0-2.2-1.8-4-4-4zM14 24.828l-7.414-7.414 2.828-2.828 4.586 4.586 9.586-9.586 2.828 2.828-12.414 12.414z"></path>
+      </symbol>
+
+      <symbol id="icon-checkbox-unchecked" viewBox="0 0 32 32" aria-labelledby="icon-checkbox-unchecked-title icon-checkbox-unchecked-desc">
+      <title id="icon-checkbox-unchecked-title"></title>
+      <desc id="icon-checkbox-unchecked-desc"></desc>
+      <path d="M28 0h-24c-2.2 0-4 1.8-4 4v24c0 2.2 1.8 4 4 4h24c2.2 0 4-1.8 4-4v-24c0-2.2-1.8-4-4-4zM28 28h-24v-24h24v24z"></path>
+      </symbol>
+
+      <symbol id="icon-radio-checked" viewBox="0 0 32 32" aria-labelledby="icon-radio-checked-title icon-radio-checked-desc">
+      <title id="icon-radio-checked-title"></title>
+      <desc id="icon-radio-checked-desc"></desc>
+      <path d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM16 20c-2.209 0-4-1.791-4-4s1.791-4 4-4c2.209 0 4 1.791 4 4s-1.791 4-4 4z"></path>
+      </symbol>
+
+      <symbol id="icon-radio-unchecked" viewBox="0 0 32 32" aria-labelledby="icon-radio-unchecked-title icon-radio-unchecked-desc">
+      <title id="icon-radio-unchecked-title"></title>
+      <desc id="icon-radio-unchecked-desc"></desc>
+      <path d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM16 28c-6.627 0-12-5.373-12-12s5.373-12 12-12c6.627 0 12 5.373 12 12s-5.373 12-12 12z"></path>
+      </symbol>
+
+      <symbol id="icon-share" viewBox="0 0 32 32" aria-labelledby="icon-share-title icon-share-desc">
+      <title id="icon-share-title"></title>
+      <desc id="icon-share-desc"></desc>
+      <path d="M8 20c0 0 1.838-6 12-6v6l12-8-12-8v6c-8 0-12 4.99-12 10zM22 24h-18v-12h3.934c0.315-0.372 0.654-0.729 1.015-1.068 1.374-1.287 3.018-2.27 4.879-2.932h-13.827v20h26v-8.395l-4 2.667v1.728z"></path>
+      </symbol>
+
+      <symbol id="icon-calendar" viewBox="0 0 32 32" aria-labelledby="icon-calendar-title icon-calendar-desc">
+      <title id="icon-calendar-title"></title>
+      <desc id="icon-calendar-desc"></desc>
+      <path d="M12.048 16.961c-0.178 0.257-0.395 0.901-0.652 1.059-0.257 0.157-0.547 0.267-0.869 0.328-0.323 0.062-0.657 0.089-1.002 0.079v1.527h2.467v6.046h1.991v-9.996h-1.584c-0.056 0.381-0.173 0.7-0.351 0.957zM23 8h2c0.553 0 1-0.448 1-1v-6c0-0.552-0.447-1-1-1h-2c-0.553 0-1 0.448-1 1v6c0 0.552 0.447 1 1 1zM7 8h2c0.552 0 1-0.448 1-1v-6c0-0.552-0.448-1-1-1h-2c-0.552 0-1 0.448-1 1v6c0 0.552 0.448 1 1 1zM30 4h-2v5c0 0.552-0.447 1-1 1h-6c-0.553 0-1-0.448-1-1v-5h-8v5c0 0.552-0.448 1-1 1h-6c-0.552 0-1-0.448-1-1v-5h-2c-1.104 0-2 0.896-2 2v24c0 1.104 0.896 2 2 2h28c1.104 0 2-0.896 2-2v-24c0-1.104-0.896-2-2-2zM30 29c0 0.553-0.447 1-1 1h-26c-0.552 0-1-0.447-1-1v-16c0-0.552 0.448-1 1-1h26c0.553 0 1 0.448 1 1v16zM15.985 17.982h4.968c-0.936 1.152-1.689 2.325-2.265 3.705-0.575 1.381-0.638 2.818-0.749 4.312h2.131c0.009-0.666-0.195-1.385-0.051-2.156 0.146-0.771 0.352-1.532 0.617-2.285 0.267-0.752 0.598-1.461 0.996-2.127 0.396-0.667 0.853-1.229 1.367-1.686v-1.742h-7.015v1.979z"></path>
+      </symbol>
+
+      <symbol id="icon-gift" viewBox="0 0 28 32" aria-labelledby="icon-gift-title icon-gift-desc">
+      <title id="icon-gift-title"></title>
+      <desc id="icon-gift-desc"></desc>
+      <path d="M14 30h10v-10h-10v10zM2 30h10v-10h-10v10zM13.992 11.756c0.983-0.109 2.090-0.231 2.73-0.304 2.621-0.292 4.98-2.652 5.271-5.272 0.291-2.617-1.594-4.504-4.209-4.21-2.045 0.229-3.915 1.718-4.785 3.604-0.87-1.887-2.74-3.376-4.784-3.606-2.616-0.292-4.504 1.595-4.21 4.212 0.292 2.62 2.652 4.979 5.271 5.272 0.642 0.072 1.748 0.196 2.731 0.304-0.016 0.132-0.008 0.244-0.008 0.244h2c0 0 0.008-0.112-0.008-0.244zM17.355 4.396c1.414-0.158 2.438 0.861 2.277 2.277-0.156 1.416-1.434 2.692-2.848 2.851-1.418 0.157-2.438-0.862-2.279-2.278s1.436-2.692 2.85-2.85zM9.216 9.524c-1.414-0.158-2.689-1.435-2.848-2.851s0.862-2.436 2.275-2.277c1.416 0.157 2.692 1.434 2.851 2.85s-0.862 2.436-2.278 2.278zM14 12v6h12v-6h-12zM0 18h12v-6h-12v6z"></path>
+      </symbol>
+
+      <symbol id="icon-dots-three-h" viewBox="0 0 32 32" aria-labelledby="icon-dots-three-h-title icon-dots-three-h-desc">
+      <title id="icon-dots-three-h-title"></title>
+      <desc id="icon-dots-three-h-desc"></desc>
+      <path d="M16.002 12.48c-1.944 0-3.522 1.576-3.522 3.52s1.578 3.52 3.522 3.52c1.944 0 3.518-1.576 3.518-3.52s-1.574-3.52-3.518-3.52zM4.802 12.48c-1.944 0-3.522 1.576-3.522 3.52s1.578 3.52 3.522 3.52c1.944 0 3.518-1.578 3.518-3.52s-1.574-3.52-3.518-3.52zM27.202 12.48c-1.944 0-3.522 1.576-3.522 3.52s1.578 3.52 3.522 3.52c1.944 0 3.518-1.576 3.518-3.52s-1.574-3.52-3.518-3.52z"></path>
+      </symbol>
+
+      <symbol id="icon-flag" viewBox="0 0 32 32" aria-labelledby="icon-flag-title icon-flag-desc">
+      <title id="icon-flag-title"></title>
+      <desc id="icon-flag-desc"></desc>
+      <path d="M30.282 8.934c-14.942 21.709-9.827-0.416-22.459 10.171l2.872 11.294h-3.23l-5.864-23.056 2.96-1.062c14.158-10.354 6.765 9.312 25.019 2.006 0.582-0.235 1.048 0.144 0.702 0.646z"></path>
+      </symbol>
+
+      <symbol id="icon-image" viewBox="0 0 32 32" aria-labelledby="icon-image-title icon-image-desc">
+      <title id="icon-image-title"></title>
+      <desc id="icon-image-desc"></desc>
+      <path d="M30.4 3.2h-28.8c-0.885 0-1.6 0.715-1.6 1.6v22.4c0 0.883 0.715 1.6 1.6 1.6h28.8c0.885 0 1.6-0.717 1.6-1.6v-22.4c0-0.883-0.715-1.6-1.6-1.6zM28.8 25.6h-25.6v-19.2h25.6v19.2zM22.904 17.403l-5.17 2.568-6.032-9.762-5.302 12.19h19.2l-2.696-4.997zM21.2 14.4c1.104 0 2-0.896 2-2s-0.896-2-2-2-2 0.896-2 2 0.896 2 2 2z"></path>
+      </symbol>
+
+      <symbol id="icon-location" viewBox="0 0 32 32" aria-labelledby="icon-location-title icon-location-desc">
+      <title id="icon-location-title"></title>
+      <desc id="icon-location-desc"></desc>
+      <path d="M30.987 28.963l-2.187-6.563h-2.4l1.333 6.4h-23.466l1.333-6.4h-2.4l-2.189 6.563c-0.555 1.67 0.429 3.037 2.189 3.037h25.6c1.76 0 2.744-1.366 2.187-3.037zM24 8c0-4.418-3.581-8-8-8s-8 3.582-8 8c0 7.64 8 16 8 16s8-8.36 8-16zM11.68 8.096c0-2.386 1.933-4.318 4.32-4.318s4.32 1.933 4.32 4.318c0 2.387-1.934 4.32-4.32 4.32s-4.32-1.934-4.32-4.32z"></path>
+      </symbol>
+
+      <symbol id="icon-mail" viewBox="0 0 32 32" aria-labelledby="icon-mail-title icon-mail-desc">
+      <title id="icon-mail-title"></title>
+      <desc id="icon-mail-desc"></desc>
+      <path d="M2.518 8.458c0.781 0.419 11.597 6.23 12 6.446s0.925 0.318 1.45 0.318c0.525 0 1.046-0.102 1.45-0.318s11.219-6.027 12-6.446c0.782-0.421 1.522-2.058 0.086-2.058h-27.070c-1.435 0-0.696 1.637 0.085 2.058zM29.781 11.982c-0.888 0.462-11.819 6.158-12.363 6.443s-0.925 0.318-1.45 0.318-0.906-0.034-1.45-0.318-11.413-5.982-12.301-6.445c-0.624-0.326-0.618 0.056-0.618 0.35s0 11.669 0 11.669c0 0.672 0.906 1.6 1.6 1.6h25.6c0.694 0 1.6-0.928 1.6-1.6 0 0 0-11.373 0-11.667s0.006-0.677-0.619-0.35z"></path>
+      </symbol>
+
+      <symbol id="icon-pin" viewBox="0 0 32 32" aria-labelledby="icon-pin-title icon-pin-desc">
+      <title id="icon-pin-title"></title>
+      <desc id="icon-pin-desc"></desc>
+      <path d="M7.638 24.459l-3.368 5.2 0.358 1.701 1.696-0.363 3.366-5.197c-0.358-0.192-0.714-0.397-1.058-0.624-0.349-0.226-0.682-0.467-0.995-0.717zM21.898 22.643c0.022-0.046 0.037-0.098 0.058-0.147 0.085-0.187 0.16-0.374 0.221-0.571 0.010-0.035 0.014-0.070 0.026-0.102 0.062-0.218 0.115-0.432 0.157-0.653 0-0.011 0-0.019 0-0.034 0.312-1.87-0.232-3.957-1.477-5.842l1.776-2.742c2.046 0.261 3.816-0.254 4.667-1.571 1.477-2.277-0.32-6.067-4.008-8.469-3.691-2.403-7.877-2.504-9.35-0.23-0.854 1.318-0.605 3.147 0.469 4.917l-1.779 2.742c-2.222-0.373-4.346-0.026-5.925 1.024-0.010 0.003-0.021 0.006-0.027 0.013-0.184 0.125-0.363 0.262-0.531 0.406-0.027 0.022-0.059 0.043-0.082 0.066-0.157 0.134-0.298 0.285-0.434 0.435-0.032 0.038-0.077 0.072-0.107 0.112-0.17 0.194-0.326 0.398-0.464 0.616-2.214 3.413-0.325 8.578 4.213 11.534 4.541 2.957 10.016 2.582 12.226-0.83 0.139-0.216 0.267-0.442 0.373-0.674zM20.594 6.71c-1.419-0.923-2.112-2.379-1.544-3.258 0.566-0.875 2.178-0.835 3.594 0.088 1.422 0.923 2.109 2.382 1.544 3.258s-2.173 0.835-3.594-0.088z"></path>
+      </symbol>
+
+      <symbol id="icon-chevron-sm" viewBox="0 0 32 32" aria-labelledby="icon-chevron-sm-title icon-chevron-sm-desc">
+      <title id="icon-chevron-sm-title"></title>
+      <desc id="icon-chevron-sm-desc"></desc>
+      <path d="M17.6 16l-5.026-5.472c-0.429-0.432-0.429-1.131 0-1.565 0.429-0.432 1.122-0.432 1.55 0l6.128 6.253c0.429 0.434 0.429 1.134 0 1.566l-6.128 6.253c-0.427 0.435-1.122 0.432-1.55 0-0.429-0.43-0.429-1.131 0-1.565l5.026-5.47z"></path>
+      </symbol>
+
+      <symbol id="icon-open-book" viewBox="0 0 32 32" aria-labelledby="icon-open-book-title icon-open-book-desc">
+      <title id="icon-open-book-title"></title>
+      <desc id="icon-open-book-desc"></desc>
+      <path d="M16.952 8.314l0.714 2.194c0.59-0.506 1.336-0.958 2.306-1.272 0.944-0.307 1.778-0.48 2.531-0.579l-0.688-2.117c-0.762 0.11-1.602 0.288-2.528 0.589-0.925 0.301-1.688 0.72-2.334 1.186zM18.435 12.882l0.714 2.194c0.59-0.506 1.336-0.958 2.306-1.272 0.944-0.307 1.778-0.48 2.531-0.579l-0.688-2.117c-0.762 0.11-1.602 0.288-2.528 0.589-0.925 0.299-1.686 0.718-2.334 1.186zM19.92 17.448l0.714 2.194c0.59-0.506 1.336-0.958 2.306-1.272 0.944-0.307 1.778-0.48 2.531-0.579l-0.688-2.117c-0.762 0.11-1.602 0.288-2.528 0.589-0.926 0.299-1.688 0.72-2.334 1.186zM8.621 20.923l0.688 2.117c0.667-0.362 1.443-0.712 2.387-1.018 0.97-0.315 1.838-0.387 2.613-0.325l-0.714-2.194c-0.798 0.003-1.661 0.112-2.584 0.411-0.926 0.301-1.71 0.65-2.39 1.008zM5.653 11.789l0.688 2.117c0.667-0.362 1.443-0.71 2.387-1.018 0.97-0.315 1.838-0.387 2.613-0.325l-0.712-2.195c-0.798 0.005-1.661 0.112-2.586 0.413-0.926 0.301-1.71 0.65-2.39 1.008zM7.136 16.357l0.688 2.117c0.667-0.362 1.443-0.712 2.387-1.018 0.97-0.315 1.838-0.387 2.613-0.325l-0.712-2.195c-0.798 0.003-1.661 0.112-2.584 0.411-0.926 0.301-1.712 0.651-2.392 1.010zM17.702 2.256c-2.757 0.896-4.197 2.803-4.885 4.094-1.315-0.64-3.6-1.336-6.357-0.44-4.037 1.312-6.35 4.203-6.35 4.203l6.552 20.139c0.202 0.619 1.034 0.763 1.405 0.229 0.798-1.15 2.336-2.653 5.211-3.587 2.749-0.893 4.75 0.086 5.848 0.925 0.435 0.333 1.059 0.096 1.219-0.429 0.403-1.323 1.451-3.264 4.176-4.149 2.878-0.936 5.006-0.622 6.33-0.16 0.616 0.214 1.2-0.387 1-1.006l-6.541-20.15c0 0-3.571-0.979-7.608 0.331zM17.522 24.41c-1.31-0.39-3.042-0.573-5.026 0.070-2.002 0.65-3.403 1.518-4.318 2.246l-5.192-15.971c0.573-0.573 1.899-1.667 4.259-2.434 2.222-0.722 4.045-0.104 5.246 0.605l5.030 15.483zM28.552 20.107c-1.17-0.051-2.814 0.070-4.816 0.722-1.984 0.645-3.277 1.811-4.107 2.896l-5.030-15.483c0.554-1.28 1.664-2.851 3.888-3.573 2.358-0.766 4.075-0.661 4.875-0.534l5.19 15.973z"></path>
+      </symbol>
+
+      <symbol id="icon-triangle-right" viewBox="0 0 32 32" aria-labelledby="icon-triangle-right-title icon-triangle-right-desc">
+      <title id="icon-triangle-right-title"></title>
+      <desc id="icon-triangle-right-desc"></desc>
+      <path d="M24 16l-14.4 8v-16l14.4 8z"></path>
+      </symbol>
+
+      <symbol id="icon-area-graph" viewBox="0 0 32 32" aria-labelledby="icon-area-graph-title icon-area-graph-desc">
+      <title id="icon-area-graph-title"></title>
+      <desc id="icon-area-graph-desc"></desc>
+      <path d="M32 3.2v25.6h-31.488c-0.509 0-0.666-0.334-0.346-0.744l7.15-9.197c0.318-0.41 0.885-0.453 1.262-0.099l2.27 2.134c0.376 0.354 0.915 0.285 1.195-0.154l4.875-7.584c0.28-0.437 0.814-0.499 1.186-0.144l3.474 3.354c0.371 0.36 0.894 0.288 1.158-0.16l8.213-12.456c0.266-0.451 0.65-0.55 1.050-0.55z"></path>
+      </symbol>
+
+      <symbol id="icon-cog" viewBox="0 0 32 32" aria-labelledby="icon-cog-title icon-cog-desc">
+      <title id="icon-cog-title"></title>
+      <desc id="icon-cog-desc"></desc>
+      <path d="M26.853 16c0-1.678 1.034-3 2.587-3.909-0.282-0.934-0.651-1.832-1.107-2.675-1.742 0.456-3.152-0.226-4.338-1.413-1.186-1.184-1.549-2.594-1.093-4.338-0.843-0.456-1.741-0.829-2.675-1.106-0.909 1.552-2.552 2.584-4.227 2.584-1.677 0-3.318-1.032-4.229-2.584-0.936 0.277-1.83 0.65-2.674 1.106 0.456 1.744 0.094 3.154-1.094 4.338-1.184 1.187-2.594 1.869-4.338 1.413-0.456 0.843-0.827 1.741-1.106 2.675 1.552 0.909 2.584 2.23 2.584 3.909 0 1.675-1.032 3.318-2.584 4.229 0.28 0.934 0.65 1.83 1.106 2.675 1.744-0.456 3.154-0.094 4.338 1.091 1.186 1.187 1.55 2.597 1.094 4.338 0.843 0.456 1.739 0.829 2.675 1.109 0.909-1.557 2.552-2.587 4.229-2.587 1.675 0 3.318 1.032 4.229 2.587 0.934-0.282 1.83-0.653 2.675-1.109-0.456-1.741-0.094-3.15 1.093-4.338 1.186-1.184 2.595-1.866 4.338-1.413 0.456-0.843 0.827-1.738 1.107-2.675-1.557-0.91-2.59-2.232-2.59-3.907zM16 21.843c-3.229 0-5.845-2.616-5.845-5.843 0-3.229 2.618-5.846 5.845-5.846 3.229 0 5.843 2.619 5.843 5.846 0 3.229-2.614 5.843-5.843 5.843z"></path>
+      </symbol>
+
+      <symbol id="icon-heart" viewBox="0 0 32 32" aria-labelledby="icon-heart-title icon-heart-desc">
+      <title id="icon-heart-title"></title>
+      <desc id="icon-heart-desc"></desc>
+      <path d="M27.504 6.648c-2.675-2.454-7.013-2.454-9.688 0l-1.816 1.667-1.818-1.667c-2.675-2.454-7.011-2.454-9.686 0-3.010 2.763-3.010 7.232 0 9.994l11.504 10.558 11.504-10.558c3.008-2.762 3.008-7.232 0-9.994z"></path>
+      </symbol>
+
+      <symbol id="icon-list" viewBox="0 0 32 32" aria-labelledby="icon-list-title icon-list-desc">
+      <title id="icon-list-title"></title>
+      <desc id="icon-list-desc"></desc>
+      <path d="M23.040 14.4h-9.28c-0.883 0-0.96 0.715-0.96 1.6s0.077 1.6 0.96 1.6h9.28c0.883 0 0.96-0.715 0.96-1.6s-0.077-1.6-0.96-1.6zM26.24 22.4h-12.48c-0.883 0-0.96 0.715-0.96 1.6s0.077 1.6 0.96 1.6h12.48c0.883 0 0.96-0.715 0.96-1.6s-0.077-1.6-0.96-1.6zM13.76 9.6h12.48c0.883 0 0.96-0.715 0.96-1.6s-0.077-1.6-0.96-1.6h-12.48c-0.883 0-0.96 0.715-0.96 1.6s0.077 1.6 0.96 1.6zM8.64 14.4h-2.88c-0.883 0-0.96 0.715-0.96 1.6s0.077 1.6 0.96 1.6h2.88c0.883 0 0.96-0.715 0.96-1.6s-0.077-1.6-0.96-1.6zM8.64 22.4h-2.88c-0.883 0-0.96 0.715-0.96 1.6s0.077 1.6 0.96 1.6h2.88c0.883 0 0.96-0.715 0.96-1.6s-0.077-1.6-0.96-1.6zM8.64 6.4h-2.88c-0.883 0-0.96 0.715-0.96 1.6s0.077 1.6 0.96 1.6h2.88c0.883 0 0.96-0.715 0.96-1.6s-0.077-1.6-0.96-1.6z"></path>
+      </symbol>
+
+      <symbol id="icon-message" viewBox="0 0 32 32" aria-labelledby="icon-message-title icon-message-desc">
+      <title id="icon-message-title"></title>
+      <desc id="icon-message-desc"></desc>
+      <path d="M28.8 9.6v11.2c0 1.76-1.44 3.2-3.2 3.2h-6.4v4.8l-6.4-4.8h-6.4c-1.762 0-3.2-1.44-3.2-3.2v-11.2c0-1.76 1.438-3.2 3.2-3.2h19.2c1.76 0 3.2 1.44 3.2 3.2z"></path>
+      </symbol>
+
+      <symbol id="icon-new" viewBox="0 0 32 32" aria-labelledby="icon-new-title icon-new-desc">
+      <title id="icon-new-title"></title>
+      <desc id="icon-new-desc"></desc>
+      <path d="M29.904 19.75l-2.763-2.461c-0.8-0.712-0.8-1.878 0-2.59l2.763-2.462c0.8-0.712 0.587-1.374-0.474-1.478l-3.664-0.347c-1.059-0.099-1.632-1.013-1.266-2.026l1.944-5.413c0.365-1.016-0.082-1.384-0.99-0.822l-4.322 2.672c-0.909 0.566-2.085 0.256-2.61-0.682l-1.565-2.794c-0.526-0.941-1.395-0.944-1.931-0.013l-1.454 2.528c-0.539 0.936-1.773 1.333-2.741 0.89l-2.56-1.174c-0.973-0.448-1.717 0.067-1.659 1.146l0.138 2.584c0.059 1.078-0.738 2.187-1.766 2.466l-2.472 0.662c-1.027 0.278-1.216 1.088-0.416 1.8l2.763 2.462c0.8 0.712 0.8 1.878 0 2.59l-2.763 2.462c-0.8 0.712-0.589 1.403 0.469 1.531l3.352 0.406c1.058 0.128 1.646 1.072 1.309 2.098l-1.718 5.213c-0.338 1.026 0.144 1.422 1.069 0.888l3.941-2.282c0.925-0.534 2.17-0.24 2.766 0.653l1.635 2.462c0.595 0.894 1.49 0.846 1.984-0.109l1.438-2.773c0.496-0.957 1.683-1.347 2.637-0.869l2.774 1.387c0.957 0.475 1.691-0.016 1.634-1.091l-0.139-2.587c-0.056-1.078 0.738-2.184 1.77-2.462l2.469-0.666c1.030-0.278 1.219-1.088 0.419-1.8zM17.6 22.4h-3.2v-3.2h3.2v3.2zM17.6 17.6h-3.2v-8h3.2v8z"></path>
+      </symbol>
+
+      <symbol id="icon-share-alternitive" viewBox="0 0 32 32" aria-labelledby="icon-share-alternitive-title icon-share-alternitive-desc">
+      <title id="icon-share-alternitive-title"></title>
+      <desc id="icon-share-alternitive-desc"></desc>
+      <path d="M14.4 20.8h3.2v-14.4h3.2l-4.8-6.4-4.8 6.4h3.2v14.4zM27.2 11.2h-4.8v3.2h3.2v14.4h-19.2v-14.4h3.2v-3.2h-4.8c-0.885 0-1.6 0.715-1.6 1.6v17.6c0 0.883 0.715 1.6 1.6 1.6h22.4c0.885 0 1.6-0.717 1.6-1.6v-17.6c0-0.883-0.715-1.6-1.6-1.6z"></path>
+      </symbol>
+
+      <symbol id="icon-star" viewBox="0 0 32 32" aria-labelledby="icon-star-title icon-star-desc">
+      <title id="icon-star-title"></title>
+      <desc id="icon-star-desc"></desc>
+      <path d="M16 2.080l3.821 10.755h10.259l-8.371 6.317 2.994 11.085-8.702-6.646-8.701 6.646 2.992-11.085-8.373-6.317h10.259l3.822-10.755z"></path>
+      </symbol>
+
+      <symbol id="icon-unread" viewBox="0 0 32 32" aria-labelledby="icon-unread-title icon-unread-desc">
+      <title id="icon-unread-title"></title>
+      <desc id="icon-unread-desc"></desc>
+      <path d="M27.2 4.8c-1.766 0-3.2 1.432-3.2 3.2s1.434 3.2 3.2 3.2 3.2-1.432 3.2-3.2c0-1.768-1.434-3.2-3.2-3.2zM20 6.4h-17.6c-0.442 0-0.8 0.358-0.8 0.8v1.6c0 0.442 0.358 0.8 0.8 0.8h17.6c0.442 0 0.8-0.358 0.8-0.8v-1.6c0-0.442-0.358-0.8-0.8-0.8zM20 14.4h-17.6c-0.442 0-0.8 0.358-0.8 0.8v1.6c0 0.442 0.358 0.8 0.8 0.8h17.6c0.442 0 0.8-0.358 0.8-0.8v-1.6c0-0.442-0.358-0.8-0.8-0.8zM20 22.4h-17.6c-0.442 0-0.8 0.358-0.8 0.8v1.6c0 0.442 0.358 0.8 0.8 0.8h17.6c0.442 0 0.8-0.358 0.8-0.8v-1.6c0-0.442-0.358-0.8-0.8-0.8z"></path>
+      </symbol>
+
+      <symbol id="icon-v-card" viewBox="0 0 32 32" aria-labelledby="icon-v-card-title icon-v-card-desc">
+      <title id="icon-v-card-title"></title>
+      <desc id="icon-v-card-desc"></desc>
+      <path d="M30.4 4.8h-28.8c-0.885 0-1.6 0.715-1.6 1.6v19.2c0 0.883 0.715 1.6 1.6 1.6h28.8c0.885 0 1.6-0.717 1.6-1.6v-19.2c0-0.883-0.715-1.6-1.6-1.6zM20.8 11.2h6.4v1.6h-6.4v-1.6zM17.6 23.685c-0.206-0.163-0.469-0.322-0.846-0.485-1.888-0.813-4.738-2.016-4.738-3.482 0-0.882 0.574-0.594 0.829-2.206 0.106-0.669 0.616-0.011 0.712-1.538 0-0.608-0.278-0.76-0.278-0.76s0.141-0.899 0.197-1.594c0.058-0.725-0.354-2.88-2.043-3.355-0.298-0.301-0.498-0.178 0.413-0.659-1.99-0.094-2.454 0.947-3.514 1.714-0.902 0.672-1.147 1.736-1.102 2.302 0.059 0.693 0.2 1.594 0.2 1.594s-0.28 0.15-0.28 0.758c0.098 1.526 0.608 0.869 0.712 1.538 0.253 1.613 0.83 1.325 0.83 2.206 0 1.466-2.85 2.669-4.738 3.482-0.325 0.141-0.558 0.277-0.754 0.416v-15.616h14.4v15.685zM28.8 17.6h-8v-1.6h8v1.6z"></path>
+      </symbol>
+
+      <symbol id="icon-facebook-circle" viewBox="0 0 32 32" aria-labelledby="icon-facebook-circle-title icon-facebook-circle-desc">
+      <title id="icon-facebook-circle-title"></title>
+      <desc id="icon-facebook-circle-desc"></desc>
+      <path d="M16 0.64c-8.483 0-15.36 6.877-15.36 15.36s6.877 15.36 15.36 15.36 15.36-6.877 15.36-15.36-6.877-15.36-15.36-15.36zM19.638 11.254h-2.309c-0.274 0-0.578 0.36-0.578 0.838v1.667h2.888l-0.437 2.378h-2.451v7.138h-2.725v-7.138h-2.472v-2.378h2.472v-1.398c0-2.006 1.392-3.637 3.302-3.637h2.309v2.53z"></path>
+      </symbol>
+
+      <symbol id="icon-linkedin-circle" viewBox="0 0 32 32" aria-labelledby="icon-linkedin-circle-title icon-linkedin-circle-desc">
+      <title id="icon-linkedin-circle-title"></title>
+      <desc id="icon-linkedin-circle-desc"></desc>
+      <path d="M16 0.64c-8.483 0-15.36 6.877-15.36 15.36s6.877 15.36 15.36 15.36 15.36-6.877 15.36-15.36-6.877-15.36-15.36-15.36zM12.24 22.366h-3.11v-10.010h3.11v10.010zM10.666 11.128c-0.982 0-1.618-0.696-1.618-1.557 0-0.878 0.654-1.554 1.658-1.554s1.618 0.675 1.637 1.554c0 0.861-0.634 1.557-1.677 1.557zM23.6 22.366h-3.11v-5.547c0-1.291-0.451-2.168-1.576-2.168-0.859 0-1.37 0.594-1.595 1.165-0.083 0.203-0.104 0.491-0.104 0.778v5.771h-3.112v-6.816c0-1.25-0.040-2.294-0.082-3.194h2.702l0.142 1.39h0.062c0.41-0.653 1.413-1.616 3.091-1.616 2.046 0 3.581 1.371 3.581 4.318v5.918z"></path>
+      </symbol>
+
+      <symbol id="icon-twitter-circle" viewBox="0 0 32 32" aria-labelledby="icon-twitter-circle-title icon-twitter-circle-desc">
+      <title id="icon-twitter-circle-title"></title>
+      <desc id="icon-twitter-circle-desc"></desc>
+      <path d="M16 0.64c-8.483 0-15.36 6.877-15.36 15.36s6.877 15.36 15.36 15.36 15.36-6.877 15.36-15.36-6.877-15.36-15.36-15.36zM22.248 13.222c0.006 0.131 0.008 0.262 0.008 0.39 0 4-3.042 8.61-8.606 8.61-1.709 0-3.299-0.499-4.637-1.36 0.235 0.029 0.477 0.040 0.722 0.040 1.418 0 2.722-0.482 3.757-1.294-1.323-0.026-2.44-0.899-2.826-2.099 0.184 0.034 0.373 0.053 0.568 0.053 0.275 0 0.544-0.037 0.797-0.106-1.384-0.278-2.427-1.501-2.427-2.966v-0.037c0.408 0.226 0.875 0.363 1.371 0.379-0.813-0.544-1.346-1.469-1.346-2.52 0-0.554 0.149-1.075 0.41-1.522 1.493 1.83 3.72 3.034 6.235 3.163-0.053-0.222-0.078-0.453-0.078-0.691 0-1.669 1.354-3.026 3.026-3.026 0.869 0 1.656 0.368 2.208 0.957 0.69-0.138 1.336-0.387 1.92-0.734-0.226 0.706-0.704 1.299-1.33 1.675 0.613-0.075 1.195-0.237 1.738-0.478-0.405 0.606-0.918 1.141-1.509 1.566z"></path>
+      </symbol>
+
+      <symbol id="icon-youtube-circle" viewBox="0 0 32 32" aria-labelledby="icon-youtube-circle-title icon-youtube-circle-desc">
+      <title id="icon-youtube-circle-title"></title>
+      <desc id="icon-youtube-circle-desc"></desc>
+      <path d="M18.565 15.733l-3.594-1.677c-0.314-0.146-0.571 0.018-0.571 0.365v3.158c0 0.347 0.258 0.51 0.571 0.365l3.592-1.677c0.315-0.147 0.315-0.387 0.002-0.534zM16 0.64c-8.483 0-15.36 6.877-15.36 15.36s6.877 15.36 15.36 15.36 15.36-6.877 15.36-15.36-6.877-15.36-15.36-15.36zM16 22.24c-7.862 0-8-0.709-8-6.24s0.138-6.24 8-6.24 8 0.709 8 6.24-0.138 6.24-8 6.24z"></path>
+      </symbol>
+
+      <symbol id="icon-locked" viewBox="0 0 32 32" aria-labelledby="icon-locked-title icon-locked-desc">
+      <title id="icon-locked-title"></title>
+      <desc id="icon-locked-desc"></desc>
+      <path d="M4 31v-16h3v-5c0-4.418 3.581-8 8-8h1c4.418 0 8 3.582 8 8v5h3v16h-23zM14.744 22.787l-0.744 5.213h3l-0.745-5.213c0.729-0.298 1.245-1.013 1.245-1.85 0-1.104-0.896-2-2-2-1.105 0-2 0.896-2 2 0 0.837 0.515 1.552 1.244 1.85zM21 10.5c0-3.038-2.463-5.5-5.5-5.5-3.038 0-5.5 2.462-5.5 5.5v4.5h11v-4.5z"></path>
+      </symbol>
+
+      <symbol id="icon-grid" viewBox="0 0 32 32" aria-labelledby="icon-grid-title icon-grid-desc">
+      <title id="icon-grid-title"></title>
+      <desc id="icon-grid-desc"></desc>
+      <path d="M8 12h4v-4h-4v4zM14 12h4v-4h-4v4zM20 8v4h4v-4h-4zM8 18h4v-4h-4v4zM14 18h4v-4h-4v4zM20 18h4v-4h-4v4zM8 24h4v-4h-4v4zM14 24h4v-4h-4v4zM20 24h4v-4h-4v4z"></path>
+      </symbol>
+
+      <symbol id="icon-grid-sm" viewBox="0 0 32 32" aria-labelledby="icon-grid-sm-title icon-grid-sm-desc">
+      <title id="icon-grid-sm-title"></title>
+      <desc id="icon-grid-sm-desc"></desc>
+      <path d="M8 15h7v-7h-7v7zM17 8v7h7v-7h-7zM17 24h7v-7h-7v7zM8 24h7v-7h-7v7z"></path>
+      </symbol>
+
+      <symbol id="icon-equalizer" viewBox="0 0 30 32" aria-labelledby="icon-equalizer-title icon-equalizer-desc">
+      <title id="icon-equalizer-title"></title>
+      <desc id="icon-equalizer-desc"></desc>
+      <path d="M18.432 19.552v3.584h-1.76v5.344q0 0.736-0.544 1.28t-1.248 0.544-1.248-0.544-0.544-1.28v-5.344h-1.792v-3.584h1.792v-16.096q0-0.768 0.544-1.248t1.216-0.512q0.768 0 1.312 0.512t0.512 1.248v16.096h1.76zM29.152 8.832v3.584h-1.76v16.064q0 0.736-0.512 1.28t-1.312 0.544q-0.736 0-1.248-0.544t-0.512-1.28v-16.064h-1.792v-3.584h1.792v-5.376q0-0.768 0.512-1.248t1.248-0.512 1.312 0.512 0.512 1.248v5.376h1.76zM7.712 12.416v3.552h-1.76v12.512q0 0.736-0.512 1.28t-1.28 0.544q-0.736 0-1.248-0.544t-0.544-1.28v-12.512h-1.792v-3.552h1.792v-8.96q0-0.768 0.512-1.248t1.28-0.512 1.28 0.512 0.512 1.248v8.96h1.76z"></path>
+      </symbol>
+
+      <symbol id="icon-caret" viewBox="0 0 18 32" aria-labelledby="icon-caret-title icon-caret-desc">
+      <title id="icon-caret-title"></title>
+      <desc id="icon-caret-desc"></desc>
+      <path d="M18.286 12.571q0 0.464-0.339 0.804l-8 8q-0.339 0.339-0.804 0.339t-0.804-0.339l-8-8q-0.339-0.339-0.339-0.804t0.339-0.804 0.804-0.339h16q0.464 0 0.804 0.339t0.339 0.804z"></path>
+      </symbol>
+
+      </svg>
+  </noscript>
 
     <header class="site-header fixed-top">
       <nav class="navbar navbar-inverse navbar-toggleable-md main-menu" role="navigation">
         <div class="container">
           <!-- logo -->
-          <a class="navbar-brand" href="index.html"><img src="images/concordus-logo-white-h.svg" alt="Concordus Applications" /></a>
+          <a class="navbar-brand" href="index.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="2445 55 288.36 62.597"><defs><style>.cls-1 { fill: #ccbe97; } .cls-2 { fill: #39909a; } .cls-3 { fill: #956b51; } .cls-4 { fill: #00a2e1; } .cls-5 { fill: #7eb963; } .cls-6 { fill: #ec4644; } .cls-7 { fill: #a0afd4; } .cls-8 { fill: #f6be1e; } .cls-9 { fill: none; stroke: #abacac; stroke-miterlimit: 10; stroke-width: 0.433px; } .cls-10 { fill: #fff; }</style></defs><g id="Group_154"><g id="Group_131"><path id="Path_232" class="cls-1" d="M71.16 7.613h1.088v-5.438a2.166 2.166 0 0 0-2.176-2.175h-11a2.166 2.166 0 0 0-2.172 2.175v11.118a2.166 2.166 0 0 0 2.175 2.175h5.559v-1.208a6.525 6.525 0 0 1 6.526-6.647z" transform="translate(2388.221 55)"/><path id="Path_233" class="cls-2" d="M58.975 19.4a2.166 2.166 0 0 0-2.175 2.175v11a2.166 2.166 0 0 0 2.175 2.175h5.559v-15.35z" transform="translate(2388.2 59.044)"/><path id="Path_234" class="cls-3" d="M96.967 46.592h-.967v5.68a2.166 2.166 0 0 0 2.175 2.175h11a2.166 2.166 0 0 0 2.175-2.175v-11a2.166 2.166 0 0 0-2.175-2.175h-5.68v1.088a6.473 6.473 0 0 1-6.528 6.407z" transform="translate(2396.371 63.15)"/><path id="Path_235" class="cls-4" d="M76.3 50.959a2.166 2.166 0 0 0 2.175 2.175h11a2.166 2.166 0 0 0 2.175-2.175v-5.559h-15.35z" transform="translate(2392.265 64.463)"/><path id="Path_236" class="cls-5" d="M64.534 40.088v-1.088h-5.559a2.166 2.166 0 0 0-2.175 2.175v11.118a2.166 2.166 0 0 0 2.175 2.175h11a2.166 2.166 0 0 0 2.175-2.175v-5.559h-1.09a6.765 6.765 0 0 1-6.526-6.646z" transform="translate(2388.2 63.129)"/><path id="Path_237" class="cls-6" d="M103.492 14.26v1.208h5.68a2.166 2.166 0 0 0 2.175-2.175v-11.118a2.166 2.166 0 0 0-2.175-2.175h-11a2.166 2.166 0 0 0-2.172 2.175v5.438h.967a6.6 6.6 0 0 1 6.525 6.647z" transform="translate(2396.371 55)"/><path id="Path_238" class="cls-7" d="M107.88 34.847a2.166 2.166 0 0 0 2.175-2.175v-11a2.166 2.166 0 0 0-2.175-2.172h-5.68v15.468h5.68z" transform="translate(2397.663 59.065)"/><path id="Path_239" class="cls-8" d="M91.747 2.175a2.166 2.166 0 0 0-2.175-2.175h-11a2.166 2.166 0 0 0-2.172 2.175v5.438h15.468v-5.438z" transform="translate(2392.286 55)"/><path id="Path_240" class="cls-9" d="M104.97 22.131h5.438v-7.976h-5.438a2.166 2.166 0 0 1-2.17-2.175v-5.68h-8.222v5.68a2.166 2.166 0 0 1-2.178 2.175h-11a2.166 2.166 0 0 1-2.175-2.175v-5.68h-8.1v5.68a2.166 2.166 0 0 1-2.175 2.175h-5.55v7.976h5.559a2.166 2.166 0 0 1 2.175 2.175v11a2.166 2.166 0 0 1-2.175 2.175h-5.559v8.338h5.559a2.166 2.166 0 0 1 2.175 2.175v5.438h8.1v-5.441a2.166 2.166 0 0 1 2.175-2.175h11a2.166 2.166 0 0 1 2.175 2.175v5.438h8.216v-5.438a2.166 2.166 0 0 1 2.175-2.175h5.438v-8.216h-5.443a2.166 2.166 0 0 1-2.175-2.175v-11a2.2 2.2 0 0 1 2.175-2.294zm-10.513 13.051a2.166 2.166 0 0 1-2.175 2.175h-11a2.166 2.166 0 0 1-2.175-2.175v-11a2.166 2.166 0 0 1 2.175-2.175h11a2.166 2.166 0 0 1 2.175 2.175z" transform="translate(2389.576 56.313)"/></g><path id="Path_241" class="cls-10" d="M15.468 71.721c-.363-2.779-2.779-3.988-5.438-3.988-5.921 0-7.734 5.438-7.734 10.151s1.813 10.151 7.734 10.151c2.538 0 5.2-1.329 5.68-4.23h2.3a7.821 7.821 0 0 1-7.976 6.163c-7.013.001-10.034-5.679-10.034-12.084s3.021-12.084 10.03-12.084c3.746 0 7.372 1.692 7.734 5.921z" transform="translate(2387) translate(146.36 1.321)"/><path id="Path_242" class="cls-10" d="M2565.385 91.29c-6.646 0-10.393-4.834-10.393-12.084s3.746-12.085 10.393-12.085 10.393 4.834 10.393 12.084-3.747 12.085-10.393 12.085zm0-1.934c5.8 0 8.1-5.075 8.1-10.151s-2.3-10.151-8.1-10.151-8.1 5.075-8.1 10.151 2.299 10.151 8.1 10.151z"/><path id="Path_243" class="cls-10" d="M2580.852 67.604h2.417l12.81 20.423h.121v-20.423h2.052v23.2h-2.657l-12.568-20.058h-.121v20.058h-2.054z"/><path id="Path_244" class="cls-10" d="M73.168 71.721c-.363-2.779-2.779-3.988-5.438-3.988-5.921.001-7.73 5.439-7.73 10.151s1.813 10.151 7.734 10.151c2.538 0 5.2-1.329 5.68-4.23h2.3a7.821 7.821 0 0 1-7.976 6.163c-7.009 0-10.03-5.68-10.03-12.084s3.013-12.084 10.022-12.084c3.746 0 7.372 1.692 7.734 5.921z" transform="translate(2387) translate(158.388 1.321)"/><path id="Path_245" class="cls-10" d="M2635.112 91.29c-6.646 0-10.393-4.834-10.393-12.084s3.746-12.085 10.393-12.085 10.393 4.834 10.393 12.084-3.626 12.085-10.393 12.085zm0-1.934c5.8 0 8.1-5.075 8.1-10.151s-2.3-10.151-8.1-10.151-8.1 5.075-8.1 10.151 2.299 10.151 8.1 10.151z"/><path id="Path_246" class="cls-10" d="M99.454 89.4h-2.054v-23.2h7.613a9.283 9.283 0 0 1 5.438 1.208 5.357 5.357 0 0 1 2.417 4.834c0 2.538-1.813 4.35-4.471 4.955v.121c3.021.483 3.625 2.538 3.867 5.2.363 3.746.242 5.559 1.208 6.888h-2.417a16.244 16.244 0 0 1-.846-4.834c-.483-5.317-.846-6.284-5.075-6.284h-5.8v11.112zm4.471-12.93c3.021 0 6.646-.242 6.646-4.109 0-4.471-4.23-4.109-6.4-4.109h-4.717v8.338h4.471z" transform="translate(2387) translate(166.663 1.404)"/><path id="Path_247" class="cls-10" d="M2678.374 67.604c7.613 0 11.964 3.867 11.964 11.6s-4.35 11.6-11.964 11.6h-6.284v-23.2zm.483 21.269c6.526 0 9.184-3.867 9.184-9.668 0-6.888-3.988-9.909-10.634-9.668h-3.263v19.336z"/><path id="Path_248" class="cls-10" d="M2697.588 67.604v14.985c.121 4.23 2.538 6.767 6.4 6.767s6.284-2.538 6.4-6.767v-14.985h2.054v15.106c-.121 4.955-2.9 8.7-8.459 8.7-5.68 0-8.459-3.625-8.459-8.7v-15.106z"/><path id="Path_249" class="cls-10" d="M159.288 89.99a6.655 6.655 0 0 1-6.888-6.526h2.3c.121 3.625 2.659 4.592 5.8 4.592 2.659 0 5.559-1.571 5.559-4.471 0-2.3-1.692-3.384-3.625-4.109-3.746-1.208-9.547-2.417-9.547-7.492 0-4.109 3.746-6.284 7.372-6.284 3.021 0 7.009 1.088 7.613 5.559h-2.3c-.121-2.9-2.659-3.625-5.075-3.625s-5.438 1.208-5.438 4.109c0 6.646 13.172 3.625 13.172 11.6.12 5.197-4.231 6.647-8.943 6.647z" transform="translate(2387) translate(178.127 1.3)"/><path id="Path_250" class="cls-10" d="M2 98.8a.663.663 0 0 0 .725-.483 4.991 4.991 0 0 0 .483-1.088l2.9-7.13h.363l2.9 6.888.725 1.45a.731.731 0 0 0 .725.363v.363h-4.229v-.363c.483 0 .725 0 .846-.121.121 0 .242-.242.242-.363a.914.914 0 0 0-.121-.483c0-.121-.121-.242-.121-.483l-.363-.85h-2.9a3.271 3.271 0 0 0-.363.967 2.126 2.126 0 0 0-.121.725.32.32 0 0 0 .363.363 4.273 4.273 0 0 0 .725.121v.363h-2.779zm4.834-2.779l-1.209-3.021h-.125l-1.2 3.021z" transform="translate(2387) translate(146.777 6.386)"/><path id="Path_251" class="cls-10" d="M17.321 98.78a1.156 1.156 0 0 0 .846-.242 1.562 1.562 0 0 0 .242-.967v-5.8a1.562 1.562 0 0 0-.242-.967 1.408 1.408 0 0 0-.846-.242v-.362h4.23a5 5 0 0 1 2.538.483 1.908 1.908 0 0 1 .846 1.813 2.042 2.042 0 0 1-.363 1.208 2.853 2.853 0 0 1-1.088.967 4.293 4.293 0 0 1-1.208.242h-1.813v2.417a1.562 1.562 0 0 0 .242.967 1.408 1.408 0 0 0 .846.242v.361h-4.351v-.12zm4.713-4.35a2.016 2.016 0 0 0 .6-1.692 4.507 4.507 0 0 0-.242-1.45 1.269 1.269 0 0 0-1.088-.6.906.906 0 0 0-.6.121.444.444 0 0 0-.121.363v3.5a3.471 3.471 0 0 0 1.451-.242z" transform="translate(2387) translate(149.946 6.407)"/><path id="Path_252" class="cls-10" d="M31.521 98.78a1.156 1.156 0 0 0 .846-.242 1.562 1.562 0 0 0 .242-.967v-5.8a1.562 1.562 0 0 0-.242-.967 1.408 1.408 0 0 0-.846-.242v-.362h4.23a5 5 0 0 1 2.538.483 1.908 1.908 0 0 1 .846 1.813 2.042 2.042 0 0 1-.363 1.208 2.853 2.853 0 0 1-1.088.967 4.293 4.293 0 0 1-1.208.242h-1.813v2.417a1.562 1.562 0 0 0 .242.967 1.408 1.408 0 0 0 .846.242v.361h-4.351v-.12zm4.713-4.35a2.016 2.016 0 0 0 .6-1.692 4.507 4.507 0 0 0-.242-1.45 1.269 1.269 0 0 0-1.088-.6.906.906 0 0 0-.6.121.444.444 0 0 0-.121.363v3.5a3.471 3.471 0 0 0 1.451-.242z" transform="translate(2387) translate(152.906 6.407)"/><path id="Path_253" class="cls-10" d="M45.621 98.738c.363 0 .6 0 .725-.121a.731.731 0 0 0 .363-.725v-6.284a.731.731 0 0 0-.363-.725c-.121-.121-.363-.121-.725-.121v-.362h4.592v.363a2.413 2.413 0 0 0-1.088.237 1.562 1.562 0 0 0-.242.967v6.163a.923.923 0 0 0 .242.6c.121.121.483.121.846.121a3.294 3.294 0 0 0 1.934-.483 4.015 4.015 0 0 0 1.329-2.054h.366l-.483 2.9h-7.617v-.483z" transform="translate(2387) translate(155.845 6.449)"/><path id="Path_254" class="cls-10" d="M60.4 98.738a1.792 1.792 0 0 0 .846-.121.731.731 0 0 0 .363-.725v-6.284a.731.731 0 0 0-.363-.725c-.121-.121-.483-.121-.846-.121v-.362h4.592v.363a6.814 6.814 0 0 0-.846.121.731.731 0 0 0-.363.725v6.284a.731.731 0 0 0 .363.725 1.872 1.872 0 0 0 .967.242v.363h-4.592v-.483z" transform="translate(2387) translate(158.95 6.449)"/><path id="Path_255" class="cls-10" d="M78.584 90.463a5.339 5.339 0 0 0 .967.363c.121 0 .242-.121.363-.242s.121-.242.242-.363h.244v3.021h-.363a8.915 8.915 0 0 0-.967-1.571 2.7 2.7 0 0 0-2.054-1.088 1.874 1.874 0 0 0-1.816 1.088 7.045 7.045 0 0 0-.6 3.021 6.091 6.091 0 0 0 .363 2.3 2.321 2.321 0 0 0 2.3 1.692 2.968 2.968 0 0 0 1.813-.6 8.816 8.816 0 0 0 1.208-1.088l.363.363a5.679 5.679 0 0 1-1.329 1.208 3.979 3.979 0 0 1-2.3.725 4.837 4.837 0 0 1-3.268-1.092 4.216 4.216 0 0 1-1.45-3.384 5.042 5.042 0 0 1 1.329-3.5 4.28 4.28 0 0 1 3.142-1.216 4.415 4.415 0 0 1 1.813.363z" transform="translate(2387) translate(161.431 6.386)"/><path id="Path_256" class="cls-10" d="M87.5 98.8a.663.663 0 0 0 .725-.483 4.992 4.992 0 0 0 .483-1.088l2.9-7.13h.363l2.9 6.888.725 1.45a.731.731 0 0 0 .725.363v.363h-4.23v-.363c.483 0 .725 0 .846-.121.121 0 .242-.242.242-.363a.914.914 0 0 0-.121-.483c0-.121-.121-.242-.121-.483l-.363-.846h-2.9a3.271 3.271 0 0 0-.363.967 2.126 2.126 0 0 0-.121.725.32.32 0 0 0 .363.363 4.274 4.274 0 0 0 .725.121v.363h-2.657v-.243zm4.955-2.779l-1.209-3.021h-.121l-1.208 3.021z" transform="translate(2387) translate(164.599 6.386)"/><path id="Path_257" class="cls-10" d="M102.1 90.3h7.855v2.659h-.363a2.4 2.4 0 0 0-1.088-1.934 2.617 2.617 0 0 0-1.45-.242v6.888a1.562 1.562 0 0 0 .242.967 1.74 1.74 0 0 0 1.088.242v.363h-4.592v-.363a.968.968 0 0 0 1.208-1.208v-6.889a4.507 4.507 0 0 0-1.45.242 2.4 2.4 0 0 0-1.088 1.934h-.362z" transform="translate(2387) translate(167.643 6.428)"/><path id="Path_258" class="cls-10" d="M116.8 98.738a1.792 1.792 0 0 0 .846-.121.731.731 0 0 0 .363-.725v-6.284a.731.731 0 0 0-.363-.725c-.121-.121-.483-.121-.846-.121v-.362h4.592v.363a6.814 6.814 0 0 0-.846.121.731.731 0 0 0-.363.725v6.284a.731.731 0 0 0 .363.725 1.872 1.872 0 0 0 .967.242v.363h-4.592v-.483z" transform="translate(2387) translate(170.707 6.449)"/><path id="Path_259" class="cls-10" d="M136.655 91.412a4.547 4.547 0 0 1 1.329 3.384 4.747 4.747 0 0 1-1.329 3.384 4.462 4.462 0 0 1-3.263 1.329 4.216 4.216 0 0 1-3.384-1.45 4.279 4.279 0 0 1-1.208-3.142 4.747 4.747 0 0 1 1.329-3.384 4.547 4.547 0 0 1 3.384-1.329 4 4 0 0 1 3.142 1.208zm-1.329 5.8a7.087 7.087 0 0 0 .242-2.417 7.239 7.239 0 0 0-.6-3.142 1.823 1.823 0 0 0-1.692-1.088 2.147 2.147 0 0 0-2.054 1.813 7.087 7.087 0 0 0-.242 2.417 12.467 12.467 0 0 0 .242 2.417 2.03 2.03 0 0 0 2.054 1.692 2.057 2.057 0 0 0 2.05-1.692z" transform="translate(2387) translate(173.208 6.404)"/><path id="Path_260" class="cls-10" d="M144.5 98.78a1.562 1.562 0 0 0 .967-.242 1.3 1.3 0 0 0 .242-.725v-6.163a7.231 7.231 0 0 0-.725-.846.444.444 0 0 0-.363-.121v-.363h2.779l4.471 5.438h.121v-3.866a1.872 1.872 0 0 0-.242-.967c-.121-.242-.483-.363-.967-.363v-.362h2.779v.363c-.363.121-.725.121-.846.242a1.022 1.022 0 0 0-.242.725v7.734h-.363l-5.8-6.888h-.121v5.075c0 .363 0 .725.121.846.121.242.483.363 1.088.483v.363h-2.9z" transform="translate(2387) translate(176.481 6.407)"/><path id="Path_261" class="cls-10" d="M160.1 96.042h.363a4.554 4.554 0 0 0 .967 2.175 2 2 0 0 0 1.571.6 1.273 1.273 0 0 0 1.208-.483 1.607 1.607 0 0 0 .363-.967 1.372 1.372 0 0 0-.363-.967 3.688 3.688 0 0 0-1.088-.6l-.846-.363a4.044 4.044 0 0 1-1.692-1.208 2.228 2.228 0 0 1-.483-1.571 2.9 2.9 0 0 1 .725-1.813 2.344 2.344 0 0 1 2.054-.845 4.344 4.344 0 0 1 1.329.242 3.9 3.9 0 0 1 .725.242c.121 0 .242 0 .242-.121s.121-.242.121-.363h.363v2.9h-.359a4.465 4.465 0 0 0-.846-1.692 2.127 2.127 0 0 0-1.571-.725 1.189 1.189 0 0 0-.967.363 1.1 1.1 0 0 0-.363.846 1.372 1.372 0 0 0 .363.967 9.563 9.563 0 0 0 1.571.967l.967.483a3.337 3.337 0 0 1 .967.725 2.46 2.46 0 0 1 .725 1.813 2.665 2.665 0 0 1-.725 1.813 2.953 2.953 0 0 1-2.417.846 2.359 2.359 0 0 1-.846-.121 3.074 3.074 0 0 1-.846-.242l-.242-.121h-.242c-.121 0-.242 0-.242.121s-.121.242-.121.363h-.365v-3.264z" transform="translate(2387) translate(179.732 6.365)"/></g></svg></a>
           <!-- toggle button -->
           <button class="navbar-toggler navbar-toggler-right toggle-button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
             <noscript>
@@ -372,8 +759,7 @@
               <li><a href="iaas.html">Integration as a Service</a></li>
               <li><a href="enterprise-mobile-crm.html">Enterprise Mobile CRM</a></li>
               <!--<li><a href="offerings.html">Offerings</a></li>-->
-            <li><a href="oproduct-technologies.html">Product Technologies</a></li>
-              
+              <li><a href="oproduct-technologies.html">Product Technologies</a></li>              
             </ul>
           </nav>      
           <!-- nav list -->
@@ -424,7 +810,6 @@
             </div>
             <p class="mb-0 text-sm">&copy; 2017 Concordus Applications. All rights reserved.</p>
           </div>
-
         </section>
       </div>
     </footer>
