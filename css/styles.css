@@ -724,7 +724,8 @@ input[type="button"].btn-block {
     height: auto;
     margin: 0; }
   .form-trans input:focus {
-    background: transparent; }
+    background: transparent;
+    color: #FFF; }
   .form-trans button {
     padding-left: 0; }
 
