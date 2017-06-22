@@ -673,9 +673,7 @@ input[type="button"].btn-block {
   height: 0;
   padding-bottom: 56.25%;
   width: 100%; }
-  .media-wrap > figure,
-  .media-wrap > div,
-  .media-wrap > iframe {
+  .media-wrap > * {
     display: inline-block;
     position: absolute;
     margin: 0;
@@ -959,17 +957,32 @@ input[type="button"].btn-block {
 @media (min-width: 40em) {
   .card-row {
     flex-direction: row; }
-    .card-row > * {
-      width: 35%; }
     .card-row .card-block {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 10%; }
+      padding: 10%;
+      width: 35%; }
+    .card-row .media-item {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      width: 40%; }
     .card-row .card-text + .card-text {
       margin-bottom: 20%; }
     .card-row .btn {
       align-self: flex-start; } }
+  @media (min-width: 40em) and (min-width: 40em) and (max-width: 58em) {
+    .card-row .media-item > * {
+      display: flex;
+      align-items: stretch; }
+      .card-row .media-item > * > * {
+        object-fit: cover;
+        object-position: right;
+        max-height: 40em; } }
+  @media (min-width: 40em) and (min-width: 100em) {
+    .card-row .media-item {
+      width: auto; } }
 
 @media (min-width: 40em) {
   .card-row-rev {

@@ -16,16 +16,19 @@
       @include flex-d-row;
       //@include ai-center;
 
-      > * {
-        //@include as-center;
-        @include w-35;
-      }
-
       .card-block {
         @include flex;
         @include flex-d-col;
         @include jc-center;
         padding: 10%;
+        @include w-35;
+      }
+
+      .media-item {
+        @include flex;
+        @include flex-d-col;
+        @include ai-end;
+        @include w-40;
       }
 
       .card-text + .card-text {
@@ -34,6 +37,28 @@
 
       .btn {
         @include as-start;
+      }
+
+      @media (min-width: 40em) and (max-width: 58em) {
+        .media-item {
+          > * {
+            display: flex;
+            align-items: stretch;            
+            > * {
+              object-fit: cover;
+              object-position: right;
+              max-height: 40em;
+            }
+          }
+        }
+      }
+
+      @media (min-width: 100em) {
+
+        .media-item {
+          @include w-a;
+        }
+
       }
 
     }
