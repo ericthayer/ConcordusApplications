@@ -20,6 +20,20 @@
   @supports (grid-gap: 0) {
     grid-row: 4 / 4;
   }
+  
+  @media (max-width: 33em) {
+    .logo {
+      //max-width: 25em;
+      @include mr-a;
+      @include ml-a;
+    }
+    .search {
+      @include flex-grow-1;
+      @include mw-15em;
+      @include mr-a;
+      @include ml-a;
+    }
+  }
 }
 
 .footer-nav {
@@ -51,11 +65,13 @@
     }
   }
 
-  // 450
   @media (min-width: 42em) {
     nav {
       //flex-basis: 17%;
       @include mb-4;
+      &:not(:last-child) {
+        padding-right: calc(1vw + 4em);
+      }
     }
   }
   @media (min-width: 55em) {

@@ -1055,7 +1055,10 @@ input[type="button"].btn-block {
   border-radius: 0; }
 
 .card-row .card-block {
-  padding: 4em; }
+  padding-top: 4em;
+  padding-bottom: 4em;
+  padding-right: 3em;
+  padding-left: 3em; }
 
 @media (min-width: 40em) {
   .card-row {
@@ -1194,6 +1197,15 @@ input[type="button"].btn-block {
   @supports (grid-gap: 0) {
     .site-footer {
       grid-row: 4 / 4; } }
+  @media (max-width: 33em) {
+    .site-footer .logo {
+      margin-right: auto;
+      margin-left: auto; }
+    .site-footer .search {
+      flex-grow: 1;
+      max-width: 15em;
+      margin-right: auto;
+      margin-left: auto; } }
 
 .footer-nav {
   display: flex;
@@ -1214,7 +1226,9 @@ input[type="button"].btn-block {
       text-decoration-skip: ink; } }
   @media (min-width: 42em) {
     .footer-nav nav {
-      margin-bottom: 4rem; } }
+      margin-bottom: 4rem; }
+      .footer-nav nav:not(:last-child) {
+        padding-right: calc(1vw + 4em); } }
   @media (min-width: 55em) {
     .footer-nav {
       flex-wrap: nowrap; } }
