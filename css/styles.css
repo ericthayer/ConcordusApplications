@@ -1914,6 +1914,14 @@ input[type="button"].btn-block {
 .theme-blue {
   background-color: #00A2E1;
   color: #FCFCFC; }
+  .theme-blue a {
+    color: #c0e8f8; }
+
+.theme-teal {
+  background-color: #9cc8cd;
+  color: #2b6c74; }
+  .theme-teal a {
+    color: #39909A; }
 
 .theme-green {
   background-color: #7EB963;
