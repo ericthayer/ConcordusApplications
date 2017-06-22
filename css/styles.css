@@ -890,6 +890,8 @@ input[type="button"].btn-block {
   top: .25em;
   right: 0;
   padding: 0; }
+  .navbar-toggler:focus {
+    outline: none; }
   .navbar-inverse .navbar-toggler {
     border: none; }
     .navbar-inverse .navbar-toggler .icon {
@@ -900,6 +902,69 @@ input[type="button"].btn-block {
     margin-right: 0;
     margin-left: 0;
     top: 0; }
+  .navbar-toggler[aria-expanded=true] {
+    background-color: #EEE; }
+
+.toggle-button {
+  cursor: pointer;
+  padding: 0;
+  height: 42px;
+  width: 56px; }
+  .toggle-button .nav-icon,
+  .toggle-button .nav-icon:before,
+  .toggle-button .nav-icon:after {
+    transition: .3s ease-in-out; }
+  .toggle-button .nav-icon {
+    background: currentColor;
+    background: transparent;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+    .toggle-button .nav-icon span {
+      text-transform: uppercase;
+      transition: opacity .3s ease; }
+    .toggle-button .nav-icon:before, .toggle-button .nav-icon:after {
+      opacity: 0;
+      content: '';
+      background: currentColor;
+      border-radius: 5px;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      left: 0; }
+    .toggle-button .nav-icon:before {
+      top: -8px; }
+    .toggle-button .nav-icon:after {
+      top: 8px; }
+    .toggle-button .nav-icon:hover, .toggle-button .nav-icon:focus {
+      will-change: transform scale; }
+  .toggle-button[aria-expanded=true] {
+    background: rgba(0, 0, 0, 0.3); }
+    .toggle-button[aria-expanded=true] .nav-icon {
+      background-color: transparent;
+      transform: scale(0.7);
+      height: 4px;
+      width: 60%;
+      position: absolute; }
+      .toggle-button[aria-expanded=true] .nav-icon span, .toggle-button[aria-expanded=true] .nav-icon .icon {
+        opacity: 0; }
+      .toggle-button[aria-expanded=true] .nav-icon:before, .toggle-button[aria-expanded=true] .nav-icon:after {
+        opacity: 1; }
+      .toggle-button[aria-expanded=true] .nav-icon:before {
+        background: #FFF;
+        top: 0;
+        transform: rotate(45deg); }
+      .toggle-button[aria-expanded=true] .nav-icon:after {
+        background: #FFF;
+        top: 0;
+        transform: rotate(-45deg); }
+  .toggle-button:hover, .toggle-button:focus {
+    box-shadow: none; }
 
 .navbar-brand {
   max-width: 12rem;

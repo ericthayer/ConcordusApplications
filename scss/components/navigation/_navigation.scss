@@ -27,6 +27,9 @@
   top: .25em;
   right: 0;
   padding: 0;
+  &:focus {
+    outline: none;
+  }
   .navbar-inverse & {
     border: none;
     .icon {
@@ -40,6 +43,105 @@
     margin-left: 0;
     top: 0;
   }
+  &[aria-expanded=true] {
+    background-color: #EEE;
+  }
+}
+
+// Custom Toggle Button
+
+$box-size: 40px;
+
+.toggle-button {
+  cursor: pointer;  
+  padding: 0;
+  height: 42px;
+  width: 56px;
+  
+  .nav-icon,
+  .nav-icon:before,
+  .nav-icon:after {
+    transition: .3s ease-in-out;
+  }
+
+  .nav-icon {
+    background: currentColor;
+    background: transparent;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    span {
+      text-transform: uppercase;
+      transition: opacity .3s ease;  
+    }
+    
+    &:before,
+    &:after {
+      opacity: 0;  
+      content: '';
+      background: currentColor;
+      border-radius: 5px;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      left: 0;  
+    }
+
+    &:before {
+      top: -$box-size/5;
+    }
+
+    &:after {
+      top: $box-size/5;
+    }
+
+    &:hover,
+    &:focus {
+      will-change: transform scale;
+    }
+    
+  }
+  
+  &[aria-expanded=true] {
+    background: rgba(black, .3);
+    .nav-icon {
+      background-color: transparent;
+      transform: scale(.7);
+      height: 4px;
+      width: 60%;
+      position: absolute;
+      span, .icon {
+        opacity: 0;  
+      }
+      &:before,
+      &:after {
+        opacity: 1;
+      }
+      //transform: rotate(-180deg);
+      &:before {
+        background: #FFF;
+        top: 0;
+        transform: rotate(45deg);
+      }
+      &:after {
+        background: #FFF;
+        top: 0;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+  
+  &:hover,
+  &:focus {
+    box-shadow: none;
+  }
+        
 }
 
 .navbar-brand {
