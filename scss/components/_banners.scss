@@ -8,5 +8,17 @@
 }
 
 .banner-full {
-
+  .card-title {
+    font-size: 2em;
+  }
+  @media (min-width: 70em) {
+    font-size: 1.25rem;
+    p:last-of-type {
+      margin-bottom: 5em;
+      @include mw-35em;
+    }
+    .btn {
+      font-size: 1.25em;
+    }
+  }
 }

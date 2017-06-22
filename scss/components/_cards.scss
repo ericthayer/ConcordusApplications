@@ -14,16 +14,17 @@
     }
     @media (min-width: $break-ml-phone) {
       @include flex-d-row;
-      @include ai-center;
+      //@include ai-center;
 
       > * {
-        @include as-center;
+        //@include as-center;
         @include w-35;
       }
 
       .card-block {
         @include flex;
         @include flex-d-col;
+        @include jc-center;
         padding: 10%;
       }
 

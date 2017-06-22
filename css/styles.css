@@ -958,14 +958,13 @@ input[type="button"].btn-block {
 
 @media (min-width: 40em) {
   .card-row {
-    flex-direction: row;
-    align-items: center; }
+    flex-direction: row; }
     .card-row > * {
-      align-self: center;
       width: 35%; }
     .card-row .card-block {
       display: flex;
       flex-direction: column;
+      justify-content: center;
       padding: 10%; }
     .card-row .card-text + .card-text {
       margin-bottom: 20%; }
@@ -983,6 +982,18 @@ input[type="button"].btn-block {
   .fonts-loaded .banner p {
     font-family: "Montserrat Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-weight: 300; }
+
+.banner-full .card-title {
+  font-size: 2em; }
+
+@media (min-width: 70em) {
+  .banner-full {
+    font-size: 1.25rem; }
+    .banner-full p:last-of-type {
+      margin-bottom: 5em;
+      max-width: 35em; }
+    .banner-full .btn {
+      font-size: 1.25em; } }
 
 .blockquote {
   padding-top: 1em;
@@ -1752,8 +1763,13 @@ input[type="button"].btn-block {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-size: contain;
-  background-image: url(../images/bg/bg-banner-half-globe-darkgreen.png); }
+  background-image: url(../images/bg/bg-banner-half-globe-darkgreen.jpg); }
+
+.bg-analytics {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/bg/bg-analytics-darkblue.jpg); }
 
 .flex-layout {
   display: flex;
@@ -1912,7 +1928,7 @@ input[type="button"].btn-block {
   color: #FCFCFC; }
 
 .theme-blue {
-  background-color: #00A2E1;
+  background-color: #007aa9;
   color: #FCFCFC; }
   .theme-blue a {
     color: #c0e8f8; }
