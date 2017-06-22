@@ -13,6 +13,9 @@
       @include pt-pb-4;
       @include pr-pl-3;
     }
+    .btn {
+      text-align: left;
+    }
     @media (min-width: $break-ml-phone) {
       @include flex-d-row;
       //@include ai-center;

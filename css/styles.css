@@ -1060,6 +1060,9 @@ input[type="button"].btn-block {
   padding-right: 3em;
   padding-left: 3em; }
 
+.card-row .btn {
+  text-align: left; }
+
 @media (min-width: 40em) {
   .card-row {
     flex-direction: row; }
