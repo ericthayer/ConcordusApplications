@@ -1060,6 +1060,9 @@ input[type="button"].btn-block {
   padding-right: 3em;
   padding-left: 3em; }
 
+.card-row p:last-of-type {
+  margin-bottom: 3rem; }
+
 .card-row .btn {
   text-align: left; }
 
@@ -1089,6 +1092,10 @@ input[type="button"].btn-block {
         object-fit: cover;
         object-position: right;
         max-height: 40em; } }
+  @media (min-width: 40em) and (min-width: 70em) {
+    .card-row p:last-of-type {
+      max-width: 35em;
+      margin-bottom: 5rem; } }
   @media (min-width: 40em) and (min-width: 100em) {
     .card-row .media-item {
       width: auto; } }
@@ -1111,11 +1118,8 @@ input[type="button"].btn-block {
 @media (min-width: 70em) {
   .banner-full {
     font-size: 1.25rem; }
-    .banner-full p:last-of-type {
-      margin-bottom: 5em;
-      max-width: 35em; }
     .banner-full .btn {
-      font-size: 1.25em; } }
+      font-size: 1.35em; } }
 
 .blockquote {
   padding-top: 1em;
