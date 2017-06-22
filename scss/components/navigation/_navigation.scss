@@ -14,6 +14,9 @@
   &.show {
 
   }
+  &:target {
+    display: block;
+  }
   @media (max-width: 991px) {
     // background-color: rgba(#000, .9);
   }
@@ -45,6 +48,9 @@
   }
   &[aria-expanded=true] {
     background-color: #EEE;
+  }
+  &.no-script {
+    z-index: 1;
   }
 }
 

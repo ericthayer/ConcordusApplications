@@ -384,6 +384,40 @@ ul li, ol li {
   max-width: 85em;
   width: 100%; }
 
+:root:not(.enhanced):before {
+  content: "Please enable JavaScript for a better user experience. Thank you!";
+  color: #FFF;
+  background: #EC4644;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0;
+  opacity: 0;
+  height: 0;
+  text-align: center;
+  width: 100%; }
+
+:root:not(.enhanced):before {
+  animation: fade .5s ease 1;
+  animation-fill-mode: forwards;
+  animation-delay: 2s; }
+
+@keyframes fade {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; }
+  0% {
+    height: 0px; }
+  100% {
+    height: 2em; }
+  0% {
+    padding: 0; }
+  100% {
+    padding: .25em 1em; } }
+
 body {
   background-color: #f9f9f9; }
 
@@ -881,6 +915,8 @@ input[type="button"].btn-block {
 .navbar-collapse {
   margin: 0 -15px;
   padding: 1em; }
+  .navbar-collapse:target {
+    display: block; }
 
 .navbar-toggler {
   font-size: 1.5rem;
@@ -904,6 +940,8 @@ input[type="button"].btn-block {
     top: 0; }
   .navbar-toggler[aria-expanded=true] {
     background-color: #EEE; }
+  .navbar-toggler.no-script {
+    z-index: 1; }
 
 .toggle-button {
   cursor: pointer;

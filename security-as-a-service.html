@@ -25,11 +25,16 @@
     <header class="site-header fixed-top">
       <nav class="navbar navbar-inverse navbar-toggleable-md main-menu" role="navigation">
         <div class="container">
+          <!-- logo -->
           <a class="navbar-brand" href="index.html"><img src="images/concordus-logo-white-h.svg" alt="Concordus Applications" /></a>
+          <!-- toggle button -->
           <button class="navbar-toggler navbar-toggler-right toggle-button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <noscript>
+              <a href="#main-menu" class="navbar-toggler navbar-toggler-right toggle-button no-script"></a>
+            </noscript>
             <div class="nav-icon c-white"><span><svg class="icon icon-menu"><use xlink:href="#icon-menu" /></svg></span></div>
           </button>
-
+          <!-- menu -->
           <div class="collapse navbar-collapse" id="main-menu">
             <ul class="navbar-nav ml-a">
               <li class="nav-item">
@@ -53,7 +58,8 @@
                 <a class="nav-link dropdown-toggle" href="analytics.html" id="analytics-dropdown" data-toggle="dropdown" aria-haspopup="true"
                   aria-expanded="false">Analytics</a>
                 <div class="dropdown-menu" aria-labelledby="analytics-dropdown">
-                  <a class="dropdown-item" href="analytics.html">Overview</a>                   <a class="dropdown-item" href="360-degree-view.html">360-Degree view of the Customer</a>
+                  <a class="dropdown-item" href="analytics.html">Overview</a>
+                  <a class="dropdown-item" href="360-degree-view.html">360-Degree view of the Customer</a>
                   <a class="dropdown-item" href="data-analysis.html">Big Data Analysis</a>
                   <a class="dropdown-item" href="real-time-analytics.html">Real-Time Analytics</a>
                   <a class="dropdown-item" href="sentiment-analysis.html">Sentiment Analysis</a>
