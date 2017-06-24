@@ -19,7 +19,6 @@
 .grid {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 !important;
   max-width: 100%; }
   .grid > * {
     flex-grow: 1;
@@ -36,7 +35,6 @@
 .grid-2-col {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 !important;
   max-width: 100%; }
   .grid-2-col > * {
     flex-grow: 1;
@@ -57,7 +55,6 @@
 .grid-4-col {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 !important;
   max-width: 100%; }
   .grid-4-col > * {
     flex-grow: 1;

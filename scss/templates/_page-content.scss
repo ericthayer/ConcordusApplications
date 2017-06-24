@@ -13,7 +13,7 @@
     @include mr-ml-a;
   }
   // < 640
-  @media (max-width: $break-640) {
+  @media (max-width: $break-640 - .01em) {
     //.float-r,
     //.float-l,
     .media-item {
@@ -50,7 +50,8 @@
   &-sm {
     @media (max-width: $break-480 - .01em) {
       //@include mr-ml-a;
-      [class*="pr-"] {
+      [class*="pr-"]:not(ul):not(ol),
+      [class*="pl-"] {
         @include pr-pl-0;
       }
     }
@@ -59,7 +60,8 @@
   &-md {
     @media (max-width: $break-768 - .01em) {
       //@include mr-ml-a;
-      [class*="pr-"] {
+      [class*="pr-"]:not(ul):not(ol),
+      [class*="pr-"]:not(ul):not(ol) {
         @include pr-pl-0;
       }
     }
@@ -68,7 +70,8 @@
   &-lg {
     @media (max-width: $break-900 - .01em) {
       //@include mr-ml-a;
-      [class*="pr-"] {
+      [class*="pr-"]:not(ul):not(ol),
+      [class*="pl-"]:not(ul):not(ol) {
         @include pr-pl-0;
       }
     }

@@ -168,6 +168,14 @@ ul, ol {
   width: 100%;
 }
 
+.section-headline {
+  @include mr-ml-a;
+  @include mw-56em;
+  @include pt-pb-2;
+  @include pr-pl-2;
+  @include w-100;
+}
+
 // display
 
 .display-4 {

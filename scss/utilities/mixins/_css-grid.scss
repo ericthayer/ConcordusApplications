@@ -3,7 +3,7 @@
 @mixin grid {
   @include flex;
   @include flex-wrap;
-  padding: 0 !important;
+  //padding: 0 !important;
   @include mw-100p;
   > * {
     @include flex-grow-1;
