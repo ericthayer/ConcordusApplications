@@ -513,9 +513,11 @@
         <div class="container">
 
             <!-- media item (right) -->
+            <!-- use 1x1 sized images when using circle mask -->
             <figure class="media-item circle-mask mask-outside float-r lazyload">
-              <picture>            
-                <img src="images/content/img-content-subscription-services-1x1.jpg" data-src="images/content/img-content-subscription-services-1x1.jpg" class="lazyload" alt="A group of application interfaces arranged in a cool grid.">
+            <picture>
+              <source media="(min-width: 40em)" srcset="images/content/img-content-subscription-services-1x1.jpg" class="lazyload" alt="A group of application interfaces arranged in a cool grid.">
+              <img srcset="images/content/img-content-subscription-services-wide.jpg" data-srcset="images/content/img-content-subscription-services-wide.jpg" class="lazyload" alt="A group of application interfaces arranged in a cool grid.">
                 <noscript>
                   <img src="images/content/img-content-subscription-services-1x1.jpg" alt="A group of application interfaces arranged in a cool grid.">
                 </noscript>
@@ -533,16 +535,17 @@
 
             <p>Concordus Applications is a Systems Integrator that is focused on building a connected world by offering innovative, smart and cost-effective solutions.Our products aim to automate the business processes used for various Users in industries like the Communications Channel, Retail, Health care etc. We offer end-to-end services for software design, build, maintenance and support and we work across technology domains, platforms, infrastructure and tools.</p>
 
-            <h2 id="page-section-two" class="text-xl pt-2">Page Section Title h2</h2>
+            <h2 id="page-section-two" class="pt-2">Page Section Title h2</h2>
             
             <p class="lead">Concordus Applications is a Systems Integrator that is focused on building a connected world by offering innovative, smart and cost-effective solutions.Our products aim to automate the business processes used for various Users in industries like the Communications Channel, Retail, Health care etc. We offer end-to-end services for software design, build, maintenance and support and we work across technology domains, platforms, infrastructure and tools.</p>
 
             <!-- media item (left) -->
             <figure class="media-item circle-mask-md mask-outside float-l lazyload">
-              <picture>            
-                <img src="images/content/img-content-analytics-1x1.jpg" data-src="images/content/img-content-analytics-1x1.jpg" class="lazyload" alt="A group of application interfaces arranged in a cool grid.">
+              <picture>
+                <source media="(min-width: 40em)" srcset="images/content/img-content-analytics-1x1.jpg" class="lazyload" alt="Illustration of analytical icons. Vector art.">              
+                <img src="images/content/img-content-analytics-wide.jpg" data-src="images/content/img-content-analytics-wide.jpg" class="lazyload" alt="Illustration of analytical icons. Vector art.">
                 <noscript>
-                  <img src="images/content/img-content-analytics-1x1.jpg" alt="A group of application interfaces arranged in a cool grid.">
+                  <img src="images/content/img-content-analytics-1x1.jpg" alt="Illustration of analytical icons. Vector art.">
                 </noscript>
               </picture>
               <figcaption class="figure-caption">A caption for the above image.</figcaption>
@@ -554,10 +557,11 @@
 
             <!-- media item (right) -->
             <figure class="media-item float-r mw-20em lazyload">
-              <picture>            
-                <img src="images/content/img-content-testing-1x1.jpg" data-src="images/content/img-content-testing-1x1.jpg" class="lazyload" alt="A group of application interfaces arranged in a cool grid.">
+              <picture>
+                <source media="(min-width: 40em)" srcset="images/content/img-content-testing-1x1.jpg" class="lazyload" alt="Integration Team sitting in the office.">              
+                <img src="images/content/img-content-testing-wide.jpg" data-src="images/content/img-content-testing-wide.jpg" class="lazyload" alt="Integration Team sitting in the office.">
                 <noscript>
-                  <img src="images/content/img-content-testing-1x1.jpg" alt="A group of application interfaces arranged in a cool grid.">
+                  <img src="images/content/img-content-testing-1x1.jpg" alt="Integration Team sitting in the office.">
                 </noscript>
               </picture>
               <figcaption class="figure-caption">A caption for the above image.</figcaption>
@@ -605,7 +609,8 @@
 
             <!-- media item (full) -->
             <figure class="media-item pt-pb-1 w-100 lazyload">
-              <picture>            
+              <picture>   
+              <!-- <source media="(min-width: 40em)" srcset="images/content/img-content-app-user-01.jpg" class="lazyload" alt="Integration Team sitting in the office."> -->         
                 <img src="images/content/img-content-app-user-01-wide.jpg" data-src="images/content/img-content-app-user-01-wide.jpg" class="lazyload" alt="A group of application interfaces arranged in a cool grid.">
                 <noscript>
                   <img src="images/content/img-content-app-user-01-wide.jpg" alt="A group of application interfaces arranged in a cool grid.">
@@ -629,21 +634,23 @@
             <a class="btn btn-text btn-xl" href="contact.html">Contact us to learn more <svg class="icon icon-outline"><use xlink:href="#icon-chevron-sm" /></svg></a>
 
             <!-- list & media item -->
-            <div class="row pt-1">
+            <div class="row content-row-lg pt-1">
 
               <!-- media item -->
-              <figure class="media-item col-md-5 pr-2 lazyload">
-                <picture>            
-                  <img src="images/content/img-content-integration-team.jpg" data-src="images/content/img-content-integration-team.jpg" class="lazyload" alt="A group of application interfaces arranged in a cool grid.">
+              <figure class="media-item col-lg-5 pr-2 lazyload">
+                <picture>
+                  <!-- the breakpoint should match the col modifier size eg. "col-lg" bp = 900px (56.25em) -->
+                  <source media="(min-width: 56.25em)" srcset="images/content/img-content-integration-team.jpg" class="lazyload" alt="Integration Team sitting in the office.">              
+                  <img src="images/content/img-content-integration-team-wide.jpg" data-src="images/content/img-content-integration-team-wide.jpg" class="lazyload" alt="Integration Team sitting in the office.">
                   <noscript>
-                    <img src="images/content/img-content-integration-team-1x1.jpg" alt="A group of application interfaces arranged in a cool grid.">
+                    <img src="images/content/img-content-integration-team-1x1.jpg" alt="Integration Team sitting in the office.">
                   </noscript>
                 </picture>
                 <figcaption class="figure-caption">A caption for the above image.</figcaption>
               </figure>
 
               <!-- list -->
-              <ul class="col-md-7 pl-2">
+              <ul class="list-styled col-lg-7 pl-2">
                 <p class="h2 list-title">List Title</p>
                 <li>Customers at heart – Serve our Customer smarter and quicker</li>
                 <li>Sharper and more powerful Digital offerings</li>
@@ -679,7 +686,7 @@
             <p class="text-sm">Innovative, smart and cost-effective software development and integration provided as a service, for Telcos and Enterprises.</p>
 
             <!-- list & media item -->
-            <div class="row pt-2">
+            <div class="row content-row-md pt-2">
 
               <!-- list -->
               <ul class="list-unstyled col-md-8 pr-4">
@@ -706,8 +713,10 @@
 
               <!-- media item -->
               <figure class="media-item rounded-mask col-md-4 p-0 lazyload">
-                <picture>            
-                  <img src="images/content/img-content-subscription-services-1x1.jpg" data-src="images/content/img-content-subscription-services-1x1.jpg" class="lazyload" alt="A group of application interfaces arranged in a cool grid.">
+                <picture>
+                  <!-- the breakpoint should match the col modifier size eg. "col-md" bp = 768px (48em) -->
+                  <source media="(min-width: 48em)" srcset="images/content/img-content-subscription-services-1x1.jpg" class="lazyload" alt="Integration Team sitting in the office.">         
+                  <img src="images/content/img-content-subscription-services-wide.jpg" data-src="images/content/img-content-subscription-services-wide.jpg" class="lazyload" alt="A group of application interfaces arranged in a cool grid.">
                   <noscript>
                     <img src="images/content/img-content-subscription-services-1x1.jpg" alt="A group of application interfaces arranged in a cool grid.">
                   </noscript>

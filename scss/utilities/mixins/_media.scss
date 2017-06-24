@@ -31,20 +31,26 @@
 }
 
 .circle-mask {
-  @include circle-mask;
+  @media (min-width: $break-640) {
+    @include circle-mask;
+  }
 }
 
 .circle-mask-md {
-  @include circle-mask-md;
+  @media (min-width: $break-640) {
+    @include circle-mask-md;
+  }
 }
 
 .circle-mask-sm {
-  @include circle-mask-sm;
+  @media (min-width: $break-640) {
+    @include circle-mask-sm;
+  }
 }
 
 @mixin rounded-mask {
   border-radius: 1rem;
-  width: 100%;
+  max-width: 100%;
   overflow: hidden;
   img {
     border-radius: 1rem;

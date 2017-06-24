@@ -175,7 +175,7 @@ $box-size: 40px;
   color: #DDD;
 }
 
-@media (min-width: $break-md-screen) {
+@media (min-width: $break-980) {
   .nav-item {
     @include ml-1;
   }

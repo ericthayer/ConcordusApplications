@@ -78,55 +78,58 @@
         .grid-4-col {
           grid-template-columns: repeat(auto-fit, minmax(25em, 1fr)); } } }
 
-.circle-mask {
-  border-radius: 50%;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  max-height: 25rem;
-  max-width: 25rem; }
-  .circle-mask img {
-    border-radius: 50%; }
-  .circle-mask figcaption {
-    display: none; }
-  .circle-mask.mask-outside {
-    shape-outside: circle(); }
+@media (min-width: 40em) {
+  .circle-mask {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    max-height: 25rem;
+    max-width: 25rem; }
+    .circle-mask img {
+      border-radius: 50%; }
+    .circle-mask figcaption {
+      display: none; }
+    .circle-mask.mask-outside {
+      shape-outside: circle(); } }
 
-.circle-mask-md {
-  border-radius: 50%;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  max-height: 25rem;
-  max-width: 25rem;
-  max-height: 20rem;
-  max-width: 20rem; }
-  .circle-mask-md img {
-    border-radius: 50%; }
-  .circle-mask-md figcaption {
-    display: none; }
-  .circle-mask-md.mask-outside {
-    shape-outside: circle(); }
+@media (min-width: 40em) {
+  .circle-mask-md {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    max-height: 25rem;
+    max-width: 25rem;
+    max-height: 20rem;
+    max-width: 20rem; }
+    .circle-mask-md img {
+      border-radius: 50%; }
+    .circle-mask-md figcaption {
+      display: none; }
+    .circle-mask-md.mask-outside {
+      shape-outside: circle(); } }
 
-.circle-mask-sm {
-  border-radius: 50%;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  max-height: 25rem;
-  max-width: 25rem;
-  max-height: 10rem;
-  max-width: 10rem; }
-  .circle-mask-sm img {
-    border-radius: 50%; }
-  .circle-mask-sm figcaption {
-    display: none; }
-  .circle-mask-sm.mask-outside {
-    shape-outside: circle(); }
+@media (min-width: 40em) {
+  .circle-mask-sm {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    max-height: 25rem;
+    max-width: 25rem;
+    max-height: 10rem;
+    max-width: 10rem; }
+    .circle-mask-sm img {
+      border-radius: 50%; }
+    .circle-mask-sm figcaption {
+      display: none; }
+    .circle-mask-sm.mask-outside {
+      shape-outside: circle(); } }
 
 .rounded-mask {
   border-radius: 1rem;
-  width: 100%;
+  max-width: 100%;
   overflow: hidden; }
   .rounded-mask img {
     border-radius: 1rem; }
@@ -265,10 +268,10 @@
   font-size: 1.25em; }
 
 .text-lg {
-  font-size: 1.5em; }
+  font-size: 1.75em; }
 
 .text-xl {
-  font-size: 2.5em; }
+  font-size: 3.125em; }
 
 .all-caps {
   text-transform: uppercase; }

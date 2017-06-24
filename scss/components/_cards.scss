@@ -19,7 +19,7 @@
     .btn {
       text-align: left;
     }
-    @media (min-width: $break-ml-phone) {
+    @media (min-width: $break-640) {
       @include flex-d-row;
       //@include ai-center;
 
@@ -77,7 +77,7 @@
   }
 
   &-row-rev {
-    @media (min-width: $break-ml-phone) {
+    @media (min-width: $break-640) {
       @include flex-d-row-rev;
     }
   }

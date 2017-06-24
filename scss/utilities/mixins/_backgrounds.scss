@@ -63,7 +63,7 @@
     @include text-base;
   }
 
-  @media (max-height: $break-md-phone) {
+  @media (max-height: $break-540) {
     @include h-auto;
     @include pt-pb-5;
   }

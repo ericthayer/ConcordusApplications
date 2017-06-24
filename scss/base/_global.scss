@@ -33,6 +33,9 @@ img {
 
 .row {
   @include w-100;
+  @media (max-width: $break-640) {
+    @include mr-ml-a;
+  }
 }
 
 // main
@@ -83,7 +86,7 @@ img {
         //@include pt-2;
       }
 
-      @media (min-width: $break-ml-phone) {
+      @media (min-width: $break-640) {
 
         .media-item {
           @include as-stretch;
@@ -92,7 +95,7 @@ img {
         }
 
       }
-      @media (min-width: $break-md-screen) {
+      @media (min-width: $break-980) {
         .media-item {
           @include pt-0;
         }

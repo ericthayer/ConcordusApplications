@@ -1,15 +1,29 @@
 .page-content {
 
   > .container {
-    @include pt-pb-2;
+    @include pt-5;
+    @include pb-2;
     @include pr-pl-2;
     > .btn {
       margin-top: 1rem;
       @include mb-2;
     }
   }
-
-  @media (min-width: $break-lg-phone) {
+  .row {
+    @include mr-ml-a;
+  }
+  // < 640
+  @media (max-width: $break-640) {
+    //.float-r,
+    //.float-l,
+    .media-item {
+      float: none;
+      @include p-0;
+      @include mw-100p;
+    }
+  }
+  // > 768
+  @media (min-width: $break-768) {
 
     padding-top: 10vh;
     padding-bottom: 10vh;
@@ -26,5 +40,39 @@
     }
 
   }
+
+}
+
+// content rows
+
+.content-row {
+
+  &-sm {
+    @media (max-width: $break-480 - .01em) {
+      //@include mr-ml-a;
+      [class*="pr-"] {
+        @include pr-pl-0;
+      }
+    }
+  }
+
+  &-md {
+    @media (max-width: $break-768 - .01em) {
+      //@include mr-ml-a;
+      [class*="pr-"] {
+        @include pr-pl-0;
+      }
+    }
+  }
+
+  &-lg {
+    @media (max-width: $break-900 - .01em) {
+      //@include mr-ml-a;
+      [class*="pr-"] {
+        @include pr-pl-0;
+      }
+    }
+  }
+
 
 }

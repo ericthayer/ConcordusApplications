@@ -9,7 +9,7 @@
       }
     }
   }
-  @media (min-width: $break-lg-phone) {
+  @media (min-width: $break-768) {
     display: flex;
     justify-content: space-between;
     &:before,
@@ -20,7 +20,7 @@
 }
 
 .navbar-header {
-  @media(min-width: $break-lg-phone) {
+  @media(min-width: $break-768) {
     height: 50px;
     display: flex;
     align-items: center;
@@ -40,7 +40,7 @@
   svg {
     max-width: 12em;
   }
-  @media (max-width: $break-lg-phone) {
+  @media (max-width: $break-768) {
     padding-top: 1em;
   }
 }

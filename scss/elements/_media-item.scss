@@ -32,14 +32,16 @@
 }
 
 @mixin media-item {
-  margin: 0 auto 2rem;
+  margin-top: 2rem;
+  @include mr-ml-a;
+  @include mb-2;
 
   figcaption {
     @include pt-sm;
     @include pl-sm;
   }
 
-  @media (min-width: $break-lg-phone) {
+  @media (min-width: $break-640) {
 
     &.float-l {
       margin: .5rem 2.5rem 2.5rem 0;
