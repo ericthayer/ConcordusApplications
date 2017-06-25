@@ -81,14 +81,16 @@
     height: 100%;
     width: 100%;
     overflow: hidden;
-    max-height: 25rem;
-    max-width: 25rem; }
-    .circle-mask img {
-      border-radius: 50%; }
+    max-height: 20rem;
+    max-width: 20rem; }
     .circle-mask figcaption {
       display: none; }
     .circle-mask.mask-outside {
       shape-outside: circle(); } }
+  @media (min-width: 40em) and (min-width: 56.25em) {
+    .circle-mask {
+      max-height: 25rem;
+      max-width: 25rem; } }
 
 @media (min-width: 40em) {
   .circle-mask-md {
@@ -96,16 +98,18 @@
     height: 100%;
     width: 100%;
     overflow: hidden;
-    max-height: 25rem;
-    max-width: 25rem;
+    max-height: 20rem;
+    max-width: 20rem;
     max-height: 20rem;
     max-width: 20rem; }
-    .circle-mask-md img {
-      border-radius: 50%; }
     .circle-mask-md figcaption {
       display: none; }
     .circle-mask-md.mask-outside {
       shape-outside: circle(); } }
+  @media (min-width: 40em) and (min-width: 56.25em) {
+    .circle-mask-md {
+      max-height: 25rem;
+      max-width: 25rem; } }
 
 @media (min-width: 40em) {
   .circle-mask-sm {
@@ -113,16 +117,18 @@
     height: 100%;
     width: 100%;
     overflow: hidden;
-    max-height: 25rem;
-    max-width: 25rem;
+    max-height: 20rem;
+    max-width: 20rem;
     max-height: 10rem;
     max-width: 10rem; }
-    .circle-mask-sm img {
-      border-radius: 50%; }
     .circle-mask-sm figcaption {
       display: none; }
     .circle-mask-sm.mask-outside {
       shape-outside: circle(); } }
+  @media (min-width: 40em) and (min-width: 56.25em) {
+    .circle-mask-sm {
+      max-height: 25rem;
+      max-width: 25rem; } }
 
 .rounded-mask {
   border-radius: 1rem;
@@ -755,13 +761,13 @@ input[type="button"].btn-block {
     .media-item {
       margin-top: 0; }
       .media-item.float-l {
-        margin: .5rem 2.5rem 2.5rem 0; }
+        margin: .5rem 1.75rem 2.5rem 0; }
       .media-item.float-r {
-        margin: .5rem 0 2.5rem 2.5rem; }
+        margin: .5rem 0 2.5rem 1.75rem; }
       .media-item.mask-outside.float-l {
-        margin: 2rem 2.5rem 2.5rem 0; }
+        margin: 2rem 1.75rem 2.5rem 0; }
       .media-item.mask-outside.float-r {
-        margin: .5rem 0 2.5rem 2.5rem; } }
+        margin: .5rem 0 2.5rem 1.75rem; } }
 
 .form-trans {
   border-radius: 3em;
@@ -1919,8 +1925,11 @@ input[type="button"].btn-block {
   @media (min-width: 50em) {
     .bg-hero {
       height: 50vh; } }
+  .bg-hero .container {
+    padding-right: calc(1vw + 2em);
+    padding-left: calc(1vw + 2em); }
   .bg-hero .h1, .bg-hero h1 {
-    font-size: 3.125em;
+    font-size: 2.875em;
     margin-bottom: .625rem; }
   .bg-hero p {
     max-width: 40em;

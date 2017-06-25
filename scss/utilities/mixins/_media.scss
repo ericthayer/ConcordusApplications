@@ -5,16 +5,17 @@
   height: 100%;
   width: 100%;
   overflow: hidden; 
-  max-height: 25rem;
-  max-width: 25rem;
-  img {
-    border-radius: 50%;
-  }
+  max-height: 20rem;
+  max-width: 20rem;
   figcaption {
     display: none;
   }
   &.mask-outside {
     shape-outside: circle();
+  }
+  @media (min-width: $break-900) {
+    max-height: 25rem;
+    max-width: 25rem;
   }
 }
 

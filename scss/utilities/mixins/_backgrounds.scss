@@ -43,8 +43,14 @@
   @include font-scale;
   @include h-100vh;
 
+  .container {
+    padding-right: calc(1vw + 2em);
+    padding-left: calc(1vw + 2em);
+  }
+
   .h1, h1 {
-    @include text-xl;
+    font-size: 2.875em;
+    //font-size: 4vmax;
     @include mb-sm;
   }
 
