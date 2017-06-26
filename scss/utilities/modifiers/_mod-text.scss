@@ -62,3 +62,36 @@
 .bold {
   @include bold;
 }
+
+//** LIST STYLES **//
+
+.list-title {
+  margin-left: -1rem;
+}
+
+ul, ol {
+  padding-left: 1.5em;
+  li {
+    @include mb-sm;
+    &:last-child {
+      @include mb-0;
+    }
+  }
+
+  &.list-styled {
+    @include MontserratLight;
+  }
+
+  &.list-unstyled {
+    @include list-unstyled;
+  }
+
+  &.no-bullet {
+    @include list-clean;
+  }
+
+  &.arrow-list-lg {
+    @include arrow-list-lg;
+  }
+
+}

@@ -484,11 +484,12 @@
         <div class="container">
 
             <!-- media item (right) -->
-            <figure class="media-item mw-20em float-r lazyload">
-              <picture>            
-                <img src="images/content/img-content-testing.jpg" data-src="images/content/img-content-testing.jpg" class="lazyload" alt="Group of application interfaces.">
+            <figure class="media-item circle-mask mask-outside float-r lazyload">
+              <picture>
+                <source media="(min-width: 40em)" srcset="images/content/img-content-tech-handshake-1x1.jpg" class="lazyload" alt="Two hands shaking, one with a microchip pattern composited on the left person's hand.">
+                <img src="images/content/img-content-tech-handshake-wide.jpg" data-src="images/content/img-content-tech-handshake-wide.jpg" class="lazyload" alt="Two hands shaking, one with a microchip pattern composited on the left person's hand.">
                 <noscript>
-                  <img src="images/content/img-content-testing-1x1.jpg" alt="Group of application interfaces.">
+                  <img src="images/content/img-content-tech-handshake-1x1.jpg" alt="Two hands shaking, one with a microchip pattern composited on the left person's hand.">
                 </noscript>
               </picture>
             </figure>
@@ -496,49 +497,66 @@
             <!-- Page Title -->
             <h1 id="offerings" class="display-4">Offerings</h1>
             
-            <p class="lead">Concordus Applications is a Systems Integrator that is focused on building a connected world by offering innovative, smart and cost-effective solutions. Our products aim to automate the business processes used for various Users in industries like the Communications Channel, Retail, Health care etc. We offer end-to-end services for software design, build, maintenance and support and we work across technology domains, platforms, infrastructure and tools.</p>
+            <p class="lead clearfix">Concordus Applications is a Systems Integrator that is focused on building a connected world by offering innovative, smart and cost-effective solutions. Our products aim to automate the business processes used for various Users in industries like the Communications Channel, Retail, Health care etc. We offer end-to-end services for software design, build, maintenance and support and we work across technology domains, platforms, infrastructure and tools.</p>
 
-            <h2 id="technical-services" class="mb-2 pt-1">Technical Services</h2>
+            <div class="section-headline align-center pt-3 pb-2">
 
-            <ul class="list-styled text-md">
-              <li>Requirements elicitation
-              <li>Design – Integration, Cloud, Infrastructure, Identity, Security</li>
-              <li>Build and Development</li>
-              <li>DevOps</li>
-              <li>End-to-End Testing - Functional, Performance, Security</li>
-              <li>Release &amp; Deployment</li>
-              <li>24/7 Support</li>
-            </ul>
+              <h2 id="other-ways-we-can-help" class="mr-ml-a">Other Ways We Can Help</h2>
+            
+              <p class="lead mr-ml-a mw-40em mb-0">One stop shop for all your software testing needs. Cost effective digital test automation frameworks for mobile and web automation.</p>
 
-            <!-- media item (right) -->
-            <figure class="media-item mw-20em float-r lazyload">
-              <picture>            
-                <img src="images/content/img-content-analytics.jpg" data-src="images/content/img-content-analytics.jpg" class="lazyload" alt="Group of application interfaces.">
+            </div>
+
+            <!-- media item (full) -->
+            <figure class="media-item pt-pb-2 w-100 lazyload">
+              <picture>
+                <source media="(min-width: 40em)" srcset="images/content/img-content-integration-apps-02-wide.jpg" class="lazyload" alt="Two hands shaking, one with a microchip pattern composited on the left person's hand.">
+                <img src="images/content/img-content-integration-apps-02-wide.jpg" data-src="images/content/img-content-integration-apps-02-wide.jpg" class="lazyload" alt="Group of application interfaces.">
                 <noscript>
-                  <img src="images/content/img-content-analytics-1x1.jpg" alt="Group of application interfaces.">
+                  <img src="images/content/img-content-integration-apps-02-1x1.jpg" alt="Group of application interfaces.">
                 </noscript>
               </picture>
             </figure>
 
-            <h2 id="professional-services" class="mb-2 pt-1">Professional Services</h2>
+            <div class="flex-layout flex-3-col mb-4">
+              <div class="grid-item">
+                <h2 id="technical-services" class="pt-1">Technical Services</h2>
 
-            <ul class="list-styled text-md">
-              <li>Integration Consulting</li>
-              <li>Strategy &amp; Roadmap creation</li>
-              <li>Project Management</li>
-              <li>Integration Architecture</li>
-              <li>Training</li>
-              <li>Quality Assurance</li>
-            </ul>
-            
-            <h2 id="managed-services" class="mb-2 pt-1">Managed Services</h2>
+                <ul class="list-styled arrow-list-lg mb-0">
+                  <li>Requirements elicitation</li>
+                    <li>Design – Integration, Cloud, Infrastructure, Identity, Security</li>
+                    <li>Build and Development</li>
+                    <li>DevOps</li>
+                    <li>End-to-End Testing - Functional, Performance, Security</li>
+                    <li>Release &amp; Deployment</li>
+                    <li>24/7 Support</li>
+                </ul>
+              </div>
 
-            <ul class="list-styled mb-4 text-md">
-              <li>On-going integration services</li>
-              <li>Access to multiple resources</li>
-              <li>Subscription Based Billing</li>
-              <li>Packaged Professional and Technical Services</li>
-            </ul>
+              <div class="grid-item">
+                <h2 id="professional-services" class="pt-1">Professional Services</h2>
+
+                <ul class="list-styled arrow-list-lg mb-0">
+                  <li>Integration Consulting</li>
+                  <li>Strategy &amp; Roadmap creation</li>
+                  <li>Project Management</li>
+                  <li>Integration Architecture</li>
+                  <li>Training</li>
+                  <li>Quality Assurance</li>
+                </ul>
+              </div>
+
+              <div class="grid-item">
+                <h2 id="managed-services" class="pt-1">Managed Services</h2>
+
+                <ul class="list-styled arrow-list-lg mb-0">
+                  <li>On-going integration services</li>
+                  <li>Access to multiple resources</li>
+                  <li>Subscription Based Billing</li>
+                  <li>Packaged Professional and Technical Services</li>
+                </ul>
+              </div>
+            </div>
 
             <a class="btn btn-text btn-xl" href="contact.html">Contact us to learn more <svg class="icon icon-outline"><use xlink:href="#icon-chevron-sm" /></svg></a>
 

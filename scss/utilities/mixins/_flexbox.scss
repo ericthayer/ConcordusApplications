@@ -3,12 +3,12 @@
 @mixin flex-layout {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -.25em;
-  margin-left: -.25em;
+  margin-right: -1em;
+  margin-left: -1em;
   > * {
-    padding: 0 .25em .5em;    
-    //flex-grow: 1;
-    //flex-shrink: 0;
+    @include p-1;    
+    // flex-grow: 1;
+    // flex-shrink: 0;
     //flex-basis: 11em; // 3 cols
   }
 }
@@ -22,9 +22,11 @@
 }
 
 @mixin flex-3-col {
-  @include flex-layout-grid;
-  > * {
-    flex-basis: 11em;
+  @media (min-width: $break-900) {
+    @include flex-layout-grid;
+    > * {
+      flex-basis: 11em;
+    }
   }
 }
 

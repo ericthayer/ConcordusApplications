@@ -85,3 +85,36 @@
 @mixin bold {
   font-weight: 700;
 }
+
+//** LIST STYLES **//
+
+@mixin list-unstyled {
+  font-family: $sans-serif;
+  ul {
+    font-family: $sans-serif;
+    @include mb-0;
+    @include pt-pb-1;
+    li:last-child {
+      @include mb-0;
+    }
+  }
+}
+
+@mixin list-clean {
+  li {
+    list-style-type: none;
+  }
+}
+
+@mixin arrow-list-lg {
+  @include p-0;
+  li {
+    display: flex;
+    @include list-clean;
+    &:before {
+      color: $ca-orange;
+      content: "→ ";
+      @include pr-sm;
+    }
+  }
+}

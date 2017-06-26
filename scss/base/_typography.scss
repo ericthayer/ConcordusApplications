@@ -117,40 +117,6 @@ a abbr[title] {
   font-family: $sans-serif; //font-style: italic;
 }
 
-.list-title {
-  margin-left: -1rem;
-}
-
-ul, ol {
-
-  &.list-styled {
-    @include MontserratLight;
-  }
-
-  &.list-unstyled {
-    font-family: $sans-serif;
-    ul {
-      font-family: $sans-serif;
-      @include mb-0;
-      @include pt-pb-1;
-      li:last-child {
-        @include mb-0;
-      }
-    }
-  }
-
-  &.no-bullet {
-    list-style-type: none;
-  }
-
-  li {
-    @include mb-sm;
-    &:last-child {
-      @include mb-0;
-    }
-  }
-}
-
 .border-title {
   border-bottom: 1px solid #DDD;
   color: $text-color;
