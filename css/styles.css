@@ -1046,8 +1046,12 @@ input[type="button"].btn-block {
     box-shadow: none; }
 
 .navbar-brand {
+  display: flex;
+  align-items: center;
   max-width: 12rem;
   width: 100%; }
+  .navbar-brand svg {
+    flex-grow: 1; }
 
 .nav-list {
   font-size: .875em; }
@@ -1066,7 +1070,8 @@ input[type="button"].btn-block {
 
 @media (min-width: 61.25em) {
   .nav-item {
-    margin-left: 1rem; } }
+    margin-left: 1rem;
+    margin-bottom: 0; } }
 
 .dropdown-menu {
   min-width: 15rem; }

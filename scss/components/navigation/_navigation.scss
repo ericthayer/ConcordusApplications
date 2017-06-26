@@ -151,8 +151,13 @@ $box-size: 40px;
 }
 
 .navbar-brand {
+  @include flex;
+  @include ai-center;
   max-width: 12rem;
-  width: 100%;
+  @include w-100;
+  svg {
+    @include flex-grow-1;
+  }
 }
 
 .nav-list {
@@ -175,9 +180,10 @@ $box-size: 40px;
   color: #DDD;
 }
 
-@media (min-width: $break-980) {
-  .nav-item {
+.nav-item {
+  @media (min-width: $break-980) {
     @include ml-1;
+    @include mb-0;
   }
 }
 
