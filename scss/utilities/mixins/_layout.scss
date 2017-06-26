@@ -236,6 +236,10 @@
   max-width: 25em;
 }
 
+@mixin mw-30em {
+  max-width: 30em;
+}
+
 @mixin mw-35em {
   max-width: 35em;
 }

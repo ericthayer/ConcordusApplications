@@ -82,4 +82,9 @@
 
 .media-item {
   @include media-item;
+  &.mobile-crm {
+    @media (min-width: $break-800) {
+      @include mw-20em;
+    }
+  }
 }
