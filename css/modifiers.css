@@ -295,21 +295,6 @@ ul, ol {
     margin-bottom: .625rem; }
     ul li:last-child, ol li:last-child {
       margin-bottom: 0; }
-  ul.list-styled, ol.list-styled {
-    -webkit-font-smoothing: auto;
-    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
-    .fonts-loaded ul.list-styled, .fonts-loaded ol.list-styled {
-      font-family: "Montserrat Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      font-weight: 300; }
-  ul.list-unstyled, ol.list-unstyled {
-    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
-    ul.list-unstyled ul, ol.list-unstyled ul {
-      font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      margin-bottom: 0;
-      padding-top: 1em;
-      padding-bottom: 1em; }
-      ul.list-unstyled ul li:last-child, ol.list-unstyled ul li:last-child {
-        margin-bottom: 0; }
   ul.no-bullet li, ol.no-bullet li {
     list-style-type: none; }
   ul.arrow-list-lg, ol.arrow-list-lg {
@@ -322,6 +307,30 @@ ul, ol {
         color: #F6BE1E;
         content: "→ ";
         padding-right: .625em; }
+  ul.list-styled, ol.list-styled {
+    -webkit-font-smoothing: auto;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    padding: 0; }
+    .fonts-loaded ul.list-styled, .fonts-loaded ol.list-styled {
+      font-family: "Montserrat Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-weight: 300; }
+    ul.list-styled li, ol.list-styled li {
+      display: flex; }
+      ul.list-styled li li, ol.list-styled li li {
+        list-style-type: none; }
+      ul.list-styled li:before, ol.list-styled li:before {
+        color: #F6BE1E;
+        content: "→ ";
+        padding-right: .625em; }
+  ul.list-unstyled, ol.list-unstyled {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+    ul.list-unstyled ul, ol.list-unstyled ul {
+      font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      margin-bottom: 0;
+      padding-top: 1em;
+      padding-bottom: 1em; }
+      ul.list-unstyled ul li:last-child, ol.list-unstyled ul li:last-child {
+        margin-bottom: 0; }
 
 .flex-layout {
   display: flex;

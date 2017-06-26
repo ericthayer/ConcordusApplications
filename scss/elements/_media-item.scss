@@ -78,6 +78,27 @@
     }
   }
 
+  @media (min-width: $break-900) {
+    &.banner-float-l {
+      @include float-l;
+      @include mr-3;
+      @include mb-3;
+      @include ml-0;
+    }
+    &.banner-float-r {
+      @include float-r;
+      @include mr-0;
+      @include mb-2;
+      @include ml-3;
+    }
+    &.banner-float-l,
+    &.banner-float-r {
+      margin-top: 1rem;
+      @include mw-20em;
+    }
+    
+  }
+
 }
 
 .media-item {

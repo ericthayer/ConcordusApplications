@@ -78,20 +78,21 @@ ul, ol {
     }
   }
 
-  &.list-styled {
-    @include MontserratLight;
-  }
-
-  &.list-unstyled {
-    @include list-unstyled;
-  }
-
   &.no-bullet {
     @include list-clean;
   }
 
   &.arrow-list-lg {
     @include arrow-list-lg;
+  }
+
+  &.list-styled {
+    @include MontserratLight;
+    @include arrow-list-lg;
+  }
+
+  &.list-unstyled {
+    @include list-unstyled;
   }
 
 }
