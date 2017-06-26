@@ -768,6 +768,15 @@ input[type="button"].btn-block {
         margin: 2rem 1.75rem 2.5rem 0; }
       .media-item.mask-outside.float-r {
         margin: .5rem 0 2.5rem 1.75rem; } }
+  @media (min-width: 50em) {
+    .media-item.float-l {
+      margin-right: 2.5rem; }
+    .media-item.float-r {
+      margin-left: 2.5rem; }
+    .media-item.mask-outside.float-l {
+      margin-right: 2.5rem; }
+    .media-item.mask-outside.float-r {
+      margin-left: 2.5rem; } }
 
 .form-trans {
   border-radius: 3em;

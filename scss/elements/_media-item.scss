@@ -61,6 +61,23 @@
 
   }
 
+  @media (min-width: $break-800) {
+    &.float-l {
+      margin-right: 2.5rem;
+    }
+    &.float-r {
+      margin-left: 2.5rem;
+    }
+
+    &.mask-outside.float-l {
+      margin-right: 2.5rem;
+    }
+
+    &.mask-outside.float-r {
+      margin-left: 2.5rem;
+    }
+  }
+
 }
 
 .media-item {
