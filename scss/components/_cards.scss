@@ -4,6 +4,9 @@
 
   .media-item {
     margin-top: 0;
+    .feature & {
+      @include mb-0;
+    }
   }
 
   &-clean {

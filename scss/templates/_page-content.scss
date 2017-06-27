@@ -1,6 +1,6 @@
 .page-content {
 
-  > .container {
+  > .container:not([class*="grid-"]) {
     @include pt-3;
     @include pb-2;
     @include pr-pl-2;
@@ -33,7 +33,7 @@
       //@include pb-0;
     }
 
-    > .container {
+    > .container:not([class*="grid-"]) {
       @include pt-0;
       @include pb-0;
       @include pr-pl-4;

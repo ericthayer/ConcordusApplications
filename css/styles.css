@@ -1084,6 +1084,8 @@ input[type="button"].btn-block {
 
 .card .media-item {
   margin-top: 0; }
+  .feature .card .media-item {
+    margin-bottom: 0; }
 
 .card-clean {
   background-color: transparent;
@@ -1302,12 +1304,12 @@ input[type="button"].btn-block {
           margin-left: .313rem;
           margin-right: 0; } }
 
-.page-content > .container {
+.page-content > .container:not([class*="grid-"]) {
   padding-top: 3em;
   padding-bottom: 2em;
   padding-right: 2em;
   padding-left: 2em; }
-  .page-content > .container > .btn {
+  .page-content > .container:not([class*="grid-"]) > .btn {
     margin-top: 1rem;
     margin-bottom: 2rem; }
 
@@ -1327,7 +1329,7 @@ input[type="button"].btn-block {
     padding-bottom: 10vh; }
     .page-content + .page-content {
       padding-top: 0; }
-    .page-content > .container {
+    .page-content > .container:not([class*="grid-"]) {
       padding-top: 0;
       padding-bottom: 0;
       padding-right: 4em;
