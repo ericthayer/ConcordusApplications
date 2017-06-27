@@ -153,8 +153,7 @@ $box-size: 40px;
 .navbar-brand {
   @include flex;
   @include ai-center;
-  height: 100%;
-  max-height: 4em;
+  height: 4em;
   max-width: 12rem;
   @include w-100;
   svg {

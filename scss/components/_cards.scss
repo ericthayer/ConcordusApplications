@@ -4,6 +4,7 @@
 
   .media-item {
     margin-top: 0;
+    overflow: hidden;
     .feature & {
       @include mb-0;
     }
@@ -40,8 +41,8 @@
 
       .media-item {
         @include flex;
-        @include flex-d-col;
-        @include ai-end;
+        // @include flex-d-col;
+        // @include ai-end;
         @include w-40;
       }
 

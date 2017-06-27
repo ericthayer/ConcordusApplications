@@ -10,7 +10,7 @@ body {
 
 img {
   @include mw-100p;
-  @include w-100;
+  //@include w-100;
 }
 
 .site-wrapper {
