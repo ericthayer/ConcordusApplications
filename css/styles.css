@@ -50,7 +50,7 @@
         padding: 0; } }
   @supports (grid-gap: 0) {
     .grid-2-col {
-      grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(26em, 1fr));
       grid-gap: 3em; } }
 
 .grid-4-col {
@@ -1699,7 +1699,7 @@ input[type="button"].btn-block {
   font-weight: 700; }
 
 .list-title {
-  margin-left: -1rem; }
+  margin-bottom: 1rem; }
 
 ul, ol {
   padding-left: 1.5em; }
@@ -1711,11 +1711,11 @@ ul, ol {
     list-style-type: none; }
   ul.arrow-list-lg, ol.arrow-list-lg {
     padding: 0; }
-    ul.arrow-list-lg li, ol.arrow-list-lg li {
+    ul.arrow-list-lg > li, ol.arrow-list-lg > li {
       display: flex; }
-      ul.arrow-list-lg li li, ol.arrow-list-lg li li {
+      ul.arrow-list-lg > li li, ol.arrow-list-lg > li li {
         list-style-type: none; }
-      ul.arrow-list-lg li:before, ol.arrow-list-lg li:before {
+      ul.arrow-list-lg > li:before, ol.arrow-list-lg > li:before {
         color: #F6BE1E;
         content: "→ ";
         padding-right: .625em; }
@@ -1726,11 +1726,11 @@ ul, ol {
     .fonts-loaded ul.list-styled, .fonts-loaded ol.list-styled {
       font-family: "Montserrat Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       font-weight: 300; }
-    ul.list-styled li, ol.list-styled li {
+    ul.list-styled > li, ol.list-styled > li {
       display: flex; }
-      ul.list-styled li li, ol.list-styled li li {
+      ul.list-styled > li li, ol.list-styled > li li {
         list-style-type: none; }
-      ul.list-styled li:before, ol.list-styled li:before {
+      ul.list-styled > li:before, ol.list-styled > li:before {
         color: #F6BE1E;
         content: "→ ";
         padding-right: .625em; }
@@ -1743,6 +1743,16 @@ ul, ol {
       padding-bottom: 1em; }
       ul.list-unstyled ul li:last-child, ol.list-unstyled ul li:last-child {
         margin-bottom: 0; }
+  ul ul.list-nested, ol ul.list-nested {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 3em;
+    width: 100%; }
+    ul ul.list-nested > li, ol ul.list-nested > li {
+      list-style-type: circle; }
+
+.list-parent {
+  flex-wrap: wrap; }
 
 .show,
 .block {

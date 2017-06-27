@@ -106,10 +106,20 @@
   }
 }
 
+@mixin list-nested {
+  @include pt-pb-1;
+  @include pl-3;
+  @include w-100;
+  > li {
+    list-style-type: circle;
+  }
+}
+
 @mixin arrow-list-lg {
   @include p-0;
-  li {
-    display: flex;
+  > li {
+    @include flex;
+    //@include flex-wrap;
     @include list-clean;
     &:before {
       color: $ca-orange;
@@ -117,4 +127,8 @@
       @include pr-sm;
     }
   }
+}
+
+@mixin list-parent {
+  @include flex-wrap;
 }
