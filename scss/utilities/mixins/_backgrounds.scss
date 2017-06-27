@@ -75,7 +75,7 @@
   }
 
   // > 800px
-  @media (min-width: 50em) {
+  @media (min-width: 50em) and (min-height: 30em) {
     @include h-100vh;
   }
 
