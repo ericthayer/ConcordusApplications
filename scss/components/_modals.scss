@@ -55,6 +55,7 @@
 
 .modal-dialog {
   @include flex-grow-1;
+  @include mr-ml-a;
   max-width: 65em;
 }
 
