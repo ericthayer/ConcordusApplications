@@ -185,7 +185,7 @@ $box-size: 40px;
 
 .nav-title {
   font-size: 1.25em;
-  margin-bottom: 1.5rem;
+  @include mb-2;
 }
 
 .navbar-inverse .navbar-nav .nav-link {
