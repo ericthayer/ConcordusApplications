@@ -165,6 +165,10 @@ $box-size: 40px;
   @include w-100;
   svg {
     @include flex-grow-1;
+    height: 100%;
+    max-height: 4em;
+    max-width: 9.5em;
+    @include w-100;
   }
 }
 
