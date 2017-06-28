@@ -206,3 +206,19 @@ $box-size: 40px;
 .dropdown-item {
   white-space: initial;
 }
+
+@media (min-width: $break-980) {
+  .navbar-toggleable-md {
+
+    > .container {
+      @include flex;
+      flex-wrap: nowrap;
+      @include ai-center;
+      @include jc-between;
+    }
+    .navbar-collapse {
+      width: auto;
+    }
+
+  }
+}
