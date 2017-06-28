@@ -8,6 +8,9 @@
   &.show {    
     pointer-events: all;
     z-index: 1050;
+    .close {
+      z-index: 1051;
+    }
   }
   .close {
     background-color: rgba(black, 0);
