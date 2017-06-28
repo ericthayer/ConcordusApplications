@@ -55,7 +55,7 @@
 
 .modal-dialog {
   @include flex-grow-1;
-  max-width: 85em;
+  max-width: 65em;
 }
 
 .modal-backdrop.show {
