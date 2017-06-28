@@ -27,8 +27,9 @@
   font-weight: normal;
   letter-spacing: .02em;
   text-transform: uppercase;
-  top: .25em;
-  right: 0;
+  height: 100%;
+  top: 5px;
+  right: 5px;
   padding: 0;
   &:focus {
     outline: none;
@@ -44,7 +45,7 @@
     width: 1.75em;
     margin-right: 0;
     margin-left: 0;
-    top: 0;
+    top: -5px;
   }
   &[aria-expanded=true] {
     background-color: #EEE;
@@ -59,10 +60,14 @@
 $box-size: 40px;
 
 .toggle-button {
+  border-radius: 50%;
   cursor: pointer;  
   padding: 0;
-  height: 42px;
-  width: 56px;
+  height: 100%;
+  width: 100%;
+  max-height: 2em;
+  max-width: 2em;
+  //width: 56px;
   
   .nav-icon,
   .nav-icon:before,
@@ -115,12 +120,12 @@ $box-size: 40px;
   }
   
   &[aria-expanded=true] {
-    background: rgba(black, .3);
+    background: #333;
     .nav-icon {
       background-color: transparent;
       transform: scale(.7);
       height: 4px;
-      width: 60%;
+      width: 65%;
       position: absolute;
       span, .icon {
         opacity: 0;  
@@ -153,7 +158,9 @@ $box-size: 40px;
 .navbar-brand {
   @include flex;
   @include ai-center;
-  height: 4em;
+  flex-shrink: 0;
+  height: 100%;
+  max-height: 4em;
   max-width: 12rem;
   @include w-100;
   svg {
