@@ -17,9 +17,10 @@
   &:target {
     display: block;
   }
-  @media (max-width: 991px) {
-    // background-color: rgba(#000, .9);
-  }
+}
+
+.navbar-nav {
+
 }
 
 .navbar-toggler {
@@ -193,7 +194,7 @@ $box-size: 40px;
 }
 
 .nav-item {
-  @media (min-width: $break-980) {
+  @media (min-width: $break-992) {
     @include ml-1;
     @include mb-0;
   }
@@ -207,7 +208,7 @@ $box-size: 40px;
   white-space: initial;
 }
 
-@media (min-width: $break-980) {
+@media (min-width: $break-992) {
   .navbar-toggleable-md {
 
     > .container {
