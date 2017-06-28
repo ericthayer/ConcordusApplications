@@ -4,8 +4,10 @@
   @include jc-center;
   @include p-2;
   pointer-events: none;
+  z-index: 0;
   &.show {    
     pointer-events: all;
+    z-index: 1050;
   }
   .close {
     background-color: rgba(black, 0);
