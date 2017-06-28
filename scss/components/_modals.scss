@@ -1,7 +1,6 @@
 .modal {
   display: flex !important;
   @include ai-center;
-  @include jc-center;
   @include p-2;
   pointer-events: none;
   z-index: 0;
