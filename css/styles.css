@@ -1038,13 +1038,13 @@ input[type="button"].btn-block {
 .navbar-brand {
   display: flex;
   align-items: center;
-  flex-shrink: 0;
-  height: 100%;
-  max-height: 4em;
-  max-width: 9.5em;
-  width: 100%; }
+  flex-shrink: 0; }
   .navbar-brand svg {
-    flex-grow: 1; }
+    flex-grow: 1;
+    height: 100%;
+    max-height: 4em;
+    max-width: 9.5em;
+    width: 100%; }
 
 .nav-list {
   font-size: .875em; }
