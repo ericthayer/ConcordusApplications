@@ -69,9 +69,10 @@
     @include text-base;
   }
 
-  @media (max-height: $break-540) {
+  @media (max-height: $break-640) {
     @include h-auto;
-    @include pt-pb-5;
+    padding-top: 7.5em;
+    @include pb-5;
   }
 
   // > 800px
