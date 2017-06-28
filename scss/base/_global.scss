@@ -30,7 +30,8 @@ img {
 }
 
 .container {
-  max-width: 85rem;
+  //max-width: 85rem;
+  @include mw-100p;
   width: 100%;
 }
 

@@ -1,9 +1,10 @@
 .page-content {
 
   > .container:not([class*="grid-"]) {
-    @include pt-3;
-    @include pb-2;
-    @include pr-pl-2;
+    //@include pt-3;
+    //@include pb-2;
+    max-width: 85em;
+    @include pr-pl-3;
     > .btn {
       margin-top: 1rem;
       @include mb-2;
@@ -23,7 +24,7 @@
     }
   }
   // > 768
-  @media (min-width: $break-768) {
+  @media (min-width: $break-640) {
 
     padding-top: 10vh;
     padding-bottom: 10vh;
@@ -31,12 +32,6 @@
     & + .page-content {
       @include pt-0;
       //@include pb-0;
-    }
-
-    > .container:not([class*="grid-"]) {
-      @include pt-0;
-      @include pb-0;
-      @include pr-pl-4;
     }
 
   }
