@@ -1044,11 +1044,7 @@ input[type="button"].btn-block {
   max-width: 9.5em;
   width: 100%; }
   .navbar-brand svg {
-    flex-grow: 1;
-    height: 100%;
-    max-height: 4em;
-    max-width: 9.5em;
-    width: 100%; }
+    flex-grow: 1; }
 
 .nav-list {
   font-size: .875em; }
