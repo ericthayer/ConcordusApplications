@@ -150,6 +150,11 @@
   100% {
     opacity: 0; } }
 
+.fade-in {
+  animation: fade-in .4s linear forwards;
+  opacity: 0;
+  transition: opacity .4s; }
+
 .post-list {
   list-style-type: none;
   margin-top: 0;
