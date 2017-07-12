@@ -1,6 +1,9 @@
 :root {  
   &:not(.enhanced) {
     @include no-js-subtle-alert;
+    .site-header {
+      position: relative;
+    }
   }
 }
 
