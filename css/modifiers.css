@@ -183,7 +183,7 @@
   border-top: 4px solid \9;
   border-right: 4px solid transparent;
   border-left: 4px solid transparent; }
-  .caret:before {
+  .caret::before {
     display: none; }
 
 .pad-block {
@@ -226,6 +226,16 @@
   margin: 0;
   overflow: visible;
   clip: auto; }
+
+@keyframes fade {
+  0% {
+    height: 0;
+    opacity: 0;
+    padding: 0; }
+  100% {
+    height: 4em;
+    opacity: 1;
+    padding: .25em 1em; } }
 
 .MontserratLight {
   -webkit-font-smoothing: auto;
