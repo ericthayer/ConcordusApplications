@@ -1,5 +1,9 @@
 .page-content {
-
+  @include pt-2;
+  @include fade-in;
+  > .container {
+    
+  }
   > .container:not([class*="grid-"]) {
     //@include pt-3;
     //@include pb-2;

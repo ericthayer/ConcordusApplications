@@ -28,17 +28,23 @@
 }
 @mixin fade-in {
   animation: fade-in .4s linear forwards;
-  transition: opacity .4s ease;
+  opacity: 0;
+  transition: opacity .4s;
 }
 
 @mixin fade-out {
   animation: fade-out .4s linear forwards;
-  transition: opacity .4s ease;
+  opacity: 1;
+  transition: opacity .4s;
 }
 
 @mixin fade-out-delay {
   animation: fade-out .4s 4s linear forwards;
   transition: opacity .4s ease;
+}
+
+.fade-in {
+  @include fade-in;
 }
 
 /// Slightly lighten a color
