@@ -5,6 +5,10 @@
   &.headroom--not-top {
     background-color: rgba(black, .9);
   }
+  &.fixed-top:not(.enhanced) {
+    position: relative;
+  }
+
   @supports (grid-gap: 0) {
     grid-row: span 1;
   }
