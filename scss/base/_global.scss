@@ -15,7 +15,8 @@ img {
 
 // skip to #main link
 
-.skip-link {
+.skip-link,
+#skip-to-content {
   background-color: $ca-blue;
   color: #FFF;
   display: flex;
@@ -36,7 +37,8 @@ img {
   }
 }
 
-a.skip-link:focus {
+a.skip-link:focus,
+#skip-to-content:focus {
   box-shadow: none;
   color: #FFF;
   max-height: 10rem;
