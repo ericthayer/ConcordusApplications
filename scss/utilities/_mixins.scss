@@ -154,7 +154,7 @@
   border-top: 4px solid \9;
   border-right: 4px solid transparent;
   border-left: 4px solid transparent;
-  &:before {
+  &::before {
     display: none;
   }
 }
@@ -223,7 +223,7 @@
 // counter item
 @mixin counter-item {
   counter-increment: sequential;
-  &:before {
+  &::before {
     background-color: $orange-red;
     border-radius: 50%;
     color: #FFF;
@@ -274,7 +274,7 @@
 
 // Clearfix
 @mixin clearfix {
-  &:before,
+  &::before,
   &:after {
     content: "";
     display: block;
@@ -331,7 +331,21 @@
 // JavaScript Disabled
 
 // ******** "No JavaScript" ALERTS ******** //
-// - To Be Used Only if we think an alert is necessary. 
+// - To Be Used Only if we think an alert is necessary.
+
+// Keyframes
+@keyframes fade {
+  0% {
+    height: 0;
+    opacity: 0;
+    padding: 0;
+  }
+  100% {
+    height: 4em;
+    opacity: 1;
+    padding: .25em 1em;
+  }
+}
 
 // ** VITAL ALERT ** //
 
@@ -343,7 +357,7 @@
   overflow: hidden;
   position: relative;
   height: auto !important; // top alert banner
-  &:before {
+  &::before {
     // Vital Message
     content: "JavaScript is DISABLED. You MUST enable JavaScript to proceed. Thank You!";
     color: #FFF;
@@ -355,7 +369,7 @@
     top: 0;
     right: 0;
     width: 100%;
-    z-index: 10001;
+    z-index: 10000;
   } // disabled overlay
   &:after {
     background: rgba(black, 0.75);
@@ -374,18 +388,12 @@
 // It is NOT vital in order to accomplish a task but may make the user experience better.
 // The alert message fades out after 5 seconds.
 @mixin no-js-subtle-alert {
-  &:before {
+  &::before {
     // Subtle Message
     content: "Please enable JavaScript for a better user experience. Thank you!";
     color: #FFF;
     background: $ca-red;
-    font-weight: normal;
-    // vital message
-    // content: "JavaScript is DISABLED. You MUST enable JavaScript to proceed. Thank You!";
-    // color: #FFF;
-    // background: shade(red, 85%);
-    // font-weight: bold;
-    
+    font-weight: normal;    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -395,50 +403,11 @@
     height: 0;
     text-align: center;
     width: 100%;
-  }
-  &:before {
+    z-index: 10000;
+    // animation
     animation: fade .5s ease 1;
     animation-fill-mode: forwards;
-    animation-delay: 2s;
-    // Keyframes
-    @keyframes fade {
-      // 0% {
-      //   opacity: 1;
-      // }
-      // 100% {
-      //   opacity: 0;
-      // }
-      // 0% {
-      //   height: 50px;
-      // }
-      // 100% {
-      //   height: 0;
-      // }
-      // 0% {
-      //   padding: 1em;
-      // }
-      // 100% {
-      //   padding: 0;
-      // }
-      0% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
-      0% {
-        height: 0;
-      }
-      100% {
-        height: 2em;
-      }
-      0% {
-        padding: 0;
-      }
-      100% {
-        padding: .25em 1em;
-      }
-    }
+    animation-delay: 2.5s;
   }
 }
 
