@@ -1,2 +1,2 @@
 # Concordus-Applications
-Concordus Applications v2
+MaxCentive v2
