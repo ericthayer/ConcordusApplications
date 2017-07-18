@@ -6,6 +6,7 @@
 
 .main-menu {
   @include m-0;
+  @include pt-pb-1;
 }
 
 .navbar-collapse {
@@ -29,7 +30,7 @@
   letter-spacing: .02em;
   text-transform: uppercase;
   height: 100%;
-  top: 5px;
+  top: 0;
   right: 5px;
   padding: 0;
   &:focus {

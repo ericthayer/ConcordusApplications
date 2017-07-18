@@ -1,5 +1,30 @@
 // form base styles
 
+input::-webkit-input-placeholder {
+  //font-size: .875rem;
+  transition: all .3s ease;
+  text-align: left;
+}
+
+::-moz-placeholder {
+  transition: all .3s ease;
+  text-align: left;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+ 
+input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+input[type="number"].no-spinner::-webkit-inner-spin-button,
+input[type="number"].no-spinner::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 @mixin form-trans {
   border-radius: 3em;
   border: .15em solid currentColor;
@@ -32,11 +57,10 @@
   @include form-trans;
 }
 
-.form {
+.form-control {
   
-  > *:not(:last-child) {
-    //@include mb-1;
-  }
+  @include text-base;
+  padding: 0.5em 0.75em;
   
 }
 
@@ -64,7 +88,7 @@
   }
 
   label {
-    font-size: .9rem;
+    font-size: .9em;
     font-weight: 400;
     //@include flex-grow-1;
     @include mb-0;
@@ -228,8 +252,8 @@
 }
 
 .search {
-  input {
-    width: auto;
+  button {
+    cursor: pointer;
   }
 }
 
