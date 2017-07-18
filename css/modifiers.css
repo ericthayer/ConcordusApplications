@@ -19,8 +19,7 @@
 
 .grid {
   display: flex;
-  flex-wrap: wrap;
-  max-width: 100%; }
+  flex-wrap: wrap; }
   .grid > * {
     flex-grow: 1;
     padding: 1em;
@@ -35,8 +34,7 @@
 
 .grid-2-col {
   display: flex;
-  flex-wrap: wrap;
-  max-width: 100%; }
+  flex-wrap: wrap; }
   .grid-2-col > * {
     flex-grow: 1;
     padding: 1em;
@@ -50,13 +48,12 @@
         padding: 0; } }
   @supports (grid-gap: 0) {
     .grid-2-col {
-      grid-template-columns: repeat(auto-fit, minmax(26em, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
       grid-gap: 3em; } }
 
 .grid-4-col {
   display: flex;
-  flex-wrap: wrap;
-  max-width: 100%; }
+  flex-wrap: wrap; }
   .grid-4-col > * {
     flex-grow: 1;
     padding: 1em;

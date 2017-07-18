@@ -4,7 +4,7 @@
   > .container {
     
   }
-  > .container:not([class*="grid-"]) {
+  > .container {
     //@include pt-3;
     //@include pb-2;
     max-width: 85em;
