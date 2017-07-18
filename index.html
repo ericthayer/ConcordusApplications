@@ -430,48 +430,58 @@
             </noscript>
             <div class="nav-icon c-white"><span><svg class="icon icon-menu"><use xlink:href="#icon-menu" /></svg></span></div>
           </button>
-          <!-- menu -->
+          <!-- Main Menu -->
           <div class="collapse navbar-collapse" id="main-menu">
+            <!-- main nav -->
             <ul class="navbar-nav ml-a">
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About<!--<span class="sr-only">(current)</span>--></a>
-              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="products.html" id="products-dropdown" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">Products</a>
+                <div class="dropdown-menu" aria-labelledby="products-dropdown">
+                  <a class="dropdown-item" href="commissions.html">Commissions Services</a>
+                  <a class="dropdown-item" href="payments.html">Payments</a>
+                  <a class="dropdown-item" href="loyalty.html">Loyalty</a>
+                </div>
+              </li>              
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="services.html" id="services-dropdown" data-toggle="dropdown" aria-haspopup="true"
                   aria-expanded="false">Services</a>
                 <div class="dropdown-menu" aria-labelledby="services-dropdown">
-                  <a class="dropdown-item" href="subscription-services.html">Subscription Services</a>
-                  <a class="dropdown-item" href="integration.html">Integration</a>
-                  <a class="dropdown-item" href="iaas.html">Integration as a Service</a>
-                  <a class="dropdown-item" href="business-in-a-box.html">Business In a Box</a>
-                  <a class="dropdown-item" href="enterprise-mobile-crm.html">Enterprise Mobile CRM</a>
-                  <a class="dropdown-item" href="security-as-a-service.html">Security as a Service</a>
-                  <a class="dropdown-item" href="offerings.html">Offerings</a>
-                  <a class="dropdown-item" href="product-technologies.html">Product Technologies</a>
+                  <a class="dropdown-item" href="customer-support.html">Customer Support</a>
+                  <a class="dropdown-item" href="training.html">Training & Support</a>
+                  <a class="dropdown-item" href="sales-consulting.html">Sale Consulting</a>
                 </div>
-              </li>              
+              </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="analytics.html" id="analytics-dropdown" data-toggle="dropdown" aria-haspopup="true"
-                  aria-expanded="false">Analytics</a>
-                <div class="dropdown-menu" aria-labelledby="analytics-dropdown">
-                  <a class="dropdown-item" href="analytics.html">Overview</a>
-                  <a class="dropdown-item" href="360-degree-view.html">360-Degree view of the Customer</a>
-                  <a class="dropdown-item" href="data-analysis.html">Big Data Analysis</a>
-                  <a class="dropdown-item" href="real-time-analytics.html">Real-Time Analytics</a>
-                  <a class="dropdown-item" href="sentiment-analysis.html">Sentiment Analysis</a>
+                <a class="nav-link dropdown-toggle" href="#0" id="about-dropdown" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">Company</a>
+                <div class="dropdown-menu" aria-labelledby="about-dropdown">
+                  <a class="dropdown-item" href="about-us.html">Bio</a>
+                  <a class="dropdown-item" href="our-team.html">Team</a>
+                  <a class="dropdown-item" href="platform-overview.html">Overview</a>
+                  <a class="dropdown-item" href="help-center.html">Help Center</a>
                 </div>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="advanced-testing.html">Testing</a>
-              </li>
-              <!--<li class="nav-item">
-                <a class="nav-link" href="concordus-customers.html">Customers</a>
-              </li>-->
               <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="demo.html" data-toggle="modal" data-target="#demo-modal">Demo</a>
+                <a class="nav-link" href="pricing.html">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#0" data-toggle="modal" data-target="#contact-modal">Demo</a>
+              </li>
+            </ul>
+            <!-- login nav -->
+            <ul class="navbar-nav login-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="sign-up.html">Sign Up</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+              </li>
+              <li class="nav-item flex ai-center">
+                <button class="btn btn-text ca-white-c" data-toggle="modal" data-target="#search-modal"><svg class="icon"><use xlink:href="#icon-search" /></svg></button>
               </li>
             </ul>
           </div>
@@ -484,10 +494,12 @@
       <!-- masthead -->
       <section class="masthead bg-hero bg-hero-app-user-01 theme-black">
         <div class="container">
-          <h1>Building a Connected World</h1>
-          <p class="lead">Innovative, smart and cost-effective software development and integration provided as a service, for Telcos and
-            Enterprises.</p>
-          <a href="#page-start" class="btn btn-lg btn-round btn-outline pr-tiny" data-scroll>Learn More <svg class="icon icon-outline rotate-90"><use xlink:href="#icon-chevron-sm" /></svg></a>
+          <h1>Commissions, Payments and Loyalty. Under One Roof.</h1>
+          <p class="lead">The all-in-one incentive platform that rewards your success the more you use it. MaxCentive addresses the Commissions, Incentives, Payments, Loyalty and Analytics needs of any business in the simplest manner possible.</p>
+          <div class="btn-group">
+          <a href="#page-start" class="btn btn-lg btn-round btn-secondary" data-scroll>Learn More</a>
+          <a href="pricing.html" class="btn btn-lg btn-round btn-primary" data-scroll>Find Pricing</a>
+          </div>
         </div>
       </section>
 
@@ -506,9 +518,9 @@
               </picture>
             </figure>
             <div class="card-block">
-              <h2 id="subscription-services" class="card-title">Subscription Services</h2>
-              <p class="card-text">The hosted Software-as-a-Service (SaaS) model also allows service providers to become more agile with the ability to quickly create, bundle and implement new offerings with minimal CapEx investments.</p>
-              <a href="subscription-services.html" class="btn btn-lg btn-text">Find out how <svg class="icon icon-outline"><use xlink:href="#icon-chevron-sm" /></svg></a>
+              <h2 id="what-is-maxcentive" class="card-title">What is MaxCentive?</h2>
+              <p class="card-text">MaxCentive is a completely integrated and white-label payments hub based on blockchain technology for financial institutions and enterprise customers. The MaxCentive platform is a single cloud-based end-to-end platform to create, process and manage all cash and non-cash transactions related to compensation, loyalty, and incentives paid to partners, contractors, and suppliers.</p>
+              <a href="#" class="btn btn-lg btn-text">Find out how <svg class="icon icon-outline"><use xlink:href="#icon-chevron-sm" /></svg></a>
             </div>
           </div>
         </div>
@@ -529,9 +541,9 @@
               </picture>
             </figure>
             <div class="card-block bg-half-globe-left">
-              <h2 id="integration-services" class="card-title">Integration Services</h2>
-              <p class="card-text">Our team has deep understanding and capability in designing solutions ground up to take advantage of cloud’s extreme elasticity and physical availability across multiple geographies.</p>
-              <a href="#" class="btn btn-lg btn-text">Meet the team <svg class="icon icon-outline"><use xlink:href="#icon-chevron-sm" /></svg></a>
+              <h2 id="integration-services" class="card-title">Who Should Use MaxCentive?</h2>
+              <p class="card-text">MaxCentive is designed to be used by Organizations of different shapes and sizes. We cater to every Organization from one-man band to a company of hundreds of thousands and everybody in between. Since MaxCentive is a SaaS application, it is ideal for any business that wants to focus on its core business and not worry about managing complex.</p>
+              <a href="#" class="btn btn-lg btn-text">Learn More <svg class="icon icon-outline"><use xlink:href="#icon-chevron-sm" /></svg></a>
             </div>
           </div>
         </div>
@@ -552,8 +564,8 @@
               </picture>
             </figure>
             <div class="card-block">
-              <h2 id="advanced-testing" class="card-title">Advanced Testing</h2>
-              <p class="card-text">Our testing platform reduces risk and costs while delivering continuous quality. We help our clients to avoid unnecessary test costs by designing and managing the end-to-end Testing process and keep the focus on delivering the best value.</p>
+              <h2 id="advanced-testing" class="card-title">Why Use MaxCentive?</h2>
+              <p class="card-text">MaxCentive is a rule-based software that enables Organizations to build unique plans that are optimized for their success. These plans pertain to Commissions, Loyalty, Payments and Incentives.</p>
               <a href="#" class="btn btn-lg btn-text">Take a closer look <svg class="icon icon-outline"><use xlink:href="#icon-chevron-sm" /></svg></a>
             </div>
           </div>
@@ -589,9 +601,8 @@
       <div class="container">
         <!-- logo & search -->
         <section class="flex flex-wrap ai-center jc-between">
-          <a class="logo" href="#main">
-            <img src="images/concordus-logo-white-h.svg" alt="MaxCentive logo">
-          </a>
+          <!-- logo -->
+          <a class="logo" href="#main"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 494.32 52.81" class="logo logo-light"><defs><style>.b{fill:#39b54a;}.c{fill:#93278f;}.d{fill:#29abe2;}.e{fill:#f15a24;}</style></defs><title>MaxCentive - Commission, Payment, Loyalty</title><path class="fill" d="M55.5,5.24V48.76c0,2.21-2.4,4.06-5.16,4.06S45.27,51,45.27,48.76v-31L32,32.46a5.51,5.51,0,0,1-4.15,1.7h-.18a5.72,5.72,0,0,1-4.24-1.7L10.23,17.71v31c0,2.21-2.3,4.06-5.16,4.06S0,51,0,48.76V5.24C0,3,2.3,1.19,5.07,1.19h.28A5.45,5.45,0,0,1,9.4,2.88L27.75,23.24,46.09,2.88a5.51,5.51,0,0,1,4.15-1.7h.09C53.1,1.26,55.5,3,55.5,5.24Z"/><path class="fill m" d="M101.88,40.64H79.48L75,50.23a5.32,5.32,0,0,1-4.79,2.58,6.6,6.6,0,0,1-1.75-.22c-2.67-.81-4-3.17-3-5.31L85.75,3.84a5.32,5.32,0,0,1,4.89-2.58,5.22,5.22,0,0,1,4.89,2.58l20.37,43.44c.92,2.14-.37,4.5-3,5.31a6.13,6.13,0,0,1-1.75.22,5.07,5.07,0,0,1-4.7-2.58ZM98.1,32.53,90.64,16.68,83.17,32.53Z"/><path class="fill a" d="M183.36,27.15C183.43,13,195.26,1.56,209.52,1.48A26.67,26.67,0,0,1,226,7a4.22,4.22,0,0,1,.71,5.7,4.18,4.18,0,0,1-5.7.78,17.77,17.77,0,0,0-11.48-3.92,18.87,18.87,0,0,0-12.83,5.13,17.59,17.59,0,0,0-5.2,12.4,17.33,17.33,0,0,0,5.2,12.4,18.87,18.87,0,0,0,12.83,5.13A17.91,17.91,0,0,0,221,40.76a4.32,4.32,0,0,1,5.7.78,4.21,4.21,0,0,1-.71,5.7,26.67,26.67,0,0,1-16.47,5.56A26.08,26.08,0,0,1,183.36,27.15Z"/><path class="fill" d="M239.24,48.89V6.83a3.87,3.87,0,0,1,3.92-3.92h23.31a4,4,0,0,1,3.92,3.92,4,4,0,0,1-3.92,4H247.15v13h16.61a4,4,0,0,1,0,7.91H247.15V44.9h19.32a4,4,0,0,1,0,7.91h-23.1c-.14,0-.14-.07-.14-.07l-.07.07A3.91,3.91,0,0,1,239.24,48.89Z"/><path class="fill" d="M293.08,48.89a3.89,3.89,0,1,1-7.77,0V7.4a3.86,3.86,0,0,1,1.57-3.28A3.93,3.93,0,0,1,292.3,5l23,31.87V7.47a3.88,3.88,0,0,1,3.85-3.85,3.94,3.94,0,0,1,3.92,3.85V48.89a4,4,0,0,1-3.92,3.92,3.87,3.87,0,0,1-2.92-1.43,1.89,1.89,0,0,1-.36-.43L293.08,19.31Z"/><path class="fill" d="M368.81,10.82H357.47V48.89a3.87,3.87,0,0,1-3.92,3.92,3.91,3.91,0,0,1-3.92-3.92V10.82H338.36a4,4,0,0,1-3.92-4,3.87,3.87,0,0,1,3.92-3.92h30.44a3.91,3.91,0,0,1,3.92,3.92A4,4,0,0,1,368.81,10.82Z"/><path class="fill" d="M386,6.83a3.87,3.87,0,0,1,3.92-3.92,4,4,0,0,1,4,3.92V48.89a4,4,0,0,1-4,3.92A3.87,3.87,0,0,1,386,48.89Z"/><path class="fill" d="M427.06,52.1a3,3,0,0,0-.5-.36c0-.07-.07-.07-.07-.21a1.89,1.89,0,0,1-.36-.43.07.07,0,0,1-.07-.07,2.5,2.5,0,0,0-.36-.57L408.24,8.83a3.8,3.8,0,0,1,2.14-5.06,3.84,3.84,0,0,1,5.06,2.07l13.9,33,13.9-33a3.93,3.93,0,0,1,7.27,3L432.9,50.46a2.13,2.13,0,0,1-.29.57c0,.07,0,.07-.07.07s-.29.29-.36.43a.55.55,0,0,1-.14.21c-.14.14-.29.21-.43.36l-.14.07a4,4,0,0,1-.57.36c-.07,0-.07,0-.14.07a1.68,1.68,0,0,0-.57.14h-.14a2.67,2.67,0,0,1-.71.07,2.43,2.43,0,0,1-.71-.07h-.14a1.68,1.68,0,0,0-.57-.14.07.07,0,0,0-.07-.07h-.07c-.14-.07-.43-.29-.64-.43Z"/><path class="fill" d="M463.16,48.89V6.83a3.87,3.87,0,0,1,3.92-3.92H490.4a4,4,0,0,1,3.92,3.92,4,4,0,0,1-3.92,4H471.08v13h16.61a4,4,0,0,1,0,7.91H471.08V44.9H490.4a4,4,0,0,1,0,7.91H467.3c-.14,0-.14-.07-.14-.07l-.07.07A3.91,3.91,0,0,1,463.16,48.89Z"/><path class="b" d="M141.45,24.4h6.91V17.25L133.3,1.6a4.7,4.7,0,0,0-7-.1,4.93,4.93,0,0,0-.19,7Z"/><path class="c" d="M152.29,24.4h6.91L174.52,8.49a4.93,4.93,0,0,0-.19-7,4.7,4.7,0,0,0-7,.1L152.29,17.25Z"/><path class="d" d="M148.36,28h-6.43L126.17,44.39a4.93,4.93,0,0,0,.1,7,5.1,5.1,0,0,0,2.73,1.4,5.2,5.2,0,0,0,4.33-1.49l15-15.61Z"/><path class="e" d="M174.49,44.39,158.73,28h-6.43v7.65l15,15.61a5.2,5.2,0,0,0,4.33,1.49,5.1,5.1,0,0,0,2.73-1.4A4.93,4.93,0,0,0,174.49,44.39Z"/></svg></a>
           <div class="search" role="search">
             <form id="footer-search" class="form-trans flex jc-between">
               <label for="company" class="sr-only">search</label>
@@ -660,7 +671,7 @@
             <h4 class="text-md">Contact Us</h4>
             <div class="contact-nav text-sm">
               <a href="tel:8005557654">800.555.7654</a>
-              <a href="mailto:contact@maxcentive.com">contact@concordusapps.com</a>
+              <a href="mailto:contact@maxcentive.com">contact@maxcentive.com</a>
             </div>
           </div>
           <div class="footer-copyright">
@@ -737,6 +748,26 @@
         <div class="media-wrap">
           <iframe width="100%" src="//www.youtube.com/embed/nQhyHO3asNE" frameborder="0" allowfullscreen></iframe>
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Search modal -->
+<div class="modal modal-clean theme-black fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="search-modal-label" aria-hidden="true">
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <div class="modal-dialog text-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+         <div class="search" role="search">
+            <form id="footer-search" class="form-trans flex jc-between">
+              <label for="search" class="sr-only">search</label>
+              <input type="text" class="form-control" id="company" placeholder="search">
+              <button class="btn btn-sm btn-default" type="submit"><svg class="icon"><use xlink:href="#icon-search" /></svg></button>
+            </form>
+          </div>
       </div>
     </div>
   </div>

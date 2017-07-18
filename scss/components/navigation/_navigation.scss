@@ -168,8 +168,6 @@ $box-size: 40px;
   svg {
     @include flex-grow-1;
     height: 100%;
-    max-height: 4em;
-    max-width: 9.5em;
     @include w-100;
   }
 }
@@ -223,4 +221,18 @@ $box-size: 40px;
     }
 
   }
+
+
+  .login-nav {
+    position: absolute;
+    top: -.25em;
+    right: 1em; 
+    &.navbar-nav .nav-link {
+      @include p-0;
+    }
+  }
+
+
 }
+
+
