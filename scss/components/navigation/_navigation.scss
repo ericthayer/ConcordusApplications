@@ -298,8 +298,9 @@ $box-size: 40px;
       @include all-caps;
       border-radius: .35em;
       font-size: .75rem;
-      letter-spacing: .03rem;
+      letter-spacing: .05rem;
       @include text-center;
+      //text-shadow: none;
       @include w-100;
       &.login-link {
         //background-color: $max-blue-dark;

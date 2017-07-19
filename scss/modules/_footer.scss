@@ -7,8 +7,18 @@
   p, nav {
     @include text-sm;
   }
+  h3 {
+    color: #999;
+  }
   @supports (grid-gap: 0) {
     grid-row: 4 / 4;
+  }
+}
+
+.contact-nav a {
+  text-decoration: underline;
+  @supports (text-decoration-skip: ink) {
+    text-decoration-skip: ink;
   }
 }
 
@@ -35,7 +45,7 @@
     list-style-type: none;
   }
 
-  .nav-title {
+  h3 {
     font-size: 1.5em;
     @include mb-1-pt5;
   }

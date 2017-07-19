@@ -1,25 +1,61 @@
-.max-black-c {
+// bg color
+
+.bg-black {
+  background-color: $max-black;
+}
+
+.bg-white {
+  background-color: $max-white;
+}
+
+.bg-charcoal {
+  background-color: $max-charcoal;
+}
+
+.bg-grey-CCC {
+  background-color: $max-grey-CCC;
+}
+
+.bg-grey-EEE {
+  background-color: $max-grey-EEE;
+}
+
+.bg-warning {
+  background-color: $max-red;
+}
+
+// color
+
+.c-black {
   color: $max-black;
 }
 
-.max-white-c {
+.c-white {
   color: $max-white;
 }
 
-.max-charcoal-c {
+.c-charcoal {
   color: $max-charcoal;
 }
 
-.max-grey-CCC-c {
+.c-grey-CCC {
   color: $max-grey-CCC;
 }
 
-.max-grey-EEE-c {
+.c-grey-EEE {
   color: $max-grey-EEE;
 }
 
-.max-warning {
+.c-warning {
  color: $max-red;
+}
+
+.theme-dark {
+  @include theme-dark;
+}
+
+.theme-light {
+  @include theme-light;
 }
 
 .theme-black {

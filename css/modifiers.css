@@ -1,4 +1,7 @@
 @charset "UTF-8";
+[class*="theme-"] a, [class*="theme-"] .btn {
+  color: currentColor; }
+
 @font-face {
   font-family: "Montserrat Light";
   src: url("../fonts/montserrat-300.woff2") format("woff2"), url("../fonts/montserrat-300.woff") format("woff");

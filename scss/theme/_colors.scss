@@ -1,12 +1,27 @@
 // MaxCentive Colors
 
+// image filters
+
+@mixin filter-luminosity {
+  @supports (background-blend-mode: luminosity) {
+    background-blend-mode: luminosity;
+  }
+}
+
+@mixin filter-soft-light {
+  @supports (background-blend-mode: soft-light) {
+    background-blend-mode: soft-light;
+  }
+}
+
 // Base
 $max-black: #111;
 $max-charcoal: #222;
 $max-grey: #333;
+$max-grey-555: #555;
 $max-grey-CCC: #CCC;
 $max-grey-EEE: #EEE;
-$max-white: #FCFCFC;
+$max-white: #FAFAFA;
 
 $max-red: #FF2222;
 
@@ -14,6 +29,7 @@ $max-red: #FF2222;
 
 // blue
 $max-blue: #29ABE2;
+$max-blue-bright: #159EFC;
 $max-blue-light: mix(white, $max-blue, 50%);
 $max-blue-dark: mix(black, $max-blue, 25%);
 
@@ -44,9 +60,24 @@ $brand-danger: #d9534f;
 $text-color: $max-grey;
 $heading-color: $max-grey;
 $bg-color: $max-white;
-$link: $max-blue;
+$link: $max-blue-bright;
 
 // theme colors
+
+[class*="theme-"] {
+  a, .btn {
+    color: currentColor;
+  }
+  //@include filter-luminosity;
+}
+
+@mixin theme-dark {
+  color: $max-white;
+}
+
+@mixin theme-light {
+  color: $text-color;
+}
 
 @mixin theme-black {
   background-color: $max-black;
@@ -54,7 +85,7 @@ $link: $max-blue;
 }
 
 @mixin theme-blue {
-  background-color: $max-blue;
+  background-color: $max-blue-bright;
   color: $max-white;
 }
 
