@@ -1,60 +1,36 @@
-// Concordus Colors
+// MaxCentive Colors
 
 // Base
-$ca-black: #111;
-$ca-charcoal: #222;
-$ca-grey: #333;
-$ca-grey-555: #555;
-$ca-grey-CCC: #CCC;
-$ca-grey-EEE: #EEE;
-$ca-white: #FCFCFC;
+$max-black: #111;
+$max-charcoal: #222;
+$max-grey: #333;
+$max-grey-CCC: #CCC;
+$max-grey-EEE: #EEE;
+$max-white: #FCFCFC;
 
-$ca-warning: #FF2222;
+$max-red: #FF2222;
 
 // ** Brand ** //
 
 // blue
-$ca-blue: #00A2E1;
-$ca-blue-light: mix(white, $ca-blue, 50%);
-$ca-blue-dark: mix(black, $ca-blue, 25%);
-
-// teal
-$ca-teal: #39909A;
-$ca-teal-light: mix(white, $ca-teal, 50%);
-$ca-teal-dark: mix(black, $ca-teal, 25%);
+$max-blue: #29ABE2;
+$max-blue-light: mix(white, $max-blue, 50%);
+$max-blue-dark: mix(black, $max-blue, 25%);
 
 // green
-$ca-green: #7EB963;
-$ca-green-light: mix(white, $ca-green, 35%);
-$ca-green-dark: mix(black, $ca-green, 25%);
-
-// dark green
-$ca-dark-green: #194247;
+$max-green: #39B54A;
+$max-green-light: mix(white, $max-green, 35%);
+$max-green-dark: mix(black, $max-green, 25%);
 
 // orange
-$ca-orange: #F6BE1E;
-$ca-orange-light: mix(white, $ca-orange, 35%);
-$ca-orange-dark: mix(black, $ca-orange, 25%);
+$max-orange: #F15A24;
+$max-orange-light: mix(white, $max-orange, 35%);
+$max-orange-dark: mix(black, $max-orange, 25%);
 
 // purple
-$ca-purple: #A0AFD4;
-$ca-purple-light: mix(white, $ca-purple, 35%);
-$ca-purple-dark: mix(black, $ca-purple, 25%);
-
-// red
-$ca-red: #EC4644;
-$ca-red-light: mix(white, $ca-red, 35%);
-$ca-red-dark: mix(black, $ca-red, 25%);
-
-// brown
-$ca-brown: #956B51;
-$ca-brown-light: mix(white, $ca-brown, 35%);
-$ca-brown-dark: mix(black, $ca-brown, 25%);
-
-// tan
-$ca-tan: #CCBE97;
-$ca-tan-light: mix(white, $ca-tan, 35%);
-$ca-tan-dark: mix(black, $ca-tan, 25%);
+$max-purple: #93278F;
+$max-purple-light: mix(white, $max-purple, 35%);
+$max-purple-dark: mix(black, $max-purple, 25%);
 
 // BS colors
 $brand-primary: #428bca;
@@ -77,74 +53,47 @@ $calc-10: calc(1vw + 10em);
 
 // defaults
 
-$text-color: $ca-grey-555;
-$heading-color: $ca-grey;
-$bg-color: $ca-white;
-$link: $ca-blue;
+$text-color: $max-grey;
+$heading-color: $max-grey;
+$bg-color: $max-white;
+$link: $max-blue;
 
 
 // theme colors
 
-@mixin theme-light {
-  background-color: $ca-grey-EEE;
-  color: $ca-grey-555;
-}
-
 @mixin theme-black {
-  background-color: $ca-black;
-  color: $ca-white;
+  background-color: $max-black;
+  color: $max-white;
 }
 
 @mixin theme-blue {
-  background-color: $ca-blue;
-  color: $ca-white;
-  a {
-    color: mix(white, $ca-blue-light, 50%);
-  }
+  background-color: $max-blue;
+  color: $max-white;
 }
 
-@mixin theme-blue-light {
-  background-color: $ca-blue-light;
-  color: $ca-blue-dark;
-  a {
-    color: $ca-blue-dark;
-  }
-}
-
-@mixin theme-teal {
-  background-color: $ca-teal-light;
-  color: $ca-teal-dark;
-  a {
-    color: $ca-teal;
-  }
+@mixin theme-blue-dark {
+  background-color: $max-blue-dark;
+  color: $max-white;
 }
 
 @mixin theme-green {
-  background-color: $ca-green;
-  color: $ca-white;
-}
-
-@mixin theme-dark-green {
-  background-color: $ca-dark-green;
-  color: $ca-white;
-  a {
-    color: #41a5ae;
-  }
+  background-color: $max-green;
+  color: $max-white;
 }
 
 @mixin theme-purple {
-  background-color: $ca-purple;
-  color: $ca-white;
+  background-color: $max-purple;
+  color: $max-white;
 }
 
 @mixin theme-orange {
-  background-color: $ca-orange;
-  color: $ca-white;
+  background-color: $max-orange;
+  color: $max-white;
 }
 
 // gradients
 
-$brand-gradient-blue: linear-gradient(to bottom, $ca-blue-light 10%, $ca-blue-dark 100%);
+// $brand-gradient-blue: linear-gradient(to bottom, $max-blue-light 10%, $max-blue-dark 100%);
 
-$brand-gradient-teal: linear-gradient(to top, $ca-teal-light 10%, $ca-teal 100%);
+// $brand-gradient-teal: linear-gradient(to top, $max-teal-light 10%, $max-teal 100%);
 

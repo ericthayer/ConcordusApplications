@@ -1,29 +1,25 @@
-.ca-black-c {
-  color: $ca-black;
+.max-black-c {
+  color: $max-black;
 }
 
-.ca-white-c {
-  color: $ca-white;
+.max-white-c {
+  color: $max-white;
 }
 
-.ca-charcoal-c {
-  color: $ca-charcoal;
+.max-charcoal-c {
+  color: $max-charcoal;
 }
 
-.ca-grey-CCC-c {
-  color: $ca-grey-CCC;
+.max-grey-CCC-c {
+  color: $max-grey-CCC;
 }
 
-.ca-grey-EEE-c {
-  color: $ca-grey-EEE;
+.max-grey-EEE-c {
+  color: $max-grey-EEE;
 }
 
-.ca-warning {
- color: $ca-warning;
-}
-
-.theme-light {
-  @include theme-light;
+.max-warning {
+ color: $max-red;
 }
 
 .theme-black {
@@ -34,16 +30,12 @@
   @include theme-blue;
 }
 
-.theme-teal {
-  @include theme-teal;
+.theme-blue-dark {
+  @include theme-blue-dark;
 }
 
 .theme-green {
   @include theme-green;
-}
-
-.theme-dark-green {
-  @include theme-dark-green;
 }
 
 .theme-purple {

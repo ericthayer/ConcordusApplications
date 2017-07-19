@@ -7,16 +7,16 @@
   p, nav {
     @include text-sm;
   }
-  .logo {
+  .site-logo {
     @include flex;
     flex-grow: 1;
     flex-basis: 15em;
     max-width: 15em;
+    max-height: 3em;
     @include mb-2;
     @include pr-1;
-    img {
-      max-height: 4em;
-      max-width: 15em;
+    > * {
+      flex-grow: 1;
     }
   }
   .search {
@@ -27,7 +27,7 @@
   }
   
   @media (max-width: 33em) {
-    .logo {
+    .site-logo {
       //max-width: 25em;
       @include mr-a;
       @include ml-a;

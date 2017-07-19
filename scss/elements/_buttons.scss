@@ -63,12 +63,12 @@
   }
 
   // custom
-  background-color: $ca-blue;
-  border-color: $ca-blue;
+  background-color: $max-blue;
+  border-color: $max-blue;
   &:hover,
   &:focus {
-    background-color: $ca-blue-dark;
-    border-color: $ca-blue-dark;
+    background-color: $max-blue-dark;
+    border-color: $max-blue-dark;
     color: #fff;
   }
 }
@@ -88,12 +88,12 @@
 
   &.btn-primary {
     background-color: transparent;
-    color: $ca-blue;
+    color: $max-blue;
   }
 
   &.btn-secondary {
     background-color: transparent;
-    border-color: $ca-grey-CCC;
+    border-color: $max-grey-CCC;
   }
 
 }
@@ -216,7 +216,7 @@ input[type="button"].btn-block {
 
 .btn-text {
   @include bg-trans;
-  color: $ca-blue;
+  color: $max-blue;
   @include p-0;
   white-space: normal;
 }

@@ -238,44 +238,55 @@ $box-size: 40px;
     }
   }
 
+}
 
-  .login-nav {
-    //@include theme-black;
+.login-nav {
+  @include flex-d-row;
+  @include pt-1;
+  & > li {
+    @include flex-grow-1;
+    @include mb-0;
+    &.search-button {
+      @include flex-grow-0;
+    }
+    &:nth-child(2) {
+      @include mr-sm;
+      @include ml-sm;
+    }
+  }
+  &.navbar-nav .nav-link {
+    @include theme-blue;
+    @include pt-pb-sm;
+    @include pr-pl-1;
+    @include all-caps;
+    border-radius: .35em;
+    font-size: .75rem;
+    letter-spacing: .03rem;
+    @include text-center;
+    width: auto;
+    &.login-link {
+      background-color: $max-blue-dark;
+    }
+  }
+  @media (min-width: $break-992) {
     @include flex;
     @include flex-d-row-rev;
     @include jc-end;
     @include ml-tiny;
-    // position: absolute;
-    // top: -1em;
-    // right: 1em;
+    @include pt-0;
     & > li {
+      @include flex-grow-0;
       @include mr-0;
       @include ml-0;
       &.search-button {
         @include flex;
         @include ai-center;
-        @include mr-sm;
-        @include ml-sm;
-      }
-    }
-    &.navbar-nav .nav-link {
-      font-size: .75rem;
-      letter-spacing: .03rem;
-    }
-    &.navbar-nav {
-      .nav-link {
-        @include theme-blue;
-        @include pt-pb-sm;
-        @include pr-pl-1;
-        @include all-caps;
-      }
-      .login-link {        
-        background-color: $ca-blue-dark;
+        @include mr-0;
+        @include ml-0;
       }
     }
   }
-
-
 }
+
 
 

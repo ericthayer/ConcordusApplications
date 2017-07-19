@@ -122,7 +122,7 @@
     //@include flex-wrap;
     @include list-clean;
     &:before {
-      color: $ca-orange;
+      color: $max-orange;
       content: "→ ";
       @include pr-sm;
     }

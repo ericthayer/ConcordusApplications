@@ -336,7 +336,7 @@ ul, ol {
       ul.arrow-list-lg > li li, ol.arrow-list-lg > li li {
         list-style-type: none; }
       ul.arrow-list-lg > li:before, ol.arrow-list-lg > li:before {
-        color: #F6BE1E;
+        color: #F15A24;
         content: "→ ";
         padding-right: .625em; }
   ul.list-styled, ol.list-styled {
@@ -351,7 +351,7 @@ ul, ol {
       ul.list-styled > li li, ol.list-styled > li li {
         list-style-type: none; }
       ul.list-styled > li:before, ol.list-styled > li:before {
-        color: #F6BE1E;
+        color: #F15A24;
         content: "→ ";
         padding-right: .625em; }
   ul.list-unstyled, ol.list-unstyled {
