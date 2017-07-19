@@ -83,19 +83,18 @@
         .grid-4-col {
           grid-template-columns: repeat(auto-fit, minmax(25em, 1fr)); } } }
 
-@media (min-width: 40em) {
-  .circle-mask {
-    border-radius: 50%;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    max-height: 20rem;
-    max-width: 20rem; }
-    .circle-mask figcaption {
-      display: none; }
-    .circle-mask.mask-outside {
-      shape-outside: circle(); } }
-  @media (min-width: 40em) and (min-width: 56.25em) {
+.circle-mask {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  max-height: 20rem;
+  max-width: 20rem; }
+  .circle-mask figcaption {
+    display: none; }
+  .circle-mask.mask-outside {
+    shape-outside: circle(); }
+  @media (min-width: 56.25em) {
     .circle-mask {
       max-height: 25rem;
       max-width: 25rem; } }

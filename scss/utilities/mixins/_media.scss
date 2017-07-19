@@ -32,8 +32,9 @@
 }
 
 .circle-mask {
+  @include circle-mask;
   @media (min-width: $break-640) {
-    @include circle-mask;
+    
   }
 }
 

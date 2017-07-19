@@ -439,7 +439,7 @@
                 <a class="nav-link dropdown-toggle" href="products.html" id="products-dropdown" data-toggle="dropdown" aria-haspopup="true"
                   aria-expanded="false">Products</a>
                 <div class="dropdown-menu" aria-labelledby="products-dropdown">
-                  <a class="dropdown-item" href="commissions.html">Commissions Services</a>
+                  <a class="dropdown-item" href="commissions.html">Commissions</a>
                   <a class="dropdown-item" href="payments.html">Payments</a>
                   <a class="dropdown-item" href="loyalty.html">Loyalty</a>
                 </div>
@@ -450,7 +450,8 @@
                 <div class="dropdown-menu" aria-labelledby="services-dropdown">
                   <a class="dropdown-item" href="customer-support.html">Customer Support</a>
                   <a class="dropdown-item" href="training.html">Training & Support</a>
-                  <a class="dropdown-item" href="sales-consulting.html">Sale Consulting</a>
+                  <a class="dropdown-item" href="sales-consulting.html">Sales Consulting</a>
+                  <a class="dropdown-item" href="analytics.html">Analytics</a>
                 </div>
               </li>
               <li class="nav-item dropdown">
@@ -483,7 +484,7 @@
                 <a class="btn theme-blue nav-link signup-link" href="sign-up.html">Sign Up</a>
               </li>
               <li class="nav-item btn-group"> 
-                <button class="btn btn-text user-menu-toggle max-white-c dropdown"><a href="#" class="dropdown-toggl" id="user-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><svg class="icon"><use xlink:href="#icon-user" /></svg></a>
+                <button class="btn btn-text user-menu-toggle max-white-c dropdown"><a href="#" class="dropdown-toggl" id="user-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><figure class="avatar-sm"><img src="images/content/1x1/img-1x1-avatar.jpg" alt=""></figure><svg class="icon hidden"><use xlink:href="#icon-user" /></svg></a>
                   <div class="dropdown-menu" aria-labelledby="user-dropdown">
                     <a class="dropdown-item" href="commissions.html">Commissions Services</a>
                     <a class="dropdown-item" href="payments.html">Payments</a>
@@ -505,8 +506,8 @@
         <div class="container">
           <h1>Commissions, Payments and Loyalty. Under One Roof.</h1>
           <p class="lead">The all-in-one incentive platform that rewards your success the more you use it. MaxCentive addresses the Commissions, Incentives, Payments, Loyalty and Analytics needs of any business in the simplest manner possible.</p>
-          <div class="btn-group">
-          <a href="#page-start" class="btn btn-lg btn-round btn-secondary" data-scroll>Learn More</a>
+          <div class="btn-wrap">
+          <a href="#page-start" class="btn btn-lg btn-round btn-outline" data-scroll>Learn More</a>
           <a href="pricing.html" class="btn btn-lg btn-round btn-primary" data-scroll>Find Pricing</a>
           </div>
         </div>
@@ -623,59 +624,48 @@
         <!-- footer nav -->
         <section class="footer-nav">
           <!-- nav list -->
+          <nav class="nav-list" aria-labelledby="maxcentive-products">
+            <h3 id="maxcentive-products" class="nav-title">Products</h3>
+            <ul>
+              <li><a href="about.html">Commissions</a></li>
+              <li><a href="payments.html">Payments</a></li>
+              <li><a href="loyalty.html">Loyalty</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+            </ul>
+          </nav>          
+          <!-- nav list -->
+          <nav class="nav-list" aria-labelledby="maxcentive-services">
+            <h3 id="maxcentive-services" class="nav-title">Services</h3>
+            <ul>
+              <li><a href="customer-support.html">Customer Support</a></li>
+              <li><a href="training.html">Training & Support</a></li>
+              <li><a href="sales-consulting.html">Sales Consulting</a></li>
+              <li><a href="analytics.html">Analytics</a></li>
+            </ul>
+          </nav>      
+          <!-- nav list -->
           <nav class="nav-list" aria-labelledby="company-information">
             <h3 id="company-information" class="nav-title"><a href="about.html">Company</a></h3>
             <ul>
               <li><a href="about.html">About Us</a></li>
-              <li><a href="#0">Our Partners</a></li>
+              <li><a href="partners.html">Our Partners</a></li>
               <li><a href="contact.html">Contact Us</a></li>
-              <li><a href="#0">Concordus News</a></li>
-            </ul>
-          </nav>
-          <!-- nav list -->
-          <nav class="nav-list" aria-labelledby="company-products">
-            <h3 class="nav-title"><a href="services.html">Services</a></h3>
-            <ul>
-              <li><a href="subscription-services.html">Subscription Services</a></li>
-              <li><a href="iaas.html">Integration as a Service</a></li>
-              <li><a href="enterprise-mobile-crm.html">Enterprise Mobile CRM</a></li>
-              <!--<li><a href="offerings.html">Offerings</a></li>-->
-              <li><a href="oproduct-technologies.html">Product Technologies</a></li>              
-            </ul>
-          </nav>      
-          <!-- nav list -->
-          <nav class="nav-list" aria-labelledby="company-members">
-            <h3 id="company-members" class="nav-title"><a href="analytics.html">Analytics</a></h3>
-            <ul>
-              <li><a href="360-degree-view.html">360-Degree view</a></li>
-              <li><a href="data-analysis.html">Big Data Analysis</a></li>
-              <li><a href="real-time-analytics.html">Real-Time Analytics</a></li>
-              <li><a href="sentiment-analysis.html">Sentiment Analysis</a></li>
-            </ul>
-          </nav>
-          <!-- nav list -->
-          <nav class="nav-list" aria-labelledby="company-members">
-            <h3 id="company-members" class="nav-title"><a href="advanced-testing.html">Testing</a></h3>
-            <ul>
-              <li><a href="#0">Digital Testing</a></li>
-              <li><a href="#0">Regression Testing</a></li>
-              <li><a href="#0">Mobile Application Testing</a></li>
-              <li><a href="#0">Enterprise Testing</a></li>
+              <li><a href="blog.html">MaxCentive News</a></li>
             </ul>
           </nav>
           <!-- nav list -->
           <nav class="nav-list" aria-labelledby="product-support">
             <h3 id="product-support" class="nav-title">Support</h3>
             <ul>
-              <li><a href="#0">Help Center</a></li>
-              <li><a href="#0">Schedule Demo</a></li>
-              <li><a href="#0">Training Resources</a></li>
-              <li><a href="#0">Terms &amp; Conditions</a></li>
+              <li><a href="help-center">Help Center</a></li>
+              <li><a href="#0" data-toggle="modal" data-target="#contact-modal">Schedule Demo</a></li>
+              <li><a href="resources.html">Documentation</a></li>
+              <li><a href="terms.html">Terms &amp; Conditions</a></li>
             </ul>
           </nav>
         </section>
         <!-- footer contact -->
-        <section class="footer-contact flex flex-wrap ai-center jc-between">
+        <section class="footer-contact">
           <div class="contact-info">
             <h4 class="text-md">Contact Us</h4>
             <div class="contact-nav text-sm">

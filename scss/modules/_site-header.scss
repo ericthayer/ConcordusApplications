@@ -1,10 +1,10 @@
 // Site Header
 
 .site-header {
-  //background-color: rgba(#000, .9);
+  background-color: rgba(#000, 0);
   //position: relative;
-  transition: background-color .4s ease;
-  &.headroom--not-top {
+  transition: .4s ease;
+  &.headroom--not-top.headroom--pinned {
     background-color: rgba(black, .9);
     .navbar-collapse {
       background-color: transparent;
@@ -15,11 +15,11 @@
   }
 }
 
-@media (min-width: $break-992) {
+
   .headroom {
     //will-change: transform;
     position: fixed;
-    transition: opacity .3s ease;
+    //transition: .3s ease;
   }
   .headroom--pinned {
     //transform: translateY(0%);
@@ -30,4 +30,3 @@
     //transform: translateY(-100%);
     opacity: 0;
   }
-}

@@ -47,7 +47,8 @@
   padding-top: $calc-2;
 
   nav {
-    @include mb-2;
+    @include mb-3;
+    flex-basis: 20em;
     &:not(:last-child) {
       padding-right: calc(1vw + 2em);
     }
@@ -63,6 +64,11 @@
     list-style-type: none;
   }
 
+  .nav-title {
+    font-size: 1.5em;
+    @include mb-1;
+  }
+
   a:hover {
     //text-decoration: none;
     @supports (text-decoration-skip: ink) {
@@ -73,7 +79,7 @@
   @media (min-width: 42em) {
     nav {
       //flex-basis: 17%;
-      @include mb-4;
+      //@include mb-4;
       &:not(:last-child) {
         padding-right: calc(1vw + 4em);
       }
@@ -92,9 +98,17 @@
 }
 
 .footer-contact {
+  @include flex;
+  @include flex-wrap;
+  @include ai-end;
+  @include jc-between;
   @include text-sm;
+  .contact-info,
+  .footer-copyright {
+    @include pt-2;
+  }
   .contact-info {
-    @include mb-2;
+    @include pr-1;
   }
   @media (min-width: 39em) {
     > * {

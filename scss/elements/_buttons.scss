@@ -103,8 +103,17 @@
   }
 }
 
-@mixin button-text {
+@mixin button-wrap {
+  @include flex;
+  @include flex-wrap;
+  @include jc-center;
+  > * {
+    margin: .5rem;
+  }
+}
 
+.btn-wrap {
+  @include button-wrap;
 }
 
 // class modifiers

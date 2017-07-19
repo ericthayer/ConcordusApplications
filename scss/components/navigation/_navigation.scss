@@ -214,11 +214,6 @@ $box-size: 40px;
   }
 }
 
-.nav-title {
-  font-size: 1.25em;
-  @include mb-2;
-}
-
 .navbar-inverse .navbar-nav .nav-link {
   color: #DDD;
   text-shadow: 0 0 .25rem rgba(black, .5);
@@ -274,6 +269,7 @@ $box-size: 40px;
     }
     .btn-group {
       flex-basis: auto;
+      @include text-lg;
       > .btn {
         border: none;
         padding-right: .125rem;
@@ -287,10 +283,12 @@ $box-size: 40px;
       .dropdown-menu {
         font-size: .875rem;
         position: absolute;
-        top: 2.5rem;
-        right: .5rem;
-        left: auto;
-        min-width: 12em;
+        top: 4em; 
+        @media (min-width: $break-640) {              
+          right: .5rem;
+          left: auto;
+          min-width: 12em;
+        }
       }
     }
 
@@ -315,22 +313,21 @@ $box-size: 40px;
       display: none;
     }
     &.logged-in {
-      .btn-group {
-        @include ml-1;
-      }
-      .nav-item-login {
+      .nav-item-login,
+      .nav-item-signup {
         display: none;
       }
       .user-menu-toggle {
         display: block;
+        @include mr-sm;
       }
     }
-    @media (max-width: $break-992 - .01em) {
+    @media (min-width: $break-640) and (max-width: $break-992) {
       .btn-group {
         position: absolute;
         top: 1rem;
         right: 1rem;
-        @include text-lg;
+        @include ml-1;
       }
     }
     @media (min-width: $break-992) {
@@ -347,6 +344,7 @@ $box-size: 40px;
       .btn-group {
         @include flex;
         @include ai-center;
+        @include ml-1;
         @include text-md;      
       }
     }
