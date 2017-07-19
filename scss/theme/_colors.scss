@@ -96,7 +96,7 @@ $link: $ca-blue;
 }
 
 @mixin theme-blue {
-  background-color: $ca-blue-dark;
+  background-color: $ca-blue;
   color: $ca-white;
   a {
     color: mix(white, $ca-blue-light, 50%);
