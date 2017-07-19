@@ -7,21 +7,49 @@
 .main-menu {
   @include m-0;
   @include pt-pb-1;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
 }
 
 .navbar-collapse {
-  //margin: 0 -15px;
-  @include p-1;
+  background-color: rgba($max-black, .95);
+  margin-top: 1rem;
+  @include p-0;
+  position: relative;
+  transition: .4s ease;
   &.show {
 
   }
   &:target {
     display: block;
   }
+  
+  @media (min-width: $break-992) {
+    background-color: transparent;
+    @include jc-between;
+    @include mt-0;
+    @include p-0;
+    @include w-100;
+  }
 }
 
 .navbar-nav {
   
+  @media (max-width: $break-992) {
+    .nav-link {
+      padding-top: $calc-25;
+      padding-right: calc(1vw + 1em);
+      padding-bottom: $calc-25;    
+      padding-left: calc(1vw + 1em);
+    }
+  }
+  @media (min-width: $break-992) {
+    @include ai-center;
+    @include jc-between;
+    .nav-link {
+      font-size: .983em;
+    }
+  }
 }
 
 .navbar-toggler {
@@ -67,8 +95,8 @@ $box-size: 40px;
   padding: 0;
   height: 100%;
   width: 100%;
-  max-height: 2em;
-  max-width: 2em;
+  max-height: 1.5em;
+  max-width: 1.5em;
   //width: 56px;
   
   .nav-icon,
@@ -197,6 +225,7 @@ $box-size: 40px;
 }
 
 .nav-item {
+  @include mb-0;
   @media (min-width: $break-992) {
     @include ml-tiny;
     @include mb-0;
@@ -207,7 +236,11 @@ $box-size: 40px;
 }
 
 .dropdown-menu {
-  min-width: 15rem;
+  border-radius: 0;
+  @include text-sm;
+  @media (max-width: $break-992) {
+    top: 0;
+  }
 }
 
 .dropdown-item {
@@ -222,67 +255,99 @@ $box-size: 40px;
       flex-wrap: nowrap;
       @include ai-center;
       @include jc-between;
-      @include pr-0;
-    }
-    .navbar-collapse {
-      @include jc-between;
-      @include p-0;
-      @include w-100;
-    }
-    .navbar-nav {
-      @include ai-center;
-      @include jc-between;
-      &.login-nav {
-        @include flex-d-row-rev;
-      }
+      @include pr-pl-0;
     }
   }
 
 }
 
-.login-nav {
-  @include flex-d-row;
-  @include pt-1;
-  & > li {
-    @include flex-grow-1;
-    @include mb-0;
-    &.search-button {
-      @include flex-grow-0;
-    }
-    &:nth-child(2) {
-      @include mr-sm;
-      @include ml-sm;
-    }
-  }
-  &.navbar-nav .nav-link {
-    @include theme-blue;
-    @include pt-pb-sm;
-    @include pr-pl-1;
-    @include all-caps;
-    border-radius: .35em;
-    font-size: .75rem;
-    letter-spacing: .03rem;
-    @include text-center;
-    width: auto;
-    &.login-link {
-      background-color: $max-blue-dark;
-    }
-  }
-  @media (min-width: $break-992) {
-    @include flex;
-    @include flex-d-row-rev;
-    @include jc-end;
-    @include ml-tiny;
-    @include pt-0;
+.navbar-nav {
+  &.admin-nav {
+    @include flex-d-row;
+    padding-top: $calc-25;
+    padding-right: $calc-1;
+    padding-bottom: $calc-75;    
+    padding-left: $calc-1;
     & > li {
-      @include flex-grow-0;
-      @include mr-0;
+      flex-basis: 7em;
+      @include mr-1;
+    }
+    .btn-group {
+      flex-basis: auto;
+      > .btn {
+        border: none;
+        padding-right: .125rem;
+        padding-left: .125rem;
+        a:hover,
+        a:focus {
+          color: currentColor;
+          opacity: .8;
+        }
+      }
+      .dropdown-menu {
+        font-size: .875rem;
+        position: absolute;
+        top: 2.5rem;
+        right: .5rem;
+        left: auto;
+        min-width: 12em;
+      }
+    }
+
+    .nav-link {
+      @include pt-pb-sm;
+      @include pr-pl-1;
+      @include all-caps;
+      border-radius: .35em;
+      font-size: .75rem;
+      letter-spacing: .03rem;
+      @include text-center;
+      @include w-100;
+      &.login-link {
+        //background-color: $max-blue-dark;
+      }
+      &.signup-link {
+        //background-color: $max-blue;
+        width: 100%;
+      }
+    }
+    .user-menu-toggle {
+      display: none;
+    }
+    &.logged-in {
+      .btn-group {
+        @include ml-1;
+      }
+      .nav-item-login {
+        display: none;
+      }
+      .user-menu-toggle {
+        display: block;
+      }
+    }
+    @media (max-width: $break-992 - .01em) {
+      .btn-group {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        @include text-lg;
+      }
+    }
+    @media (min-width: $break-992) {
+      //@include flex;
+      //@include flex-d-row-rev;
+      //@include jc-end;
       @include ml-0;
-      &.search-button {
+      @include p-0;
+      & > li {
+        @include flex-grow-0;
+        @include mr-0;
+        @include ml-sm;      
+      }
+      .btn-group {
         @include flex;
         @include ai-center;
-        @include mr-0;
-        @include ml-0;
+        @include text-md;      
       }
     }
   }

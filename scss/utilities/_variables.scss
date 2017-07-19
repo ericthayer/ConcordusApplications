@@ -75,3 +75,15 @@ $wht-text-shadow: 0 1px 0 rgba(white, 0.35);
 $blk-text-shadow: 1px 1px 0 rgba(black, 0.15);
 
 $blk-text-shadow-neg: 0 -1px 1px rgba(black, 0.25);
+
+// calc + padding
+
+$calc-25: calc(1vw + .25em);
+$calc-50: calc(1vw + .5em);
+$calc-75: calc(1vw + .75em);
+$calc-1: calc(1vw + 1em);
+$calc-2: calc(1vw + 2em);
+$calc-3: calc(1vw + 3em);
+$calc-4: calc(1vw + 4em);
+$calc-5: calc(1vw + 5em);
+$calc-10: calc(1vw + 10em);

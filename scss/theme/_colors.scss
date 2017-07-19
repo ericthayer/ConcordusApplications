@@ -39,25 +39,12 @@ $brand-info: #5bc0de;
 $brand-warning: #f0ad4e;
 $brand-danger: #d9534f;
 
-// calc + padding
-
-$calc-25: calc(1vw + .25em);
-$calc-50: calc(1vw + .5em);
-$calc-75: calc(1vw + .75em);
-$calc-1: calc(1vw + 1em);
-$calc-2: calc(1vw + 2em);
-$calc-3: calc(1vw + 3em);
-$calc-4: calc(1vw + 4em);
-$calc-5: calc(1vw + 5em);
-$calc-10: calc(1vw + 10em);
-
 // defaults
 
 $text-color: $max-grey;
 $heading-color: $max-grey;
 $bg-color: $max-white;
 $link: $max-blue;
-
 
 // theme colors
 
