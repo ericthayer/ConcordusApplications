@@ -7,37 +7,8 @@
   p, nav {
     @include text-sm;
   }
-  .site-logo {
-    @include flex;
-    flex-grow: 1;
-    flex-basis: 15em;
-    max-width: 15em;
-    max-height: 3em;
-    @include mb-2;
-    @include pr-1;
-    > * {
-      flex-grow: 1;
-    }
-  }
-  .search {
-    @include mb-2;
-  }
   @supports (grid-gap: 0) {
     grid-row: 4 / 4;
-  }
-  
-  @media (max-width: 33em) {
-    .site-logo {
-      //max-width: 25em;
-      @include mr-a;
-      @include ml-a;
-    }
-    .search {
-      @include flex-grow-1;
-      @include mw-15em;
-      @include mr-a;
-      @include ml-a;
-    }
   }
 }
 
@@ -66,7 +37,7 @@
 
   .nav-title {
     font-size: 1.5em;
-    @include mb-1;
+    @include mb-1-pt5;
   }
 
   a:hover {
@@ -93,6 +64,44 @@
       &:not(:last-child) {
         padding-right: calc(1vw + 4em);
       }
+    }
+  }
+}
+
+.footer-logo {
+  @include flex;
+  @include flex-wrap;
+  @include ai-center;
+  @include jc-between;
+  @include mb-4;
+  .site-logo {
+    @include flex;
+    flex-grow: 1;
+    flex-basis: 15em;
+    max-width: 15em;
+    max-height: 3em;
+    @include mr-a;
+    @include ml-a;
+    @include mb-1;
+    > * {
+      flex-grow: 1;
+    }
+  }
+  .search {
+    @include flex-grow-1;
+    @include mw-15em;
+    @include mr-a;
+    @include mb-1;
+    @include ml-a;    
+  }
+  
+  @media (min-width: 33em) {
+    .site-logo {
+      @include mr-ml-0;
+      @include pr-1;
+    }
+    .search {
+      @include mr-ml-0;
     }
   }
 }
