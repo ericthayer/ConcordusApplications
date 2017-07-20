@@ -49,7 +49,8 @@
 
 .bg-analytics {
   @include bg-cover;
-  background-image: url(../images/bg/bg-analytics-darkblue.jpg);
+  background-image: url(../images/bg/bg-analytics-vector-01.svg);
+  background-position: center center;
 }
 
 .bg-app-user-light {

@@ -1,0 +1,15 @@
+// gradients
+
+@mixin gradient-blue-green {
+  background: linear-gradient(to bottom, $max-blue 10%, $max-green 100%);
+}
+
+@mixin gradient-blue-green-45 {
+  background: linear-gradient(45deg, $max-blue 10%, $max-green 100%);
+}
+
+@mixin gradient-blue-green-270 {
+  background: linear-gradient(270deg, $max-blue 10%, $max-green 100%);
+}
+
+

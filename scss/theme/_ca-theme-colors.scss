@@ -24,6 +24,21 @@
   background-color: $max-red;
 }
 
+// gradients
+
+.gradient-blue-green {
+  @include gradient-blue-green;
+}
+
+.gradient-blue-green-45 {
+  @include gradient-blue-green-45;
+}
+
+.gradient-blue-green-270 {
+  @include gradient-blue-green-270;
+}
+
+
 // color
 
 .c-black {
