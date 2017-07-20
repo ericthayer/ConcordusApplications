@@ -4,7 +4,9 @@
   background-color: rgba(#000, 0);
   //position: relative;
   transition: .4s ease;
-  &.headroom--not-top.headroom--pinned {
+  &.headroom--not-top,
+  &.headroom--unpinned,
+  &.headroom--bottom {
     background-color: rgba(black, .9);
     .navbar-collapse {
       background-color: transparent;
@@ -21,7 +23,8 @@
     position: fixed;
     //transition: .3s ease;
   }
-  .headroom--pinned {
+  .headroom--pinned,
+  .headroom--bottom.headroom--unpinned {
     //transform: translateY(0%);
     opacity: 1;
   }

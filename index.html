@@ -484,7 +484,7 @@
                 <a class="btn theme-blue nav-link signup-link" href="sign-up.html">Sign Up</a>
               </li>
               <li class="nav-item btn-group"> 
-                <button class="btn btn-text user-menu-toggle c-white dropdown"><a href="#" class="dropdown-toggl" id="user-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><figure class="avatar-sm"><img src="images/content/1x1/img-1x1-avatar.jpg" alt=""></figure><svg class="icon hidden"><use xlink:href="#icon-user" /></svg></a>
+                <button class="btn btn-text user-menu-toggle c-white dropdown"><a href="#" class="dropdown-toggl" id="user-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><figure class="avatar avatar-sm"><img src="images/content/1x1/img-1x1-avatar.jpg" alt=""></figure><svg class="icon hidden"><use xlink:href="#icon-user" /></svg></a>
                   <div class="dropdown-menu" aria-labelledby="user-dropdown">
                     <a class="dropdown-item" href="commissions.html">Commissions Services</a>
                     <a class="dropdown-item" href="payments.html">Payments</a>
@@ -592,7 +592,7 @@
       <!-- Features (home) -->
       <section id="home-features" class="banner features">
         <div class="container">
-          <h2 id="maxcentive-platform" class="align-center pt-pb-2 h4 MontserratLight all-caps">MaxCentive Features</h2>
+          <h2 id="maxcentive-platform" class="align-center mb-1 pt-pb-2 h4 MontserratLight all-caps">MaxCentive Features</h2>
           <div class="grid-wrap">
             <!-- feature -->
             <div class="feature">
@@ -658,7 +658,63 @@
         </div>
       </section>
 
-      
+      <!-- Customers (home) -->
+      <section class="banner banner-full">
+        <div class="container">
+          <!-- slider -->
+          <div class="carousel carousel-testimonial slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target=".carousel-testimonial" data-slide-to="0" class="active"></li>
+              <li data-target=".carousel-testimonial" data-slide-to="1"></li>
+              <li data-target=".carousel-testimonial" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <!-- testimonial -->
+              <div class="carousel-item gradient-orange-purple theme-orange active">
+                <div class="card card-row card-row-rev card-clean">
+                  <div class="card-block">
+                    <h2 id="integration-services" class="card-title">"MaxCentive makes my life easier."</h2>
+                    <p class="card-text">MaxCentive makes it as easy as possible for our customers to use the application without costly help from the us.</p>
+                    <p class="quotee"><img class="avatar avatar-md" src="images/content/1x1/img-avatar-slug-1.svg" alt="Testimonial Person">Jennifer
+                      Thompson <span class="title">VP of Product Development - in2m</span></p>
+                    <!--<a href="#" class="btn btn-lg btn-text">View Case Study <svg class="icon icon-outline"><use xlink:href="#icon-chevron-sm" /></svg></a>-->
+                  </div>
+                </div>
+              </div>
+              <!-- testimonial -->
+              <div class="carousel-item gradient-purple-blue theme-green">
+                <div class="card card-row card-row-rev card-clean">
+                  <div class="card-block">
+                    <h2 class="card-title">"I'm able to focus on my goals."</h2>
+                    <p class="card-text">Since MaxCentive is a SaaS application, it is ideal for any business that wants to focus on its core business and not worry about managing complex.</p>
+                    <p class="quotee"><img class="avatar avatar-md" src="images/content/1x1/img-avatar-slug-2.svg" alt="Testimonial Person">Michelle
+                      Williams <span class="title">Director of Marketing - Salesforce</span></p>
+                    <!--<a href="#" class="btn btn-lg btn-text">Learn More <svg class="icon icon-outline"><use xlink:href="#icon-chevron-sm" /></svg></a>-->
+                  </div>
+                </div>
+              </div>
+              <!-- testimonial -->
+              <div class="carousel-item gradient-blue-green theme-purple">
+                <div class="card card-row card-row-rev card-clean">
+                  <div class="card-block">
+                    <h2 class="card-title">"I love using this app!"</h2>
+                    <p class="card-text">MaxCentive is designed to be used for organizations of different shapes and sizes so it takes care of everything you need to succeed.</p>
+                    <p class="quotee"><img class="avatar avatar-md" src="images/content/1x1/img-avatar-slug-6.svg" alt="Testimonial Person">Terrance
+                      Villareal <span class="title">UX Lead - Datatel Solutions</span></p>
+                    <!--<a href="#" class="btn btn-lg btn-text">Learn More <svg class="icon icon-outline"><use xlink:href="#icon-chevron-sm" /></svg></a>-->
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <script>
+          $('.carousel-testimonial').carousel({
+            interval: 3000
+          })
+        </script>
+      </section>
 
     </main>
 

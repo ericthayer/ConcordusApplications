@@ -1,0 +1,75 @@
+
+// testimonial carousel
+
+.carousel-testimonial {
+  position: relative;
+  text-shadow: .125rem .125rem 0 rgba(black, .2);
+  transition: height .4s ease;
+  .section-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .carousel-inner {
+   
+  }
+  .carousel-item {
+    @include h-100;
+    > * {      
+      opacity: 0;
+      transform: translateY(20%);
+      transition: opacity .4s ease,
+                  transform .6s ease;
+    }
+    &.active {
+      > * {
+        opacity: 1;
+        transform: none;
+      }
+    }  
+  }
+  p {
+    &:last-of-type {
+      @include mb-1;
+    }
+  }
+  .card-block {
+   @include w-100;
+  }
+  .card-text {
+    @include mw-40em;
+    @include pl-tiny;
+  }
+  .quotee {
+    @include text-md;
+    //@include italic;
+    @include pt-1;
+    @media (max-width: $break-540) {
+      @include flex;
+      @include flex-d-col;
+      @include ai-center;
+      @include jc-center;
+      @include text-center;
+    }
+    .title {
+      @include block;
+      @include italic;
+      font-size: .875rem;
+      letter-spacing: .03rem;
+      @include all-caps;
+    }
+  }
+  .avatar {
+    @media (min-width: $break-540) {
+      @include float-l;
+      @include mr-1;
+      @include mb-0;
+      @supports (shape-outside: circle()) {
+        shape-outside: circle();
+        margin-top: .125rem;
+        @include mr-2;
+      }      
+    }
+  }
+}

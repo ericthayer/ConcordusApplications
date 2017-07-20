@@ -31,7 +31,7 @@
   @supports (grid-gap: 0) {
     .grid {
       display: grid;
-      grid-gap: 3em; }
+      grid-gap: 2em; }
       @media (min-width: 40em) {
         .grid {
           grid-template-columns: repeat(auto-fit, minmax(10.5em, 1fr)); } }
@@ -49,7 +49,7 @@
   @supports (grid-gap: 0) {
     .grid-2-col {
       display: grid;
-      grid-gap: 3em; }
+      grid-gap: 2em; }
       @media (min-width: 40em) {
         .grid-2-col {
           grid-template-columns: repeat(auto-fit, minmax(10.5em, 1fr)); } }
@@ -71,7 +71,7 @@
   @supports (grid-gap: 0) {
     .grid-4-col {
       display: grid;
-      grid-gap: 3em; }
+      grid-gap: 2em; }
       @media (min-width: 40em) {
         .grid-4-col {
           grid-template-columns: repeat(auto-fit, minmax(10.5em, 1fr)); } }

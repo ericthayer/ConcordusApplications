@@ -1,12 +1,17 @@
 // card styles
 
 .card {
-
+  border: none;
   .media-item {
     margin-top: 0;
     overflow: hidden;
     .feature & {
+      @include mr-0;
+      @include ml-0;
       @include mb-0;
+      img {
+        width: 100%;
+      }
     }
   }
 

@@ -13,7 +13,7 @@
 
   @supports (grid-gap: 0) {
     display: grid;
-    grid-gap: 3em;
+    grid-gap: 2em;
     @media (min-width: $break-640) {
       grid-template-columns: repeat(auto-fit, minmax(10.5em, 1fr));  
     }

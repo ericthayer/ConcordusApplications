@@ -1,9 +1,19 @@
 
 // profile avatar
 
-.avatar-sm {
+.avatar {
   @include circle-mask;
-  height: 3rem;
-  width: 3rem;
   @include mb-0;
+  &-sm {    
+    height: 3rem;
+    width: 3rem;
+  }
+  &-md {    
+    height: 5rem;
+    width: 5rem;
+  }
+  &-lg {    
+    height: 7rem;
+    width: 7rem;
+  }
 }
