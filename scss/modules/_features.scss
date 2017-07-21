@@ -5,29 +5,66 @@
 .feature {
   @include mb-2;
   .card {
-    border-width: .75rem;
+    border-width: .1rem;
     border-style: solid;
     border-radius: 1rem;
+    transition: .4s ease;
+  }
+  .media-item {
+    margin-top: 0;
+    overflow: hidden;
+    @include mr-0;
+    @include ml-0;
+    @include mb-0;
+    img {
+      width: 100%;
+    }
+  }
+  .card[class*="theme-"] {
+    border-width: .75rem;
+    border-radius: 1rem;    
     @include p-sm;
+    .card-block {
+      @include pt-2;
+      @include pr-pl-sm;
+    }
+    .media-item {
+      border-radius: .5rem;
+      transition: .4s ease;
+    }
+    .btn {
+      color: $max-white;
+      &:hover,
+      &:focus {
+        box-shadow: 0 0 1rem rgba(black, .2);
+        color: $link;
+      }
+    }
+    &:hover {
+      color: $max-grey-555;
+      background-color: $max-white;
+      border-width: 0;
+      border-color: $max-grey-EEE;
+      box-shadow: 0 0 4rem rgba(black, .1);
+      .media-item {
+      }
+      .btn {
+        color: $link;
+        @include text-md;
+      }
+      @media (min-width: $break-900) {
+        @include p-2;
+      }
+    }
   }
   .card-block {
     @include flex;
     @include flex-d-col;
     @include ai-start;
-    @include pr-pl-sm;
   }
   .card-text {
     @include flex-grow-1;
     @include mb-2;
-  }
-  .media-item {
-    border-radius: .5rem;
-  }
-  .btn {
-    &:hover,
-    &:focus {
-      @include text-md;
-    }
   }
 }
 

@@ -2,18 +2,7 @@
 
 .card {
   border-color: $max-grey-EEE;
-  .media-item {
-    margin-top: 0;
-    overflow: hidden;
-    .feature & {
-      @include mr-0;
-      @include ml-0;
-      @include mb-0;
-      img {
-        width: 100%;
-      }
-    }
-  }
+  
 
   &-clean {
     background-color: transparent;

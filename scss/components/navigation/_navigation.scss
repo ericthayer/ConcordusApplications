@@ -296,6 +296,7 @@ $box-size: 40px;
       @include pt-pb-sm;
       @include pr-pl-1;
       @include all-caps;
+      border-width: .2em;
       border-radius: .35em;
       font-size: .75rem;
       letter-spacing: .05rem;
