@@ -1,13 +1,9 @@
-.MontserratLight {
-  @include MontserratLight;
+.OpenSans {
+  @include OpenSans;
 }
 
-.Montserrat {
-  @include Montserrat;
-}
-
-.MontserratBold {
-  @include MontserratBold;
+.Varela {
+  @include Varela;
 }
 
 //** ALIGNMENT (align-left by default) **//
@@ -88,7 +84,6 @@ ul, ol {
   }
 
   &.list-styled {
-    @include MontserratLight;
     @include arrow-list-lg;
   }
 

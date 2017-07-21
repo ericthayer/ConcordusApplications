@@ -7,6 +7,7 @@
   .card {
     border-width: .1rem;
     border-style: solid;
+    border-color: transparent;
     border-radius: 1rem;
     transition: .4s ease;
   }
@@ -43,17 +44,18 @@
     &:hover {
       color: $max-grey-555;
       background-color: $max-white;
-      border-width: 0;
-      border-color: $max-grey-EEE;
+      //border-width: 0;
+      //border-color: $max-grey-EEE;
       box-shadow: 0 0 4rem rgba(black, .1);
       .media-item {
       }
       .btn {
         color: $link;
-        @include text-md;
+        @include text-base;
       }
       @media (min-width: $break-900) {
-        @include p-2;
+        //border-width: 1rem;
+        //border-color: transparent;
       }
     }
   }
@@ -65,22 +67,5 @@
   .card-text {
     @include flex-grow-1;
     @include mb-2;
-  }
-}
-
-#home-features {
-  @media (max-width: $break-900) {
-    > .container {
-      @include p-2;
-    }
-  }
-  @media (min-width: $break-900) {
-    .grid-wrap {
-      @include grid;
-      grid-template-rows: minmax(60vh, 1fr);
-      > * {
-        display: flex;
-      }
-    }
   }
 }

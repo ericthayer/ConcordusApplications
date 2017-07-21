@@ -14,6 +14,7 @@
 
 body {
   color: $text-color;
+  @include OpenSans;
   line-height: 1.667;
   font-size-adjust: none;
   text-rendering: optimizeLegibility;
@@ -25,11 +26,14 @@ h3,.h3,
 h4,.h4,
 h5,.h5,
 h6,.h6 {
-  color: currentColor;
-  @include Montserrat;
+  color: $max-grey-555;
+  @include Varela;
   line-height: 1.35;
   @include mb-1-pt5;
   transition: opacity .2s;
+  [class*="theme"] & {
+    color: currentColor;
+  }
 }
 
 .h1,h1 {
@@ -38,14 +42,17 @@ h6,.h6 {
 
 .h2,h2 {
   font-size: 2.75em;
+  letter-spacing: .02em;
 }
 
 .h3,h3 {
   font-size: 2em;
+  letter-spacing: .02em;
 }
 
 .h4,h4 {
   font-size: 1.875em;
+  letter-spacing: .04em;
 }
 
 a {
@@ -55,7 +62,7 @@ a {
 }
 
 p:not(.sans-serif):not(.serif) {
-  @include MontserratLight;
+
 }
 
 p {
@@ -74,7 +81,7 @@ p {
 }
 
 .lead {
-  @include MontserratLight;
+
 }
 
 a abbr[title] {

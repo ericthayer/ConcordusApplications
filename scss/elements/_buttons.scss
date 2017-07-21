@@ -12,9 +12,10 @@
   padding: .5em 1em;
   font-size: 1em;
   border-radius: .25em;
+  text-transform: uppercase;
   transition: all .2s ease-in-out;
   // custom
-  @include MontserratLight;
+  @include Varela;
   letter-spacing: .05em;
   text-shadow: none;
   &:hover {
@@ -23,12 +24,15 @@
 }
 
 @mixin button-lg {
-  padding: .75em 2em;
-  font-size: .983em;
+  @include pt-1;
+  @include pr-2;
+  @include pb-1;
+  @include pl-2;
 }
 
 @mixin button-xl {
-  @include text-lg;
+  @include button-lg;
+  @include text-md;
 }
 
 @mixin button-primary {
@@ -229,5 +233,6 @@ input[type="button"].btn-block {
   @include bg-trans;
   color: $max-blue;
   @include p-0;
+  text-transform: none;
   white-space: normal;
 }

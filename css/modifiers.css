@@ -3,20 +3,14 @@
   color: currentColor; }
 
 @font-face {
-  font-family: "Montserrat Light";
-  src: url("../fonts/montserrat-300.woff2") format("woff2"), url("../fonts/montserrat-300.woff") format("woff");
+  font-family: "Varela Round";
+  src: url("../fonts/varela-round.woff2") format("woff2"), url("../fonts/varela-round.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/montserrat-500.woff2") format("woff2"), url("../fonts/montserrat-500.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: "Montserrat Bold";
-  src: url("../fonts/montserrat-700.woff2") format("woff2"), url("../fonts/montserrat-700.woff") format("woff");
+  font-family: "Open Sans";
+  src: url("../fonts/open-sans.woff2") format("woff2"), url("../fonts/open-sans.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -84,6 +78,32 @@
       @media (min-width: 60em) and (max-width: 85em) {
         .grid-4-col {
           grid-template-columns: repeat(auto-fit, minmax(25em, 1fr)); } } }
+
+@media (max-width: 56.25em) {
+  .grid-banner > .container {
+    padding: 2em; } }
+
+@media (min-width: 56.25em) {
+  .grid-banner .grid-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 2em;
+    grid-template-rows: minmax(50vh, 1fr); }
+    .grid-banner .grid-wrap > * {
+      flex-grow: 1;
+      padding: 1em;
+      flex-basis: 15em; }
+    @supports (grid-gap: 0) {
+      .grid-banner .grid-wrap {
+        display: grid;
+        grid-gap: 2em; }
+        @media (min-width: 40em) {
+          .grid-banner .grid-wrap {
+            grid-template-columns: repeat(auto-fit, minmax(10.5em, 1fr)); } }
+        .grid-banner .grid-wrap > * {
+          padding: 0; } }
+    .grid-banner .grid-wrap > * {
+      display: flex; } }
 
 .circle-mask {
   border-radius: 50%;
@@ -258,24 +278,18 @@
     opacity: 0;
     padding: 0; } }
 
-.MontserratLight {
-  -webkit-font-smoothing: auto;
+.OpenSans {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
-  .fonts-loaded .MontserratLight {
-    font-family: "Montserrat Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  .fonts-loaded .OpenSans {
+    font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-weight: 300; }
 
-.Montserrat {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
-  .fonts-loaded .Montserrat {
-    font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-weight: 500; }
-
-.MontserratBold {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
-  .fonts-loaded .MontserratBold {
-    font-family: "Montserrat Bold", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-weight: 700; }
+.Varela {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -moz-osx-font-smoothing: greyscale;
+  -webkit-font-smoothing: antialiased; }
+  .fonts-loaded .Varela {
+    font-family: "Varela Round", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
 
 @media (min-width: 33.75em) {
   .align-right {
@@ -300,10 +314,10 @@
   font-size: 1em; }
 
 .text-md {
-  font-size: 1.25em; }
+  font-size: 1.45em; }
 
 .text-lg {
-  font-size: 1.75em; }
+  font-size: 2em; }
 
 .text-xl {
   font-size: 3.125em; }
@@ -339,12 +353,7 @@ ul, ol {
         content: "→ ";
         padding-right: .625em; }
   ul.list-styled, ol.list-styled {
-    -webkit-font-smoothing: auto;
-    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     padding: 0; }
-    .fonts-loaded ul.list-styled, .fonts-loaded ol.list-styled {
-      font-family: "Montserrat Light", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      font-weight: 300; }
     ul.list-styled > li, ol.list-styled > li {
       display: flex; }
       ul.list-styled > li li, ol.list-styled > li li {

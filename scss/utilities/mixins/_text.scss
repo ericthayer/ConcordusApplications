@@ -1,25 +1,17 @@
-@mixin MontserratLight {
-  -webkit-font-smoothing: auto;
+@mixin OpenSans {
   font-family: $sans-serif;
   .fonts-loaded & {
-    font-family: $MontserratLight;
+    font-family: $OpenSans;
     font-weight: 300;
   }
 }
 
-@mixin Montserrat {
+@mixin Varela {
   font-family: $sans-serif;
+  -moz-osx-font-smoothing: greyscale;
+  -webkit-font-smoothing: antialiased;
   .fonts-loaded & {
-    font-family: $Montserrat;
-    font-weight: 500;
-  }
-}
-
-@mixin MontserratBold {
-  font-family: $sans-serif;
-  .fonts-loaded & {
-    font-family: $MontserratBold;
-    font-weight: 700;
+    font-family: $Varela;
   }
 }
 
@@ -62,11 +54,11 @@
 }
 
 @mixin text-md {
-  font-size: 1.25em;
+  font-size: 1.45em;
 }
 
 @mixin text-lg {
-  font-size: 1.75em;
+  font-size: 2em;
 }
 
 @mixin text-xl {

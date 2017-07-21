@@ -43,33 +43,23 @@ $serif: "Garamond", "Cambria", Georgia, serif;
 // ** Custom Fonts
 
 @font-face {
-  font-family: "Montserrat Light";
-  src: url("../fonts/montserrat-300.woff2") format("woff2"),
-       url("../fonts/montserrat-300.woff") format("woff");
+  font-family: "Varela Round";
+  src: url("../fonts/varela-round.woff2") format("woff2"),
+       url("../fonts/varela-round.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/montserrat-500.woff2") format("woff2"),
-       url("../fonts/montserrat-500.woff") format("woff");
+  font-family: "Open Sans";
+  src: url("../fonts/open-sans.woff2") format("woff2"),
+       url("../fonts/open-sans.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
-@font-face {
-  font-family: "Montserrat Bold";
-  src: url("../fonts/montserrat-700.woff2") format("woff2"),
-       url("../fonts/montserrat-700.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-$MontserratLight: 'Montserrat Light', $sans-serif;
-$Montserrat: 'Montserrat', $sans-serif;
-$MontserratBold: 'Montserrat Bold', $sans-serif;
-
+$OpenSans: 'Open Sans', $sans-serif;
+$Varela: 'Varela Round', $sans-serif;
 
 // Specific Helpers
 

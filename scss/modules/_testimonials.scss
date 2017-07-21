@@ -41,6 +41,9 @@
     @include mw-40em;
     @include pl-tiny;
   }
+  .card-title {
+    @include text-lg;
+  }
   .quotee {
     @include text-md;
     //@include italic;
@@ -57,7 +60,7 @@
       @include italic;
       font-size: .875rem;
       letter-spacing: .03rem;
-      @include all-caps;
+      //@include all-caps;
     }
   }
   .avatar {
