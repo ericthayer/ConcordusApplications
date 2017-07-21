@@ -56,6 +56,9 @@ a {
 
 p:not(.sans-serif):not(.serif) {
   @include MontserratLight;
+}
+
+p {
   font-size: 1.1em;
   //-webkit-font-smoothing: antialiased;
   a {

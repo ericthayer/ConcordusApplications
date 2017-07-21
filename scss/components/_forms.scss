@@ -1,14 +1,43 @@
 // form base styles
 
 ::-webkit-input-placeholder {
-  //font-size: .875rem;
-  transition: all .3s ease;
+  color: $max-grey-999;
+  font-family: $sans-serif;
+  font-size: .938em;
+  font-weight: 300;  
+  opacity: 1;
   text-align: left;
+  transition: all .3s ease;
 }
 
 ::-moz-placeholder {
-  transition: all .3s ease;
+  color: $max-grey-999;
+  font-family: $sans-serif;
+  font-size: .938em;
+  font-weight: 300;  
+  opacity: 1;
   text-align: left;
+  transition: all .3s ease;
+}
+
+:-ms-input-placeholder {
+  color: $max-grey-999;
+  font-family: $sans-serif;
+  font-size: .938em;
+  font-weight: 300;  
+  opacity: 1;
+  text-align: left;
+  transition: all .3s ease;
+}
+
+::placeholder {
+  color: $max-grey-999;
+  font-family: $sans-serif;
+  font-size: .938em;
+  font-weight: 300;  
+  opacity: 1;
+  text-align: left;
+  transition: all .3s ease;
 }
 
 :focus::-webkit-input-placeholder {
@@ -19,36 +48,12 @@
   color: transparent;
 }
 
-.form-control::-webkit-input-placeholder {
-  font-family: $sans-serif;
-  font-size: .938em;
-  font-weight: 300;
-  color: $max-grey-CCC;
-  opacity: 1;
+:focus::-ms-input-placeholder {
+  color: transparent;
 }
 
-.form-control::-moz-placeholder {
-  font-family: $sans-serif;
-  font-size: .938em;
-  font-weight: 300;
-  color: $max-grey-CCC;
-  opacity: 1;
-}
-
-.form-control:-ms-input-placeholder {
-  font-family: $sans-serif;
-  font-size: .938em;
-  font-weight: 300;
-  color: $max-grey-CCC;
-  opacity: 1;
-}
-
-.form-control::placeholder {
-  font-family: $sans-serif;
-  font-size: .938em;
-  font-weight: 300;
-  color: $max-grey-CCC;
-  opacity: 1;
+:focus::placeholder {
+  color: transparent;
 }
 
 input[type="number"].no-spinner::-webkit-inner-spin-button,
@@ -90,7 +95,7 @@ input[type="number"].no-spinner::-webkit-outer-spin-button {
 }
 
 .form-control {
-  color: $max-grey-CCC;  
+  color: $max-grey-999;  
   @include text-base;
   @include p-1;
 }

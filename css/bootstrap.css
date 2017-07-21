@@ -2116,7 +2116,7 @@ pre code {
   outline: none;
 }
 
-.form-control::-webkit-input-placeholder {
+/*.form-control::-webkit-input-placeholder {
   color: #636c72;
   opacity: 1;
 }
@@ -2134,7 +2134,7 @@ pre code {
 .form-control::placeholder {
   color: #636c72;
   opacity: 1;
-}
+}*/
 
 .form-control:disabled, .form-control[readonly] {
   background-color: #eceeef;
