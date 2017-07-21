@@ -44,6 +44,10 @@ $max-orange: #F15A24;
 $max-orange-light: mix(white, $max-orange, 35%);
 $max-orange-dark: mix(black, $max-orange, 25%);
 
+$max-rust: #d14c1f;
+$max-teal: #29c5bc;
+$max-blue-rich: #607ee8;
+
 // purple
 $max-purple: #93278F;
 $max-purple-light: mix(white, $max-purple, 35%);
@@ -95,6 +99,19 @@ $link: $max-blue-bright;
   color: $max-white;
 }
 
+@mixin theme-blue-rich {
+  background-color: $max-blue-rich;
+  border-color: $max-blue-rich;
+  color: $max-white;
+  .btn {
+    &:hover,
+    &:focus {
+      background-color: $max-white;
+      color: $max-blue-rich;
+    }
+  }
+}
+
 @mixin theme-green {
   background-color: $max-green;
   color: $max-white;
@@ -108,5 +125,31 @@ $link: $max-blue-bright;
 @mixin theme-orange {
   background-color: $max-orange;
   color: $max-white;
+}
+
+@mixin theme-rust {
+  background-color: $max-rust;
+  border-color: $max-rust;
+  color: $max-white;
+  .btn {
+    &:hover,
+    &:focus {
+      background-color: $max-white;
+      color: $max-rust;
+    }
+  }
+}
+
+@mixin theme-teal {
+  background-color: $max-teal;
+  border-color: $max-teal;
+  color: $max-white;
+  .btn {
+    &:hover,
+    &:focus {
+      background-color: $max-white;
+      color: $max-teal;
+    }
+  }
 }
 

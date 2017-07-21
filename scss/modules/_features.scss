@@ -4,6 +4,31 @@
 
 .feature {
   @include mb-2;
+  .card {
+    border-width: .75rem;
+    border-style: solid;
+    border-radius: 1rem;
+    @include p-sm;
+  }
+  .card-block {
+    @include flex;
+    @include flex-d-col;
+    @include ai-start;
+    @include pr-pl-sm;
+  }
+  .card-text {
+    @include flex-grow-1;
+    @include mb-2;
+  }
+  .media-item {
+    border-radius: .5rem;
+  }
+  .btn {
+    &:hover,
+    &:focus {
+      @include text-md;
+    }
+  }
 }
 
 #home-features {
@@ -15,6 +40,10 @@
   @media (min-width: $break-900) {
     .grid-wrap {
       @include grid;
+      grid-template-rows: minmax(60vh, 1fr);
+      > * {
+        display: flex;
+      }
     }
   }
 }

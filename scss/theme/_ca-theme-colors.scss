@@ -129,6 +129,10 @@
   @include theme-blue;
 }
 
+.theme-blue-rich {
+  @include theme-blue-rich;
+}
+
 .theme-blue-dark {
   @include theme-blue-dark;
 }
@@ -143,4 +147,12 @@
 
 .theme-orange {
   @include theme-orange;
+}
+
+.theme-rust {
+  @include theme-rust;
+}
+
+.theme-teal {
+  @include theme-teal;
 }

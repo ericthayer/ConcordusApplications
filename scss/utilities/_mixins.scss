@@ -197,7 +197,7 @@
 @mixin banner {
   @include p-0;
   > .container {
-    @include p-4;
+    //@include p-4;
   }
 }
 

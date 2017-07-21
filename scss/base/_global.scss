@@ -71,6 +71,8 @@ a.skip-link:focus,
   //max-width: 85rem;
   @include mw-100p;
   width: 100%;
+  @include pr-2;
+  @include pl-2;
 }
 
 .row {
