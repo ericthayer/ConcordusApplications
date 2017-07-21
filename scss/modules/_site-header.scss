@@ -1,7 +1,7 @@
 // Site Header
 
 .site-header {
-  background-color: rgba(#000, 0);
+  background-color: rgba(black, 0);
   //position: relative;
   transition: .4s ease;
   &.headroom--not-top,
@@ -11,6 +11,10 @@
     .navbar-collapse {
       background-color: transparent;
     }
+  }
+  @media (max-width: 15em) {
+    background-color: rgba(black, 1);
+    position: relative;
   }
   @supports (grid-gap: 0) {
     grid-row: span 1;

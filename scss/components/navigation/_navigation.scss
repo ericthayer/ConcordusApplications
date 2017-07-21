@@ -191,7 +191,7 @@ $box-size: 40px;
   flex-shrink: 0;
   height: 100%;
   max-height: 4em;
-  max-width: 9.5em;
+  max-width: 9em;
   @include w-100;
   svg {
     @include flex-grow-1;
@@ -323,7 +323,7 @@ $box-size: 40px;
         @include mr-sm;
       }
     }
-    @media (min-width: $break-640) and (max-width: $break-992) {
+    @media (min-width: $break-640) and (max-width: $break-992 - .01em) {
       .btn-group {
         position: absolute;
         top: 1rem;
@@ -335,6 +335,7 @@ $box-size: 40px;
       //@include flex;
       //@include flex-d-row-rev;
       //@include jc-end;
+      @include relative;
       @include ml-0;
       @include p-0;
       & > li {

@@ -23,8 +23,8 @@
 }
 
 @mixin button-lg {
-  padding: .75em 1.5em;
-  font-size: 1.25em;
+  padding: .75em 2em;
+  font-size: .983em;
 }
 
 @mixin button-xl {
@@ -212,6 +212,7 @@ input[type="button"].btn-block {
   @include button-lg;
   @include button-round;
   @include button-primary;
+  @include all-caps;
 }
 
 .btn-lg, .btn-group-lg > .btn {

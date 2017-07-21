@@ -1,6 +1,7 @@
 // Typography
 .sans-serif {
   font-family: $sans-serif;
+  font-weight: 300;
 }
 
 .serif {
@@ -53,7 +54,7 @@ a {
   transition: color .4s ease; //-webkit-font-smoothing: subpixel-antialiased;
 }
 
-p {
+p:not(.sans-serif):not(.serif) {
   @include MontserratLight;
   font-size: 1.1em;
   //-webkit-font-smoothing: antialiased;

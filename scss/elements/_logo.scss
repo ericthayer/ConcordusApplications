@@ -1,4 +1,13 @@
 
+.logo {
+  @media (max-width: 18.75em) {
+    .fill:not(.m):not(.a) {
+      display: none;
+    }
+  }
+}
+
+
 .logo-light {
   .fill {
     fill: #FFF;

@@ -1,6 +1,6 @@
 // form base styles
 
-input::-webkit-input-placeholder {
+::-webkit-input-placeholder {
   //font-size: .875rem;
   transition: all .3s ease;
   text-align: left;
@@ -11,12 +11,44 @@ input::-webkit-input-placeholder {
   text-align: left;
 }
 
-input:focus::-webkit-input-placeholder {
+:focus::-webkit-input-placeholder {
   color: transparent;
 }
  
-input:focus::-moz-placeholder {
+:focus::-moz-placeholder {
   color: transparent;
+}
+
+.form-control::-webkit-input-placeholder {
+  font-family: $sans-serif;
+  font-size: .938em;
+  font-weight: 300;
+  color: $max-grey-CCC;
+  opacity: 1;
+}
+
+.form-control::-moz-placeholder {
+  font-family: $sans-serif;
+  font-size: .938em;
+  font-weight: 300;
+  color: $max-grey-CCC;
+  opacity: 1;
+}
+
+.form-control:-ms-input-placeholder {
+  font-family: $sans-serif;
+  font-size: .938em;
+  font-weight: 300;
+  color: $max-grey-CCC;
+  opacity: 1;
+}
+
+.form-control::placeholder {
+  font-family: $sans-serif;
+  font-size: .938em;
+  font-weight: 300;
+  color: $max-grey-CCC;
+  opacity: 1;
 }
 
 input[type="number"].no-spinner::-webkit-inner-spin-button,
@@ -58,10 +90,9 @@ input[type="number"].no-spinner::-webkit-outer-spin-button {
 }
 
 .form-control {
-  
+  color: $max-grey-CCC;  
   @include text-base;
-  padding: 0.5em 0.75em;
-  
+  @include p-1;
 }
 
 // better styling for these long ass forms
@@ -89,7 +120,7 @@ input[type="number"].no-spinner::-webkit-outer-spin-button {
 
   label {
     font-size: .9em;
-    font-weight: 400;
+    font-weight: 300;
     //@include flex-grow-1;
     @include mb-0;
     @include pt-tiny;
@@ -195,7 +226,15 @@ input[type="number"].no-spinner::-webkit-outer-spin-button {
 
 .form-group {
   @include mb-1;
-  
+  label {
+    display: block;
+    border: none;
+    @include Montserrat;
+    font-size: .75em;
+    font-weight: iniital;
+    letter-spacing: .08rem;
+    @include all-caps;
+  }
   // input on own line style
   &-block { 
     @include ai-start;
@@ -205,8 +244,9 @@ input[type="number"].no-spinner::-webkit-outer-spin-button {
     label {
       display: block;
       border: none;
-      font-size: .9rem;
+      font-size: .75em;
       font-weight: iniital;
+      @include all-caps;
       @include mb-sm;
       @include pt-0;
       @include pr-0;
