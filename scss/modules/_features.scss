@@ -7,9 +7,6 @@
 }
 
 #home-features {
-  > .container {
-      @include p-2;
-    }
   @media (max-width: $break-900) {
     > .container {
       @include p-2;

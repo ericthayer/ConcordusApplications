@@ -1,7 +1,7 @@
 // card styles
 
 .card {
-  border: none;
+  border-color: $max-grey-EEE;
   .media-item {
     margin-top: 0;
     overflow: hidden;
@@ -78,7 +78,7 @@
           margin-bottom: 5rem;
         }
       }
-      @media (min-width: 100em) {
+      @media (min-width: $break-1200) {
 
         .media-item {
           @include w-a;

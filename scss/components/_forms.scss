@@ -1,7 +1,7 @@
 // form base styles
 
 ::-webkit-input-placeholder {
-  color: $max-grey-999;
+  color: $max-grey-CCC;
   font-family: $sans-serif;
   font-size: .938em;
   font-weight: 300;  
@@ -11,7 +11,7 @@
 }
 
 ::-moz-placeholder {
-  color: $max-grey-999;
+  color: $max-grey-CCC;
   font-family: $sans-serif;
   font-size: .938em;
   font-weight: 300;  
@@ -21,7 +21,7 @@
 }
 
 :-ms-input-placeholder {
-  color: $max-grey-999;
+  color: $max-grey-CCC;
   font-family: $sans-serif;
   font-size: .938em;
   font-weight: 300;  
@@ -31,7 +31,7 @@
 }
 
 ::placeholder {
-  color: $max-grey-999;
+  color: $max-grey-CCC;
   font-family: $sans-serif;
   font-size: .938em;
   font-weight: 300;  
@@ -95,7 +95,7 @@ input[type="number"].no-spinner::-webkit-outer-spin-button {
 }
 
 .form-control {
-  color: $max-grey-999;  
+  color: $max-grey-CCC;  
   @include text-base;
   @include p-1;
 }
