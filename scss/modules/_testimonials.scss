@@ -29,6 +29,54 @@
       }
     }  
   }
+
+  .carousel-indicators {
+    bottom: -3rem;
+    li {
+      background-color: #777;
+      box-shadow: 0 0 0 .25rem #FFF;
+      border-radius: 50%;
+      filter: grayscale(60%)  drop-shadow(0 .1rem .2rem rgba(0,0,0, .2));
+      @include h-100;
+      max-height: 4rem;
+      max-width: 4rem;
+      @include mr-1;
+      @include mb-0;
+      @include ml-1;      
+      text-indent: initial;      
+      transition: .35s ease;
+      will-change: max-height max-width;
+      .avatar {
+        margin-top: 0;
+        @include mr-0;
+        @include mb-0;
+        height: 100%;
+        width: 100%;
+        line-height: 0;
+        opacity: .75;
+        transition: .4s ease;
+      }
+      &.active,
+      &:hover {
+        background-color: #FFF;
+        filter: drop-shadow(0 .4rem .2rem rgba(0,0,0, .3));
+        .avatar {
+          opacity: 1;
+        }
+      }
+      &.active {
+        max-height: 5rem;
+        max-width: 5rem;
+      }
+      > a:hover,
+      > a:focus {
+        .avatar {
+          //filter: grayscale(0%) blur(0em);
+        }
+      }
+    }
+  }
+
   p {
     &:last-of-type {
       //@include mb-1;
@@ -45,13 +93,16 @@
     @include text-lg;
   }
   .quotee {
+    @include flex;
+    @include ai-center;
     @include text-md;
     //@include italic;
     @include pt-1;
-    @media (max-width: $break-540) {
-      @include flex;
+    .text-wrap {
+      line-height: 2rem;
+    }
+    @media (max-width: $break-540) {      
       @include flex-d-col;
-      @include ai-center;
       @include jc-center;
       @include text-center;
     }
@@ -64,15 +115,16 @@
     }
   }
   .avatar {
+    @include mb-sm;
     @media (min-width: $break-540) {
       @include float-l;
       @include mr-1;
       @include mb-0;
-      @supports (shape-outside: circle()) {
-        shape-outside: circle();
-        margin-top: .125rem;
-        @include mr-2;
-      }      
+      // @supports (shape-outside: circle()) {
+      //   shape-outside: circle();
+      //   margin-top: .125rem;
+      //   @include mr-2;
+      // }      
     }
   }
 }
