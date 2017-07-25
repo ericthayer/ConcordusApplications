@@ -68,8 +68,8 @@ a.skip-link:focus,
 }
 
 .container {
-  //max-width: 85rem;
-  @include mw-100p;
+  max-width: 85em;
+  //@include mw-100p;
   width: 100%;
   @include pr-2;
   @include pl-2;

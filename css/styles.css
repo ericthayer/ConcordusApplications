@@ -795,7 +795,7 @@ a.skip-link:focus,
 }
 
 .container {
-  max-width: 100%;
+  max-width: 85em;
   width: 100%;
   padding-right: 2em;
   padding-left: 2em;
@@ -1796,7 +1796,7 @@ input[type="number"].no-spinner::-webkit-outer-spin-button {
   width: 1.75em;
   margin-right: 0;
   margin-left: 0;
-  top: -5px;
+  top: -8px;
 }
 
 .navbar-toggler[aria-expanded=true] {
@@ -2797,7 +2797,8 @@ input[type="number"].no-spinner::-webkit-outer-spin-button {
 }
 
 .page-content {
-  padding-top: 2em;
+  padding-top: 7em;
+  padding-bottom: 7em;
   -webkit-animation: fade-in .4s linear forwards;
           animation: fade-in .4s linear forwards;
   opacity: 0;
@@ -2805,7 +2806,6 @@ input[type="number"].no-spinner::-webkit-outer-spin-button {
 }
 
 .page-content > .container {
-  max-width: 85em;
   padding-right: 3em;
   padding-left: 3em;
 }
@@ -2828,9 +2828,9 @@ input[type="number"].no-spinner::-webkit-outer-spin-button {
   }
 }
 
-@media (min-width: 40em) {
+@media (min-width: 62em) {
   .page-content {
-    padding-top: 10vh;
+    padding-top: 10vw;
     padding-bottom: 10vh;
   }
   .page-content + .page-content {
@@ -3696,12 +3696,6 @@ ul ul.list-nested > li, ol ul.list-nested > li {
   padding-bottom: 5em;
 }
 
-@media (min-width: 50em) {
-  .bg-full {
-    height: 50vh;
-  }
-}
-
 .bg-hero {
   background-position: center;
   background-repeat: no-repeat;
@@ -3724,12 +3718,6 @@ ul ul.list-nested > li, ol ul.list-nested > li {
   padding-bottom: 5em;
   font-size: calc( 1rem + (40 - 28) * ( (100vw - 400px) / ( 2000 - 400)));
   height: 100vh;
-}
-
-@media (min-width: 50em) {
-  .bg-hero {
-    height: 50vh;
-  }
 }
 
 .bg-hero .container {
@@ -3783,12 +3771,6 @@ ul ul.list-nested > li, ol ul.list-nested > li {
 
 .bg-hero-user-01 {
   background-image: url(../images/bg/bg-hero-user-man.jpg);
-}
-
-@supports (background-blend-mode: luminosity) {
-  .bg-hero {
-    background-blend-mode: luminosity;
-  }
 }
 
 .bg-dash-user {
