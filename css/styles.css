@@ -1779,7 +1779,7 @@ input[type="number"].no-spinner::-webkit-outer-spin-button {
   text-transform: uppercase;
   height: 100%;
   top: 0;
-  right: 5px;
+  right: 0;
   padding: 0;
 }
 
@@ -1796,7 +1796,8 @@ input[type="number"].no-spinner::-webkit-outer-spin-button {
   width: 1.75em;
   margin-right: 0;
   margin-left: 0;
-  top: -8px;
+  top: -5px;
+  right: 0;
 }
 
 .navbar-toggler[aria-expanded=true] {
@@ -1947,8 +1948,15 @@ input[type="number"].no-spinner::-webkit-outer-spin-button {
 }
 
 .navbar-inverse .navbar-nav .nav-link {
-  color: #DDD;
+  color: #FAFAFA;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -moz-osx-font-smoothing: greyscale;
+  -webkit-font-smoothing: antialiased;
   text-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
+}
+
+.fonts-loaded .navbar-inverse .navbar-nav .nav-link {
+  font-family: "Varela Round", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 .nav-item {
@@ -2020,7 +2028,7 @@ input[type="number"].no-spinner::-webkit-outer-spin-button {
 .navbar-nav.admin-nav .btn-group {
   -ms-flex-preferred-size: auto;
       flex-basis: auto;
-  font-size: 2em;
+  font-size: 1.45em;
 }
 
 .navbar-nav.admin-nav .btn-group > .btn {
@@ -2081,7 +2089,7 @@ input[type="number"].no-spinner::-webkit-outer-spin-button {
   margin-right: .625rem;
 }
 
-@media (min-width: 40em) and (max-width: 61.99em) {
+@media (min-width: 48em) and (max-width: 61.99em) {
   .navbar-nav.admin-nav .btn-group {
     position: absolute;
     top: 1rem;

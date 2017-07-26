@@ -59,7 +59,7 @@
   text-transform: uppercase;
   height: 100%;
   top: 0;
-  right: 5px;
+  right: 0;
   padding: 0;
   &:focus {
     outline: none;
@@ -75,7 +75,8 @@
     width: 1.75em;
     margin-right: 0;
     margin-left: 0;
-    top: -8px;
+    top: -5px;
+    right: 0;
   }
   &[aria-expanded=true] {
     background-color: #EEE;
@@ -215,7 +216,8 @@ $box-size: 40px;
 }
 
 .navbar-inverse .navbar-nav .nav-link {
-  color: #DDD;
+  color: $max-white;
+  @include Varela;
   text-shadow: 0 0 .25rem rgba(black, .5);
 }
 
@@ -269,7 +271,7 @@ $box-size: 40px;
     }
     .btn-group {
       flex-basis: auto;
-      @include text-lg;
+      @include text-md;
       > .btn {
         border: none;
         padding-right: .125rem;
@@ -324,7 +326,7 @@ $box-size: 40px;
         @include mr-sm;
       }
     }
-    @media (min-width: $break-640) and (max-width: $break-992 - .01em) {
+    @media (min-width: $break-768) and (max-width: $break-992 - .01em) {
       .btn-group {
         position: absolute;
         top: 1rem;
