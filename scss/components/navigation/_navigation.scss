@@ -37,10 +37,11 @@
   
   @media (max-width: $break-992) {
     .nav-link {
-      padding-top: $calc-25;
-      padding-right: calc(1vw + 1em);
-      padding-bottom: $calc-25;    
-      padding-left: calc(1vw + 1em);
+      // padding-top: $calc-25;
+      // padding-right: calc(1vw + 1em);
+      // padding-bottom: $calc-25;    
+      // padding-left: calc(1vw + 1em);
+      padding: .5em 1em;
     }
   }
   @media (min-width: $break-992) {
@@ -261,10 +262,15 @@ $box-size: 40px;
 .navbar-nav {
   &.admin-nav {
     @include flex-d-row;
-    padding-top: $calc-25;
-    padding-right: $calc-1;
-    padding-bottom: $calc-75;    
-    padding-left: $calc-1;
+    // padding-top: $calc-25;
+    // padding-right: $calc-1;
+    // padding-bottom: $calc-75;    
+    // padding-left: $calc-1;
+    padding: .875em 1em;
+    .avatar {
+      max-height: 2.5rem;
+      max-width: 2.5rem
+    }
     & > li {
       flex-basis: 7em;
       @include mr-1;
@@ -280,16 +286,6 @@ $box-size: 40px;
         a:focus {
           color: currentColor;
           opacity: .8;
-        }
-      }
-      .dropdown-menu {
-        font-size: .875rem;
-        position: absolute;
-        top: 4em; 
-        @media (min-width: $break-640) {              
-          right: .5rem;
-          left: auto;
-          min-width: 12em;
         }
       }
     }
@@ -326,12 +322,45 @@ $box-size: 40px;
         @include mr-sm;
       }
     }
-    @media (min-width: $break-768) and (max-width: $break-992 - .01em) {
-      .btn-group {
+    .dropdown-menu {
+      border-radius: .4rem;
+      font-size: .875rem;
+      position: absolute;
+      top: auto;
+      left: 3.5rem;
+      bottom: 0;
+      min-width: 12em;
+      &:before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        border: 8px solid transparent;
+        border-right-color: #FFF;
+        bottom: 1em;        
+        right: auto;
+        left: -16px;
+      }
+      @media (min-width: $break-540) {            top: 3rem;
+        bottom: auto;
+        right: 0; 
+        left: auto;
+        min-width: 12em;
+        &:before {
+          border-right-color: transparent;
+          border-bottom-color: #FFF;
+          top: -16px;
+          right: 1em;
+          bottom: auto;
+          left: auto;
+        }
+      }
+    }
+    @media (min-width: $break-540) and (max-width: $break-992 - .01em) {
+      &.logged-in {
         position: absolute;
         top: 1rem;
         right: 1rem;
-        @include ml-1;
+        @include ml-1;        
       }
     }
     @media (min-width: $break-992) {
@@ -355,6 +384,5 @@ $box-size: 40px;
     }
   }
 }
-
 
 

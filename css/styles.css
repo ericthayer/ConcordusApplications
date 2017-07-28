@@ -1751,10 +1751,7 @@ input[type="number"].no-spinner::-webkit-outer-spin-button {
 
 @media (max-width: 62em) {
   .navbar-nav .nav-link {
-    padding-top: calc(1vw + .25em);
-    padding-right: calc(1vw + 1em);
-    padding-bottom: calc(1vw + .25em);
-    padding-left: calc(1vw + 1em);
+    padding: .5em 1em;
   }
 }
 
@@ -2013,10 +2010,12 @@ input[type="number"].no-spinner::-webkit-outer-spin-button {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding-top: calc(1vw + .25em);
-  padding-right: calc(1vw + 1em);
-  padding-bottom: calc(1vw + .75em);
-  padding-left: calc(1vw + 1em);
+  padding: .875em 1em;
+}
+
+.navbar-nav.admin-nav .avatar {
+  max-height: 2.5rem;
+  max-width: 2.5rem;
 }
 
 .navbar-nav.admin-nav > li {
@@ -2041,20 +2040,6 @@ input[type="number"].no-spinner::-webkit-outer-spin-button {
 .navbar-nav.admin-nav .btn-group > .btn a:focus {
   color: currentColor;
   opacity: .8;
-}
-
-.navbar-nav.admin-nav .btn-group .dropdown-menu {
-  font-size: .875rem;
-  position: absolute;
-  top: 4em;
-}
-
-@media (min-width: 40em) {
-  .navbar-nav.admin-nav .btn-group .dropdown-menu {
-    right: .5rem;
-    left: auto;
-    min-width: 12em;
-  }
 }
 
 .navbar-nav.admin-nav .nav-link {
@@ -2089,8 +2074,47 @@ input[type="number"].no-spinner::-webkit-outer-spin-button {
   margin-right: .625rem;
 }
 
-@media (min-width: 48em) and (max-width: 61.99em) {
-  .navbar-nav.admin-nav .btn-group {
+.navbar-nav.admin-nav .dropdown-menu {
+  border-radius: .4rem;
+  font-size: .875rem;
+  position: absolute;
+  top: auto;
+  left: 3.5rem;
+  bottom: 0;
+  min-width: 12em;
+}
+
+.navbar-nav.admin-nav .dropdown-menu:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  border: 8px solid transparent;
+  border-right-color: #FFF;
+  bottom: 1em;
+  right: auto;
+  left: -16px;
+}
+
+@media (min-width: 33.75em) {
+  .navbar-nav.admin-nav .dropdown-menu {
+    top: 3rem;
+    bottom: auto;
+    right: 0;
+    left: auto;
+    min-width: 12em;
+  }
+  .navbar-nav.admin-nav .dropdown-menu:before {
+    border-right-color: transparent;
+    border-bottom-color: #FFF;
+    top: -16px;
+    right: 1em;
+    bottom: auto;
+    left: auto;
+  }
+}
+
+@media (min-width: 33.75em) and (max-width: 61.99em) {
+  .navbar-nav.admin-nav.logged-in {
     position: absolute;
     top: 1rem;
     right: 1rem;
@@ -4198,6 +4222,10 @@ ul ul.list-nested > li, ol ul.list-nested > li {
 
 .c-warning {
   color: #FF2222;
+}
+
+.c-blue {
+  color: #29ABE2;
 }
 
 .theme-dark {

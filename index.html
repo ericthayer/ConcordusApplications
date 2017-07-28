@@ -484,10 +484,13 @@
                 <a class="btn theme-blue nav-link signup-link" href="sign-up.html">Sign Up</a>
               </li>
               <li class="nav-item btn-group"> 
-                <button class="btn btn-text user-menu-toggle c-white dropdown"><a href="#" class="dropdown-toggl" id="user-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><figure class="avatar avatar-sm"><img src="images/content/1x1/img-1x1-avatar.jpg" alt=""></figure><svg class="icon hidden"><use xlink:href="#icon-user" /></svg></a>
-                  <div class="dropdown-menu" aria-labelledby="user-dropdown">
-                    <a class="dropdown-item" href="commissions.html">Commissions Services</a>
-                    <a class="dropdown-item" href="payments.html">Payments</a>
+                <button class="btn btn-text user-menu-toggle c-white dropdown"><a href="#" id="user-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><figure class="avatar avatar-sm"><img src="images/content/1x1/img-1x1-avatar.jpg" alt=""></figure><svg class="icon hidden"><use xlink:href="#icon-user" /></svg></a>
+                  <div class="dropdown-menu profile-menu" aria-labelledby="user-dropdown">
+                    <div class="dropdown-item">
+                      <div class="profile-menu-header">Signed in as <strong class="block pt-sm">ethayer594 <a class="c-blue" href="profile.html"><svg class="icon"><use xlink:href="#icon-cog" /></svg></a></strong></div>
+                    </div>
+                    <hr>
+                    <a class="dropdown-item" href="payments.html">Profile </a>
                     <a class="dropdown-item" href="loyalty.html">Loyalty</a>
                   </div>
                 </button>
@@ -1017,7 +1020,7 @@
 </div>
 
 <!-- Search modal -->
-<div class="modal modal-clean theme-black fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="search-modal-label" aria-hidden="true">
+<div class="modal modal-clean c-white fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="search-modal-label" aria-hidden="true">
   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
     <span aria-hidden="true">&times;</span>
   </button>

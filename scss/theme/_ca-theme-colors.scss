@@ -121,6 +121,10 @@
  color: $max-red;
 }
 
+.c-blue {
+  color: $max-blue;
+}
+
 .theme-dark {
   @include theme-dark;
 }
