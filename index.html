@@ -484,12 +484,22 @@
               <li class="nav-item btn-group"> 
                 <button class="btn btn-text user-menu-toggle c-white dropdown"><a href="#" id="user-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><figure class="avatar avatar-sm"><img src="images/content/1x1/img-1x1-avatar.jpg" alt=""></figure><svg class="icon hidden"><use xlink:href="#icon-user" /></svg></a>
                   <div class="dropdown-menu profile-menu" aria-labelledby="user-dropdown">
-                    <div class="dropdown-item">
-                      <div class="profile-menu-header">Signed in as <strong class="block pt-sm">ethayer594 <a class="c-blue" href="profile.html"><svg class="icon"><use xlink:href="#icon-cog" /></svg></a></strong></div>
+                    <div class="dropdown-item menu-header">
+                      <figure class="avatar float-l mr-1"><img src="images/content/1x1/img-1x1-avatar.jpg" alt=""></figure>
+                      <div class="profile-menu-header">Signed in as <strong class="block text-md">ethayer594 <a class="c-blue" href="profile.html"><svg class="icon"><use xlink:href="#icon-cog" /></svg></a></strong></div>
                     </div>
                     <hr>
-                    <a class="dropdown-item" href="payments.html">Profile </a>
-                    <a class="dropdown-item" href="loyalty.html">Loyalty</a>
+                    <div class="profile-menu-items">
+                      <a class="dropdown-item" href="notifications.html"><svg class="icon"><use xlink:href="#icon-alarm" /></svg> Notifications</a>
+                      <a class="dropdown-item" href="dashboard.html"><svg class="icon"><use xlink:href="#icon-meter" /></svg> Dashboard</a>
+                      <a class="dropdown-item" href="offers.html"><svg class="icon"><use xlink:href="#icon-gift" /></svg> Offers</a>
+                      <a class="dropdown-item" href="offers.html"><svg class="icon"><use xlink:href="#icon-star" /></svg> Upgrade</a>
+                    </div>
+                    <hr>
+                    <div class="flex jc-between pr-pl-1">
+                      <a class="btn btn-secondary dropdown-item mr-sm" href="help-center.html">Help Center</a>
+                      <a class="btn btn-secondary dropdown-item ml-sm" href="signout.html">Sign Out</a>
+                    </div>
                   </div>
                 </button>
                 <button class="btn btn-text c-white" data-toggle="modal" data-target="#search-modal"><svg class="icon"><use xlink:href="#icon-search" /></svg></button>
