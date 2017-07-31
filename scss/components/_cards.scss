@@ -3,7 +3,10 @@
 .card {
   border-color: $max-grey-EEE;
   
-
+  .media-item {
+    margin-top: 0;
+  }
+  
   &-clean {
     background-color: transparent;
     border: none;
