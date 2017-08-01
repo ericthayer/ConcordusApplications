@@ -125,6 +125,18 @@
   color: $max-blue;
 }
 
+.c-green {
+  color: $max-green;
+}
+
+.c-orange {
+  color: $max-orange;
+}
+
+.c-purple {
+  color: $max-purple;
+}
+
 .theme-dark {
   @include theme-dark;
 }

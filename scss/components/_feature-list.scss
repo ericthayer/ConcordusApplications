@@ -1,0 +1,20 @@
+.feature-list {
+  .feature-title {
+    @include mb-sm;
+    @include text-lg;
+  }
+  .feature-text {
+    @include mb-1-pt5;
+    @include text-sm;
+  }
+}
+
+.feature-items {
+  @include flex-layout;
+  @media (min-width: $break-640) {
+    > * {
+      flex-basis: 50%;
+      @include p-2;
+    }
+  }
+}
