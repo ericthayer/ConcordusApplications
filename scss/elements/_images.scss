@@ -18,17 +18,24 @@
   }
 }
 
-.dash-sample {
+.media-item.dash-sample {
   position: relative;
   img {
     filter: drop-shadow(0 0 1.5rem rgba(black,.35));
   }
   figcaption {
+    background-color: rgba(black, .85);
     @include Varela;
     @include text-md;
     position: absolute;
     @include p-0;
-    top: 3em;
-    left: 3em;
+    padding-top: .5rem;
+    padding-right: 1rem;
+    padding-bottom: .5rem;
+    padding-left: 1rem;
+    top: 60%;
+    left: -3%;
+    z-index: 1;
+    color: #FFF;
   }
 }

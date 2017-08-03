@@ -4085,27 +4085,34 @@ input[type="button"].btn-block {
   width: 7rem;
 }
 
-.dash-sample {
+.media-item.dash-sample {
   position: relative;
 }
 
-.dash-sample img {
+.media-item.dash-sample img {
   -webkit-filter: drop-shadow(0 0 1.5rem rgba(0, 0, 0, 0.35));
           filter: drop-shadow(0 0 1.5rem rgba(0, 0, 0, 0.35));
 }
 
-.dash-sample figcaption {
+.media-item.dash-sample figcaption {
+  background-color: rgba(0, 0, 0, 0.85);
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   -moz-osx-font-smoothing: greyscale;
   -webkit-font-smoothing: antialiased;
   font-size: 1.45em;
   position: absolute;
   padding: 0;
-  top: 3em;
-  left: 3em;
+  padding-top: .5rem;
+  padding-right: 1rem;
+  padding-bottom: .5rem;
+  padding-left: 1rem;
+  top: 60%;
+  left: -3%;
+  z-index: 1;
+  color: #FFF;
 }
 
-.fonts-loaded .dash-sample figcaption {
+.fonts-loaded .media-item.dash-sample figcaption {
   font-family: "Varela Round", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
