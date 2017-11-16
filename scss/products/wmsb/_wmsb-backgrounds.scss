@@ -11,7 +11,7 @@
     background-image: -ms-image-set(url(../images/bg/bg-bus-dark-01.jpg) 1x,
             url(../images/bg/bg-bus-dark-01.jpg) 2x);
     p {
-      @include mw-30em;
+      max-width: 30em;
     }
   }
 }

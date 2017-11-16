@@ -1,6 +1,6 @@
 // Utilities
-@import "../../utilities/variables"; // brand colors are in here
-@import "../../utilities/mixins";
+// @import "../../utilities/variables";
+// @import "../../utilities/mixins";
 
 // Modifiers
 // @import "../../utilities/modifiers/mod-margin";
@@ -12,5 +12,7 @@
 
 // Theme
 @import "wmsb-typography";
+@import "wmsb-navigation";
+@import "wmsb-layout";
 @import "wmsb-backgrounds";
 @import "wmsb-theme-colors";

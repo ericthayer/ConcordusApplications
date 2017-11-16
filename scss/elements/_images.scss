@@ -1,0 +1,41 @@
+
+// profile avatar
+
+.avatar {
+  @include circle-mask;
+  @include mb-0;
+  &-sm {    
+    height: 3rem;
+    width: 3rem;
+  }
+  &-md {    
+    height: 5rem;
+    width: 5rem;
+  }
+  &-lg {    
+    height: 7rem;
+    width: 7rem;
+  }
+}
+
+.media-item.dash-sample {
+  position: relative;
+  img {
+    filter: drop-shadow(0 0 1.5rem rgba(black,.35));
+  }
+  figcaption {
+    background-color: rgba(black, .85);
+    @include Montserrat;
+    @include text-md;
+    position: absolute;
+    @include p-0;
+    padding-top: .5rem;
+    padding-right: 1rem;
+    padding-bottom: .5rem;
+    padding-left: 1rem;
+    top: 60%;
+    left: -3%;
+    z-index: 1;
+    color: #FFF;
+  }
+}

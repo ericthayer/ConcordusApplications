@@ -46,6 +46,23 @@
   }
 }
 
+@mixin grid-banner {
+  @media (max-width: $break-900) {
+    > .container {
+      @include p-2;
+    }
+  }
+  @media (min-width: $break-900) {
+    .grid-wrap {
+      @include grid;
+      grid-template-rows: minmax(50vh, 1fr);
+      > * {
+        display: flex;
+      }
+    }
+  }
+}
+
 .grid {
   @include grid;
 }
@@ -56,4 +73,8 @@
 
 .grid-4-col {
   @include grid-4-col;
+}
+
+.grid-banner {
+  @include grid-banner;
 }
