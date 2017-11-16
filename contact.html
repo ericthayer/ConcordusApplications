@@ -438,8 +438,13 @@
                 <a class="nav-link" href="about.html">About</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="services.html" id="services-dropdown" data-toggle="dropdown" aria-haspopup="true"
-                  aria-expanded="false">Services</a>
+                <a class="nav-link dropdown-toggle" href="#0" id="products-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products</a>
+                <div class="dropdown-menu" aria-labelledby="products-dropdown">
+                  <a class="dropdown-item" href="products/wmsb/">Watch My School Bus</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="services.html" id="services-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
                 <div class="dropdown-menu" aria-labelledby="services-dropdown">
                   <a class="dropdown-item" href="subscription-services.html">Subscription Services</a>
                   <a class="dropdown-item" href="integration.html">Integration</a>
@@ -508,33 +513,40 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
-                  <input class="form-control" type="text" name="name" placeholder="Name" required="">
+                  <label class="sr-only" for="contactName">Name</label>
+                  <input class="form-control" type="text" id="contactName" name="name" placeholder="Name" required>
                   <p class="help-block text-danger"></p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
-                  <input class="form-control" type="email" name="email" placeholder="E-mail" required="">
+                  <label class="sr-only" for="contactEmail">Email</label>
+                  <input class="form-control" type="email" id="contactEmail" name="email" placeholder="E-mail" required>
                   <p class="help-block text-danger"></p>
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="form-group">
-                  <input class="form-control" type="text" name="subject" placeholder="Subject" required="">
+                  <label class="sr-only" for="contactSubject">Subject</label>
+                  <input class="form-control" type="text" id="subject" name="subject" placeholder="Subject">
                   <p class="help-block text-danger"></p>
                 </div>
               </div>
-              <div class="col-md-12 mb-4">
+              <div class="col-md-12">
                 <div class="form-group">
-                  <textarea class="form-control" name="message" placeholder="Message" rows="12" required=""></textarea>
+                  <label class="sr-only" for="contactMessage">Message</label>
+                  <textarea class="form-control" id="contactMessage" name="message" placeholder="Message" rows="12"></textarea>
+                  <small class="form-text text-muted p-sm hidden">
+                    Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+                  </small>
                 </div>
               </div>
               <div class="col-md-12 mb-4">
-                <p class="mr-ml-a mb-0 mw-48em align-center">Concordus Applications is a Systems Integrator that is focused on building a connected world by offering innovative, smart and cost-effective solutions. Our products aim to automate the business processes used for various Users in industries like the Communications Channel, Retail, Health care etc. We offer end-to-end services for software design, build, maintenance and support and we work across technology domains, platforms, infrastructure and tools.</p>
+                <small class="form-text text-muted mr-ml-a mb-0 mw-56em align-center">Concordus Applications is a Systems Integrator that is focused on building a connected world by offering innovative, smart and cost-effective solutions. Our products aim to automate the business processes used for various Users in industries like the Communications Channel, Retail, Health care etc. We offer end-to-end services for software design, build, maintenance and support and we work across technology domains, platforms, infrastructure and tools.</small>
               </div>
               <div class="col-md-12">
                 <div class="align-center">
-                  <input class="btn btn-brand btn-xl" type="submit" value="Send Request">
+                  <button class="btn btn-brand btn-xl" type="submit">Send Request</button>
                 </div>
               </div>
             </div>
@@ -577,18 +589,29 @@
           </nav>
           <!-- nav list -->
           <nav class="nav-list" aria-labelledby="company-products">
-            <h3 class="nav-title"><a href="services.html">Services</a></h3>
+            <h3 id="company-products" class="nav-title"><a href="#0">Products</a></h3>
+            <ul>
+              <li><a href="products/wmsb/">Watch My School Bus</a></li>
+              <li><a href="#0">Chatmate</a></li>
+              <li><a href="#0">iPaaS</a></li>
+              <li><a href="#0">AWS Cloud</a></li>
+            </ul>
+          </nav>
+          <!-- nav list -->
+          <nav class="nav-list" aria-labelledby="company-services">
+            <h3 id="company-services" class="nav-title"><a href="services.html">Services</a></h3>
             <ul>
               <li><a href="subscription-services.html">Subscription Services</a></li>
               <li><a href="iaas.html">Integration as a Service</a></li>
               <li><a href="enterprise-mobile-crm.html">Enterprise Mobile CRM</a></li>
               <!--<li><a href="offerings.html">Offerings</a></li>-->
-              <li><a href="oproduct-technologies.html">Product Technologies</a></li>              
+              <li><a href="product-technologies.html">Product Technologies</a></li>
+              <li><a href="advanced-testing.html">Advanced Testing</a></li>             
             </ul>
           </nav>      
           <!-- nav list -->
-          <nav class="nav-list" aria-labelledby="company-members">
-            <h3 id="company-members" class="nav-title"><a href="analytics.html">Analytics</a></h3>
+          <nav class="nav-list" aria-labelledby="company-analytics">
+            <h3 id="company-analytics" class="nav-title"><a href="analytics.html">Analytics</a></h3>
             <ul>
               <li><a href="360-degree-view.html">360-Degree view</a></li>
               <li><a href="data-analysis.html">Big Data Analysis</a></li>
@@ -597,8 +620,8 @@
             </ul>
           </nav>
           <!-- nav list -->
-          <nav class="nav-list" aria-labelledby="company-members">
-            <h3 id="company-members" class="nav-title"><a href="advanced-testing.html">Testing</a></h3>
+          <nav class="nav-list" aria-labelledby="company-testing" hidden>
+            <h3 id="company-testing" class="nav-title"><a href="advanced-testing.html">Testing</a></h3>
             <ul>
               <li><a href="#0">Digital Testing</a></li>
               <li><a href="#0">Regression Testing</a></li>

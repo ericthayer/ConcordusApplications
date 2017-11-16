@@ -34,6 +34,8 @@ input {
   box-shadow: initial;
   display: initial;
   font-size: initial;
+  @include pt-pb-1;
+  @include pr-pl-sm;
   width: initial;
   &:focus {
     background-color: $max-purple;
