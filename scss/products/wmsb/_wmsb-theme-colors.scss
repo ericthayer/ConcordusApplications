@@ -1,55 +1,36 @@
-.ca-black-c {
-  color: $ca-black;
-}
+// Brand Colors
 
-.ca-white-c {
-  color: $ca-white;
-}
+$wmsb-yellow: #FFD400;
 
-.ca-charcoal-c {
-  color: $ca-charcoal;
-}
+$wmsb-red: #FF0000;
 
-.ca-grey-CCC-c {
-  color: $ca-grey-CCC;
-}
+$wmsb-dark-red: #C93816;
 
-.ca-grey-EEE-c {
-  color: $ca-grey-EEE;
-}
+$wmsb-blue: #1C5BEA;
 
-.ca-warning {
- color: $ca-warning;
-}
+$wmsb-green: #2EA051;
 
-.theme-light {
-  @include theme-light;
-}
+$wmsb-orange: #EF9E4C;
 
-.theme-black {
-  @include theme-black;
-}
+$wmsb-purple: #9543D1;
 
-.theme-blue {
-  @include theme-blue;
-}
 
-.theme-teal {
-  @include theme-teal;
-}
-
-.theme-green {
-  @include theme-green;
-}
-
-.theme-dark-green {
-  @include theme-dark-green;
-}
-
-.theme-purple {
-  @include theme-purple;
-}
-
-.theme-orange {
-  @include theme-orange;
-}
+.c-warning {
+  color: $wmsb-red;
+ }
+ 
+ .c-blue {
+   color: $wmsb-blue;
+ }
+ 
+ .c-green {
+   color: $wmsb-green;
+ }
+ 
+ .c-orange {
+   color: $wmsb-orange;
+ }
+ 
+ .c-purple {
+   color: $wmsb-purple;
+ }

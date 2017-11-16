@@ -10,7 +10,7 @@
 // Elements
 @import "elements/icons";
 @import "elements/buttons";
-//@import "elements/tabs";
+@import "elements/images";
 @import "elements/media-item";
 
 // Components
@@ -22,11 +22,12 @@
 @import "components/banners";
 @import "components/blockquote";
 @import "components/modals";
+@import "components/feature-list";
 
 // Modules
 @import "modules/site-header";
 @import "modules/footer";
-//@import "modules/features";
+@import "modules/features";
 
 // Templates
 @import "templates/page-content";

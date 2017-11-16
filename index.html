@@ -418,7 +418,7 @@
 
   <div class="site-wrapper">
 
-    <header class="site-header fixed-top">
+    <header class="site-header">
       <nav class="navbar navbar-inverse navbar-toggleable-md main-menu" role="navigation">
         <div class="container">
           <!-- logo -->
@@ -817,21 +817,21 @@
     }
   </script>
 
-  <!-- headroom (if you like that sort of thing) -->
+  <!-- headroom -->
   <script>
     // Media Queries
-      var mq = window.matchMedia('(min-width: 48em)');
-      if(mq.matches) {
-        // grab an element
-        var myElement = document.querySelector(".site-header");
-        // construct an instance of Headroom, passing the element
-        var headroom  = new Headroom(myElement);	
-        // initialise
-        headroom.init();
-      } 
-      else {  
-        headroom.destroy();
-      }
+    var mq = window.matchMedia('(min-width: 48em)');
+    if(mq.matches) {
+      // grab an element
+      var myElement = document.querySelector(".site-header");
+      // construct an instance of Headroom, passing the element
+      var headroom  = new Headroom(myElement);	
+      // initialise
+      headroom.init();
+    } 
+    else {  
+      headroom.destroy();
+    }
   </script>
 
 </body>

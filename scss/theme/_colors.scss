@@ -17,6 +17,7 @@ $ca-warning: #FF2222;
 $ca-blue: #00A2E1;
 $ca-blue-light: mix(white, $ca-blue, 50%);
 $ca-blue-dark: mix(black, $ca-blue, 25%);
+$ca-blue-rich: #607ee8;
 
 // teal
 $ca-teal: #39909A;
@@ -45,6 +46,7 @@ $ca-purple-dark: mix(black, $ca-purple, 25%);
 $ca-red: #EC4644;
 $ca-red-light: mix(white, $ca-red, 35%);
 $ca-red-dark: mix(black, $ca-red, 25%);
+$ca-rust: #d14c1f;
 
 // brown
 $ca-brown: #956B51;
@@ -85,6 +87,17 @@ $link: $ca-blue;
 
 // theme colors
 
+[class*="theme-"] {
+  a:not(.btn-secondary),
+  .btn:not(.btn-secondary) {
+    color: currentColor;
+  }
+}
+
+@mixin theme-dark {
+  color: $ca-white;
+}
+
 @mixin theme-light {
   background-color: $ca-grey-EEE;
   color: $ca-grey-555;
@@ -111,11 +124,47 @@ $link: $ca-blue;
   }
 }
 
+@mixin theme-blue-dark {
+  background-color: $ca-blue-dark;
+  color: $ca-white;
+}
+
+@mixin theme-blue-rich {
+  background-color: $ca-blue-rich;
+  border-color: $ca-blue-rich;
+  color: $ca-white;
+  .btn {
+    &:hover,
+    &:focus {
+      background-color: $ca-white;
+      color: $ca-blue-rich;
+    }
+  }
+}
+
+@mixin theme-rust {
+  background-color: $ca-rust;
+  border-color: $ca-rust;
+  color: $ca-white;
+  .btn {
+    &:hover,
+    &:focus {
+      background-color: $ca-white;
+      color: $ca-rust;
+    }
+  }
+}
+
 @mixin theme-teal {
-  background-color: $ca-teal-light;
-  color: $ca-teal-dark;
-  a {
-    color: $ca-teal;
+  background-color: $ca-teal;
+  border-color: $ca-teal;
+  color: $ca-white;
+  .btn {
+    &:hover,
+    &:focus {
+      background-color: $ca-white;
+      color: $ca-teal;
+    }
   }
 }
 

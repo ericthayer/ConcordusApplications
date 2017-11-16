@@ -1,4 +1,8 @@
 @charset "UTF-8";
+[class*="theme-"] a:not(.btn-secondary),
+[class*="theme-"] .btn:not(.btn-secondary) {
+  color: currentColor; }
+
 @font-face {
   font-family: "Montserrat Light";
   src: url("../fonts/montserrat-300.woff2") format("woff2"), url("../fonts/montserrat-300.woff") format("woff");
@@ -82,6 +86,32 @@
       @media (min-width: 60em) and (max-width: 85em) {
         .grid-4-col {
           grid-template-columns: repeat(auto-fit, minmax(25em, 1fr)); } } }
+
+@media (max-width: 56.25em) {
+  .grid-banner > .container {
+    padding: 2em; } }
+
+@media (min-width: 56.25em) {
+  .grid-banner .grid-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 2em;
+    grid-template-rows: minmax(50vh, 1fr); }
+    .grid-banner .grid-wrap > * {
+      flex-grow: 1;
+      padding: 1em;
+      flex-basis: 15em; }
+    @supports (grid-gap: 0) {
+      .grid-banner .grid-wrap {
+        display: grid;
+        grid-gap: 2em; }
+        @media (min-width: 40em) {
+          .grid-banner .grid-wrap {
+            grid-template-columns: repeat(auto-fit, minmax(10.5em, 1fr)); } }
+        .grid-banner .grid-wrap > * {
+          padding: 0; } }
+    .grid-banner .grid-wrap > * {
+      display: flex; } }
 
 @media (min-width: 40em) {
   .circle-mask {
