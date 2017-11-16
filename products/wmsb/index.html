@@ -23,6 +23,8 @@
   <link href="../../css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom styles -->
   <link href="../../css/styles.css" rel="stylesheet">
+  <!-- WMSB styles -->
+  <link href="css/wmsb-styles.css" rel="stylesheet">
 </head>
 
 <body>
@@ -496,11 +498,11 @@
       </nav>
 
       <!-- masthead (dark) -->
-      <section class="masthead bg-full theme-black">
+      <!-- masthead -->
+      <section class="masthead bg-hero bg-hero-bus theme-black">
         <div class="container">
-          <h1>Master Content Page</h1>
-          <p class="lead">Innovative, smart and cost-effective software development and integration provided as a service, for Telcos and Enterprises.</p>
-          <!--<a href="#page-start" class="btn btn-lg btn-round btn-outline pr-tiny" data-scroll>Learn More <svg class="icon icon-outline rotate-90"><use xlink:href="#icon-chevron-sm" /></svg></a>-->
+          <h1>Transportation Tracking</h1>
+          <p class="lead">User friendly interface and app experience. Serves as centralized software for the schools.</p>
           <div class="btn-group">
             <a href="#page-start" class="btn btn-lg btn-round btn-secondary" data-scroll>Learn More</a>
             <a href="../../contact.html" class="btn btn-brand">Get Started</a>
@@ -932,7 +934,7 @@
       html.classList.add("fonts-loaded");
     } else {
       var script = document.createElement("script");
-      script.src = "js/libs/fontfaceobserver.js";
+      script.src = "../../js/libs/fontfaceobserver.js";
       script.async = true;
 
       script.onload = function () {

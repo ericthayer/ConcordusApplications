@@ -9,6 +9,10 @@
 @import "mixins/css-grid";
 @import "mixins/media";
 
+@mixin font-scale {
+  font-size: calc( 1rem + (40 - 28) * ( (100vw - 400px) / ( 2000 - 400)));
+}
+
 // fade animation
 @keyframes fade-in {
   0% {
