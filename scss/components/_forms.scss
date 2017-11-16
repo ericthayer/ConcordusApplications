@@ -1,5 +1,21 @@
 // form base styles
 
+input::-webkit-input-placeholder {
+  transition: all .3s ease;
+}
+
+::-moz-placeholder {
+  transition: all .3s ease;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+ 
+input:focus::-moz-placeholder {
+  color: transparent;
+}
+
 @mixin form-trans {
   border-radius: 3em;
   border: .15em solid currentColor;
@@ -214,6 +230,10 @@
     }
   }
 
+}
+
+.form-control {
+  @include p-1;
 }
 
 .form-heading {
