@@ -16,6 +16,11 @@
   }
 }
 
+// yellow bg
+.bg-bus-yelllow {
+  background-image: url(../images/bg/bg-bus-yellow-01.jpg);
+}
+
 
 @mixin theme-yellow {
   background-color: $wmsb-yellow;

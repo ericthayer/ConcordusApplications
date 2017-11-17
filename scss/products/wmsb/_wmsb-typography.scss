@@ -11,6 +11,38 @@ $MontserratBold: 'Montserrat Bold', $sans-serif;
   }
 }
 
-.banner h2 {
+h1,.h1,
+h2,.h2,
+h3,.h3,
+h4,.h4,
+h5,.h5,
+h6,.h6 {
   @include MontserratLight;
+}
+
+.feature-list {
+  
+}
+
+
+.feature-list li:nth-child(1n) a {
+  color: $wmsb-green;
+}
+
+.feature-list li:nth-child(2n) a {
+  color: $wmsb-blue;
+}
+.feature-list li:nth-child(3n) a {
+  color: $wmsb-orange;
+}
+
+.feature-list li:nth-child(4n) a {
+  color: $wmsb-purple;
+}
+
+.feature-list li:nth-child(5n) a {
+  color: $wmsb-teal;
+}
+.feature-list li:nth-child(6n) a {
+  color: $wmsb-rust;
 }

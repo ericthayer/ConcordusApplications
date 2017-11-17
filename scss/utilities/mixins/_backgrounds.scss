@@ -81,3 +81,7 @@
   }
 
 }
+
+@mixin bg-light {
+  background-color: $ca-white;
+}

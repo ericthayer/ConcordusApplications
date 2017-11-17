@@ -1,13 +1,20 @@
-.media-item.dash-sample {
-  img {
-    //filter: drop-shadow(0 0 1.5rem rgba(black,.35));
+.dash-sample {
+  @media (min-width: 20em) and (max-width: 40em) {
+    padding-left: 4em;
   }
+
   figcaption {
     background-color: $wmsb-blue;
+    display: none;
     filter: drop-shadow(0 0 .5rem rgba(black,.35));
     font-size: 1.5em;
     position: absolute;
     bottom: 20%;
     left: 3%;
+  }
+
+  @media  (min-width: 40em) {
+    padding-right: 4em;
+    padding-left: 4em;
   }
 }
