@@ -22,6 +22,18 @@
  color: $ca-warning;
 }
 
+.c-blue-light {
+  color: $ca-blue-light;
+}
+
+.c-teal {
+  color: $ca-teal;
+}
+
+.c-rust {
+  color: $ca-rust;
+}
+
 .theme-light {
   @include theme-light;
 }

@@ -25,17 +25,16 @@
   }
   figcaption {
     background-color: rgba(black, .85);
+    color: #fff;
     @include Montserrat;
-    @include text-md;
-    position: absolute;
-    @include p-0;
+    @include text-lg;    
     padding-top: .5rem;
     padding-right: 1rem;
     padding-bottom: .5rem;
     padding-left: 1rem;
-    top: 60%;
-    left: -3%;
+    position: absolute;
+    bottom: 20%;
+    left: 0;
     z-index: 1;
-    color: #FFF;
   }
 }

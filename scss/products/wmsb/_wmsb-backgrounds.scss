@@ -15,3 +15,16 @@
     }
   }
 }
+
+
+@mixin theme-yellow {
+  background-color: $wmsb-yellow;
+  color: $wmsb-dark-brown;
+  a {
+    color: #222;
+  }
+}
+
+.theme-yellow {
+  @include theme-yellow;
+}
