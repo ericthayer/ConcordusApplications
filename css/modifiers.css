@@ -235,8 +235,6 @@
 
 .banner {
   padding: 0; }
-  .banner > .container {
-    padding: 4em; }
 
 .banner-full {
   padding: 0; }
@@ -718,6 +716,9 @@ ul, ol {
 
 .mw-56em {
   max-width: 56.25em; }
+
+.mw-65em {
+  max-width: 65em; }
 
 .mw-100p {
   max-width: 100%; }

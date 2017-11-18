@@ -44,3 +44,7 @@
   background-image: url(../images/bg/bg-analytics-darkblue.jpg);
 }
 
+.bg-light {
+  @include bg-light;
+}
+

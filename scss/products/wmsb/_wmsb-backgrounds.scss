@@ -15,3 +15,38 @@
     }
   }
 }
+
+// yellow bg
+.bg-bus-yelllow {
+  background-image: url(../images/bg/bg-bus-yellow-01.jpg);
+  @media (min-width: 40em) {
+    margin-top: -7em;
+    .card-row .card-block {
+      padding-top: 16%;
+    }
+  }
+}
+
+// blue bg
+.bg-bus-blue {
+  background-image: url(../images/bg/bg-bus-blue-01.jpg);
+  @media (min-width: 40em) {
+    margin-top: -7em;
+    .card-row .card-block {
+      padding-top: 16%;
+    }
+  }
+}
+
+
+@mixin theme-yellow {
+  background-color: $wmsb-yellow;
+  color: $wmsb-dark-brown;
+  a {
+    color: #222;
+  }
+}
+
+.theme-yellow {
+  @include theme-yellow;
+}

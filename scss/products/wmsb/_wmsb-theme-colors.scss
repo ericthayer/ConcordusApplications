@@ -4,21 +4,34 @@ $wmsb-yellow: #FFD400;
 
 $wmsb-red: #FF0000;
 
+$wmsb-rust: #d14c1f;
+
 $wmsb-dark-red: #C93816;
 
 $wmsb-blue: #1C5BEA;
 
 $wmsb-green: #2EA051;
 
+$wmsb-teal: #39909A;
+
 $wmsb-orange: #EF9E4C;
 
 $wmsb-purple: #9543D1;
 
+$wmsb-dark-brown: #4D4C45;
 
 .c-warning {
   color: $wmsb-red;
  }
- 
+
+ .c-red {
+  color: $wmsb-dark-red;
+}
+
+.c-rust {
+  color: $wmsb-rust;
+}
+
  .c-blue {
    color: $wmsb-blue;
  }
@@ -26,6 +39,10 @@ $wmsb-purple: #9543D1;
  .c-green {
    color: $wmsb-green;
  }
+
+ .c-teal {
+  color: $wmsb-teal;
+}
  
  .c-orange {
    color: $wmsb-orange;

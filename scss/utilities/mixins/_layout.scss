@@ -256,6 +256,10 @@
   max-width: 56.25em;
 }
 
+@mixin mw-65em {
+  max-width: 65em;
+}
+
 @mixin mw-100p {
   max-width: 100%;
 }

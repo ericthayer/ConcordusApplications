@@ -7,7 +7,7 @@ $ca-grey: #333;
 $ca-grey-555: #555;
 $ca-grey-CCC: #CCC;
 $ca-grey-EEE: #EEE;
-$ca-white: #FCFCFC;
+$ca-white: #F9F9F9;
 
 $ca-warning: #FF2222;
 
@@ -99,8 +99,7 @@ $link: $ca-blue;
 }
 
 @mixin theme-light {
-  background-color: $ca-grey-EEE;
-  color: $ca-grey-555;
+  background-color: #f9f9f9;
 }
 
 @mixin theme-black {
