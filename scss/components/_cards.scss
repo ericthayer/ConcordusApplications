@@ -36,14 +36,15 @@
         @include flex-d-col;
         @include jc-center;
         padding: 10%;
-        @include w-35;
+        flex-basis: 35%;
+        //@include w-35;
       }
 
       .media-item {
         @include flex;
         // @include flex-d-col;
         // @include ai-end;
-        @include w-40;
+        //@include w-40;
       }
 
       .card-text + .card-text {
@@ -58,11 +59,10 @@
         .media-item {
           > * {
             display: flex;
-            align-items: stretch;            
             > * {
               object-fit: cover;
               object-position: right;
-              max-height: 40em;
+              //max-height: 40em;
             }
           }
         }

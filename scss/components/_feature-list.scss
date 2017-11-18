@@ -39,4 +39,10 @@
       @include p-2;
     }
   }
+  @media (min-width: 68.75em) {
+    > * {
+      flex-basis: 33.3%;
+      @include p-3;
+    }
+  }
 }
