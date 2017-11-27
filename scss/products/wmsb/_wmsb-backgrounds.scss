@@ -38,15 +38,26 @@
   }
 }
 
-
 @mixin theme-yellow {
   background-color: $wmsb-yellow;
   color: $wmsb-dark-brown;
-  a {
-    color: #222;
+  a, .btn {
+    color: currentColor;
+  }
+}
+
+@mixin theme-purple-rich {
+  background-color: $wmsb-purple;
+  color: #F9F9F9;
+  a, .btn {
+    color: currentColor;
   }
 }
 
 .theme-yellow {
   @include theme-yellow;
+}
+
+.theme-purple-rich {
+  @include theme-purple-rich;
 }
