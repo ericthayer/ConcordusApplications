@@ -1,0 +1,77 @@
+// brand colors
+@import "../theme/colors.scss";
+
+// Media Queries
+
+$break-240: 15em; // 240px
+
+$break-320: 20em; // 320px
+
+$break-375: 23.438em; // 375px
+ 
+$break-480: 30em; // 480px
+
+$break-540: 33.75em; // > 540px
+
+$break-640: 40em; // 640px
+
+$break-768: 48em; // 768px
+
+$break-800: 50em; // 800px
+
+$break-900: 56.25em; // 900px 
+
+$break-992: 62em; // 980px
+
+$break-1200: 75em; // 1200px 
+
+$break-1600: 100em; // 1600px
+
+$break-2000: 125em; // 2000px
+
+$break-2400: 150em; // 2400px
+
+// Default Font Stacks
+
+$sans-serif: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+$serif: "Garamond", "Cambria", Georgia, serif;
+
+// ** Custom Fonts
+
+@font-face {
+  font-family: "Montserrat Light";
+  src: url("../fonts/montserrat-300.woff2") format("woff2"),
+       url("../fonts/montserrat-300.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat-500.woff2") format("woff2"),
+       url("../fonts/montserrat-500.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url("../fonts/montserrat-700.woff2") format("woff2"),
+       url("../fonts/montserrat-700.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+$MontserratLight: 'Montserrat Light', $sans-serif;
+$Montserrat: 'Montserrat', $sans-serif;
+$MontserratBold: 'Montserrat Bold', $sans-serif;
+
+
+// Specific Helpers
+
+$wht-text-shadow: 0 1px 0 rgba(white, 0.35);
+
+$blk-text-shadow: 1px 1px 0 rgba(black, 0.15);
+
+$blk-text-shadow-neg: 0 -1px 1px rgba(black, 0.25);

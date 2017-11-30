@@ -1,0 +1,33 @@
+.search {
+  form {
+    color: currentColor;
+    display: flex;
+    align-content: center;
+    padding-right: 1.25em;
+  }
+  .form-trans {
+    border-radius: 3em;
+    border: .15em solid currentColor;
+    .icon {
+      fill: currentColor;
+    }
+    input,
+    button {
+      background: transparent;
+      border-radius: 3em;
+      border: none;
+      box-shadow: none;
+      color: currentColor;
+      height: auto;
+      width: auto;
+      margin: 0;
+    }
+    button {
+      // @include pr-tiny;
+      // @include pl-tiny;
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+}
+

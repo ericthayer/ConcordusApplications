@@ -1,0 +1,20 @@
+.banner {
+
+  p {
+    @include MontserratLight;
+    line-height: 2;
+  }
+
+}
+
+.banner-full {
+  .card-title {
+    font-size: 2em;
+  }
+  @media (min-width: 70em) {
+    font-size: 1.25rem;
+    .btn {
+      font-size: 1.35em;
+    }
+  }
+}

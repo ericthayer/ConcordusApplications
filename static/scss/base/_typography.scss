@@ -1,0 +1,145 @@
+// Typography
+.sans-serif {
+  font-family: $sans-serif;
+}
+
+.serif {
+  font-family: $serif;
+}
+
+body {
+  color: $text-color;
+  line-height: 1.667;
+  font-size-adjust: none;
+  text-rendering: optimizeLegibility;
+}
+
+h1,.h1,
+h2,.h2,
+h3,.h3,
+h4,.h4,
+h5,.h5,
+h6,.h6 {
+  color: currentColor;
+  @include Montserrat;
+  line-height: 1.35;
+  transition: opacity .2s;
+}
+
+.h1,h1 {
+  @include mb-1-pt5;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+  transition: color .4s ease; //-webkit-font-smoothing: subpixel-antialiased;
+}
+
+p {
+  @include MontserratLight;
+  font-size: 1.1em;
+  //-webkit-font-smoothing: antialiased;
+  a {
+    color: $link;
+    text-decoration: underline;
+    @supports (text-decoration-skip: ink) {
+      text-decoration-skip: ink;
+    }
+  }
+  a {
+    //@include link-shadow;
+  }
+}
+
+.lead {
+  @include MontserratLight;
+}
+
+a abbr[title] {
+  border: none;
+  text-decoration: inherit;
+}
+
+.module-header {
+  &.full-height {
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
+  h1 {
+    font-size: 6.5vmin;
+    line-height: 1.3;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 15em;
+  }
+  p {
+    // font-size: 1.5rem;
+    line-height: 1.4;
+  }
+}
+
+.sub-header {
+  color: #555;
+  font-size: 1.25rem;
+  font-weight: normal;
+  line-height: 1.4; //border-top: 2px dotted #CCC;
+  //border-bottom: 2px dotted #CCC;
+  //margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
+  a {
+    //@include link-shadow;
+  }
+  .fonts-loaded & {
+    font-size: 1.65rem;
+  }
+  #portfolio-home & {
+    max-width: 30em;
+  } // > 540
+  @media (min-width: $break-540) {
+    margin-bottom: 2em;
+    max-width: 40em;
+  } // > 1200
+  @media (min-width: $break-1200) {
+    max-width: 100%;
+  }
+}
+
+.disclaimer {
+  color: hotpink;
+  font-size: 1rem;
+  font-family: $sans-serif; //font-style: italic;
+}
+
+.border-title {
+  border-bottom: 1px solid #DDD;
+  color: $text-color;
+  @include mb-2;
+  @include pt-1;
+  @include pb-tiny;
+  @include text-base;
+  @include all-caps;
+  letter-spacing: 0.1em;
+}
+
+.title {
+  @include mr-ml-a;
+  max-width: 85em;
+  width: 100%;
+}
+
+.section-headline {
+  @include mr-ml-a;
+  @include mw-56em;
+  @include pt-pb-2;
+  @include pr-pl-2;
+  @include w-100;
+}
+
+// display
+
+.display-4 {
+  @include text-xl;
+}

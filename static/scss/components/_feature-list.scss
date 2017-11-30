@@ -1,0 +1,48 @@
+.feature-list {
+  .feature-title {
+    @include mb-sm;
+    @include text-lg;
+  }
+  .feature-text {
+    color: $ca-black;
+    font-size: 1em;
+    @include mb-1-pt5;
+  }
+  .feature-text {
+    border-top: .1rem solid #ddd;
+    @include pt-sm;
+  }
+  // .icon {
+  //   display: block;
+  // }
+  // h3 {
+  //   border-bottom: .2rem solid #ddd;
+  //   display: inline-block;
+  //   @include pb-tiny;
+  // }
+  a {
+    border-top: none;
+    border-right: none;
+    border-bottom: .175rem solid currentColor;
+    border-left: none;
+    border-radius: 0;
+    @include pb-tiny;
+  }
+}
+
+
+.feature-items {
+  @include flex-layout;
+  @media (min-width: $break-640) {
+    > * {
+      flex-basis: 50%;
+      @include p-2;
+    }
+  }
+  @media (min-width: 68.75em) {
+    > * {
+      flex-basis: 33.3%;
+      @include p-3;
+    }
+  }
+}

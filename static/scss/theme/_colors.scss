@@ -1,0 +1,198 @@
+// Concordus Colors
+
+// Base
+$ca-black: #111;
+$ca-charcoal: #222;
+$ca-grey: #333;
+$ca-grey-555: #555;
+$ca-grey-CCC: #CCC;
+$ca-grey-EEE: #EEE;
+$ca-white: #F9F9F9;
+
+$ca-warning: #FF2222;
+
+// ** Brand ** //
+
+// blue
+$ca-blue: #00A2E1;
+$ca-blue-light: mix(white, $ca-blue, 50%);
+$ca-blue-dark: mix(black, $ca-blue, 25%);
+$ca-blue-rich: #607ee8;
+
+// teal
+$ca-teal: #39909A;
+$ca-teal-light: mix(white, $ca-teal, 50%);
+$ca-teal-dark: mix(black, $ca-teal, 25%);
+
+// green
+$ca-green: #7EB963;
+$ca-green-light: mix(white, $ca-green, 35%);
+$ca-green-dark: mix(black, $ca-green, 25%);
+
+// dark green
+$ca-dark-green: #194247;
+
+// orange
+$ca-orange: #F6BE1E;
+$ca-orange-light: mix(white, $ca-orange, 35%);
+$ca-orange-dark: mix(black, $ca-orange, 25%);
+
+// purple
+$ca-purple: #A0AFD4;
+$ca-purple-light: mix(white, $ca-purple, 35%);
+$ca-purple-dark: mix(black, $ca-purple, 25%);
+
+// red
+$ca-red: #EC4644;
+$ca-red-light: mix(white, $ca-red, 35%);
+$ca-red-dark: mix(black, $ca-red, 25%);
+$ca-rust: #d14c1f;
+
+// brown
+$ca-brown: #956B51;
+$ca-brown-light: mix(white, $ca-brown, 35%);
+$ca-brown-dark: mix(black, $ca-brown, 25%);
+
+// tan
+$ca-tan: #CCBE97;
+$ca-tan-light: mix(white, $ca-tan, 35%);
+$ca-tan-dark: mix(black, $ca-tan, 25%);
+
+// BS colors
+$brand-primary: #428bca;
+$brand-success: #5cb85c;
+$brand-info: #5bc0de;
+$brand-warning: #f0ad4e;
+$brand-danger: #d9534f;
+
+// calc + padding
+
+$calc-25: calc(1vw + .25em);
+$calc-50: calc(1vw + .5em);
+$calc-75: calc(1vw + .75em);
+$calc-1: calc(1vw + 1em);
+$calc-2: calc(1vw + 2em);
+$calc-3: calc(1vw + 3em);
+$calc-4: calc(1vw + 4em);
+$calc-5: calc(1vw + 5em);
+$calc-10: calc(1vw + 10em);
+
+// defaults
+
+$text-color: $ca-grey-555;
+$heading-color: $ca-grey;
+$bg-color: $ca-white;
+$link: $ca-blue;
+
+
+// theme colors
+
+[class*="theme-"] {
+  a:not(.btn-secondary),
+  .btn:not(.btn-secondary) {
+    color: currentColor;
+  }
+}
+
+@mixin theme-dark {
+  color: $ca-white;
+}
+
+@mixin theme-light {
+  background-color: #f9f9f9;
+}
+
+@mixin theme-black {
+  background-color: $ca-black;
+  color: $ca-white;
+}
+
+@mixin theme-blue {
+  background-color: $ca-blue-dark;
+  color: $ca-white;
+  a {
+    color: mix(white, $ca-blue-light, 50%);
+  }
+}
+
+@mixin theme-blue-light {
+  background-color: $ca-blue-light;
+  color: $ca-blue-dark;
+  a {
+    color: $ca-blue-dark;
+  }
+}
+
+@mixin theme-blue-dark {
+  background-color: $ca-blue-dark;
+  color: $ca-white;
+}
+
+@mixin theme-blue-rich {
+  background-color: $ca-blue-rich;
+  border-color: $ca-blue-rich;
+  color: $ca-white;
+  .btn {
+    &:hover,
+    &:focus {
+      background-color: $ca-white;
+      color: $ca-blue-rich;
+    }
+  }
+}
+
+@mixin theme-rust {
+  background-color: $ca-rust;
+  border-color: $ca-rust;
+  color: $ca-white;
+  .btn {
+    &:hover,
+    &:focus {
+      background-color: $ca-white;
+      color: $ca-rust;
+    }
+  }
+}
+
+@mixin theme-teal {
+  background-color: $ca-teal;
+  border-color: $ca-teal;
+  color: $ca-white;
+  .btn {
+    &:hover,
+    &:focus {
+      background-color: $ca-white;
+      color: $ca-teal;
+    }
+  }
+}
+
+@mixin theme-green {
+  background-color: $ca-green;
+  color: $ca-white;
+}
+
+@mixin theme-dark-green {
+  background-color: $ca-dark-green;
+  color: $ca-white;
+  a {
+    color: #41a5ae;
+  }
+}
+
+@mixin theme-purple {
+  background-color: $ca-purple;
+  color: $ca-white;
+}
+
+@mixin theme-orange {
+  background-color: $ca-orange;
+  color: $ca-white;
+}
+
+// gradients
+
+$brand-gradient-blue: linear-gradient(to bottom, $ca-blue-light 10%, $ca-blue-dark 100%);
+
+$brand-gradient-teal: linear-gradient(to top, $ca-teal-light 10%, $ca-teal 100%);
+

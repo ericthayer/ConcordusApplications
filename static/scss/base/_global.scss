@@ -1,0 +1,154 @@
+:root {  
+  &:not(.enhanced) {
+    @include no-js-subtle-alert;
+    .site-header {
+      position: relative;
+    }
+  }
+}
+
+body {
+  background-color: #f9f9f9;
+}
+
+img {
+  @include mw-100p;
+  //@include w-100;
+}
+
+// skip to #main link
+
+.skip-link,
+#skip-to-content {
+  background-color: $ca-blue;
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+  line-height: 1;
+  max-height: 0;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: .3s ease;
+  width: 100%;
+  z-index: 1001;
+  @media (min-width: $break-640) {
+    //position: absolute;
+  }
+}
+
+a.skip-link:focus,
+#skip-to-content:focus {
+  box-shadow: none;
+  color: #FFF;
+  max-height: 10rem;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-decoration-skip: ink;
+  //transition: .3s ease;
+}
+
+.site-wrapper {
+  @include flex;
+  @include flex-d-col;
+  @include w-100;
+  //height: 100vh;
+  //box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
+  position: relative;
+  z-index: 1;
+  @supports (grid-gap: 0) {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: minmax(10em, 1fr);
+  }
+}
+
+.container {
+  //max-width: 85rem;
+  @include mw-100p;
+  width: 100%;
+}
+
+.row {
+  @include w-100;
+  @media (max-width: $break-640) {
+    @include mr-ml-a;
+  }
+}
+
+// main
+
+#main {
+  @include flex;
+  @include flex-d-col;
+  @include flex-grow-1;
+
+  > * {
+    @include w-100;
+    & + *:not(.banner-full) {
+      // @include pad-block;
+    }
+  }
+
+  // css grid support
+  @supports (grid-gap: 0) {
+    grid-row: 2 / 3;
+  }
+
+}
+
+// content page
+
+.content-page {
+
+  // header
+  .site-header {
+    position: relative;
+  }
+
+  // main
+  #main {
+    > * {
+      & + *:not(.banner-full) {
+        //@include pt-2;
+        //@include pb-2;
+      }
+    }
+  }
+
+  .card {
+
+    &-row {
+
+      .card-block {
+        //@include pt-2;
+      }
+
+      @media (min-width: $break-640) {
+
+        .media-item {
+          @include as-stretch;
+          @include pt-4;
+          //@include w-30;
+        }
+
+      }
+      @media (min-width: $break-992) {
+        .media-item {
+          @include pt-0;
+        }
+
+        .card-block {
+          //padding: 4em 10em 4em 7em;
+        }
+      }
+    }
+  }
+
+
+
+}
