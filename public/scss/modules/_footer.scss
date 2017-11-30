@@ -1,0 +1,161 @@
+.site-footer {
+  padding-top: $calc-2;
+  @include theme-black;
+  > .container {
+    @include p-2;
+  }
+  p, nav {
+    @include text-sm;
+  }
+  @supports (grid-gap: 0) {
+    grid-row: 4 / 4;
+  }
+  
+  @media (max-width: 33em) {
+    .logo {
+      //max-width: 25em;
+      @include mr-a;
+      @include ml-a;
+    }
+    .search {
+      @include flex-grow-1;
+      @include mw-15em;
+      @include mr-a;
+      @include ml-a;
+    }
+  }
+}
+
+.footer-logo {
+  @include flex;
+  @include flex-wrap;
+  @include ai-center;
+  @include jc-between;
+  @include mb-4;
+  .site-logo {
+    @include flex;
+    flex-grow: 1;
+    flex-basis: 15em;
+    max-width: 15em;
+    max-height: 3em;
+    @include mr-a;
+    @include ml-a;
+    @include mb-1;
+    > * {
+      flex-grow: 1;
+    }
+  }
+  .search {
+    @include flex-grow-1;
+    @include mw-15em;
+    @include mr-a;
+    @include mb-1;
+    @include ml-a;    
+  }
+  
+  @media (min-width: 33em) {
+    .site-logo {
+      @include mr-ml-0;
+      @include pr-1;
+    }
+    .search {
+      @include mr-ml-0;
+    }
+  }
+}
+
+.footer-nav {
+  @include flex;
+  @include flex-wrap;
+  padding-top: $calc-2;
+
+  nav {
+    @include mb-3;
+    flex-basis: 20em;
+    &:not(:last-child) {
+      padding-right: calc(1vw + 2em);
+    }
+  }
+
+  ul {
+    @include mb-0;
+    @include ml-0;
+    @include pl-0;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    @include mb-1-pt5;
+  }
+
+  a:hover {
+    //text-decoration: none;
+    @supports (text-decoration-skip: ink) {
+      text-decoration-skip: ink;
+    }
+  }
+
+  @media (min-width: 42em) {
+    nav {
+      //flex-basis: 17%;
+      //@include mb-4;
+      &:not(:last-child) {
+        padding-right: calc(1vw + 4em);
+      }
+    }
+  }
+  @media (min-width: 65em) {
+    flex-wrap: nowrap;
+    nav {
+      &:not(:last-child) {
+        padding-right: calc(1vw + 4em);
+      }
+    }
+  }
+}
+
+.footer-contact {
+  @include flex;
+  @include flex-wrap;
+  @include ai-end;
+  @include jc-between;
+  @include text-sm;
+  .contact-info,
+  .footer-copyright {
+    @include pt-2;
+  }
+  .contact-info {
+    @include pr-1;
+  }
+  @media (min-width: 39em) {
+    > * {
+      flex-basis: 50%;
+    }
+    .contact-info {
+      @include mb-0;
+    }
+  }
+}
+
+.footer-copyright {
+  border: none;
+  .soc-media-icons {
+    .icon {
+      @include ml-0;
+    }
+  }
+  @media (min-width: 42em) {
+    text-align: right;
+    .soc-media-icons {
+      justify-content: flex-end;
+      .icon {
+        @include ml-tiny;
+        @include mr-0;
+      }
+    }
+  }
+}

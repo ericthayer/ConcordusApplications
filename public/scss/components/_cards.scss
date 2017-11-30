@@ -1,0 +1,94 @@
+// card styles
+
+.card {
+
+  .media-item {
+    margin-top: 0;
+    overflow: hidden;
+    .feature & {
+      @include mb-0;
+    }
+  }
+
+  &-clean {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+  }
+
+  &-row {
+    .card-block {
+      @include pt-pb-4;
+      @include pr-pl-3;
+    }
+    p:last-of-type {
+      @include mb-3;
+    }
+    .btn {
+      text-align: left;
+    }
+    @media (min-width: $break-640) {
+      @include flex-d-row;
+      //@include ai-center;
+
+      .card-block {
+        @include flex;
+        @include flex-d-col;
+        @include jc-center;
+        padding: 10%;
+        flex-basis: 35%;
+        //@include w-35;
+      }
+
+      .media-item {
+        @include flex;
+        // @include flex-d-col;
+        // @include ai-end;
+        //@include w-40;
+      }
+
+      .card-text + .card-text {
+        margin-bottom: 20%;
+      }
+
+      .btn {
+        @include as-start;
+      }
+
+      @media (min-width: 40em) and (max-width: 58em) {
+        .media-item {
+          > * {
+            display: flex;
+            > * {
+              object-fit: cover;
+              object-position: right;
+              //max-height: 40em;
+            }
+          }
+        }
+      }
+      @media (min-width: 70em) {
+        p:last-of-type {
+          @include mw-35em;
+          margin-bottom: 5rem;
+        }
+      }
+      @media (min-width: 100em) {
+
+        .media-item {
+          @include w-a;
+        }
+
+      }
+
+    }
+  }
+
+  &-row-rev {
+    @media (min-width: $break-640) {
+      @include flex-d-row-rev;
+    }
+  }
+
+}
+

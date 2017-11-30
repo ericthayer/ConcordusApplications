@@ -1,0 +1,107 @@
+.sidebar {
+  
+}
+
+// --Sidebar
+.sidebar {
+  border-top: none;
+  background-color: $max-charcoal;
+
+  .sidebar-nav {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+  }
+
+  > ul > li {
+    //border-bottom: 1px solid darken(currentColor, 6.5%);
+    a {
+      &.active {
+        //background-color: currentColor;
+      }
+    }
+  }
+
+  .arrow {
+    float: right;
+  }
+
+  .fa.arrow:before {
+    content: "\f104";
+  }
+
+  .active>a>.fa.arrow:before {
+    content: "\f107";
+  }
+
+  .nav-second-level li,
+  .nav-third-level li {
+    border-bottom: none !important;
+  }
+
+  .nav-second-level li a {
+    padding-left: 37px;
+  }
+
+  .nav-third-level li a {
+    padding-left: 52px;
+  }
+
+  @media (min-width: $break-768) {
+
+    z-index: 1;
+    position: absolute;
+    width: 250px;
+    margin-top: 56px;
+    .navbar-top-links .dropdown-messages,
+    .navbar-top-links .dropdown-tasks,
+    .navbar-top-links .dropdown-alerts {
+      margin-left: auto;
+    }
+  }
+
+}
+
+.sidebar-search {
+  .input-group {
+    @include  flex;
+  }
+  .form-control {
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  .form-control::-moz-placeholder {
+    color: $max-white;
+    opacity: 1;
+  }
+
+  .form-control:-ms-input-placeholder {
+    color: $max-white;
+  }
+
+  .form-control::-webkit-input-placeholder {
+    color: $max-white;
+  }
+
+  .form-control::-ms-expand {
+    background-color: transparent;
+    border: 0;
+  }
+
+  input[type="text"] {
+    height: auto;
+    flex-grow: 1;
+  }
+  input[type="text"],
+  button {
+    background-color: $max-charcoal;
+    border: none;
+    border-radius: 0;
+    color: $max-white;
+  }
+  .input-group-btn {
+    flex-grow: 1;
+    width: auto;
+  }
+}

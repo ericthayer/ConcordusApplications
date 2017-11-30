@@ -1,0 +1,79 @@
+.ca-black-c {
+  color: $ca-black;
+}
+
+.ca-white-c {
+  color: $ca-white;
+}
+
+.ca-charcoal-c {
+  color: $ca-charcoal;
+}
+
+.ca-grey-CCC-c {
+  color: $ca-grey-CCC;
+}
+
+.ca-grey-EEE-c {
+  color: $ca-grey-EEE;
+}
+
+.ca-warning {
+ color: $ca-warning;
+}
+
+.c-blue-light {
+  color: $ca-blue-light;
+}
+
+.c-teal {
+  color: $ca-teal;
+}
+
+.c-rust {
+  color: $ca-rust;
+}
+
+.theme-light {
+  @include theme-light;
+}
+
+.theme-black {
+  @include theme-black;
+}
+
+.theme-blue {
+  @include theme-blue;
+}
+
+.theme-blue-rich {
+  @include theme-blue-rich;
+}
+
+.theme-blue-dark {
+  @include theme-blue-dark;
+}
+
+.theme-green {
+  @include theme-green;
+}
+
+.theme-dark-green {
+  @include theme-dark-green;
+}
+
+.theme-purple {
+  @include theme-purple;
+}
+
+.theme-orange {
+  @include theme-orange;
+}
+
+.theme-rust {
+  @include theme-rust;
+}
+
+.theme-teal {
+  @include theme-teal;
+}
