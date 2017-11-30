@@ -1,0 +1,46 @@
+.navbar-default {
+  margin-bottom: 0;
+  @include theme-max-black;
+  &.sidebar {
+    a {
+      color: $max-grey-CCC;
+      &:hover {
+        background: $max-black;
+      }
+    }
+  }
+  @media (min-width: $break-768) {
+    display: flex;
+    justify-content: space-between;
+    &:before,
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.navbar-header {
+  @media(min-width: $break-768) {
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.navbar-brand {
+  height: auto;
+  font-size: initial;
+  padding-top: 0;
+  padding-bottom: 0;
+  >img,
+  >svg {
+    display: block;
+    width: 100%;
+  }
+  svg {
+    max-width: 12em;
+  }
+  @media (max-width: $break-768) {
+    padding-top: 1em;
+  }
+}

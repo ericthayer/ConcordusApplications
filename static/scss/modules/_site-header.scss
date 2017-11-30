@@ -1,0 +1,29 @@
+// Site Header
+
+.site-header {
+  background-color: rgba(#000, .9);
+  position: relative;
+  &.headroom--not-top {
+    background-color: rgba(black, .9);
+  }
+  @supports (grid-gap: 0) {
+    grid-row: span 1;
+  }
+}
+
+.headroom {
+  //will-change: transform;
+  position: fixed;
+  transition: opacity .3s ease;
+  @include w-100;
+  z-index: 1030;
+}
+.headroom--pinned {
+  //transform: translateY(0%);
+  opacity: 1;
+}
+
+.headroom--unpinned {
+  //transform: translateY(-100%);
+  opacity: 0;
+}

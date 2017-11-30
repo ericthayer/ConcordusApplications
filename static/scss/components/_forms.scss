@@ -1,0 +1,256 @@
+// form base styles
+
+input::-webkit-input-placeholder {
+  transition: all .3s ease;
+}
+
+::-moz-placeholder {
+  transition: all .3s ease;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+ 
+input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+@mixin form-trans {
+  border-radius: 3em;
+  border: .15em solid currentColor;
+  .icon {
+    fill: currentColor;
+  }
+  input,
+  button {
+    background: transparent;
+    border-radius: 3em;
+    border: none;
+    color: currentColor;
+    box-shadow: none;
+    height: auto;
+    margin: 0;
+  }
+  input:focus {
+    background: transparent;
+    color: #FFF;
+  }
+  button {
+    // @include pr-tiny;
+    // @include pl-tiny;
+    // padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.form-trans {
+  @include form-trans;
+}
+
+.form {
+  
+  > *:not(:last-child) {
+    //@include mb-1;
+  }
+  
+}
+
+// better styling for these long ass forms
+// (so the the user does not leave our app)
+
+.form-base {
+  input,
+  label { 
+    background-color: transparent;
+    border-bottom: 1px solid currentColor;
+    box-shadow: none;
+    &.clean {
+       border: none;
+    }
+  }
+
+  textarea {
+    border: 1px solid currentColor;
+  }
+
+  input {
+    font-size: 1.125rem;
+    //width: 100%;
+  }
+
+  label {
+    font-size: .9rem;
+    font-weight: 400;
+    //@include flex-grow-1;
+    @include mb-0;
+    @include pt-tiny;
+    @include pr-1;
+    @include pb-tiny;
+    @include pl-0;
+  }
+  .checkbox,
+  .radio {
+    @include mt-0;
+    @include mb-0;
+    label {
+      border: none;
+      @include mb-0;
+    }
+    input {
+      position: initial;
+      @include mt-0;
+      @include mr-sm;
+      @include mb-0;
+      @include ml-0;      
+      width: initial;
+    }
+  }
+
+.radio-inline {
+  @include flex;
+  @include ai-center;
+  @include ml-1;
+  & + &.radio-inline {
+    @include ml-1; 
+  }
+}
+
+.radio-group {
+  @include flex;
+  @include ai-center;
+  > * {
+    @include pr-1;
+  }
+}
+
+  abbr[data-original-title], abbr[title] {
+    border-bottom: none;
+    text-decoration: none;
+  }
+
+  .flex-3-col {
+    > * {
+      @include flex-grow-0;
+      @include pr-pl-1;
+    }
+  }
+
+  .form-group-btn {
+    @include mb-0;
+    @include pt-sm;
+  }
+
+}
+
+.form-row {
+  @include flex-layout;
+  @include ai-center;
+  > * {
+    @include flex;
+    @include ai-end;
+    @include flex-grow-1;
+    @include pr-pl-1;
+    @include pb-0;
+    flex-basis: 50%;
+    .form-control {
+      @include flex-grow-1;
+    }
+    select.form-control {
+      @include flex-grow-0;
+    }
+  }
+  > .btn {
+    flex-grow: initial;
+    flex-basis: initial;
+    padding: .35em .75em .5em;
+  }
+  &-button {
+    @include mb-2;
+    .help-block {
+      @include mb-0;
+    }
+  }
+  &.helper-text {
+    @include ai-start;
+    @include pt-1;
+    > * {
+      flex-basis: 50%;
+      &:nth-child(2) {
+        @include flex;
+        @include flex-d-col;
+        @include ai-start;
+      }
+    }
+  }
+}
+
+.form-group {
+  @include mb-1;
+  
+  // input on own line style
+  &-block { 
+    @include ai-start;
+    @include flex-d-col;
+    @include flex-basis-auto;
+
+    label {
+      display: block;
+      border: none;
+      font-size: .9rem;
+      font-weight: iniital;
+      @include mb-sm;
+      @include pt-0;
+      @include pr-0;
+      @include pb-0;
+      @include pl-0;
+    }    
+  }
+
+  // for tables
+  &-table {
+    display: block;
+    > * {
+      display: block;
+    }
+  }
+
+  // inline row
+  &-inline {
+    @include flex-d-row;
+    @include flex-grow-0;
+    @include flex-basis-auto;
+    > * {
+      @include flex;
+      @include ai-center;
+    }
+    input {
+      @include flex-grow-0;
+      width: auto;
+    }
+  }
+
+}
+
+.form-control {
+  @include p-1;
+}
+
+.form-heading {
+  &-title {
+    @include mb-sm;
+    @include pt-sm;
+    @include pr-pl-0;
+    @include pb-0;
+    flex-basis: initial;
+    width: 100%;
+  }
+}
+
+.search {
+  input {
+    width: auto;
+  }
+}
+
+
