@@ -198,14 +198,12 @@ $box-size: 40px;
     @include ml-1;
     @include mb-0;
   }
-}
-
-.dropdown-menu {
-  min-width: 15rem;
-}
-
-.dropdown-item {
-  white-space: initial;
+  &:last-child.dropdown {
+    .dropdown-menu {
+      right: 0;
+      left: auto;
+    }
+  }
 }
 
 @media (min-width: $break-992) {

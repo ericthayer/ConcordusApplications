@@ -1,3 +1,134 @@
 baseURL = "/"
+relativeurls = true
 languageCode = "en-us"
 title = "Concordus Applications"
+
+[[menu.main]]
+    name = "About"
+    url = "/about"
+    weight = 1
+
+# Products
+
+[[menu.main]]
+    name = "Products"
+    url = "#"
+    weight = 2
+    identifier = "products-dropdown"
+[[menu.main]]
+    name = "ChatMate"
+    url = "/products/chatmate"
+    weight = 1
+    parent ="products-dropdown"
+[[menu.main]]
+    name = "in2Marketplace"
+    url = "/products/in2m"
+    weight = 2
+    parent ="products-dropdown"
+[[menu.main]]
+    name = "Watch My School Bus"
+    url = "/products/wmsb"
+    weight = 3
+    parent ="products-dropdown"
+[[menu.main]]
+    name = "iPaaS"
+    url = "/products/ipaas"
+    weight = 4
+    parent ="products-dropdown"
+[[menu.main]]
+    name = "AWS"
+    url = "/products/aws"
+    weight = 5
+    parent ="products-dropdown"
+
+# Services
+
+[[menu.main]]
+    name = "Services"
+    url = "#"
+    weight = 3
+    identifier = "services-dropdown"
+[[menu.main]]
+    name = "Subscription Services"
+    url = "/subscription-services"
+    weight = 1
+    parent = "services-dropdown"
+[[menu.main]]
+    name = "Integration"
+    url = "/integration"
+    weight = 2
+    parent = "services-dropdown"
+[[menu.main]]
+    name = "Integration Platform as a Service"
+    url = "/ipaas"
+    weight = 3
+    parent = "services-dropdown"
+[[menu.main]]
+    name = "Business ina Box"
+    url = "/business-in-a-box"
+    weight = 4
+    parent = "services-dropdown"
+[[menu.main]]
+    name = "Enterprise Mobile CRM"
+    url = "/enterprise-mobile-crm"
+    weight = 5
+    parent = "services-dropdown"
+[[menu.main]]
+    name = "Security as a Service"
+    url = "/security-as-a-service"
+    weight = 6
+    parent = "services-dropdown"
+[[menu.main]]
+    name = "Offerings"
+    url = "/offerings"
+    weight = 7
+    parent = "services-dropdown"
+
+# Analytics
+
+[[menu.main]]
+    name = "Analytics"
+    url = "#"
+    weight = 4
+    identifier = "analytics-dropdown"
+[[menu.main]]
+    name = "Analytics Overview"
+    url = "/analytics"
+    weight = 1
+    parent = "analytics-dropdown"
+[[menu.main]]
+    name = "360-Degree view of the Customer"
+    url = "/360-degree-view"
+    weight = 2
+    parent = "analytics-dropdown"
+[[menu.main]]
+    name = "Big Data Analysis"
+    url = "/data-analysis"
+    weight = 3
+    parent = "analytics-dropdown"
+[[menu.main]]
+    name = "Real-time Analytics"
+    url = "/real-time-analytics"
+    weight = 4
+    parent = "analytics-dropdown"
+[[menu.main]]
+    name = "Sentiment Analysis"
+    url = "/sentiment-analysis"
+    weight = 5
+    parent = "analytics-dropdown"
+
+# Testing
+
+[[menu.main]]
+    name = "Testing"
+    url = "/advanced-testing"
+    weight = 5
+
+# Contact
+
+[[menu.main]]
+    name = "Contact"
+    url = "/contact"
+    weight = 6
+
+

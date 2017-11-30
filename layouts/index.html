@@ -1,9 +1,29 @@
-{{ partial "modules/site-header.html" . }}
+{{ partial "3_modules/site-header.html" . }}
 <!-- Main -->
 <main id="main" role="main">
   {{ .Content }}
 </main>
-{{ partial "modules/site-footer.html" . }}
+{{ partial "3_modules/site-footer.html" . }}
 </div>
 <!-- END .site-wrapper -->
-{{ partial "js/headroom-js.html" . }}
+
+<!-- Demo modal -->
+<div class="modal modal-clean fade" id="demo-modal" tabindex="-1" role="dialog" aria-labelledby="demo-modal-label" aria-hidden="true">
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title h5 mb-0 sr-only" id="demo-modal">Concordus Video Demo</h2>
+      </div>
+      <div class="modal-body">
+        <div class="media-wrap video">
+          <iframe class="lazyload" width="100%" src="//www.youtube.com/embed/nQhyHO3asNE" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{ partial "_base/js/headroom-js.html" . }}
