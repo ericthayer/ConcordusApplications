@@ -1,8 +1,12 @@
   <!-- Footer -->
   <footer class="site-footer" role="contentinfo">
+    <div class="container">
     
-      {{ partial "2_components/banners/contact-banner.html" . }}
-
+      {{ partial "2_components/footer-logo.html" . }}
+      {{ partial "2_components/footer-nav.html" . }}
+      {{ partial "2_components/footer-contact.html" . }}
+      
+    </div>
   </footer>
 
   {{ partial "_base/js/main-js.html" . }}
