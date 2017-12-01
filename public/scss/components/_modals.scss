@@ -1,10 +1,10 @@
 .modal {
-  display: flex !important;
   @include ai-center;
   @include p-2;
   pointer-events: none;
   z-index: 0;
-  &.show {    
+  &.show {
+    display: flex !important;    
     pointer-events: all;
     z-index: 1050;
     .close {

@@ -1,4 +1,5 @@
-:root {  
+:root {
+  overflow-y: scroll;
   &:not(.enhanced) {
     @include no-js-subtle-alert;
     .site-header {
@@ -13,7 +14,6 @@ body {
 
 img {
   @include mw-100p;
-  //@include w-100;
 }
 
 // skip to #main link
