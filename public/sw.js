@@ -3,17 +3,20 @@
 // You have to supply a name for your cache, this will
 // allow us to remove an old one to avoid hitting disk
 // space limits and displaying old resources
-var cacheName = 'v1';
+var cacheName = 'v2';
 
 // Assets to cache
 var assetsToCache = [
+  '/',
+  '/css/bootstrap.min.css',
   '/css/styles.css',
-  '/js/min/script.min.js',
-  '/images/content-img/1x1/img-1x1-avatar-2.jpg',
-  '/css/fonts/Knockout-HTF29-JuniorLiteweight-subset.woff',
-  '/css/fonts/Knockout-HTF29-JuniorLiteweight-subset.woff2',
-  '/css/fonts/RobotoCondensed-Regular-subset.woff',
-  '/css/fonts/RobotoCondensed-Regular-subset.woff2'
+  '/js/script.min.js',
+  '/fonts/montserrat-300.woff',
+  '/fonts/montserrat-300.woff2',
+  '/fonts/montserrat-500.woff',
+  '/fonts/montserrat-500.woff2',
+  '/fonts/montserrat-700.woff',
+  '/fonts/montserrat-700.woff2'
 ];
 
 self.addEventListener('install', function (event) {
@@ -69,7 +72,7 @@ self.addEventListener('fetch', function (event) {
         // If there is no internet connection, try to match the request
         // to some of our cached resources
         return cache.match(event.request);
-      })
+      });
     })
   );
 });
