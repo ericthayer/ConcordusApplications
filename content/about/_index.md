@@ -1,6 +1,6 @@
 +++
 type = "page"
-page = "about/about.html"
+page = "/about"
 title = "About"
 description = ""
 +++

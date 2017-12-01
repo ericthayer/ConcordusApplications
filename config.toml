@@ -5,7 +5,7 @@ title = "Concordus Applications"
 
 [[menu.main]]
     name = "About"
-    url = "/about"
+    url = "/about/"
     weight = 1
 
 # Products
@@ -17,7 +17,7 @@ title = "Concordus Applications"
     identifier = "products-dropdown"
 [[menu.main]]
     name = "ChatMate"
-    url = "/products/chatmate"
+    url = "/products/chatmate/"
     weight = 1
     parent ="products-dropdown"
 [[menu.main]]
@@ -27,7 +27,7 @@ title = "Concordus Applications"
     parent ="products-dropdown"
 [[menu.main]]
     name = "Watch My School Bus"
-    url = "/products/wmsb"
+    url = "/wmsb/"
     weight = 3
     parent ="products-dropdown"
 [[menu.main]]
