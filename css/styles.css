@@ -1342,12 +1342,12 @@ input:focus::-moz-placeholder {
   padding-bottom: 1em; }
 
 .modal {
-  display: flex !important;
   align-items: center;
   padding: 2em;
   pointer-events: none;
   z-index: 0; }
   .modal.show {
+    display: flex !important;
     pointer-events: all;
     z-index: 1050; }
     .modal.show .close {

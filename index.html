@@ -437,7 +437,7 @@
                 <a class="nav-link" href="about.html">About<!--<span class="sr-only">(current)</span>--></a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="products-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products</a>
+                <a class="nav-link dropdown-toggle" href="products" id="products-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products</a>
                 <div class="dropdown-menu" aria-labelledby="products-dropdown">
                   <a class="dropdown-item" href="http://gochatmate.com/">Chatmate</a>
                   <a class="dropdown-item" href="//www.gr8integration.com/">Gr8Integration</a>
@@ -448,7 +448,7 @@
                 </div>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="services.html" id="services-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+                <a class="nav-link dropdown-toggle" href="services" id="services-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
                 <div class="dropdown-menu" aria-labelledby="services-dropdown">
                   <a class="dropdown-item" href="subscription-services.html">Subscription Services</a>
                   <a class="dropdown-item" href="integration.html">Integration</a>
@@ -461,7 +461,7 @@
                 </div>
               </li>              
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="analytics.html" id="analytics-dropdown" data-toggle="dropdown" aria-haspopup="true"
+                <a class="nav-link dropdown-toggle" href="analytics" id="analytics-dropdown" data-toggle="dropdown" aria-haspopup="true"
                   aria-expanded="false">Analytics</a>
                 <div class="dropdown-menu" aria-labelledby="analytics-dropdown">
                   <a class="dropdown-item" href="analytics.html">Overview</a>
@@ -481,7 +481,7 @@
                 <a class="nav-link" href="contact.html">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="demo.html" data-toggle="modal" data-target="#demo-modal">Demo</a>
+                <a class="nav-link" href="demo" data-toggle="modal" data-target="#demo-modal">Demo</a>
               </li>
             </ul>
           </div>
@@ -766,8 +766,6 @@
   </div>
 </div>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ThlWQKV0Xw0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
   <!-- async font loading -->
   <script>
     var html = document.documentElement;
@@ -830,14 +828,14 @@
     var mq = window.matchMedia('(min-width: 48em)');
     if(mq.matches) {
       // grab an element
-      var myElement = document.querySelector(".site-header");
+      var stickyNav = document.querySelector(".site-header");
       // construct an instance of Headroom, passing the element
-      var headroom  = new Headroom(myElement);	
+      var headroom  = new Headroom(stickyNav);	
       // initialise
       headroom.init();
     } 
     else {  
-      headroom.destroy();
+      stickyNav.hidden;
     }
   </script>
 
