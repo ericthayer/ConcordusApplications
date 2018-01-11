@@ -8,7 +8,7 @@
         {{ range .Site.Menus.main }}
         {{ if .HasChildren }}
         <li{{if $currentPage.IsMenuCurrent "main" . }} class="nav-item dropdown active" {{ else }} class="nav-item dropdown" {{end}}>
-          <a id="{{ .Name }}-dropdown" class="nav-link dropdown-toggle" href="#main" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{- .Name -}}</a>
+          <a id="{{ .Name }}-dropdown" href="#0" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{- .Name -}}</a>
           <div class="dropdown-menu" aria-labelledby="{{ .Name }}-dropdown">
             {{ range .Children }}
             <a class="dropdown-item{{if $currentPage.IsMenuCurrent "main" . }} active{{end}}" href="{{ .URL | relLangURL }}">{{- .Name -}}</a>
