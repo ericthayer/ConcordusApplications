@@ -716,13 +716,12 @@
   var mq = window.matchMedia('(min-width: 48em)');
   if(mq.matches) {
     
-    var myElement = document.querySelector(".site-header");
+    var stickyNav = document.querySelector(".site-header");
     
-    var headroom  = new Headroom(myElement);	
+    var headroom  = new Headroom(stickyNav);	
     
     headroom.init();
   } 
   else {  
-    headroom.destroy();
   }
 </script>
