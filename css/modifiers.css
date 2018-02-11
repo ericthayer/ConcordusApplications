@@ -722,13 +722,3 @@ ul, ol {
 
 .mw-100p {
   max-width: 100%; }
-
-@media (min-width: 33.75em) {
-  .align-right {
-    text-align: right; }
-    .align-right * + *:last-child {
-      margin-right: 0; } }
-
-@media (min-width: 33.75em) {
-  .align-center {
-    text-align: center; } }
