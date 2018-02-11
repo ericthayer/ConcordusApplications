@@ -508,7 +508,10 @@
         <div class="container">
 
           <!-- Contact Form -->
-          <form id="contact-form" method="post" class="mr-ml-a mb-4 mw-56em" novalidate>
+          <form id="contact-form" netlify-honeypot="bot-field" action="thank-you" class="mr-ml-a mb-4 mw-56em" netlify novalidate>
+            <span class="hidden">
+              <label>Don’t fill this out: <input name="bot-field"></label>
+            </span>
             <h2 class="border-title mb-4">Contact form</h2>
             <div class="row">
               <div class="col-md-6">

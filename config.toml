@@ -17,27 +17,27 @@ title = "Concordus Applications"
     identifier = "products-dropdown"
 [[menu.main]]
     name = "ChatMate"
-    url = "/products/chatmate/"
+    url = "https://www.gochatmate.com/"
     weight = 1
     parent ="products-dropdown"
 [[menu.main]]
-    name = "in2Marketplace"
-    url = "/products/in2m"
+    name = "Gr8Integration"
+    url = "https://www.gr8integration.com/"
     weight = 2
+    parent ="products-dropdown"
+[[menu.main]]
+    name = "Gr8Market"
+    url = "https://www.gr8market.biz/"
+    weight = 3
+    parent ="products-dropdown"
+[[menu.main]]
+    name = "Gr8Cloud"
+    url = "http://www.gr8cloud.biz/"
+    weight = 4
     parent ="products-dropdown"
 [[menu.main]]
     name = "Watch My School Bus"
     url = "/wmsb/"
-    weight = 3
-    parent ="products-dropdown"
-[[menu.main]]
-    name = "iPaaS"
-    url = "/products/ipaas"
-    weight = 4
-    parent ="products-dropdown"
-[[menu.main]]
-    name = "AWS"
-    url = "/products/aws"
     weight = 5
     parent ="products-dropdown"
 
