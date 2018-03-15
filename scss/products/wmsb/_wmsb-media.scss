@@ -1,16 +1,14 @@
 .dash-sample {
-  padding-bottom: 56.25%;
+  padding-bottom: 54%;
   img {
     top: auto;
     bottom: 0;
   }
   @media (min-width: 20em) {
-    img {
-      height: 95%;
-      width: 95%;
+    img {      
       left: auto;
       right: 0;
-      padding-left: 4em;
+      //padding-left: 4em;
     }
   }
 
@@ -26,11 +24,14 @@
 
   @media  (min-width: 40em) {
     padding-right: 4em;
+    padding-bottom: 56.25%;
     padding-left: 4em;
     img {
-      padding-left: 0;
+      //padding-left: 0;
       right: auto;
       left: 2.5%;
+      height: 95%;
+      width: 95%;
     }
   }
 }
