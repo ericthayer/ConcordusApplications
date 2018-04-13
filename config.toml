@@ -37,7 +37,7 @@ title = "Concordus Applications"
     parent ="products-dropdown"
 [[menu.main]]
     name = "Watch My School Bus"
-    url = "/wmsb/"
+    url = "https://www.watchmyschoolbus.com/"
     weight = 5
     parent ="products-dropdown"
 
@@ -130,5 +130,3 @@ title = "Concordus Applications"
     name = "Contact"
     url = "/contact"
     weight = 6
-
-
